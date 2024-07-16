@@ -14,7 +14,7 @@ layout: feed
 		<email>annasmail1803@gmail.com</email>
 	</author>
 
-	{% for post in site.category.Physics %}
+	{% for post in site.category.Geography %}
 		<entry>
 			<title>{{ post.title }}</title>
 			<link href="http://annasmail.github.io{{ post.url }}"/>
