@@ -5,10 +5,10 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>Earth Sciences</title>
-	<link href="http://annasmail.github.io/Earth-Sciences/atom.xml" rel="self"/>
-	<link href="http://annasmail.github.io/Earth-Sciences"/>
+	<link href="http://annasmail.github.io/EarthSciences/atom.xml" rel="self"/>
+	<link href="http://annasmail.github.io/EarthSciences"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://annasmail.github.io/Earth-Sciences</id>
+	<id>http://annasmail.github.io/EarthSciences</id>
 	<author>
 		<name>Anna Smail</name>
 		<email>annasmail1803@gmail.com</email>
