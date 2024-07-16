@@ -15,15 +15,13 @@ layout: feed
 	</author>
 
 	{% for post in site.posts %}
-		{% if post.categories contains {{Physics}}  %}
-			<entry>
-				<title>{{ post.title }}</title>
-				<link href="http://annasmail.github.io{{ post.url }}"/>
-				<updated>{{ post.date | date_to_xmlschema }}</updated>
-				<id>http://annasmail.github.io{{ post.id }}</id>
-				<content type="html">{{ post.content | xml_escape }}</content>
-			</entry>
-		{% endif %}
+		<entry>
+			<title>{{ post.title }}</title>
+			<link href="http://annasmail.github.io{{ post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>http://annasmail.github.io{{ post.id }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
+		</entry>
 	{% endfor %}
 
 </feed>
