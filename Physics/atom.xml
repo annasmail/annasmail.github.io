@@ -4,7 +4,7 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>Anna Smail's Blog</title>
+	<title>Physics</title>
 	<link href="http://annasmail.github.io/Physics/atom.xml" rel="self"/>
 	<link href="http://annasmail.github.io/Physics"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
