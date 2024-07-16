@@ -5,4 +5,4 @@ date: 2024-07-16
 category: "Physics"
 ---
 
-Hello again.
+This project was about configuring two magnets such that they would create a local minimum at a distance that could be used to push magnetic nanoparticles. This had potential applications in medical treatments such as magnetic injection of medicine into the inner ear.
