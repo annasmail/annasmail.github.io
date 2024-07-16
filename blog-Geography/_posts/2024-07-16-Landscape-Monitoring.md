@@ -5,4 +5,5 @@ date: 2024-07-16
 category: "Geography"
 ---
 
-Hello.
+This was a group project where we investigated the potential InSAR data holds in determining conditions of peat soil in remote places. 
+![The fens](https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2018/04/fens6.jpg)
