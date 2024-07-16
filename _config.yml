@@ -1,4 +1,3 @@
 name: Anna Smail
 markdown: kramdown
-permalink: /Physics/:year/:month/:day/:title
-permalink: /Geography/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title
