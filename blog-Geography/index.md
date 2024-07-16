@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Geography Blog
+category: Geography
 ---
 <div class="blurb">
 	<h1>Anna Smail</h1>
