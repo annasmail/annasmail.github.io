@@ -1,6 +1,6 @@
 ---
 layout: post-Geography
-title: "This is my second blog"
+title: "Water Temperature Modelling"
 date: 2024-07-16
 category: "Geography"
 ---
