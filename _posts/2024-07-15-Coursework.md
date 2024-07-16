@@ -2,7 +2,7 @@
 layout: post
 title: "Coursework"
 date: 2024-07-15
-category: Physics
+categories: Physics
 ---
 
 These are some of my courseworks.
