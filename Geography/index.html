@@ -5,7 +5,7 @@ title: Geography2
 	<h1>{{ page.title }}</h1>
 	<ul class="posts2">
 
-	  {% for post in site.posts2 %}
+	  {% for post in site.category.Geography %}
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
