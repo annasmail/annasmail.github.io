@@ -39,5 +39,6 @@ ul.posts {
 }
 
 ul.posts li {
+    font-family:'Helvetica';
     list-style: none;
 }
