@@ -5,4 +5,4 @@ date: 2024-07-16
 category: "Geography"
 ---
 
-Hello again.
+This practical used RStudio to model daily fluctuations of the temperature of a body of water.
