@@ -1,6 +1,6 @@
 ---
 layout: post-Physics
-title: "This is my second blog"
+title: "Pushing with Magnets"
 date: 2024-07-16
 category: "Physics"
 ---
