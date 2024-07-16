@@ -5,16 +5,16 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>Anna Smail's Blog</title>
-	<link href="http://annasmail.github.io/blog/atom.xml" rel="self"/>
-	<link href="http://annasmail.github.io/blog"/>
+	<link href="http://annasmail.github.io/Physics/atom.xml" rel="self"/>
+	<link href="http://annasmail.github.io/Physics"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://annasmail.github.io/blog</id>
+	<id>http://annasmail.github.io/Physics</id>
 	<author>
 		<name>Anna Smail</name>
 		<email>annasmail1803@gmail.com</email>
 	</author>
 
-	{% for post in site.posts %}
+	{% for post in site.Physics %}
 		<entry>
 			<title>{{ post.title }}</title>
 			<link href="http://annasmail.github.io{{ post.url }}"/>
