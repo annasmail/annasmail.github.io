@@ -7,5 +7,5 @@ category: "Geography"
 
 This practical used RStudio to model daily fluctuations of the temperature of a body of water.
 
-<img src = "/blog-Geography/images/WaterTemp.png">
+<img src = "/blog-Geography/images/WaterTemp.png" width="12"/>
 
