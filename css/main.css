@@ -10,17 +10,17 @@ a.btn {
     color: #2D3047;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #E2CFEA;
+    background-color: #EDE2F3;
     border-radius: 25px;
 }
 .top:hover {
-    background-color: #B890E0;
+    background-color: #D2B7E1;
     font-weight: bold;
 }
 .bottom {
     color: #2D3047;
     font-weight: normal;
-    padding: 7px 10px;
+    padding: 4px 10px;
     background-color: #F6F1F9;
     border-radius: 2px;
 }
