@@ -3,6 +3,15 @@ body {
     width: 70%;
     background-color: #F6F1F9;
 }
+a {
+    text-decoration: none;
+    color:#2D3047;
+}
+a:hover {
+    text-decoration: none;
+    font-weight: normal;
+    color:#2D3047;
+}
 a.btn {
     text-decoration: none;
 }
@@ -38,15 +47,6 @@ nav ul li, footer ul li {
     display: inline;
     margin-left: 20px;
 }
-a {
-    text-decoration: none;
-    color:#2D3047;
-}
-a:hover {
-    text-decoration: none;
-    font-weight: normal;
-    color:#2D3047;
-}
 h1 {
     font-size: 2em;
     font-family:'Helvetica';
@@ -65,15 +65,10 @@ p {
 }
 
 ul.posts { 
-    margin: 20px auto 40px; 
     font-family:'Helvetica';
     font-size: 1em;
     color:#2D3047;
-}
-
-ul.posts:hover {
-    color:#B969C9
-}
+}  
 
 ul.posts li {
     list-style: none;
