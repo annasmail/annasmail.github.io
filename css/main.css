@@ -70,6 +70,11 @@ ul.posts {
     color:#2D3047;
 }
 
+ul.posts: hover {
+    color:#BB0A21;
+}
+    
+
 ul.posts li {
     list-style: none;
     font-family:'Helvetica';
