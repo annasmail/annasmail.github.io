@@ -5,23 +5,25 @@ body {
 }
 a.btn {
     text-decoration: none;
-    border-radius: 25px;
 }
 .top {
     color: #2D3047;
     font-weight: bold;
     padding: 10px 20px;
     background-color: #E2CFEA;
+    border-radius: 25px;
 }
 .top:hover {
     background-color: #B890E0;
     font-weight: bold;
+    border-radius: 25px;
 }
 .bottom {
     color: #2D3047;
     font-weight: normal;
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #F6F1F9;
+    border-radius: 10px;
 }
 .bottom:hover {
     background-color: #E2CFEA;
@@ -54,11 +56,6 @@ p {
     font-size: 1.5em;
     font-family:'Helvetica';
     line-height: 1.4em;
-    color:#2D3047;
-}
-footer {
-    border-top: 1px solid #FFFFFF;
-    font-size: .8em;
     color:#2D3047;
 }
 
