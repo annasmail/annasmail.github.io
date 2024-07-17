@@ -5,8 +5,10 @@ body {
 nav ul, footer ul {
     font-family:'Helvetica';
     padding: 0px;
-    color: #F1E3F3;
     list-style: none;
+}
+.header {
+    background: #F1E3F3;
 }
 nav ul li, footer ul li {
     display: inline;
