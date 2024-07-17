@@ -14,18 +14,18 @@ a.btn {
     border-radius: 25px;
 }
 .top:hover {
-    background-color: #D2B7E1;
+    background-color: #FFFFFF;
     font-weight: bold;
 }
 .bottom {
     color: #2D3047;
     font-weight: normal;
-    padding: 6px 10px;
+    padding: 6px 6px;
     background-color: #F6F1F9;
     border-radius: 3px;
 }
 .bottom:hover {
-    background-color: #E2CFEA;
+    background-color: #FFFFFF;
 }
 nav ul, footer ul {
     font-family:'Helvetica';
