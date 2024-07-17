@@ -7,10 +7,10 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     background-color: #F1E3F3;
+    height: 3em;
 }
 nav ul li, footer ul li {
     display: inline;
-    padding: 5px;
     margin-left: 20px;
 }
 a {
