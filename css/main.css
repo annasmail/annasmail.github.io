@@ -2,12 +2,10 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-header {
-    color: #F1E3F3;
-}
 nav ul, footer ul {
     font-family:'Helvetica';
     padding: 0px;
+    color: #F1E3F3;
     list-style: none;
 }
 nav ul li, footer ul li {
