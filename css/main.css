@@ -18,6 +18,7 @@ a.btn {
 .bottom {
     color: #2D3047;
     font-weight: normal;
+    padding: 10px 20px;
     background-color: #F6F1F9;
 }
 .bottom:hover {
