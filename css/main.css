@@ -21,11 +21,12 @@ a.btn {
     padding: 6px 15px;
     background-color: #F6F1F9;
     border-radius: 25px;
-    border: 2px solid #EDE2F3;
+    outline: 2px solid #EDE2F3;
 }
 .bottom:hover {
     background-color: #EDE2F3;
-    border: 2px solid #EDE2F3;
+    border-radius: 25px;
+    outline: 2px solid #EDE2F3;
 }
 nav ul, footer ul {
     font-family:'Helvetica';
