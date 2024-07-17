@@ -48,7 +48,7 @@ a:hover {
     color:#2D3047;
 }
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-family:'Helvetica';
     color:#2D3047;
 }
@@ -56,9 +56,12 @@ h2 {
     font-size: 1.5em;
     font-family:'Helvetica';
     color:#2D3047;
+    padding: 6px 15px;
+    background-color: #F6F1F9;
+    border-radius: 25px;
 }
 p {
-    font-size: .5em;
+    font-size: 1em;
     font-family:'Helvetica';
     line-height: 1.4em;
     color:#2D3047;
