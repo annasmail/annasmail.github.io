@@ -7,7 +7,12 @@ a.btn {
     color: #000000;
     padding: 10px 20px;
     border-radius: 25px;
+}
+.top {
     background-color: #D8E9FD;
+}
+.bottom {
+    background-color: #0C73E9;
 }
 nav ul, footer ul {
     font-family:'Helvetica';
@@ -38,7 +43,7 @@ p {
     color: #333;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #FFFFFF;
     font-size: .8em;
 }
 
