@@ -7,6 +7,8 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     background-color: #F1E3F3;
+    height: 3em;
+    align-items: center;
 }
 nav ul li, footer ul li {
     display: inline;
