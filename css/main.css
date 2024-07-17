@@ -28,12 +28,9 @@ nav ul, footer ul {
     font-family:'Helvetica';
     padding: 0px;
     list-style: none;
-    display: flex;
-    justify-content: center;
 }
 nav ul li, footer ul li {
-    display: flex;
-    justify-content: center;
+    display: inline;
     margin-left: 20px;
 }
 a {
