@@ -30,7 +30,7 @@ a.btn {
 }
 nav ul, footer ul {
     font-family:'Helvetica';
-    padding: 5px;
+    padding: 0px;
     list-style: none;
     text-align: center;
 }
@@ -80,6 +80,6 @@ ul.posts li {
     font-family:'Helvetica';
 }
 footer {
-    border-top: 1px solid #B969C9;
+    border-top: 1px solid #F6F1F9;
     font-size: .8em;
 }
