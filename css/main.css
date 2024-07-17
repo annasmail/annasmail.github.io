@@ -20,8 +20,9 @@ a.btn {
 .bottom {
     color: #2D3047;
     font-weight: normal;
-    padding: 4px 10px;
+    padding: 10px 20px;
     background-color: #F6F1F9;
+    border-radius: 25px;
 }
 .bottom:hover {
     background-color: #E2CFEA;
