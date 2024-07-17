@@ -65,14 +65,9 @@ p {
 }
 
 ul.posts { 
-    margin: 20px; 
     font-family:'Helvetica';
     font-size: 1em;
     color:#2D3047;
-}
-
-ul.posts:hover {
-    color:#B969C9
 }
 
 ul.posts li {
