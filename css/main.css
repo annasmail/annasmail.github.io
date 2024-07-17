@@ -8,14 +8,12 @@ a.btn {
 }
 .top {
     color: #2D3047;
-    font-weight: bold;
     padding: 10px 20px;
     background-color: #EDE2F3;
     border-radius: 25px;
 }
 .top:hover {
     background-color: #FFFFFF;
-    font-weight: bold;
 }
 .bottom {
     color: #2D3047;
@@ -63,6 +61,10 @@ ul.posts {
     font-family:'Helvetica';
     font-size: 1.5em;
     color:#2D3047;
+}
+
+ul.posts:hover {
+    color:#B969C9
 }
 
 ul.posts li {
