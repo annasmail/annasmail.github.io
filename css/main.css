@@ -25,7 +25,7 @@ a.btn {
 }
 .bottom:hover {
     background-color: #EDE2F3;
-    border: 2px #EDE2F3;
+    outline-colour: #EDE2F3;
 }
 nav ul, footer ul {
     font-family:'Helvetica';
