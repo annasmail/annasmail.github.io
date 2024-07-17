@@ -26,17 +26,11 @@ a.btn {
 .bottom:hover {
     background-color: #E2CFEA;
 }
-nav ul {
+nav ul, footer ul {
     font-family:'Helvetica';
     padding: 0px;
     list-style: none;
     text-align: center;
-}
-footer ul {
-    font-family:'Helvetica';
-    padding: 0px;
-    list-style: none;
-    text-align: left;
 }
 nav ul li, footer ul li {
     display: inline;
