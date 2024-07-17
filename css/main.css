@@ -38,24 +38,6 @@ nav ul li, footer ul li {
     display: inline;
     margin-left: 20px;
 }
-a.class1 {
-    text-decoration: none;
-    color:#2D3047;
-}
-a.class1:hover {
-    text-decoration: none;
-    font-weight: normal;
-    color:#2D3047;
-}
-a.class2 {
-    text-decoration: none;
-    color:#2D3047;
-}
-a.class2:hover {
-    text-decoration: none;
-    font-weight: normal;
-    color:#BB0A21;
-}
 h1 {
     font-size: 2em;
     font-family:'Helvetica';
