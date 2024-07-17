@@ -29,7 +29,7 @@ a.btn {
     outline: 2px solid #EDE2F3;
 }
 nav ul, footer ul {
-    font-family:'Helvetica';
+    font-family:'Georgia';
     padding: 0px;
     list-style: none;
     text-align: center;
@@ -68,12 +68,7 @@ ul.posts {
     font-family:'Helvetica';
     font-size: 1em;
     color:#2D3047;
-}
-
-ul.posts: hover {
-    color:#BB0A21;
-}
-    
+}  
 
 ul.posts li {
     list-style: none;
