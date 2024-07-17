@@ -30,7 +30,7 @@ a.btn {
 }
 nav ul, footer ul {
     font-family:'Helvetica';
-    padding: 0px;
+    padding: 5px;
     list-style: none;
     text-align: center;
 }
