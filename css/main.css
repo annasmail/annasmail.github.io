@@ -8,8 +8,8 @@ a {
     color:#2D3047;
 }
 a:hover {
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration: underline;
+    font-weight: normal;
     color:#B62DFF;
 }
 a.btn {
@@ -73,8 +73,8 @@ p {
 
 ul.posts { 
     font-family:'Microsoft Sans Serif';
-    font-weight: bold;
-    font-size: 1em;
+    font-weight: normal;
+    font-size: 1.5em;
     color:#2D3047;
 }  
 
