@@ -65,10 +65,17 @@ h2 {
     font-weight: bold;
     color:#2D3047;
 }
+h3 {
+    font-size: 1em;
+    font-family:'Microsoft Sans Serif';
+    font-weight: bold;
+    line-height: 1.2em;
+    color:#2D3047;
+}
 p {
     font-size: 1em;
     font-family:'Microsoft Sans Serif';
-    line-height: 1.2em;
+    line-height: 1.1em;
     color:#2D3047;
 }
 
