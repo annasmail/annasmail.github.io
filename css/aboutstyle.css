@@ -100,7 +100,8 @@ footer {
     padding: 10px 20px;
     color: #2D3047;
     font-family:'Microsoft Sans Serif';
-    background-image: linear-gradient(#EDE2F3,#DBC6E7);
+    background-color: #FFFFFF;
+    /*background-image: linear-gradient(#EDE2F3,#DBC6E7);*/
     text-align: center;
     border-radius: 25px;
 }
