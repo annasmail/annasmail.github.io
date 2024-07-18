@@ -2,9 +2,6 @@ body {
     margin: 60px auto;
     width: 70%;
     background-color: #F6F1F9;
-    /* align-items: center;*/
-    /* justify-content: center;*/
-    /*display: flex;*/
 }
 a {
     text-decoration: none;
@@ -94,11 +91,13 @@ footer {
     justify-content: center;
     align-items: center;
     min-heigh: 400px;
-    background: #E0A458;
+    background: #F6F1F9;
 }
 #container div{
     margin: 60px;
-    width: 335px;
+    width: 360px;
     height: 370px;
-    background-color: #F95738;
+    linear-gradient: (#EDE2F3,#DBC6E7);
+    text-align: center;
+    border-radius: 25px;
 }
