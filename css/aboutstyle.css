@@ -94,7 +94,8 @@ footer {
     justify-content: center;
     align-items: center;
     min-heigh: 400px;
-    background: #E0A458
+    background: #E0A458;
+}
 #container div{
     margin: 60px;
     width: 335px;
