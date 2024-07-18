@@ -70,12 +70,16 @@ h3 {
     font-family:'Microsoft Sans Serif';
     font-weight: bold;
     line-height: 1.2em;
+    margin-bottom: 15px;
     color:#2D3047;
 }
 p {
     font-size: 1em;
     font-family:'Microsoft Sans Serif';
-    line-height: 1em;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
     color:#2D3047;
 }
 
