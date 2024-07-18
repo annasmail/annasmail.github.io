@@ -20,6 +20,7 @@ a.btn {
     padding: 10px 20px;
     background-color: #EDE2F3;
     border-radius: 25px;
+    transition: 0.3s;
 }
 .top:hover {
     background-color: #FFFFFF;
@@ -31,6 +32,7 @@ a.btn {
     background-color: #F6F1F9;
     border-radius: 25px;
     outline: 2px solid #EDE2F3;
+    transition: 0.3s;
 }
 .bottom:hover {
     background-color: #EDE2F3;
