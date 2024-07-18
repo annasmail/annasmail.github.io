@@ -89,13 +89,13 @@ footer {
     border-top: 1px solid #F6F1F9;
     font-size: .8em;
 }
-.container{
+#container{
     display: flex;
     justify-content: center;
     align-items: center;
     min-heigh: 400px;
     background: #E0A458
-.container div{
+#container div{
     margin: 60px;
     width: 335px;
     height: 370px;
