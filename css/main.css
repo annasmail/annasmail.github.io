@@ -38,7 +38,7 @@ a.btn {
     outline: 2px solid #EDE2F3;
 }
 nav ul, footer ul {
-    font-family:'Graphik';
+    font-family:'Microsoft Sans Serif';
     padding: 0px;
     list-style: none;
     text-align: center;
@@ -49,24 +49,24 @@ nav ul li, footer ul li {
 }
 h1 {
     font-size: 2em;
-    font-family:'Peace Sans';
+    font-family:'Helvetica';
     color:#2D3047;
 }
 h2 {
     font-size: 1.5em;
-    font-family:'Graphik';
+    font-family:'Microsoft Sans Serif';
     font-weight: bold;
     color:#2D3047;
 }
 p {
     font-size: 1em;
-    font-family:'Graphik';
+    font-family:'Microsoft Sans Serif';
     line-height: 1.4em;
     color:#2D3047;
 }
 
 ul.posts { 
-    font-family:'Graphik';
+    font-family:'Microsoft Sans Serif';
     font-weight: bold;
     font-size: 1em;
     color:#2D3047;
@@ -74,7 +74,7 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
-    font-family:'Graphik';
+    font-family:'Microsoft Sans Serif';
 }
 footer {
     border-top: 1px solid #F6F1F9;
