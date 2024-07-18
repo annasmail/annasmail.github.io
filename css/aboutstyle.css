@@ -104,4 +104,5 @@ footer {
     /*background-image: linear-gradient(#EDE2F3,#DBC6E7);*/
     text-align: center;
     border-radius: 25px;
+    box-shadow: 5px 5px 5px #EDE2F3;
 }
