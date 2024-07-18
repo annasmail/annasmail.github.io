@@ -10,7 +10,7 @@ a {
 a:hover {
     text-decoration: none;
     font-weight: normal;
-    color:#2D3047;
+    color:#F95738;
 }
 a.btn {
     text-decoration: none;
@@ -23,6 +23,7 @@ a.btn {
     transition: 0.3s;
 }
 .top:hover {
+    color: #2D3047;
     background-color: #FFFFFF;
 }
 .bottom {
@@ -35,6 +36,7 @@ a.btn {
     transition: 0.3s;
 }
 .bottom:hover {
+    color: #2D3047;
     background-color: #EDE2F3;
     border-radius: 25px;
     outline: 2px solid #EDE2F3;
