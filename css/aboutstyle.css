@@ -68,7 +68,7 @@ h2 {
 p {
     font-size: 1em;
     font-family:'Microsoft Sans Serif';
-    line-height: 1.4em;
+    line-height: 1.2em;
     color:#2D3047;
 }
 
@@ -84,7 +84,7 @@ ul.posts li {
     font-family:'Microsoft Sans Serif';
 }
 footer {
-    border-top: 20px solid #9B61BD;
+    border-top: 40px solid #F6F1F9;
     font-size: .8em;
 }
 #container{
@@ -95,7 +95,7 @@ footer {
     background: #F6F1F9;
 }
 #container div{
-    margin: 20px;
+    margin: 30px;
     width: 360px;
     height: 370px;
     padding: 15px 20px;
