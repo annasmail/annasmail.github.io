@@ -2,9 +2,6 @@ body {
     margin: 60px auto;
     width: 70%;
     background-color: #F6F1F9;
-    align-items: center;
-    justify-content: center;
-    display: flex;
 }
 a {
     text-decoration: none;
@@ -88,16 +85,4 @@ ul.posts li {
 footer {
     border-top: 1px solid #F6F1F9;
     font-size: .8em;
-}
-.cover {
-    width: 900px;
-    height: 400px;
-    margin-top: 50px;
-    display: flex;
-}
-.box {
-    margin: 10px;
-    width: 800px;
-    height: 400px;
-    background-color: #F95738;
 }
