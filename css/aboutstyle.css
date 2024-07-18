@@ -97,7 +97,7 @@ footer {
     margin: 60px;
     width: 360px;
     height: 370px;
-    linear-gradient: (#EDE2F3,#DBC6E7);
+    background-image: linear-gradient(#EDE2F3,#DBC6E7);
     text-align: center;
     border-radius: 25px;
 }
