@@ -86,3 +86,6 @@ footer {
     border-top: 1px solid #F6F1F9;
     font-size: .8em;
 }
+.uppercase-text {
+        text-transform: uppercase;
+    }
