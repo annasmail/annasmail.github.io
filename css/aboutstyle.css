@@ -74,6 +74,15 @@ h3 {
     margin-top: 5px;
     color:#2D3047;
 }
+h4 {    
+    font-size: 0.8em;
+    font-family:'Microsoft Sans Serif';
+    font-weight: bold;
+    line-height: 0.9em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color:#2D3047;
+}
 p {
     font-size: 1em;
     font-family:'Microsoft Sans Serif';
