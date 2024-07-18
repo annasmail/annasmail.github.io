@@ -84,7 +84,7 @@ ul.posts li {
     font-family:'Microsoft Sans Serif';
 }
 footer {
-    border-top: 40px solid #F6F1F9;
+    border-top: 30px solid #F6F1F9;
     font-size: .8em;
 }
 #container{
@@ -95,7 +95,7 @@ footer {
     background: #F6F1F9;
 }
 #container div{
-    margin: 30px;
+    margin: 20px;
     width: 360px;
     height: 370px;
     padding: 15px 25px;
@@ -105,5 +105,5 @@ footer {
     text-align: justify;
     text-justify: inter-word;
     border-radius: 25px;
-    box-shadow: 10px 10px 4px #EDE2F3;
+    box-shadow: 7px 7px 4px #EDE2F3;
 }
