@@ -95,3 +95,9 @@ footer {
     margin-top: 50px;
     display: flex;
 }
+.box1 {
+    margin: 10px;
+    width: 800px;
+    height: 400px;
+    background-color: #F95738;
+}
