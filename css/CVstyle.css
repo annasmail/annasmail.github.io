@@ -35,6 +35,7 @@ a.btn {
 .top:hover {
     font-weight: normal;
     padding: 8px 17px;
+    color: #1E2529;
     background-color: #E7E7E7;
     border-radius: 25px;
 }
@@ -114,6 +115,6 @@ ul.posts li {
     font-family:'Microsoft Sans Serif';
 }
 footer {
-    border-top: 30px solid #F6F1F9;
+    border-top: 30px solid #F5F5F5;
     font-size: .8em;
 }
