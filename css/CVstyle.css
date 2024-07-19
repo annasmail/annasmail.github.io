@@ -50,8 +50,8 @@ a.btn {
     transition: 0.3s;
 }
 .bottom:hover {
-    color: #1E2529;
-    background-color: #EBF3FF;
+    color: #FFFFFF;
+    background-color: #0066FF;
     border-radius: 25px;
     outline: 2px solid #0066FF;
     font-weight: normal;
