@@ -51,8 +51,8 @@ nav ul, footer ul {
     text-align: center;
 }
 nav ul li, footer ul li {
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
+    justify-content: end;
     align-items: center;
 }
 h1 {
