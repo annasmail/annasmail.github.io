@@ -74,11 +74,13 @@ title: Anna Smail
   grid-row-start: 4;
   grid-row-end: 6;
  	grid-column: 1;
-	background-image: url(running.jpg);
+	background-color: #F0A9E3;
+	color: #FFFFFF;
 	background-size: cover;
 	background-position: center;
 	order:6;
-	  border-radius: 5px 5px 25px 25px;
+	padding: 20px  25px;
+	border-radius: 5px 5px 25px 25px;
 }
 .grid-item7 {
   grid-row-start: 4;
@@ -95,6 +97,44 @@ title: Anna Smail
 </style>
 </head>
 <body>
+
+
+	
+
+<p id="demo"></p>
+
+<script>
+var countDownDate = new Date("Sep 7, 2024 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+	
 
 <h1>About me</h1>
 
@@ -123,7 +163,7 @@ title: Anna Smail
    			<h3> </h3>
   </div>
 <div class="grid-item6">
-			<h3></h3>
+			<p id="demo"></p>
   </div>
 <div class="grid-item7">
 			<h3>University of Nottingham</h3>
