@@ -21,7 +21,6 @@ a.btn {
     background-color: #EDE2F3;
     border-radius: 25px;
     transition: 0.3s;
-    margin-left: auto;
 }
 .top:hover {
     color: #2D3047;
@@ -36,7 +35,6 @@ a.btn {
     border-radius: 25px;
     outline: 2px solid #EDE2F3;
     transition: 0.3s;
-    justify-content: end;
 }
 .bottom:hover {
     color: #2D3047;
