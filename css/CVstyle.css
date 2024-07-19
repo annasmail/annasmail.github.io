@@ -68,6 +68,7 @@ h1 {
     color:#2D3047;
 }
 h2 {
+    margin: 0px;
     font-size: 1.5em;
     font-family:'Microsoft Sans Serif';
     font-weight: bold;
