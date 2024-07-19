@@ -1,12 +1,13 @@
 ---
 layout: CVlayout
-title: Physics
+title: Anna Smail
 ---
+
 <head>
 <style>
 .grid-container {
   display: grid;
-  grid-template-columns: 350px 350px 350px;
+  grid-template-columns: 350px 430px 270px;
   gap: 20px;
   padding: 10px;
 }
@@ -16,58 +17,128 @@ title: Physics
   text-justify: inter-word;
 }
 .grid-item1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
- 	grid-column: 1;
-	background-image: url(running.jpg);
-	color: #FFFFFF;
-	background-size: cover;
-	background-position: center;
-	order:1;
-	padding: 20px  25px;
-	border-radius: 5px 5px 25px 25px;
-}
-.grid-item2 {
-  grid-row-start: 1;
-  grid-row-end: 2;
- 	grid-column: 2;
-	background-image: url(running.jpg);
-	color: #FFFFFF;
-	background-size: cover;
-	background-position: center;
-	order:2;
-	padding: 20px  25px;
-	border-radius: 5px 5px 25px 25px;
+	box-sizing: border-box;
+  border: 2px solid #EBF3FF;
+	grid-column: 3;
+	color:#2D3047;
+	background-color: #EBF3FF;
+	transition: 0.3s;
+	order:4;
+	padding: 10px  20px;
+	  border-radius: 25px;
 }
 .grid-item3 {
+	box-sizing: border-box;
+  border: 2px solid #EBF3FF;
+	grid-column: 3;
+	color:#2D3047;
+	transition: 0.3s;
+	background-color: #EBF3FF;
+	order:6;
+	padding: 10px  20px;
+	  border-radius: 25px 25px 5px 5px;
+}
+.grid-item2 {
+  box-sizing: border-box;
+	border: 2px solid #EBF3FF;
+	grid-column: 3;
+	color:#2D3047;
+	transition: 0.3s;
+	background-color: #EBF3FF;
+	order:5;
+	padding: 10px  20px;
+	  border-radius: 25px;
+}
+.grid-item4 {
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 6;
+ 	grid-column: 2;
+	box-sizing: border-box;
+	border-top: 2px solid #EBEBEB;
+	border-bottom: 2px solid #EBEBEB;
+    	color:#2D3047;
+	order:3;
+	padding: 20px  25px;
+}
+.grid-item5 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+	grid-column: 1;
+	background-image: url(nottingham.jpg);
+	background-size: cover;
+	background-position: center;
+    	color: #2D3047;
+	order:1;
+	  border-radius: 25px 25px 5px 5px;
+}
+.grid-item6 {
+  grid-row-start: 4;
+  grid-row-end: 6;
  	grid-column: 3;
 	background-image: url(running.jpg);
 	color: #FFFFFF;
 	background-size: cover;
 	background-position: center;
-	order:3;
+	order:7;
 	padding: 20px  25px;
 	border-radius: 5px 5px 25px 25px;
+}
+.grid-item7 {
+  grid-row-start: 4;
+  grid-row-end: 6;
+ 	grid-column: 1;
+	box-sizing: border-box;
+	border: 2px solid #EBF3FF;
+	background-color: #EBF3FF;
+    	color:#2D3047;
+	order:2;
+	padding: 20px  25px;
+	  border-radius: 5px 5px 25px 25px;
 }
 </style>
 </head>
 
 <body>
-	
+
+<h1>About me</h1>
+
 <div class="grid-container">
-<div class="grid-item1">
-   	<h3> </h3>
+	<div class="grid-item1">
+    <p><b>Currently reading</b></p>
+    <p>Pythagoras' Trousers</p>
+  </div> 
+  <div class="grid-item2">
+    <p><b>Current design project</b></p>
+    <p>This website!</p>
+  </div>
+  <div class="grid-item3">
+    <p><b>Next race</b></p>
+    <p>Battle of the Borders Trail Run</p>
+  </div>
+<div class="grid-item4">
+			<h3>Final Year Projects</h3>
+			<p><b>Landscape Monitoring</b></p>
+			<p>Analysing the capabilities of InSAR in monitoring the condition of peat in agricultural areas and writing a grant proposal to enable further interpretation. </p>
+  			<p><b>Pushing with Magnets</b></p>
+			<p>Writing a computer model in Python to calculate the magnetic fields and gradients of two-magnet setups as well as experimental validation.  </p>
+			<h3>Favourite Modules</h3>
+			<p><b>Atmospheric  and Planetary Physics</b></p>
+			<p>Studying mathematical derivations to better under phyiscal phenomena such as cyclones and atmospheric stratification.</p>
+			<p><b>Environmental Modelling</b></p>
+			<p>Using R to accurately simulate water temperature fluxes and MATLAB to analyse the implications of climate change on health.</p>
 </div>
-<div class="grid-item2">
-	<p> </p>
+  <div class="grid-item5">
+   			<h3> </h3>
+  </div>
+<div class="grid-item6">
+			<p> </p>
+  </div>
+<div class="grid-item7">
+			<h3>University of Nottingham</h3>
+			<p><b>BSc (Hons) Natural Sciences</b></p>
+			<p>With a focus on Physics, Earth Sciences and Mathematics.</p>
+			<h4><i>2021 - 2024</i></h4>
+  </div>
 </div>
-<div class="grid-item3">
-	<p> </p>
-</div>
-</div>
-	
+
 </body>
-
-
