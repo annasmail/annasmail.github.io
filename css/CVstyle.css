@@ -72,7 +72,6 @@ h2 {
     font-size: 1.5em;
     font-family:'Microsoft Sans Serif';
     font-weight: bold;
-    color:#2D3047;
 }
 h3 {
     font-size: 1.2em;
@@ -81,7 +80,6 @@ h3 {
     line-height: 1.2em;
     margin-bottom: 0px;
     margin-top: 0px;
-    color:#2D3047;
 }
 h4 {    
     font-size: 0.8em;
@@ -90,7 +88,6 @@ h4 {
     line-height: 0.9em;
     margin-bottom: 5px;
     margin-top: 5px;
-    color:#2D3047;
 }
 p {
     font-size: 1em;
@@ -100,7 +97,6 @@ p {
     margin-top: 5px;
     text-align: justify;
     text-justify: inter-word;
-    color:#2D3047;
 }
 
 ul.posts { 
