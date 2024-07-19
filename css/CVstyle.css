@@ -3,7 +3,7 @@ body {
     width: 70%;
     background-color: #F6F1F9;
 }
-head {
+header {
     display:flex;
     justify-content: space-between;
     align-items: center;
