@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: #F6F1F9;
+    background-color: #F5F5F5;
 }
 header {
     display:flex;
@@ -12,7 +12,7 @@ header {
 a {
     text-decoration: none;
     font-family:'Microsoft Sans Serif';
-    color:#2D3047;
+    color:#1E2529;
 }
 a:hover {
     text-decoration: underline;
@@ -23,33 +23,31 @@ a.btn {
     text-decoration: none;
 }
 .top {
-    color: #2D3047;
+    color: #1E2529;
     padding: 6px 15px;
     margin-right: 20px;
-    background-color: #EDE2F3;
     border-radius: 25px;
     transition: 0.3s;
 }
 .top:hover {
-    color: #2D3047;
-    background-color: #FFFFFF;
+    color: #0056D5;
     font-weight: normal;
 }
 .bottom {
-    color: #2D3047;
+    color: #1E2529;
     font-family:'Microsoft Sans Serif';
     font-weight: normal;
     padding: 6px 15px;
-    background-color: #F6F1F9;
+    background-color: #F5F5F5;
     border-radius: 25px;
-    outline: 2px solid #EDE2F3;
+    outline: 2px solid #0056D5;
     transition: 0.3s;
 }
 .bottom:hover {
-    color: #2D3047;
-    background-color: #EDE2F3;
+    color: #F5F5F5;
+    background-color: #0056D5;
     border-radius: 25px;
-    outline: 2px solid #EDE2F3;
+    outline: 2px solid #0056D5;
     font-weight: normal;
 }
 nav ul, footer ul {
@@ -65,7 +63,7 @@ h1 {
     margin: 30px 30px 30px 0px;
     font-size: 2em;
     font-family:'Microsoft Sans Serif';
-    color:#2D3047;
+    color:#1E2529;
 }
 h2 {
     margin: 0px;
@@ -103,7 +101,7 @@ ul.posts {
     font-family:'Microsoft Sans Serif';
     font-weight: normal;
     font-size: 1.5em;
-    color:#2D3047;
+    color:#1E2529;
 }  
 
 ul.posts li {
