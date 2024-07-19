@@ -28,10 +28,15 @@ a.btn {
     margin-right: 20px;
     border-radius: 25px;
     transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
 }
 .top:hover {
-    color: #0066FF;
     font-weight: normal;
+    padding: 8px 17px;
+    background-color: #E7E7E7;
+    border-radius: 25px;
 }
 .bottom {
     color: #1E2529;
