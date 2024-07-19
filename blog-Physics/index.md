@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: CVlayout
 title: Physics Blog
 category: Physics
 ---
