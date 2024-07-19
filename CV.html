@@ -17,13 +17,9 @@ title: Anna Smail
   border-radius: 25px;
   padding: 20px;
 }
-.grid-item3 {
-  grid-row-start: 1;
-  grid-row-end: 4;
-	background-image: url(nottingham.jpg);
-	background-size: cover;
-	background-position: center;
-    color: #2D3047;
+.grid-item1 {
+  outline: 2px #DE541E;
+	    color:#2D3047;
 }
 .grid-item2 {
   grid-row-start: 1;
@@ -31,9 +27,13 @@ title: Anna Smail
 background-color: #FFFFFF;
     color:#2D3047;
 }
-.grid-item1 {
-  outline: 2px #DE541E;
-	    color:#2D3047;
+.grid-item3 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+	background-image: url(nottingham.jpg);
+	background-size: cover;
+	background-position: center;
+    color: #2D3047;
 }
 .grid-item4 {
   outline: 2px #DE541E;
@@ -50,10 +50,11 @@ background-color: #FFFFFF;
 <h1>About me</h1>
 
 <div class="grid-container">
-  <div class="grid-item3">
-   			<h3> </h3>
-  </div>
-  <div class="grid-item2">
+	<div class="grid-item1">
+    <p><b>Currently reading</b></p>
+    <p>Pythagoras' Trousers</p>
+  </div> 
+<div class="grid-item2">
 			<h3>Python</h3>
 			<p>Automating data collection and display for analysig and visualising concepts in physics. </p>
 			<h3>R</h3>
@@ -61,10 +62,9 @@ background-color: #FFFFFF;
 			<h3>MATLAB</h3>
 			<p>Use of the HadCM3 model to predict future heat-related mortality rates.  </p>
   </div>
-  <div class="grid-item1">
-    <p><b>Currently reading</b></p>
-    <p>Pythagoras' Trousers</p>
-  </div>  
+  <div class="grid-item3">
+   			<h3> </h3>
+  </div>
   <div class="grid-item4">
     <p><b>Next race</b></p>
     <p>Battle of the Boarders Trail Run</p>
