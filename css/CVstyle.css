@@ -30,7 +30,7 @@ a.btn {
     transition: 0.3s;
 }
 .top:hover {
-    color: #0056D5;
+    color: #0066FF;
     font-weight: normal;
 }
 .bottom {
@@ -40,14 +40,14 @@ a.btn {
     padding: 6px 15px;
     background-color: #F5F5F5;
     border-radius: 25px;
-    outline: 2px solid #0056D5;
+    outline: 2px solid #0066FF;
     transition: 0.3s;
 }
 .bottom:hover {
     color: #F5F5F5;
-    background-color: #0056D5;
+    background-color: #0066FF;
     border-radius: 25px;
-    outline: 2px solid #0056D5;
+    outline: 2px solid #0066FF;
     font-weight: normal;
 }
 nav ul, footer ul {
