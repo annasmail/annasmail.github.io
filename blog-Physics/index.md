@@ -1,5 +1,5 @@
 ---
-layout: CVlayout
+layout: post-Physics
 title: Physics Blog
 category: Physics
 ---
