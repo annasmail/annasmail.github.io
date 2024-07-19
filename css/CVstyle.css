@@ -1,1 +1,111 @@
+body {
+    margin: 60px auto;
+    width: 70%;
+    background-color: #F6F1F9;
+}
+a {
+    text-decoration: none;
+    color:#2D3047;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: normal;
+    color:#B62DFF;
+}
+a.btn {
+    text-decoration: none;
+}
+.top {
+    color: #2D3047;
+    padding: 10px 20px;
+    background-color: #EDE2F3;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.top:hover {
+    color: #2D3047;
+    background-color: #FFFFFF;
+    font-weight: normal;
+}
+.bottom {
+    color: #2D3047;
+    font-weight: normal;
+    padding: 6px 15px;
+    background-color: #F6F1F9;
+    border-radius: 25px;
+    outline: 2px solid #EDE2F3;
+    transition: 0.3s;
+}
+.bottom:hover {
+    color: #2D3047;
+    background-color: #EDE2F3;
+    border-radius: 25px;
+    outline: 2px solid #EDE2F3;
+    font-weight: normal;
+}
+nav ul, footer ul {
+    font-family:'Microsoft Sans Serif';
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-left: 20px;
+}
+h1 {
+    margin: 30px 30px 30px 0px;
+    font-size: 2em;
+    font-family:'Microsoft Sans Serif';
+    color:#2D3047;
+}
+h2 {
+    font-size: 1.5em;
+    font-family:'Microsoft Sans Serif';
+    font-weight: bold;
+    color:#2D3047;
+}
+h3 {
+    font-size: 1.2em;
+    font-family:'Microsoft Sans Serif';
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color:#2D3047;
+}
+h4 {    
+    font-size: 0.8em;
+    font-family:'Microsoft Sans Serif';
+    font-weight: bold;
+    line-height: 0.9em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color:#2D3047;
+}
+p {
+    font-size: 1em;
+    font-family:'Microsoft Sans Serif';
+    line-height: 1.2em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+    color:#2D3047;
+}
 
+ul.posts { 
+    font-family:'Microsoft Sans Serif';
+    font-weight: normal;
+    font-size: 1.5em;
+    color:#2D3047;
+}  
+
+ul.posts li {
+    list-style: none;
+    font-family:'Microsoft Sans Serif';
+}
+footer {
+    border-top: 30px solid #F6F1F9;
+    font-size: .8em;
+}
