@@ -4,7 +4,7 @@ title: Anna Smail
 ---
 <style>
 	.cards {
-		width: 320px;
+		width: 315px;
 		display: inline-block;
 		background-color: #F5F5F5;
 		border-radius: 25px;
@@ -15,8 +15,19 @@ title: Anna Smail
 	.cards:hover {
 		transform: scale(1.1);
 	}
+	}
+	.card1 {
+		margin: 15px 25px 15px 0px;
+	}
+
+	.card2 {
+		margin: 15px 25px 15px 25px;
+	}
+	.card3 {
+		margin: 15px 0px 15px 25px;
+	}
 	.image img{
-		width: 320px;
+		width: 315px;
 		height: 210px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
@@ -29,8 +40,10 @@ title: Anna Smail
 		text-align:center;
 	}
 	.main {
-		margin-left: 15px;
-  		margin-right: 15px;
+		display:flex;
+    		justify-content: space-between;
+    		align-items: center;
+    		padding: 30 10px;
 	}
 a {
     text-decoration: none;
@@ -82,9 +95,9 @@ a.btn {
 		
 </style>
 <body>
-<div class="main">
 <h1>Earth Sciences</h1>
-	<div class="cards">
+<div class="main">
+	<div class="cards card1">
 		<div class="image">
 			<img src="images/NDVI.png">
 		</div>
@@ -95,7 +108,7 @@ a.btn {
 			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
 		</div>
 	</div>
-	<div class="cards">
+	<div class="cards card2">
 		<div class="image">
 			<img src="images/fens.jpg">
 		</div>
@@ -106,7 +119,7 @@ a.btn {
 			<a href="/Physics/2024/07/16/Pushing-with-Magnets" class="btn readme">read more</a>
 		</div>
 	</div>
-	<div class="cards">
+	<div class="cards card3">
 		<div class="image">
 			<img src="images/lidar.avif">
 		</div>
