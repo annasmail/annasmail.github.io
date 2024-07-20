@@ -4,12 +4,11 @@ body {
     background-color: #FFFFFF;
 }
 header {
-    width:70%;
+    width:1000px;
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    background-color: #000000;
 }
 a {
     text-decoration: none;
