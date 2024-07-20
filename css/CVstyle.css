@@ -3,14 +3,12 @@ body {
     width: 70%;
     background-color: #FFFFFF;
 }
-head {
-    width: 70%;
-}
 header {
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 30 10px;
+    width:60%;
 }
 a {
     text-decoration: none;
