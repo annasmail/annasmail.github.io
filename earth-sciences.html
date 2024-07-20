@@ -27,6 +27,18 @@ body {
   display: table;
   clear: both;
 }
+.image img{
+		height: 210px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+@media screen and (max-width: 600px) {
+  .image {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
@@ -55,11 +67,6 @@ body {
 	}
 	.card3 {
 		margin: 15px 0px 15px 25px;
-	}
-	.image img{
-		height: 210px;
-		border-top-left-radius: 25px;
-		border-top-right-radius: 25px;
 	}
 	.title {
 		text-align: center;
