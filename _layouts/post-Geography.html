@@ -1,13 +1,104 @@
 ---
 layout: CVlayout
-title: Geography
+title: Anna Smail
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-      {% if post.category=="Geography" %}
-	    	  <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	    {% endif %}
-    {% endfor %}
-	</ul>
+<style>
+	.cards {
+		width: 320px;
+		display: inline-block;
+		background-color: #F5F5F5;
+		border-radius: 25px;
+		margin: 15px;
+		padding: 0px 0px 25px 0px;
+		transition: 0.3s;
+	}
+	.cards:hover {
+		transform: scale(1.1);
+	}
+	.image img{
+		width: 320px;
+		height: 210px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+	.title {
+		text-align: center;
+		padding: 10px 10px 20px 10px;
+	}
+	.des {
+		text-align:center;
+	}
+	.main {
+		margin-left: auto;
+  		margin-right: auto;
+	}
+a {
+    text-decoration: none;
+    font-family:'Microsoft Sans Serif';
+    color:#1E2529;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: normal;
+    color:#0066FF;
+}
+a.btn {
+    text-decoration: none;
+}
+.readme {
+    color: #1E2529;
+    font-family:'Microsoft Sans Serif';
+    font-weight: normal;
+    padding: 6px 15px;
+    background-color: #EBEBEB;
+    border-radius: 25px;
+    outline: 2px solid #EBEBEB;
+    transition: 0.3s;
+}
+.readme:hover {
+    color: #F5F5F5;
+    background-color: #0066FF;
+    border-radius: 25px;
+    outline: 2px solid #0066FF;
+    font-weight: normal;
+}
+		
+</style>
+<body>
+<div class="main">
+<h1>Geography</h1>
+	<div class="cards">
+		<div class="image">
+			<img src="images/NDVI.png">
+		</div>
+		<div class="title">
+			<h2>The Hydrogen Atom</h2>
+		</div>
+		<div class="des">
+			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
+		</div>
+	</div>
+	<div class="cards">
+		<div class="image">
+			<img src="images/fens.jpg">
+		</div>
+		<div class="title">
+			<h2>Stokes' Equations</h2>
+		</div>
+		<div class="des">
+			<a href="/Physics/2024/07/16/Pushing-with-Magnets" class="btn readme">read more</a>
+		</div>
+	</div>
+	<div class="cards">
+		<div class="image">
+			<img src="images/lidar.avif">
+		</div>
+		<div class="title">
+			<h2>Pushing with Magnets</h2>
+		</div>
+		<div class="des">
+			<a href="/Physics/2024/07/16/Pushing-with-Magnets" class="btn readme">read more</a>
+		</div>
+	</div>
+</div>
+</body>
