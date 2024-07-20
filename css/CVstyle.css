@@ -4,6 +4,9 @@ body {
     background-color: #FFFFFF;
 }
 header {
+    width: 70%;
+}
+header {
     display:flex;
     justify-content: space-between;
     align-items: center;
