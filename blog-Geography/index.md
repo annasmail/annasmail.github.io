@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: CVlayout
 title: Geography Blog
 category: Geography
 ---
