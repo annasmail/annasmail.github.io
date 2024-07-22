@@ -66,16 +66,21 @@ category: "Physics"
 	order:1;
 	padding: 10px  10px;
 	margin: 0px 0px;
-	border-radius: 5px 25px 25px 5px;
+	border-radius: 5px 25px 5px 5px;
 }
 .grid-item3 {
-  	grid-row-start: 1;
-	grid-column-start: 1;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+  	border: 2px solid #F5F5F5;
+	grid-column-start: 3;
 	grid-column-end:6;
-    	color: #FFFFFF;
+	color:#2D3047;
+	background-color: #F5F5F5;
 	order:1;
-	height: 10px;
-	border-radius: 25px 25px 5px 5px;
+	padding: 10px  10px;
+	margin: 0px 0px;
+	border-radius: 5px 5px 25px 5px;
 }
 .grid-item4 {
 	box-sizing: border-box;
@@ -273,7 +278,7 @@ a1:hover {
   			How can magnets be used to ‘push’ magnetic nanoparticles?
 		</p1>
 	</div>
-	<div class="grid-item2">
+	<div class="grid-item3">
 		<p1>
 			What is the optimal arrangement of two magnets for drug delivery?
 		</p1>
