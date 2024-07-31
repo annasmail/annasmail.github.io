@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Martian+Mono:wght@100..800&display=swap');
 
 body {
     margin: 0px;
     width: 100%;
-    background-color: #FAFFFD;
+    background-color: #EBEBEB;
 }
 header {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #F15BB5;
+    background-color: #FFFFFF;
+    min-height: 150%;
 }
 a {
     text-decoration: none;
-    font-family:'Microsoft Sans Serif';
+    font-family:'Martian Mono';
     color:#1E2529;
 }
 a:hover {
@@ -45,7 +47,7 @@ a.btn {
 }
 .bottom {
     color: #1E2529;
-    font-family:'Microsoft Sans Serif';
+    font-family:'Martian Mono';
     font-weight: normal;
     padding: 6px 15px;
     background-color: #FFFFFF;
