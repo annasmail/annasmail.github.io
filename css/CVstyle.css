@@ -7,9 +7,9 @@ body {
 header {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 20px;
     background-color: #8B02A1;
 }
 a {
