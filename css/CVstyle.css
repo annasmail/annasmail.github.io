@@ -40,14 +40,14 @@ a.btn {
     transition: 0.3s;
     padding: 8px 17px;
     background-color: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 .top:hover {
     font-weight: normal;
     padding: 8px 17px;
     color: #000000;
-    background-color: #B8DBF4;
-    border-radius: 15px;
+    background-color: #DCEDF9;
+    border-radius: 25px;
 }
 .bottom {
     color: #000000;
@@ -57,14 +57,14 @@ a.btn {
     margin-left: 10px;
     padding: 6px 15px;
     background-color: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 25px;
     outline: 2px solid #0083F5;
     transition: 0.3s;
 }
 .bottom:hover {
     color: #FFFFFF;
     background-color: #0083F5;
-    border-radius: 15px;
+    border-radius: 25px;
     outline: 2px solid #0083F5;
     font-weight: normal;
 }
