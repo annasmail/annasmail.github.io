@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 body {
-    padding: 30px 80px;
+    padding: 30px 100px;
     max-width: 100%;
     background-color: #F5F5F5;
 }
@@ -33,7 +33,7 @@ a.btn {
 .top {
     color: #000000;
     padding: 6px 15px;
-    border-radius: 25px;
+    border-radius: 15px;
     margin-right: 10px;
     margin-left: 10px;
     transition: 0.3s;
@@ -46,7 +46,7 @@ a.btn {
     padding: 8px 17px;
     color: #000000;
     background-color: #E0E0E0;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 .bottom {
     color: #000000;
@@ -56,14 +56,14 @@ a.btn {
     margin-left: 10px;
     padding: 6px 15px;
     background-color: #F5F5F5;
-    border-radius: 25px;
+    border-radius: 15px;
     outline: 2px solid #2E3CC2;
     transition: 0.3s;
 }
 .bottom:hover {
     color: #FFFFFF;
     background-color: #2E3CC2;
-    border-radius: 25px;
+    border-radius: 15px;
     outline: 2px solid #2E3CC2;
     font-weight: normal;
 }
