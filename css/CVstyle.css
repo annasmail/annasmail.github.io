@@ -30,6 +30,8 @@ a.btn {
     color: #1E2529;
     padding: 6px 15px;
     border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
     transition: 0.3s;
     padding: 8px 17px;
     background-color: #FFFFFF;
@@ -109,7 +111,6 @@ p {
 logo {
     font-family: Dela Gothic One;
     font-size: 1.7em;
-    margin-left: 20px;
 }
 
 ul.posts { 
