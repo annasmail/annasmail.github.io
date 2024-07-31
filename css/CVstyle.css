@@ -7,7 +7,7 @@ body {
 header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 40px;
 }
@@ -107,7 +107,7 @@ p {
 }
 logo {
     font-family: Dela Gothic One;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 ul.posts { 
