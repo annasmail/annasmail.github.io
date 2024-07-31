@@ -52,7 +52,6 @@ a.btn {
     border-radius: 25px;
     outline: 2px solid #0066FF;
     transition: 0.3s;
-    margin: 0px;
 }
 .bottom:hover {
     color: #FFFFFF;
