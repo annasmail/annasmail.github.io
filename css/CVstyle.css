@@ -111,6 +111,8 @@ p {
 logo {
     font-family: Dela Gothic One;
     font-size: 1.7em;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 ul.posts { 
