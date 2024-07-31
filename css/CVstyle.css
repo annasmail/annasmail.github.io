@@ -4,8 +4,8 @@ body {
 }
 header {
     width: 100%;
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: end;
     align-items: center;
     padding: 0px;
 }
