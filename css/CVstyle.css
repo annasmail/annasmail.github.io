@@ -11,6 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
+    background-color: #FFFFFF;
 }
 a {
     text-decoration: none;
@@ -51,7 +52,7 @@ a.btn {
     border-radius: 25px;
     outline: 2px solid #0066FF;
     transition: 0.3s;
-    margin: 0px;
+    margin: 0px 20px;
 }
 .bottom:hover {
     color: #FFFFFF;
@@ -110,6 +111,7 @@ p {
 logo {
     font-family: Dela Gothic One;
     font-size: 1.7em;
+    margin: 0px 20px;
 }
 
 ul.posts { 
