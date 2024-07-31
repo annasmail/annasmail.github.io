@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 body {
-    margin: 60px auto;
+    margin: 0;
     width: 100%;
 }
 header {
@@ -107,6 +107,7 @@ p {
 }
 logo {
     font-family: Dela Gothic One;
+    font-size: 1.5em;
 }
 
 ul.posts { 
