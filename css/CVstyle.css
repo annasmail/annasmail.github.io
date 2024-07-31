@@ -6,14 +6,13 @@
 body {
     padding: 30px 80px;
     max-width: 100%;
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    background-color: #FFFFFF;
     height: 100px;
     padding: 0px;
     position: sticky;
@@ -21,18 +20,18 @@ header {
 a {
     text-decoration: none;
     font-family:'Karla';
-    color:#1E2529;
+    color:#000000;
 }
 a:hover {
     text-decoration: underline;
     font-weight: normal;
-    color:#0066FF;
+    color:#2E3CC2;
 }
 a.btn {
     text-decoration: none;
 }
 .top {
-    color: #1E2529;
+    color: #000000;
     padding: 6px 15px;
     border-radius: 25px;
     margin-right: 10px;
@@ -45,12 +44,12 @@ a.btn {
 .top:hover {
     font-weight: normal;
     padding: 8px 17px;
-    color: #1E2529;
-    background-color: #F5F5F5;
+    color: #000000;
+    background-color: #E0E0E0;
     border-radius: 25px;
 }
 .bottom {
-    color: #1E2529;
+    color: #000000;
     font-family:'Karla';
     font-weight: normal;
     margin-right: 10px;
@@ -58,14 +57,14 @@ a.btn {
     padding: 6px 15px;
     background-color: #FFFFFF;
     border-radius: 25px;
-    outline: 2px solid #0066FF;
+    outline: 2px solid #2E3CC2;
     transition: 0.3s;
 }
 .bottom:hover {
     color: #FFFFFF;
-    background-color: #0066FF;
+    background-color: #2E3CC2;
     border-radius: 25px;
-    outline: 2px solid #0066FF;
+    outline: 2px solid #2E3CC2;
     font-weight: normal;
 }
 nav ul, footer ul {
@@ -81,7 +80,7 @@ h1 {
     margin: 30px 30px 30px 0px;
     font-size: 2em;
     font-family:'Karla';
-    color:#1E2529;
+    color:#000000;
 }
 h2 {
     margin: 0px;
@@ -104,7 +103,7 @@ h4 {
     font-weight: normal;
     margin-bottom: 5px;
     margin-top: 5px;
-    color: #CCCCCC;
+    color: #000000;
 }
 p {
     font-size: 1em;
@@ -125,7 +124,7 @@ ul.posts {
     font-family:'Karla';
     font-weight: normal;
     font-size: 1.5em;
-    color:#1E2529;
+    color:#000000;
 }  
 
 ul.posts li {
