@@ -67,7 +67,7 @@ a.btn {
     font-weight: normal;
 }
 nav ul, footer ul {
-    font-family:'Microsoft Sans Serif';
+    font-family:'Titillium Web';
     padding: 0px;
     list-style: none;
     text-align: center;
@@ -84,12 +84,12 @@ h1 {
 h2 {
     margin: 0px;
     font-size: 1.5em;
-    font-family:'Microsoft Sans Serif';
+    font-family:'Titillium Web';
     font-weight: bold;
 }
 h3 {
     font-size: 1.2em;
-    font-family:'Microsoft Sans Serif';
+    font-family:'Titillium Web';
     font-weight: bold;
     line-height: 1.2em;
     margin-bottom: 0px;
@@ -97,7 +97,7 @@ h3 {
 }
 h4 {    
     font-size: 0.7em;
-    font-family:'Microsoft Sans Serif';
+    font-family:'Titillium Web';
     line-height: 1em;
     font-weight: normal;
     margin-bottom: 5px;
@@ -119,7 +119,7 @@ logo {
 }
 
 ul.posts { 
-    font-family:'Microsoft Sans Serif';
+    font-family:'Titillium Web';
     font-weight: normal;
     font-size: 1.5em;
     color:#1E2529;
@@ -127,7 +127,7 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
-    font-family:'Microsoft Sans Serif';
+    font-family:'Titillium Web';
 }
 footer {
     border-top: 30px solid #FFFFFF;
