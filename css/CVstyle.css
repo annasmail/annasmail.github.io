@@ -12,6 +12,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #FFFFFF;
+    height: 200px;
 }
 a {
     text-decoration: none;
