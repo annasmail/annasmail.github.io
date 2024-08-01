@@ -89,6 +89,7 @@ nav ul {
     padding: 0px;
     list-style: none;
     text-align: center;
+	overflow: hidden;
 }
 nav ul li, footer ul li {
     display: inline;
