@@ -1,4 +1,7 @@
-  const ctx = document.getElementById('bookbarchart');
+src="https://cdn.jsdelivr.net/npm/chart.js">
+
+
+const ctx = document.getElementById('bookbarchart');
 
   new Chart(ctx, {
     type: 'bar',
