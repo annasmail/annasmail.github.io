@@ -1,29 +1,12 @@
 ---
 title: Anna Smail
 ---
-
-<style>
-.grid-item2 {
-	box-sizing: border-box;
-	background-image: url(images/profilepicture-03.png);
-	background-position: center;
-  background-size: contain;
-	background-repeat: no-repeat;
-  grid-column-start: 6;
-  grid-column-end: 7;
-	padding: 110px  120px;
-	border-radius: 25px;
-  margin: 0px;
-  order: 2;
-}
-</style>
-
 <!DOCTYPE html>
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/homecss.css">
+			<link rel="stylesheet" type="text/css" href="/css/CVstyle.css">
 		</head>
 		<header>
 			<logo>Anna Smail</logo>
@@ -51,18 +34,27 @@ title: Anna Smail
 <div class="grid-container2">
   <h2>Reading</h2>
       </div>
+      
 <div class="grid-container2">
   <h2>Reading</h2>
       </div>
+      
 <div class="grid-container2">
   <h2>Reading</h2>
       </div>
 <!-- /blurb -->
-<script type="text/javascript">
-	window.addEventListener("scroll", function(){
-		var header  = document.querySelector("header");
-		header.classlist.toggle("sticky", window.scrollY > 0);
-	})	
-</script>		
+<script>
+const nav = document.querySelector('header')
+window.addEventListener('scroll', fixNav)
+
+function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 0) {
+        nav.classList.add('active')
+    } else {
+        nav.classList.remove('active')
+    }
+}	
+  
+</script>
 		</body>
 	</html>
