@@ -161,19 +161,6 @@ p {
   order: 1;
 
 }
-.grid-item2 {
-	box-sizing: border-box;
-	background-image:       url(https://www.svgrepo.com/show/404545/avatar-man-profile-user-3.svg);
-	background-position: center;
-  background-size: contain;
-	background-repeat: no-repeat;
-  grid-column-start: 5;
-  grid-column-end: 7;
-	padding: 110px  120px;
-	border-radius: 25px;
-  margin: 0px;
-  order: 2;
-}
 
 .grid-container2 {
   display: grid;
