@@ -42,8 +42,8 @@ a.btn {
 .top:hover {
     font-weight: normal;
     padding: 8px 17px;
-    color: #000000;
-    background-color: #D6C2F5;
+    color: #8652FF;
+    background-color: #ECE3FB;
     border-radius: 25px;
 }
 .github {
@@ -59,10 +59,10 @@ a.btn {
     transition: 0.3s;
 }
 .github:hover {
-    color: #000000;
-    background-color: #D6C2F5;
+    color: #8652FF;
+    background-color: #ECE3FB;
     border-radius: 25px;
-    outline: 2px solid #D6C2F5;
+    outline: 2px solid #ECE3FB;
     font-weight: normal;
 }
 .contact {
@@ -78,10 +78,10 @@ a.btn {
     transition: 0.3s;
 }
 .contact:hover {
-    color: #FFFFFF;
-    background-color: #8652FF;
+    color: #8652FF;
+    background-color: #ECE3FB;
     border-radius: 25px;
-    outline: 2px solid #8652FF;
+    outline: 2px solid #ECE3FB;
     font-weight: normal;
 }
 nav ul {
