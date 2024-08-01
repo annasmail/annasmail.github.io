@@ -18,6 +18,10 @@ header {
     background-color: #FFFFFF;
     margin: 0px;
 }
+header.sticky {
+	padding: 5px 10px;
+	background: #000000;
+}
 a {
     text-decoration: none;
     font-family:'DM Sans';
