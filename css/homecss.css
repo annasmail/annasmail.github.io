@@ -163,7 +163,7 @@ p {
 	box-sizing: border-box;
 	color:#000000;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 6;
   background-color: #FFFFFF;
 	padding: 0px  0px;
 	border-radius: 25px;
@@ -177,7 +177,7 @@ p {
 	background-position: center;
   background-size: contain;
 	background-repeat: no-repeat;
-  grid-column-start: 5;
+  grid-column-start: 6;
   grid-column-end: 7;
 	padding: 110px  120px;
 	border-radius: 25px;
