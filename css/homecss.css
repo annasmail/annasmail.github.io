@@ -161,3 +161,30 @@ p {
   order: 1;
 
 }
+
+.grid-container2 {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 20px 0px;
+  background-color: #F5F5F5;
+  min-height: 200px;
+  padding: 30px 200px;
+}
+.grid-container2 > div2 {
+  text-align: left;
+  text-justify: inter-word;
+}
+.grid-item99 {
+	box-sizing: border-box;
+	color:#000000;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: #FFFFFF;
+	padding: 0px  0px;
+	border-radius: 25px;
+  margin: 0px;
+  order: 1;
+
+}
