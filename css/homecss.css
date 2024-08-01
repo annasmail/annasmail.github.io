@@ -11,7 +11,7 @@ header {
     align-items: center;
     max-width: 100%;
     height: 100px;
-    padding: 30px 160px 0px 160px;
+    padding: 30px 200px 0px 200px;
     position: sticky;
     margin: 0px;
 }
@@ -140,10 +140,10 @@ p {
 .grid-container {
   display: grid;
   gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr    1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 0px;
   justify-content: center;
-  margin: 0px 160px;
+  margin: 0px 200px;
 }
 .grid-container > div {
   text-align: left;
@@ -165,12 +165,12 @@ p {
 .grid-container2 {
   display: grid;
   gap: 30px;
-  grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 1fr 80px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
   margin: 20px 0px;
   background-color: #F5F5F5;
   min-height: 200px;
-  padding: 30px 160px;
+  padding: 30px 200px;
 }
 .grid-container2 > div2 {
   text-align: left;
