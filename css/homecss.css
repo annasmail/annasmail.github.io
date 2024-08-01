@@ -203,7 +203,7 @@ p {
 	box-sizing: border-box;
 	color:#000000;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 3;
   background-color: #FFFFFF;
 	padding: 0px  0px;
 	border-radius: 25px;
