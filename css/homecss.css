@@ -4,7 +4,7 @@ body {
     max-width: 100%;
     padding: 0px;
     margin: 0px;
-    background-image: url("../images/iconbackground2-05.png");
+    background-image: url("../images/iconbackground3-05.png");
 	background-position: center;
   background-size: 100%;
 	background-repeat: no-repeat;
@@ -161,7 +161,7 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     border-radius: 30px;
   justify-content: center;
-    margin: 60px 60px;
+    margin: 0px 60px 60px 60px;
   background-color: #FFFFFF;
 box-shadow: 0px 0px 10px #D6D6D6;
   padding: 40px 60px;
