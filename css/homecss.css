@@ -4,6 +4,10 @@ body {
     max-width: 100%;
     padding: 0px;
     margin: 0px;
+    background-image: url("../images/icon background2-05.png");
+	background-position: center;
+  background-size: cover;
+	background-repeat: no-repeat;
 }
 header {
     display: flex;
@@ -132,10 +136,6 @@ p {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 2fr 1fr;
-background-image: url("../images/icon background-05.png");
-	background-position: center;
-  background-size: cover;
-	background-repeat: no-repeat;
   padding: 40px;
   justify-content: center;
   margin: 0px 0px;
