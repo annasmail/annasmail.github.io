@@ -132,6 +132,10 @@ p {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+background-image: url(images/icon background-05.png);
+	background-position: center;
+  background-size: contain;
+	background-repeat: no-repeat;
   padding: 0px;
   justify-content: center;
   margin: 0px 80px;
