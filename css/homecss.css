@@ -147,8 +147,8 @@ background-image: url("../images/icon background-05.png");
 .grid-item1 {
 	box-sizing: border-box;
 	color:#000000;
-  grid-column-start: 2;
-  grid-column-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 5;
 	padding: 0px  0px;
 	border-radius: 25px;
   margin: 0px;
