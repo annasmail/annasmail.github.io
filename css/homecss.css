@@ -6,7 +6,7 @@ body {
     margin: 0px;
     background-image: url("../images/iconbackground2-05.png");
 	background-position: center;
-  background-size: cover;
+  background-size: 100%;
 	background-repeat: no-repeat;
 }
 header {
