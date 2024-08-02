@@ -69,10 +69,10 @@ a.btn {
     transition: 0.3s;
 }
 .github:hover {
-    color: #000000;
-    background-color: #F1EBFF;
+    color: #FFFFFF;
+    background-color: #8652FF;
     border-radius: 25px;
-    outline: 2px solid #F1EBFF;
+    outline: 2px solid #8652FF;
     font-weight: normal;
 }
 nav ul {
