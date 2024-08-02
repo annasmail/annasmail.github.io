@@ -144,18 +144,17 @@ Title: Anna Smail
       const segment = width / data.labels.length;
       const barWidth = segment * data.datasets[0].barPercentage * data.datasets[0].categoryPercentage;
       console.log(segment)
-      ctx.fillStyle = '#F5F5F5';
-	      for(let i = 0; i < data.labels.length; i++) {
+      for(let i = 0; i < data.labels.length; i++) {
         ctx.strokeStyle = "#F5F5F5";
-ctx.beginPath();
-              ctx.roundRect(x.getPixelForValue(i)- barWidth / 2,top,barWidth,height,[45]);
+	ctx.beginPath();
+        ctx.roundRect(x.getPixelForValue(i)- barWidth / 2,top,barWidth,height,[45]);
         ctx.stroke();
         ctx.fillStyle = "#f5f5f5";
         ctx.fill()
       }
       }
     }
-  }
+
   
 </script>
   
