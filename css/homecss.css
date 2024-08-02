@@ -161,10 +161,10 @@ background-image: url("../images/icon background-05.png");
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     border-radius: 30px;
   justify-content: center;
-    margin: 40px 40px;
+    margin: 60px 60px;
   background-color: #FFFFFF;
 box-shadow: 0px 0px 10px #D6D6D6;
-  padding: 40px 40px;
+  padding: 40px 60px;
 }
 .grid-container2 > div2 {
   text-align: left;
