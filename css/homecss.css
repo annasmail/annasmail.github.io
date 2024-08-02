@@ -131,7 +131,7 @@ p {
 .grid-container {
   display: grid;
   gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 background-image: url("../images/icon background-05.png");
 	background-position: center;
   background-size: cover;
@@ -147,8 +147,7 @@ background-image: url("../images/icon background-05.png");
 .grid-item1 {
 	box-sizing: border-box;
 	color:#000000;
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column: 2;
 	padding: 0px  0px;
 	border-radius: 25px;
   margin: 0px;
