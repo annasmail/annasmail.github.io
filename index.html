@@ -39,7 +39,7 @@ Title: Anna Smail
 </div>
   
  <div class=grid-item98>
-   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+   <canvas id="myChartLine"></canvas>
 </div>
   
 </div>
@@ -92,7 +92,7 @@ Title: Anna Smail
     data: {
       labels: ['2021', '2022', '2023', '2024',],
       datasets: [{
-        data: [62, 112, 87, 13],
+        data: [62, 112, 87, 26],
         borderWidth: 0,
         barPercentage: 0.8,
         categoryPercentage: 0.8,
@@ -132,7 +132,6 @@ Title: Anna Smail
             }
 
     },
-    plugins: [backgroundBar],
     
   });
 </script>
@@ -152,7 +151,92 @@ Title: Anna Smail
       }
     }
   }
+  
+</script>
+  
+    <script>
+      
+      
+       const doughnutLabel = {
+        id: "doughnutLabel",
+        beforeDatasetsDraw(chartLine, args, pluginOptions) {
+          const {ctx, dataLine} = chartLine;
+          ctx.save();
+          const xCoor = chartLine.getDatasetMeta(0).data[0].x;
+          const yCoor = chartLine.getDatasetMeta(0).data[0].y; 
+          ctx.font = 'bold 30px';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('Top Genres', xCoor, yCoor);
+        }
+      }
+      
+       // Doughnut 
+    const dataLine = {
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+      datasets: [{
+        label: 'Doughnut',
+        data: [18, 12, 6, 9, 12],
+        backgroundColor: [
+          '#3D00CC',
+          '#621FFF',
+          '#8D5CFF',
+          '#B899FF',
+          '#D4C2FF'
+        ],
+        borderColor: [
+          'rgba(255, 255, 255, 1)'
+        ],
+        borderWidth: 3
+      }]
+    };
+
+      
+    // config 
+    const configLine = {
+      type: 'doughnut',
+      data: dataLine,
+      options: {
+	    
+      plugins:  {
+        legend: {
+        display: false
+      	},  
+      	},
+	    
+      scales: {
+        y: {
+          beginAtZero: true, 
+          display: false,
+          grid: {
+          display: false
+            }
+            },
+        x: {
+          display: false,
+          grid: {
+          display: false
+          },
+          ticks: {
+                    font: {
+                        family: 'DM Sans',
+                        size: 18,
+                    },
+                  },
+            }     
+            }
+
+    },
+      plugins: [doughnutLabel],
+    };
+
+    // render init block
+    const myChartLine = new Chart(
+      document.getElementById('myChartLine'),
+      configLine
+    );
+
+    </script>
 
 </script>  
   
-
