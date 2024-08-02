@@ -141,15 +141,14 @@ background-image: url("../images/icon background-05.png");
   margin: 0px 80px;
 }
 .grid-container > div {
-  text-align: left;
+  text-align: center;
   text-justify: inter-word;
 }
 .grid-item1 {
 	box-sizing: border-box;
 	color:#000000;
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-column-end: 6;
-  background-color: #FFFFFF;
 	padding: 0px  0px;
 	border-radius: 25px;
   margin: 0px;
