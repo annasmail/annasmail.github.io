@@ -79,7 +79,12 @@ Title: Anna Smail
       console.log(segment)
       ctx.fillStyle = '#F5F5F5';
       for(let i = 0; i < data.labels.length; i++) {
-        ctx.fillRect(x.getPixelForValue(i)- barWidth / 2,top,barWidth,height)
+        ctx.strokeStyle = "#f5f5f5";
+        ctx.beginPath();
+        ctx.roundRect(x.getPixelForValue(i)- barWidth / 2,top,barWidth,height,[40]);
+        ctx.stroke();
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill()
       }
     }
   }
