@@ -21,8 +21,8 @@ header {
 }
 header.active{
     background-color: #FFFFFF;
-    box-shadow:  #FFFFFF 0px 30px 15px;
-    padding: 0px 80px 0px 80px;
+    box-shadow:  #F5F5F5 0px 15px 10px;
+    padding: 0px 200px 0px 200px;
      
 }
 a {
