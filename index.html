@@ -50,30 +50,25 @@ Title: Anna Smail
       </div>
 <!-- /blurb -->
       
-		</body>
-	</html>
+</body>
+</html>
       
          
  <script>
-const nav = document.querySelector('header')
-window.addEventListener('scroll', fixNav)
-
-function fixNav() {
-    if (window.scrollY > 10) {
+	const nav = document.querySelector('header')
+	window.addEventListener('scroll', fixNav)
+	function fixNav() {
+    	if (window.scrollY > 10) {
         nav.classList.add('active')
-    } else {
+  	} else {
         nav.classList.remove('active')
-    }
-}	
-  
-</script>
+  	}
+	}	
+  </script>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script>
-src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
   const backgroundBar = {
@@ -106,11 +101,15 @@ src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       }]
     },
     options: {
+        
+      maintainAspectRatio: false,
+	    
       plugins:  {
         legend: {
         display: false
-      },  
-      },
+      	},  
+      	},
+	    
       scales: {
         y: {
           beginAtZero: true, 
@@ -118,7 +117,7 @@ src="https://cdn.jsdelivr.net/npm/chart.js"></script>
           grid: {
           display: false
             }
-        },
+            },
         x: {
           grid: {
           display: false
@@ -128,9 +127,10 @@ src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                         family: 'DM Sans',
                         size: 14,
                     },
-                },
-        }     
-      }
+                  },
+            }     
+            }
+
     },
     plugins: [backgroundBar],
     
