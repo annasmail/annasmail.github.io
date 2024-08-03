@@ -134,6 +134,14 @@ p {
     font-size: 1em;
     font-family:'DM Sans';
     line-height: 1.2em;
+    margin: 0px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+p2 {
+    font-size: 1em;
+    font-family:'DM Sans';
+    line-height: 1.2em;
     margin-bottom: 5px;
     margin-top: 5px;
     text-align: justify;
