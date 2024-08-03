@@ -108,7 +108,7 @@ h2 {
     font-weight: bold;
 }
 h3 {
-	font-size: 1.2em;
+	font-size: 1em;
     font-family:'DM Sans';
     color:#000000;
     line-height: 1.1em;
@@ -191,7 +191,7 @@ p2 {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-	padding: 10px;
+	padding: 80px 20px;
   border-radius: 30px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 1fr;
@@ -208,13 +208,12 @@ background-image: url("../images/modules-10.png");
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-	padding: 10px;
+	padding: 80px 20px;
   border-radius: 30px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 1fr;
   height: 1fr;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin: auto;
 	background-image: url("../images/modules-11.png");
 		background-position: center;
   background-size: 100%;
