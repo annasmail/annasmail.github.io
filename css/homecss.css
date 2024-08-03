@@ -382,6 +382,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   grid-row:2;
 	padding: 10px  10px;
   order: 1;
+	height: 100%;
 }
 .grid-item93 {
 	box-sizing: border-box;
@@ -411,10 +412,11 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .grid-item92 {
 	box-sizing: border-box;
-	color:#F5F5F5;
+	background-color:#F5F5F5;
   grid-column-start: 5;
   grid-column-end: 7;
 	padding: 20px  20px;
   margin: auto;
+	border-radius: 30px;
   order: 1;
 }
