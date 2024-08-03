@@ -181,6 +181,10 @@ p {
   width: 100%;
   height: 0;
   padding-top: 100%;
+background-image: url("../images/modules-10.png");
+		background-position-y: 100px;
+  background-size: 100%;
+	background-repeat: no-repeat;
 }
 .grid-item98 {
 	box-sizing: border-box;
@@ -196,6 +200,10 @@ p {
   padding-top: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin: auto;
+	background-image: url("../images/modules-11.png");
+		background-position-y: 100px;
+  background-size: 100%;
+	background-repeat: no-repeat;
 }
 .grid-item97 {
 	box-sizing: border-box;
@@ -210,6 +218,10 @@ p {
   width: 100%;
   height: 0;
   padding-top: 100%;
+	background-image: url("../images/modules-12.png");
+		background-position-y: 100px;
+  background-size: 100%;
+	background-repeat: no-repeat;
 }
 .grid-item96 {
 	box-sizing: border-box;
@@ -225,6 +237,10 @@ p {
   padding-top: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin: auto;
+	background-image: url("../images/modules-13.png");
+		background-position-y: 100px;
+  background-size: 100%;
+	background-repeat: no-repeat;
 }
 .grid-item95 {
 	box-sizing: border-box;
