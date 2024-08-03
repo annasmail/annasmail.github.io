@@ -157,7 +157,7 @@ p {
 
 .grid-container3 {
   display: grid;
-  gap: 20px;
+  gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
