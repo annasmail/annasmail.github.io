@@ -366,7 +366,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	padding: 10px  10px;
 
   order: 1;
-  height: 100%;
 }
 .grid-item941 {
 	box-sizing: border-box;
@@ -375,7 +374,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	background-color: #F5F5F5;
 	padding: 10px  10px;
   order: 1;
-  height: 100%;
 }
 .grid-item942 {
 	box-sizing: border-box;
@@ -384,7 +382,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   grid-row:2;
 	padding: 10px  10px;
   order: 1;
-  height: 100%;
 }
 .grid-item93 {
 	box-sizing: border-box;
@@ -395,7 +392,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	padding: 20px  20px;
   margin: auto;
   order: 1;
-  height: 100%;
 }
 .grid-item931 {
 	box-sizing: border-box;
@@ -404,7 +400,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   grid-row:1;
 	padding: 10px  10px;
   order: 1;
-  height: 100%;
 }
 .grid-item932 {
 	box-sizing: border-box;
@@ -413,7 +408,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   grid-row:2;
 	padding: 10px  10px;
   order: 1;
-  height: 100%;
 }
 .grid-item92 {
 	box-sizing: border-box;
@@ -423,5 +417,4 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	padding: 20px  20px;
   margin: auto;
   order: 1;
-  height: 100%;
 }
