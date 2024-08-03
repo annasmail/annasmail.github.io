@@ -123,7 +123,7 @@ h4 {
     font-weight: bold;
 	margin: 0px;
 }
-percent {
+h5 {
     font-size: 1.8em;
     font-family:'DM Sans';
     color:#8652ff;
@@ -371,7 +371,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   grid-column-start: 1;
   grid-column-end: 3;
 	padding: 10px  10px;
-height: 100%;
   order: 1;
 }
 .grid-item941 {
