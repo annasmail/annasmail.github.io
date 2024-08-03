@@ -304,7 +304,9 @@ background-image: url("../images/modules-13.png");
 	box-sizing: border-box;
   grid-column:2;
   grid-row:2;
-  border-radius: 30px;
+	background-color: #e7dcff;
+	color: #8652ff;
+  border-radius: 100px;
   width: 100%;
   height: 100%;
 }
@@ -312,7 +314,9 @@ background-image: url("../images/modules-13.png");
 	box-sizing: border-box;
   grid-column:2;
   grid-row:3;
-  border-radius: 30px;
+	background-color: #e7dcff;
+	color: #8652ff;
+  border-radius: 100px;
   width: 100%;
   height: 100%;
 }
