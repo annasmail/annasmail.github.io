@@ -103,7 +103,14 @@ h1 {
 h2 {
     font-size: 1.8em;
     font-family:'DM Sans';
-    color:#8652FF;
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: bold;
+}
+h3 {
+	font-size: 1.4em;
+    font-family:'DM Sans';
+    color:#000000;
     line-height: 1.1em;
     font-weight: bold;
 }
