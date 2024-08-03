@@ -4,7 +4,7 @@ body {
     max-width: 100%;
     padding: 0px;
     margin: 0px;
-    background-image: url("../images/background-06.png");
+    background-image: url("../images/background2-06.png");
 		background-position-y: 100px;
   background-size: 100%;
 	background-repeat: no-repeat;
@@ -94,7 +94,7 @@ logo {
     font-weight: bold;
 }
 h1 {
-    font-size: 1.7em;
+    font-size: 2.3em;
     font-family:'DM Sans';
     color:#000000;
     line-height: 1.1em;
@@ -136,7 +136,7 @@ p {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 2fr 1fr;
-  padding: 40px;
+  padding: 200px 40px;
   justify-content: center;
   margin: 0px 0px;
 }
