@@ -103,7 +103,7 @@ h1 {
 h2 {
     font-size: 1.8em;
     font-family:'DM Sans';
-    color:#8652ff;
+    color:#000000;
     line-height: 1.1em;
     font-weight: bold;
 }
@@ -122,6 +122,13 @@ h4 {
     line-height: 1.3em;
     font-weight: bold;
 	margin: 0px;
+}
+percent {
+    font-size: 1.8em;
+    font-family:'DM Sans';
+    color:#8652ff;
+    line-height: 1.1em;
+    font-weight: bold;
 }
 b {
     font-family:'DM Sans';
