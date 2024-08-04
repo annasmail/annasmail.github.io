@@ -371,10 +371,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	grid-column-start: 1;
 	grid-column-end: 3;
 grid-template-rows: auto, auto;
-    border-radius: 30px;
   justify-content: center;
-  background-color: #FFFFFF;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .grid-container21 > div {
   text-align: left;
@@ -384,7 +381,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	box-sizing: border-box;
 	color:#000000;
   grid-row:1;
-	padding: 10px  10px;
+	padding: 0px  10px;
   order: 1;
 }
 .grid-item942 {
@@ -393,7 +390,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   	grid-row:2;
 	padding: 10px  10px;
   	order: 1;
-	height: 200px;
 }
 .grid-item93 {
 	box-sizing: border-box;
