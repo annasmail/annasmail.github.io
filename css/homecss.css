@@ -391,15 +391,17 @@ grid-template-rows: auto, auto;
 	padding: 10px  10px;
   	order: 1;
 }
-.grid-item93 {
-	box-sizing: border-box;
-	color:#000000;
-	grid-template-rows: 2fr 1fr;
-  grid-column-start: 3;
-  grid-column-end: 5;
-	padding: 20px  20px;
-  margin: auto;
-  order: 1;
+.grid-container22 {
+  display: grid;
+  gap: 20px;
+	grid-column-start: 3;
+	grid-column-end: 5;
+grid-template-rows: auto, auto;
+  justify-content: center;
+}
+.grid-container22 > div {
+  text-align: left;
+  text-justify: inter-word;
 }
 .grid-item931 {
 	box-sizing: border-box;
