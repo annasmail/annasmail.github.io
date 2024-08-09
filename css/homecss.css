@@ -510,8 +510,8 @@ grid-template-rows: 1fr 1fr 1fr;
   display: grid;
   grid-template-rows: auto auto;
   gap: 20px 40px;
-  min-width: 145px;
-  max-width: 145px;
+  min-width: 150px;
+  max-width: 150px;
 }
 
 .grid-item621{
