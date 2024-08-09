@@ -151,6 +151,8 @@ p {
     font-family:'DM Sans';
     line-height: 1.2em;
     margin: 0px;
+    text-align: center;
+    text-justify: inter-word;
 }
 p2 {
     font-size: 1em;
