@@ -480,11 +480,11 @@ grid-template-rows: 1fr 1fr 1fr;
   height: auto;
   padding: 10px;
   grid-template-rows: auto auto;
-  margin: auto;
   display: grid;
   gap: 10px;
   border-radius: 30px;
-	background-color: #ECE3FF;
+  background-color: #ECE3FF;
+  margin: 0px 150px 60px 150px;
   padding: 30px 60px 40px 60px;
 }
 
