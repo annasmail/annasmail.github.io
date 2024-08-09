@@ -551,10 +551,11 @@ grid-template-rows: 1fr 1fr 1fr;
 }
 
 .grid-item63{
-  background-color: #FFFFFF;
   text-align: center;
-  border-radius: 25px;
-  padding: 0px;
+  background-color: #F6F2FF;
+  border-radius: 30px;
+  padding: 10px  20px;
+  
 }
 
 
