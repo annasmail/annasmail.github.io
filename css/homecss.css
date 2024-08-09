@@ -513,9 +513,41 @@ grid-template-rows: 1fr 1fr 1fr;
   max-width: 130px;
 }
 
-.grid-item62{
+.grid-item621{
   aspect-ratio: 1/1;
-  background-color: #FFFFFF;
+  background-image: url("../images/modulesicon-14.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.grid-item622{
+  aspect-ratio: 1/1;
+  background-image: url("../images/modulesicon-15.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.grid-item623{
+  aspect-ratio: 1/1;
+  background-image: url("../images/modulesicon-16.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.grid-item624{
+  aspect-ratio: 1/1;
+  background-image: url("../images/modulesicon-17.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.grid-item625{
+  aspect-ratio: 1/1;
+  background-image: url("../images/modulesicon-18.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.grid-item626{
+  aspect-ratio: 1/1;
+  background-image: url("../images/modulesicon-19.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .grid-item63{
@@ -524,6 +556,18 @@ grid-template-rows: 1fr 1fr 1fr;
   border-radius: 25px;
   padding: 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
