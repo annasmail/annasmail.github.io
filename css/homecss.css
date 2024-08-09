@@ -107,6 +107,14 @@ h2 {
     line-height: 1.1em;
     font-weight: bold;
 }
+h22 {
+    font-size: 1.8em;
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: bold;
+    margin: 0;
+}
 h3 {
 	font-size: 1em;
     font-family:'DM Sans';
