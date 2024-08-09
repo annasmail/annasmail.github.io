@@ -172,6 +172,14 @@ p3 {
     text-justify: inter-word;
     font-weight: bold;
 }
+p4 {
+    font-size: 0.9em;
+    font-family:'DM Sans';
+    line-height: 1.2em;
+    margin: 0px;
+    text-align: center;
+    text-justify: inter-word;
+}
 .grid-container {
   display: grid;
   gap: 30px;
