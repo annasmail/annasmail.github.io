@@ -629,7 +629,7 @@ background-image: url("../images/modulesicon-19.png");
 	color:#000000;
   grid-column-start: 2;
    grid-column-end: 6;
-	padding: 0px;
+	padding: 20px 0px 10px 0px;
   text-align: center;
   grid-row: 1;
   }
