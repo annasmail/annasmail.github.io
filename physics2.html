@@ -1,0 +1,73 @@
+---
+Title: Anna Smail
+---
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/physicscss.css">
+		</head>
+		<header>
+			<logo>Anna Smail</logo>
+			<nav>
+	    			<ul class="nav_links">
+	        			<li><a href="/" class="btn top">Home</a></li>
+					<li><a href="/physics" class="btn top">Physics</a></li>
+					<li><a href="/earth-sciences" class="btn top">Earth Sciences</a></li>
+					<li><a href="https://github.com/annasmail" class="btn github">My Github</a></li>
+				</ul>
+			</nav>
+		</header>
+		<body>
+			
+
+<div class="grid-container7">
+  <div class="grid-item71">
+    <p3> Other interests... </p3>
+  </div>
+  <div class="flex-item7 flex-container7">
+    <div class = "flex-item7 flex-item71"> 
+      <div class="grid-item72">
+        <h6> Reading </h6>
+      </div>
+      <div class="grid-item73">
+	      <a href="/reading"><p4>read more</p4></a>
+      </div>
+    </div>
+    <div class = "flex-item7 flex-item71"> 
+    <div class="grid-item72">
+      <h6> Design </h6>
+      </div>
+      <div class="grid-item73">
+        <p4>read more</p4>
+      </div>
+      </div>
+    <div class = "flex-item7 flex-item71"> 
+      <div class="grid-item72">
+        <h6> Running </h6>
+      </div>
+      <div class="grid-item73">
+        <p4>read more</p4>
+      </div>
+        </div>    
+  </div>
+</div>
+
+
+			
+			
+</body>
+
+ <script>
+	const nav = document.querySelector('header')
+	window.addEventListener('scroll', fixNav)
+	function fixNav() {
+    	if (window.scrollY > 10) {
+        nav.classList.add('active')
+  	} else {
+        nav.classList.remove('active')
+  	}
+	}	
+  </script>
