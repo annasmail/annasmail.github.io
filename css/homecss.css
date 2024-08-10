@@ -583,10 +583,10 @@ h6 {
   display: grid;
   gap: 10px;
   border-radius: 30px;
-	background-color: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 30px 60px 40px 60px;
-  margin: 0px 150px 60px 150px;
+  margin: auto;
 }
 
 .grid-item71{
@@ -622,8 +622,6 @@ h6 {
 .flex-item71:hover{
   transform: scale(1.05);
 }
-
-
 
 .grid-item72{
   text-align: center;
