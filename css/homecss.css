@@ -514,6 +514,11 @@ grid-template-rows: 1fr 1fr 1fr;
   gap: 20px 40px;
   min-width: 155px;
   max-width: 155px;
+  transition: 0.3s;
+}
+
+.flex-item61:hover{
+transform: scale(1.1);
 }
 
 .grid-item621{
