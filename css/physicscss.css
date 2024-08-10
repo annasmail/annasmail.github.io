@@ -200,7 +200,7 @@ h6 {
 }
 
 .flex-item71{
-		background-color: #F5F5F5;
+		background-color: #FFFFFF;
 		border-radius: 25px;
 		padding: 0px 0px 35px 0px;
 		transition: 0.3s;
@@ -251,15 +251,15 @@ a.btn {
     font-family:'DM Sans';
     font-weight: normal;
     padding: 6px 15px;
-    background-color: #EBEBEB;
+    background-color: #FFFFFF;
     border-radius: 25px;
-    outline: 2px solid #EBEBEB;
+    outline: 2px solid #7A8FE1;
     transition: 0.3s;
 }
 .readme:hover {
     color: #F5F5F5;
-    background-color: #3454D1;
+    background-color: #7A8FE1;
     border-radius: 25px;
-    outline: 2px solid #3454D1;
+    outline: 2px solid #7A8FE1;
     font-weight: normal;
 }
