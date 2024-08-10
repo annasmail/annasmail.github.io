@@ -512,8 +512,8 @@ grid-template-rows: 1fr 1fr 1fr;
   display: grid;
   grid-template-rows: auto auto;
   gap: 0px;
-  min-width: 145px;
-  max-width: 145px;
+  min-width: 140px;
+  max-width: 140px;
   background-color: #F6F2FF;
   border-radius: 15px;
 }
