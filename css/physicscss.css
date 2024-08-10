@@ -261,3 +261,28 @@ a.btn {
     border-radius: 25px;
     font-weight: normal;
 }
+
+
+
+.grid-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 150px 40px 200px 40px;
+  justify-content: center;
+  margin: 0px 0px;
+}
+.grid-container > div {
+  text-align: center;
+  text-justify: inter-word;
+}
+.grid-item1 {
+	box-sizing: border-box;
+	color:#000000;
+  grid-column: 2;
+	padding: 0px  0px;
+	border-radius: 25px;
+  margin: 0px;
+  order: 1;
+
+}
