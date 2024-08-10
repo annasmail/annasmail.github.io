@@ -250,24 +250,64 @@ h6 {
   background-color: #FFFFFF;
 }
 
+	.cards {
+		width: 315px;
+		background-color: #F5F5F5;
+		border-radius: 25px;
+		padding: 0px 0px 25px 0px;
+		transition: 0.3s;
+		margin: 20px;
+	}
 
-
-.title {
-	text-align: center;
-	padding: 10px 10px 20px 10px;
+	.cards:hover {
+		transform: scale(1.1);
+	}
+	.title {
+		text-align: center;
+		padding: 10px 10px 20px 10px;
+	}
+	.des {
+		text-align:center;
+	}
+	.main {
+		display:flex;
+    		justify-content: center;
+    		align-items: center;
+    		padding: 10px;
+	}
+	.image img{
+		width: 315px;
+		height: 210px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+a {
+    text-decoration: none;
+    font-family:'Karla';
+    color:#1E2529;
 }
-.des {
-	text-align:center;
+a:hover {
+    text-decoration: underline;
+    font-weight: normal;
+    color:#0066FF;
 }
-.main {
-	display:flex;
-    	justify-content: center;
-    	align-items: center;
-    	padding: 10px;
+a.btn {
+    text-decoration: none;
 }
-.image img{
-	width: 315px;
-	height: 210px;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
+.readme {
+    color: #1E2529;
+    font-family:'Karla';
+    font-weight: normal;
+    padding: 6px 15px;
+    background-color: #EBEBEB;
+    border-radius: 25px;
+    outline: 2px solid #EBEBEB;
+    transition: 0.3s;
+}
+.readme:hover {
+    color: #F5F5F5;
+    background-color: #0066FF;
+    border-radius: 25px;
+    outline: 2px solid #0066FF;
+    font-weight: normal;
 }
