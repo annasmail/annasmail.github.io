@@ -498,7 +498,7 @@ grid-template-rows: 1fr 1fr 1fr;
 .flex-container{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   grid-row: 2;
 }
