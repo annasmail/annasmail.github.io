@@ -4,7 +4,7 @@ body {
     max-width: 100%;
     padding: 0px;
     margin: 0px;
-    background-image: url("../images/physicsbackground-21-21-21.png");
+    background-image: url("../images/background2-06.png");
     background-position-y: 100px;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@ a.btn {
     font-weight: normal;
     padding: 8px 17px;
     color: #000000;
-    background-color: #D8EAFF;
+    background-color: #F1EBFF;
     border-radius: 25px;
 }
 .github {
@@ -68,14 +68,14 @@ a.btn {
     padding: 6px 15px;
     background-color: #FFFFFF;
     border-radius: 25px;
-    outline: 2px solid #2E58FF;
+    outline: 2px solid #8652FF;
     transition: 0.3s;
 }
 .github:hover {
     color: #FFFFFF;
-    background-color: #2E58FF;
+    background-color: #8652FF;
     border-radius: 25px;
-    outline: 2px solid #2E58FF;
+    outline: 2px solid #8652FF;
     font-weight: normal;
 }
 nav ul {
@@ -251,15 +251,13 @@ a.btn {
     font-family:'DM Sans';
     font-weight: normal;
     padding: 6px 15px;
-    background-color: #FFFFFF;
+    background-color: #F1EBFF;
     border-radius: 25px;
-    outline: 2px solid #2E58FF;
     transition: 0.3s;
 }
 .readme:hover {
-    color: #F5F5F5;
-    background-color: #2E58FF;
+    color: #FFFFFF;
+    background-color: #8652FF;
     border-radius: 25px;
-    outline: 2px solid #2E58FF;
     font-weight: normal;
 }
