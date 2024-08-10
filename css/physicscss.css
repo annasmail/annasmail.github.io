@@ -64,14 +64,14 @@ a.btn {
     padding: 6px 15px;
     background-color: #FFFFFF;
     border-radius: 25px;
-    outline: 2px solid #8652FF;
+    outline: 2px solid #3454D1;
     transition: 0.3s;
 }
 .github:hover {
     color: #FFFFFF;
-    background-color: #8652FF;
+    background-color: #3454D1;
     border-radius: 25px;
-    outline: 2px solid #8652FF;
+    outline: 2px solid #3454D1;
     font-weight: normal;
 }
 nav ul {
@@ -189,11 +189,10 @@ h6 {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   padding: 0px;
   margin: 80px 150px 60px 150px;
   justify-content: center;
-  background-color: #D1345B;
 }
 
 .flex-item71{
@@ -255,8 +254,8 @@ a.btn {
 }
 .readme:hover {
     color: #F5F5F5;
-    background-color: #0066FF;
+    background-color: #3454D1;
     border-radius: 25px;
-    outline: 2px solid #0066FF;
+    outline: 2px solid #3454D1;
     font-weight: normal;
 }
