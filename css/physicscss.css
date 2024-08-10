@@ -187,108 +187,49 @@ h6 {
 
 .grid-container7{
   height: auto;
-  padding: 10px;
-  grid-template-rows: auto auto;
-  display: grid;
-  gap: 10px;
-  border-radius: 30px;
-  background-color: #FFFFFF;
-  padding: 20px 0px;
-  margin: 80px 150px 60px 150px;
-}
-
-.grid-item71{
-  grid-row: 1;
-  text-align: center;
-}
-
-.flex-container7{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
+  padding: 0px;
+  margin: 80px 150px 60px 150px;
   justify-content: center;
-  grid-row: 2;
-}
-
-.flex-item7{
-  flex: 1;
-  padding: 20px 15px;
+  background-color: #D1345B;
 }
 
 .flex-item71{
-  		width: 315px;
 		background-color: #F5F5F5;
 		border-radius: 25px;
-		padding: 0px 0px 25px 0px;
+		padding: 0px 0px 35px 0px;
 		transition: 0.3s;
-		margin: 20px;
+		margin: 15px;
 
 		display: grid;
-  		gap: 5px;
+  	gap: 0px;
  		transition: 0.3s;
-  		justify-content: center;
-  		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  	justify-content: center;
+    flex: 1;
+    max-width: 315px;
+    min-width: 315px;
 }
 
 .flex-item71:hover{
   transform: scale(1.05);
 }
 
-.grid-item72{
-  text-align: center;
+.title {
+	text-align: center;
+	padding: 0px 30px 5px 30px;
 }
-
-.grid-item73{
-  background-color: #C2DFF1;
-  text-align: center;
-  border-radius: 25px;
-  padding: 5px;
-  width: 100px;
-  align-items: center;
-  transition: 0.3s;
+.des {
+	text-align:center;
 }
-
-.grid-item73:hover{
+.image img{
+	width: 315px;
+	height: 210px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
   background-color: #FFFFFF;
 }
-
-	.cards {
-		width: 315px;
-		background-color: #F5F5F5;
-		border-radius: 25px;
-		padding: 0px 0px 25px 0px;
-		transition: 0.3s;
-		margin: 20px;
-
-		display: grid;
-  		gap: 5px;
- 		transition: 0.3s;
-  		justify-content: center;
-  		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-	}
-
-	.cards:hover {
-		transform: scale(1.1);
-	}
-	.title {
-		text-align: center;
-		padding: 10px 10px 20px 10px;
-	}
-	.des {
-		text-align:center;
-	}
-	.main {
-		display:flex;
-    		justify-content: center;
-    		align-items: center;
-    		padding: 10px;
-	}
-	.image img{
-		width: 315px;
-		height: 210px;
-		border-top-left-radius: 25px;
-		border-top-right-radius: 25px;
-	}
 a {
     text-decoration: none;
     font-family:'DM Sans';
