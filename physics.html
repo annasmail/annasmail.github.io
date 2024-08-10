@@ -1,99 +1,32 @@
 ---
-layout: CVlayout
-title: Anna Smail
+Title: Anna Smail
 ---
-<style>
-	.cards {
-		width: 315px;
-		background-color: #F5F5F5;
-		border-radius: 25px;
-		padding: 0px 0px 25px 0px;
-		transition: 0.3s;
-		margin: 20px;
-	}
 
-	.cards:hover {
-		transform: scale(1.1);
-	}
-	.title {
-		text-align: center;
-		padding: 10px 10px 20px 10px;
-	}
-	.des {
-		text-align:center;
-	}
-	.main {
-		display:flex;
-    		justify-content: center;
-    		align-items: center;
-    		padding: 10px;
-	}
-	.image img{
-		width: 315px;
-		height: 210px;
-		border-top-left-radius: 25px;
-		border-top-right-radius: 25px;
-	}
-a {
-    text-decoration: none;
-    font-family:'Karla';
-    color:#1E2529;
-}
-a:hover {
-    text-decoration: underline;
-    font-weight: normal;
-    color:#0066FF;
-}
-a.btn {
-    text-decoration: none;
-}
-.readme {
-    color: #1E2529;
-    font-family:'Karla';
-    font-weight: normal;
-    padding: 6px 15px;
-    background-color: #EBEBEB;
-    border-radius: 25px;
-    outline: 2px solid #EBEBEB;
-    transition: 0.3s;
-}
-.readme:hover {
-    color: #F5F5F5;
-    background-color: #0066FF;
-    border-radius: 25px;
-    outline: 2px solid #0066FF;
-    font-weight: normal;
-}
-		
-</style>
-<body>
-<h1>Physics</h1>
-<div class="main">
-	<div class="cards">
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/physicscss.css">
+		</head>
+		<header>
+			<logo>Anna Smail</logo>
+			<nav>
+	    			<ul class="nav_links">
+	        			<li><a href="/" class="btn top">Home</a></li>
+					<li><a href="/physics" class="btn top">Physics</a></li>
+					<li><a href="/earth-sciences" class="btn top">Earth Sciences</a></li>
+					<li><a href="https://github.com/annasmail" class="btn github">My Github</a></li>
+				</ul>
+			</nav>
+		</header>
+		<body>
+			
+
+<div class="grid-container7">
+	<div class="flex-item71">
 		<div class="image">
-			<img src="images/atoms.jpg">
-		</div>
-		<div class="title">
-			<h2>The Hydrogen Atom</h2>
-		</div>
-		<div class="des">
-			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
-		</div>
-	</div>
-	<div class="cards">
-		<div class="image">
-			<img src="images/cyclone.png">
-		</div>
-		<div class="title">
-			<h2>Stokes' Equations</h2>
-		</div>
-		<div class="des">
-			<a href="/Physics/2024/07/16/Pushing-with-Magnets" class="btn readme">read more</a>
-		</div>
-	</div>
-	<div class="cards">
-		<div class="image">
-			<img src="images/magnet.jpg">
+      <img src="images/atoms.jpg">
 		</div>
 		<div class="title">
 			<h2>Pushing with Magnets</h2>
@@ -102,5 +35,43 @@ a.btn {
 			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
 		</div>
 	</div>
+	<div class="flex-item71">
+		<div class="image">
+			<img src="images/atoms.jpg">
+		</div>
+		<div class="title">
+			<h2>The Hydrogen Atom</h2>
+		</div>
+		<div class="des">
+			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
+	 </div>
 </div>
+	<div class="flex-item71">
+		<div class="image">
+      <img src="images/atoms.jpg">
+		</div>
+		<div class="title">
+			<h2>Stokes' Equation</h2>
+		</div>
+		<div class="des">
+			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
+		</div>
+</div>
+</div>
+
+
+			
+			
 </body>
+
+ <script>
+	const nav = document.querySelector('header')
+	window.addEventListener('scroll', fixNav)
+	function fixNav() {
+    	if (window.scrollY > 10) {
+        nav.classList.add('active')
+  	} else {
+        nav.classList.remove('active')
+  	}
+	}	
+  </script>
