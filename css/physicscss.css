@@ -249,3 +249,25 @@ h6 {
 .grid-item73:hover{
   background-color: #FFFFFF;
 }
+
+
+
+.title {
+	text-align: center;
+	padding: 10px 10px 20px 10px;
+}
+.des {
+	text-align:center;
+}
+.main {
+	display:flex;
+    	justify-content: center;
+    	align-items: center;
+    	padding: 10px;
+}
+.image img{
+	width: 315px;
+	height: 210px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
