@@ -268,7 +268,7 @@ a.btn {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 2fr 1fr;
-  padding: 150px 40px 200px 40px;
+  padding: 40px 0px 0px 0px;
   justify-content: center;
   margin: 0px 0px;
 }
