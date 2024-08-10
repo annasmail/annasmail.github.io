@@ -216,16 +216,18 @@ h6 {
 }
 
 .flex-item71{
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 5px;
-  transition: 0.3s;
-  min-width: 300px;
-  max-width: 300px;
-  background-color: #DEEDF7;
-  border-radius: 25px;
-  justify-content: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  		width: 315px;
+		background-color: #F5F5F5;
+		border-radius: 25px;
+		padding: 0px 0px 25px 0px;
+		transition: 0.3s;
+		margin: 20px;
+
+		display: grid;
+  		gap: 5px;
+ 		transition: 0.3s;
+  		justify-content: center;
+  		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .flex-item71:hover{
@@ -289,7 +291,7 @@ h6 {
 	}
 a {
     text-decoration: none;
-    font-family:'Karla';
+    font-family:'DM Sans';
     color:#1E2529;
 }
 a:hover {
