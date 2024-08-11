@@ -237,6 +237,8 @@ postheader > div {
   background-size: 100%;
   background-position: center;
   border-radius: 15px;
+  width: 26px;
+  height: 26px;
 }
 
 
@@ -268,8 +270,9 @@ postheader > div {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  aspect-ratio: 1/1;
   border-radius: 15px;
+  width: 26px;
+  height: 26px;
 }
 
 .posttitle{
