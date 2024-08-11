@@ -59,7 +59,7 @@ a.btn {
     font-weight: normal;
     padding: 8px 17px;
     color: #000000;
-    background-color: #B8D8FF;
+    background-color: #E3EFFF;
     border-radius: 25px;
 }
 .topcurrent {
@@ -79,7 +79,7 @@ a.btn {
     font-weight: normal;
     padding: 8px 17px;
     color: #000000;
-    background-color: #B8D8FF;
+    background-color: #E3EFFF;
     border-radius: 25px;
 }
 .github {
@@ -274,7 +274,7 @@ a.btn {
     font-family:'Spline Sans Mono';
     font-weight: normal;
     padding: 6px 15px;
-    background-color: #B8D8FF;
+    background-color: #E3EFFF;
     border-radius: 25px;
     transition: 0.3s;
 }
