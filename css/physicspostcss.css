@@ -13,8 +13,8 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    height: 100px;
-    padding: 10px 80px 10px 80px;
+    height: 120px;
+    padding: 0px 80px 0px 80px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -25,6 +25,7 @@ header {
 header.active{
     background-color: #FFFFFF;
     box-shadow: 0px 12px 20px 2px rgba(0, 0, 0, .1);
+  height: 120px;
     padding: 0px 80px 0px 80px;
      
 }
@@ -79,12 +80,6 @@ a.btn {
     color: #000000;
     background-color: #E3EFFF;
     border-radius: 25px;
-}
-.arrownav {
-    color: #0075F2;
-    font-family:'Spline Sans Mono';
-    font-weight: normal;
-    padding: 0px;
 }
 .github {
     color: #000000;
@@ -193,28 +188,31 @@ p4 {
 
 postheader {
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    height: 80px;
-    padding: 0px 80px 0px 80px;
+    padding: 0px 80px 20px 80px;
     margin: 0px;
   position: -webkit-sticky;
     position: sticky;
-    top: 100px;
+    top: 120px;
   background-color: #FEFEFE;
   transition: all 0.4s ease-in-out;
 }
 postheader.active{
     background-color: #FFFFFF;
-    box-shadow: 10px 12px 20px 2px rgba(0, 0, 0, .1);
-    padding: 0px 80px 0px 80px;    
+    box-shadow: 0px 12px 15px 2px rgba(0, 0, 0, .05);
+    padding: 0px 80px 20px 80px;   
+  top: 120px;
 }
 postheader > div {
   text-align: center;
   text-justify: inter-word;
 }
+
+
+
 .prev {
 	box-sizing: border-box;
   grid-column: 1;
@@ -248,18 +246,21 @@ postheader > div {
 }
 
 
+
+
 .next {
 	box-sizing: border-box;
 	color:#008BF5;
-  grid-column: 3;
+  grid-column: 5;
 }
 .nextgrid{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
   padding: 10px 10px;
   align-items: center;
+  color:#008BF5;
   background-color: #EEF6FF;
-	border-radius: 25px;
+  border-radius: 25px;
   gap: 10px;
   height:30px;
   width: 90px;
@@ -271,7 +272,6 @@ postheader > div {
 }
 .nextgrid1{
   column: 2;
-  color: #FFFFFF;
   background-image: url("../images/arrow2-26.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -282,7 +282,7 @@ postheader > div {
 }
 
 .posttitle{
-  grid-column:2;
+  grid-column:3;
 }
 
 .grid-container {
@@ -296,4 +296,3 @@ postheader > div {
   text-align: left;
   background-color: #EEF6FF;
 }
-
