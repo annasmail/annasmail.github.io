@@ -85,16 +85,14 @@ a.btn {
     margin-right: 10px;
     margin-left: 10px;
     padding: 6px 15px;
-    background-color: #FFFFFF;
+    background-color: #8652FF;
     border-radius: 25px;
-    outline: 2px solid #8652FF;
     transition: 0.3s;
 }
 .github:hover {
     color: #FFFFFF;
-    background-color: #8652FF;
+    background-color: #F1EBFF;
     border-radius: 25px;
-    outline: 2px solid #8652FF;
     font-weight: normal;
 }
 nav ul {
