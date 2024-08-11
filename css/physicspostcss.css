@@ -271,7 +271,7 @@ postheader > div {
   background-color: #008BF5;
 }
 .nextgrid1{
-  column: 2;
+  column: 1;
   background-image: url("../images/arrow2-26.png");
   background-repeat: no-repeat;
   background-size: 100%;
