@@ -80,18 +80,18 @@ a.btn {
 }
 .github {
     color: #000000;
-    font-family:'Spline Sans Mono';
+    font-family:'DM Sans';
     font-weight: normal;
     margin-right: 10px;
     margin-left: 10px;
     padding: 6px 15px;
-    background-color: #8652FF;
+    background-color: #F1EBFF;
     border-radius: 25px;
     transition: 0.3s;
 }
 .github:hover {
     color: #FFFFFF;
-    background-color: #F1EBFF;
+    background-color: #8652FF;
     border-radius: 25px;
     font-weight: normal;
 }
