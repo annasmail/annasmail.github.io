@@ -80,6 +80,12 @@ a.btn {
     background-color: #E3EFFF;
     border-radius: 25px;
 }
+.arrownav {
+    color: #0075F2;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 0px;
+}
 .github {
     color: #000000;
     font-family:'Spline Sans Mono';
