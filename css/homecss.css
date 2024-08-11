@@ -60,6 +60,26 @@ a.btn {
     background-color: #F1EBFF;
     border-radius: 25px;
 }
+.topcurrent {
+    color: #8652FF;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.topcurrent:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #F1EBFF;
+    border-radius: 25px;
+}
 .github {
     color: #000000;
     font-family:'Spline Sans Mono';
