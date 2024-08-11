@@ -20,26 +20,29 @@ Title: Anna Smail
 				</ul>
 			</nav>
 		</header>
+  
+  
     <postheader>
       <div class="prev">
-        <div class="prevgrid">
+        <a href="/physics" class="prevgrid">
           <div class="prevgrid1">
           </div>
-        <a href="/physics" class="btn top">prev.</a>
+          prev.
+        </a>
         </div>
-        </div>
+      
       
       <div class="posttitle">
         <h2> Pushing with Magnets </h2>
         <p4>My final-year physics project, completed on the 22nd January 2024.</p4>
       </div>
       
-      <div class="next">
-        <div class="nextgrid">
-          <p4 href="/physics"> next </p4>
+       <div class="next">
+        <a href="/physics" class="nextgrid">
           <div class="nextgrid1">
           </div>
-        </div>
+          next
+        </a>
         </div>
       
     </postheader>
@@ -61,7 +64,7 @@ There have been a vast number of studies looking at different magnetic configura
     </body>
     
      <script>
-	const nav = document.querySelector('header')
+	const nav = document.querySelector('postheader')
 	window.addEventListener('scroll', fixNav)
 	function fixNav() {
     	if (window.scrollY > 10) {
