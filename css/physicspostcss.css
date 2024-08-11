@@ -235,7 +235,6 @@ postheader > div {
   background-image: url("../images/arrow-25.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-attachment: fixed;
   background-position: center;
   border-radius: 15px;
   width: 20px;
@@ -270,7 +269,6 @@ postheader > div {
   background-image: url("../images/arrow2-26.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-attachment: fixed;
   background-position: center;
   aspect-ratio: 1/1;
   border-radius: 15px;
