@@ -296,3 +296,50 @@ postheader > div {
   text-align: left;
   background-color: #EEF6FF;
 }
+
+.grid-container2 {
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap:10px;
+  margin: 40px 150px 60px 150px;
+  padding: 30px 40px 20px 40px;
+  justify-content: left;
+  text-align: left;
+  background-color: #FFFFFF;
+}
+
+.grid-container2 > div {
+}
+
+.grid-item21{
+  row: 1;
+  column: 1;
+  background-image: url("../images/array-30.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.grid-item22{
+  row: 1;
+  column: 2;
+  background-image: url("../images/array-31.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.grid-item23{
+  row: 1;
+  column: 3;
+  background-image: url("../images/array-32.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.grid-item24{
+font-family: "DM Sans";
+font-size: 1em;
+margin: 10px;
+}
+
