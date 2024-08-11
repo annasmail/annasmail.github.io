@@ -320,6 +320,7 @@ postheader > div {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  aspect-ratio: 1/1;
 }
 .grid-item22{
   row: 1;
@@ -328,6 +329,7 @@ postheader > div {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  aspect-ratio: 1/1;
 }
 .grid-item23{
   row: 1;
@@ -336,11 +338,14 @@ postheader > div {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  aspect-ratio: 1/1;
 }
 .grid-item24{
 font-family: "DM Sans";
 font-size: 1em;
 margin: 10px;
-	row: 2;
+row: 2;
+text-align: justify;
+text-justify: inter-word;
 }
 
