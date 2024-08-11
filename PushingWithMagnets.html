@@ -20,7 +20,57 @@ Title: Anna Smail
 				</ul>
 			</nav>
 		</header>
+    <postheader>
+      <div class="prev">
+        <div class="prevgrid">
+          <div class="prevgrid1">
+             <p><</p>
+          </div>
+        <p4> prev. </p4>
+        </div>
+        </div>
+      
+      <div class="posttitle">
+        <h2> Pushing with Magnets </h2>
+        <p4>My final-year physics project, completed on the 22nd January 2024.</p4>
+      </div>
+      
+      <div class="next">
+        <div class="nextgrid">
+          <p4> next </p4>
+          <div class="nextgrid1">
+            <p>></p>
+          </div>
+        </div>
+        </div>
+      
+    </postheader>
 		<body>
-
+      
+      
+<div class="grid-container">
+  <p1> The use of magnets in medicine started around 70 years ago. In 1957, Gilchrist injected tumours with biocompatible, magnetic nanoparticles (MNPs) and then used the particles’ magnetic property to heat them up. This successfully destroyed the metastases while not affecting the surrounding healthy tissue. 
+  </p1>
+  <p1>
+Current research focuses on the use of external magnets to guide and trap drug-carrying MNPs. This has the promising ability to concentrate drugs at disease locations by pulling the MNPs towards the external magnet thereby minimising exposure of healthy tissues to potentially cytotoxic drugs.
+  </p1>
+  <p1>
+There have been a vast number of studies looking at different magnetic configurations, each with varying abilities of manipulation of MNPs within anatomical structures (Fig.1). 
+</p1>
+      </div>
+      
+      
     </body>
+    
+     <script>
+	const nav = document.querySelector('header')
+	window.addEventListener('scroll', fixNav)
+	function fixNav() {
+    	if (window.scrollY > 10) {
+        nav.classList.add('active')
+  	} else {
+        nav.classList.remove('active')
+  	}
+	}	
+  </script>
   </html>
