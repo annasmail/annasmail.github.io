@@ -409,3 +409,40 @@ text-justify: inter-word;
   text-align: left;
   background-color: #EEF6FF;
 }
+
+.grid-container4 {
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin: 0px 150px 40px 150px;
+  padding: 0px 40px 0px 40px;
+  justify-content: left;
+  text-align: left;
+}
+.grid-container4 > div {
+}
+.grid-item41 {
+ border-radius: 30px;
+  grid-column: 1;
+  margin: 0px;
+  padding: 0px;
+  justify-content: left;
+  text-align: left;
+  background-image: url("../images/contour2-16.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.grid-item42 {
+  border-radius: 30px;
+  grid-column: 2;
+  margin: 0px;
+  padding: 0px;
+  justify-content: left;
+  text-align: left;
+  background-image: url("../images/contour2-16.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
