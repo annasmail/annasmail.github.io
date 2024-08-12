@@ -158,6 +158,14 @@ p1 {
     text-align: justify;
     text-justify: inter-word;
 }
+p11 {
+    font-size: 1em;
+    font-family:'DM Sans';
+    line-height: 1.4em;
+    margin-bottom: 0em; 
+    text-align: justify;
+    text-justify: inter-word;
+}
 p2 {
     font-size: 1em;
     font-family:'DM Sans';
