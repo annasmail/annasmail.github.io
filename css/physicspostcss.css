@@ -290,7 +290,7 @@ postheader > div {
   display: grid;
   grid-template-rows: auto auto auto;
   gap:10px;
-  margin: 40px 150px 60px 150px;
+  margin: 40px 150px 30px 150px;
   padding: 30px 40px 20px 40px;
   justify-content: left;
   text-align: left;
@@ -302,7 +302,7 @@ postheader > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
-  gap:25px;
+  gap:15px;
   margin: 0px 150px 60px 150px;
   padding: 30px 40px 20px 40px;
   justify-content: left;
@@ -321,6 +321,7 @@ postheader > div {
   background-size: 100%;
   background-position: center;
   aspect-ratio: 1/1;
+  padding: 10px;
 }
 .grid-item22{
   row: 1;
@@ -330,6 +331,7 @@ postheader > div {
   background-size: 100%;
   background-position: center;
   aspect-ratio: 1/1;
+  padding: 10px;
 }
 .grid-item23{
   row: 1;
@@ -339,6 +341,7 @@ postheader > div {
   background-size: 100%;
   background-position: center;
   aspect-ratio: 1/1;
+  padding: 10px;
 }
 .grid-item24{
 font-family: "DM Sans";
