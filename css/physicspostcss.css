@@ -127,8 +127,16 @@ h2 {
     font-weight: bold;
    margin: 5px;
 }
+h3 {
+    font-size: 1.5em;
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: bold;
+   margin: 5px;
+}
 b {
-    font-family:'Spline Sans Mono';
+    font-family:'DM Sans';
     line-height: 1.1em;
     font-weight: bold;
 }
