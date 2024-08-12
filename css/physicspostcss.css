@@ -327,7 +327,7 @@ postheader > div {
   text-align: left;
   background-image: url("../images/MDT-14.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   background-position: center;
 }
 .grid-container2 {
