@@ -314,7 +314,7 @@ postheader > div {
 }
 
 .grid-item21{
-  row: 1;
+  row: 2;
   column: 1;
   background-image: url("../images/array-30.png");
   background-repeat: no-repeat;
@@ -324,7 +324,7 @@ postheader > div {
   padding: 10px;
 }
 .grid-item22{
-  row: 1;
+  row: 2;
   column: 2;
   background-image: url("../images/array-31.png");
   background-repeat: no-repeat;
@@ -334,7 +334,7 @@ postheader > div {
   padding: 10px;
 }
 .grid-item23{
-  row: 1;
+  row: 2;
   column: 3;
   background-image: url("../images/array-32.png");
   background-repeat: no-repeat;
@@ -345,10 +345,9 @@ postheader > div {
 }
 .grid-item24{
 font-family: "DM Sans";
-font-size: 1em;
 margin: 10px;
-row: 2;
-text-align: justify;
+row: 1;
+text-align: center;
 text-justify: inter-word;
 }
 
