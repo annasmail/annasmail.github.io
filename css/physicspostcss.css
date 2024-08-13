@@ -223,6 +223,7 @@ postheader {
   transition: all 0.5s ease-in-out;
      position: -webkit-sticky;
     position: sticky;
+	z-index: 101;
 }
 postheader.active{
     background-color: #FFFFFF;
