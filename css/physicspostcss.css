@@ -319,6 +319,7 @@ postheader > div {
   padding: 0px;
   justify-content: left;
   text-align: left;
+  background-color: #EEF6FF;
 }
 .grid-container > div {
 }
@@ -332,7 +333,6 @@ postheader > div {
   padding: 20px 30px;
   justify-content: justify;
   text-justify: inter-word;
-  background-color: #EEF6FF;
 }
 .grid-item2 {
   border-radius: 30px;
