@@ -41,6 +41,14 @@ a:hover {
 a.btn {
     text-decoration: none;
 }
+a2 {
+    text-decoration: none;
+    font-family:'Dm Sans';
+    color:#0075F2;
+}
+a2:hover {
+    text-decoration: underline;
+}
 .top {
     color: #000000;
     font-family:'Spline Sans Mono';
