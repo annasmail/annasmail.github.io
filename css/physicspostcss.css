@@ -426,10 +426,10 @@ text-justify: inter-word;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap:20px;
-  margin: 0px 150px 40px 150px;
+  margin: 40px 150px 40px 150px;
   justify-content: left;
   text-align: left;
-  background-color: "#EEF6FF";
+  background-color: #EEF6FF;
   padding: 40px;
 }
 .grid-container4 > div {
