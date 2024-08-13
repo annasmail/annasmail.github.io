@@ -461,9 +461,9 @@ text-justify: inter-word;
 
 .grid-container5 {
   border-radius: 30px;
-  margin: 40px 150px 40px 150px;
+  margin: 0px 150px 0px 150px;
   justify-content: left;
   text-align: left;
   background-color: #FFFFFF;
-  padding: 40px;
+  padding: 30px;
 }
