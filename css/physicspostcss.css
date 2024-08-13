@@ -485,7 +485,7 @@ text-justify: inter-word;
   display: grid;
   padding: 30px;
   gap: 10px;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: auto auto;
 }
 
@@ -500,14 +500,14 @@ text-justify: inter-word;
   padding: 10px;
   grid-column: 1;
   grid-row-start: 1;
-  grid-row-end:5;
+  grid-row-end:3;
   display: grid;
-  gap: 2px;
+  gap: 5px;
   grid-template-rows: auto auto auto auto;
   background-color: #F5F5F5;
 }
 .grid-item711 {
-  margin: 5px auto;
+  margin: 0px;
   text-align: justify;
   text-justify: inter-word;
   padding: 10px;
@@ -517,8 +517,8 @@ text-justify: inter-word;
 .grid-item72{
   grid-column: 2;
   grid-row-start: 1;
-  grid-row-end: 3;
-  background-image: url("../images/twomagnet-23.png");
+  grid-row-end: 2;
+  background-image: url("https://www.sketchappsources.com/resources/source-image/profile-illustration-gunaldi-yunus.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -528,9 +528,9 @@ text-justify: inter-word;
 }
 .grid-item73{
   grid-column: 2;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  background-image: url("../images/twomagnet-24.png");
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("https://www.sketchappsources.com/resources/source-image/profile-illustration-gunaldi-yunus.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
