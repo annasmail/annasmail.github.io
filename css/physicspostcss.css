@@ -313,9 +313,7 @@ postheader > div {
 .grid-container0 {
   border-radius: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap:10px;
-  margin: 0px 150px 40px 150px;
+  margin: 20px 150px 20px 150px;
   padding: 0px;
   justify-content: left;
   text-align: left;
