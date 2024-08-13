@@ -436,7 +436,8 @@ text-justify: inter-word;
   grid-column: 1;
   background-image: url("../images/magnet-22.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 101%;
+  border-radius: 15px;
   background-position: center;
   height: 500px;
 }
