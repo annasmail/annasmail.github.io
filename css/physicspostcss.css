@@ -470,11 +470,57 @@ text-justify: inter-word;
   padding: 0px 30px 20px 30px;
 }
 
+
 .grid-container6 {
   border-radius: 50px;
   width: 560px;
   margin: 10px auto;
   text-align: center;
-  background-color: #EEF6FF;
+  background-color: #FFFFFF;
   padding: 0px;
 }
+
+.grid-container7{
+  margin: 0px 150px 0px 150px;
+  display: grid;
+  padding: 30px;
+  gap: 10px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
+.grid-container7 > div {
+}
+
+
+.grid-item71 {
+  margin: 5px auto;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 10px;
+  grid-column: 1;
+}
+
+.grid-item72{
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url("../images/twomagnets-23.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+}
+.grid-item73{
+  grid-column: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-image: url("../images/twomagnets-24.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+}
+
