@@ -485,7 +485,7 @@ text-justify: inter-word;
   display: grid;
   padding: 30px;
   gap: 10px;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 5fr 1fr;
   grid-template-rows: auto auto auto auto;
 }
 
@@ -497,7 +497,7 @@ text-justify: inter-word;
   margin: 5px auto;
   text-align: justify;
   text-justify: inter-word;
-  padding: 10px;
+  padding: 20px;
   grid-column: 1;
 }
 
@@ -511,6 +511,7 @@ text-justify: inter-word;
   background-position: center;
   aspect-ratio: 1/1;
   border-radius: 15px;
+  padding: 10px;
 }
 .grid-item73{
   grid-column: 2;
@@ -522,5 +523,6 @@ text-justify: inter-word;
   background-position: center;
   aspect-ratio: 1/1;
   border-radius: 15px;
+  padding: 10px;
 }
 
