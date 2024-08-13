@@ -485,8 +485,8 @@ text-justify: inter-word;
   display: grid;
   padding: 30px;
   gap: 10px;
-  grid-template-columns: 5fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
 }
 
 .grid-container7 > div {
@@ -497,8 +497,21 @@ text-justify: inter-word;
   margin: 5px auto;
   text-align: justify;
   text-justify: inter-word;
-  padding: 0px;
+  padding: 10px;
   grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end:5;
+  display: grid;
+  gap: 2px;
+  grid-template-rows: auto auto auto auto;
+  background-color: #F5F5F5;
+}
+.grid-item711 {
+  margin: 5px auto;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 10px;
+  background-color: #EBEBEB;
 }
 
 .grid-item72{
@@ -511,7 +524,7 @@ text-justify: inter-word;
   background-position: center;
   aspect-ratio: 1/1;
   border-radius: 15px;
-  margin: 10px;
+  background-color: #F5F5F5;
 }
 .grid-item73{
   grid-column: 2;
@@ -523,6 +536,5 @@ text-justify: inter-word;
   background-position: center;
   aspect-ratio: 1/1;
   border-radius: 15px;
-  margin: 10px;
+  background-color: #F5F5F5;
 }
-
