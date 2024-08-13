@@ -485,7 +485,7 @@ text-justify: inter-word;
   display: grid;
   padding: 30px;
   gap: 10px;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: auto auto auto auto;
 }
 
