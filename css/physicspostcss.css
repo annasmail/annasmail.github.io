@@ -316,7 +316,7 @@ postheader > div {
   grid-template-columns: 4fr 3fr;
   gap:10px;
   margin: 0px 150px 40px 150px;
-  padding: 0px 40px 0px 40px;
+  padding: 0px;
   justify-content: left;
   text-align: left;
 }
