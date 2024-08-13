@@ -337,7 +337,7 @@ postheader > div {
   padding: 0px;
   justify-content: left;
   text-align: left;
-  background-color: #EEF6FF;
+  background-color: #FFFFFF;
 }
 .grid-container > div {
 }
@@ -437,7 +437,7 @@ text-justify: inter-word;
   margin: 40px 150px 40px 150px;
   justify-content: left;
   text-align: left;
-  background-color: #EEF6FF;
+  background-color: #FFFFFF;
   padding: 40px;
 }
 .grid-container4 > div {
@@ -445,6 +445,8 @@ text-justify: inter-word;
 .grid-item40 {
   grid-column: 1;
   grid-row: 1;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .grid-item41 {
   grid-column: 1;
@@ -477,8 +479,8 @@ text-justify: inter-word;
 }
 
 .grid-container6 {
-  border-radius: 30px;
-  margin: 0px 180px 20px 180px;
+  border-radius: 50px;
+  margin: 0px 450px 20px 450px;
   text-align: center;
   background-color: #EEF6FF;
   padding: 5px 30px 5px 30px;
