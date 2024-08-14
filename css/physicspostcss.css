@@ -568,9 +568,19 @@ text-justify: inter-word;
 
 .grid-container9 {
   border-radius: 30px;
-  margin: 0px 150px;
-  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+  margin: 0px 150px 0px 150px;
+  justify-content: left;
+  text-align: left;
+  padding: 40px;
+}
+.grid-container9 > div {
+}
+.grid-item9 {
+  grid-column-start: 1;
+  grid-column-end: 3;
   text-align: justify;
   text-justify: inter-word;
-  background-color: #FFFFFF;
 }
