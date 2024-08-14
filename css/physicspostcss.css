@@ -553,13 +553,12 @@ text-justify: inter-word;
 }
 
 .grid-container8{
-  margin: 0px 150px 0px 150px;
-  height: 200px;
-  background-image: url("https://churchstretton.co.uk/wp-content/uploads/2020/11/1036DSC_9203-Pano-1036x430.jpg");
+  margin: 10px 150px 10px 150px;
+  height: 320px;
+  background-image: url("../images/overlap-25.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-color: #F5F5F5;
 }
 
 .grid-container9 {
@@ -570,7 +569,7 @@ text-justify: inter-word;
   margin: 0px 150px 0px 150px;
   justify-content: left;
   text-align: left;
-  padding: 40px;
+  padding: 0px 30px;
 }
 .grid-container9 > div {
 }
