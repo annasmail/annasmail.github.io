@@ -254,6 +254,7 @@ postheader > div {
 .prevgrid:hover{
   color:#EEF6FF;
   background-color: #008BF5;
+  text-decoration: none;
 }
 .prevgrid1{
   column: 1;
@@ -292,6 +293,7 @@ postheader > div {
 .nextgrid:hover{
   color:#EEF6FF;
   background-color: #008BF5;
+  text-decoration: none;
 }
 .nextgrid1{
   column: 1;
