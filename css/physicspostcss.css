@@ -559,6 +559,8 @@ text-justify: inter-word;
   margin: 0px 150px 0px 150px;
   background-image: url("../images/overlap-25.png");
   background-repeat: no-repeat;
+  width: 1000px;
+  aspect-ratio: auto;
   background-size: contain;
   background-position: center;
 }
