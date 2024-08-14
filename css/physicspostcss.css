@@ -558,8 +558,7 @@ text-justify: inter-word;
 
 .grid-container8{
   margin: 0px 150px 0px 150px;
-  width: 800px;
-  height: 500px;
+  height: 320px;
   background-image: url("../images/overlap-25.png");
   background-repeat: no-repeat;
   background-size: contain;
