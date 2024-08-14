@@ -537,3 +537,21 @@ text-justify: inter-word;
   aspect-ratio: 1/1;
   border-radius: 15px;
 }
+
+.contentfade{
+  width: 100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  background: rgba(255,255,255,0.7);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.contentfade:hover{
+  opacity: 1;
+}
