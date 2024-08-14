@@ -32,7 +32,7 @@ a:hover {
 a.btn {
     text-decoration: none;
 }
-a2 {
+a2:link {
     text-decoration: none;
     font-family:'Dm Sans';
     color:#0075F2;
