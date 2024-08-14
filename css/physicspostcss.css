@@ -511,8 +511,8 @@ text-justify: inter-word;
 
 .grid-item72{
   grid-column: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
   margin: 10px;
   background-image: url("../images/twomagnet-23.png");
   background-repeat: no-repeat;
@@ -523,8 +523,8 @@ text-justify: inter-word;
 }
 .grid-item73{
   grid-column: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   margin: 10px;
   background-image: url("../images/twomagnet-24.png");
   background-repeat: no-repeat;
