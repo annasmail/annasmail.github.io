@@ -554,3 +554,11 @@ text-justify: inter-word;
 .contentfade:hover{
   opacity: 1;
 }
+
+.grid-container8{
+  margin: 0px 150px 0px 150px;
+  background-image: url("../images/overlap-25.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
