@@ -558,10 +558,19 @@ text-justify: inter-word;
 
 .grid-container8{
   margin: 0px 150px 0px 150px;
+  width: 800px;
+  height: 500px;
   background-image: url("../images/overlap-25.png");
   background-repeat: no-repeat;
-  width: 1000px;
-  aspect-ratio: auto;
   background-size: contain;
   background-position: center;
+}
+
+.grid-container9 {
+  border-radius: 30px;
+  margin: 0px 150px;
+  padding: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #FFFFFF;
 }
