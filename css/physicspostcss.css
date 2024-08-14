@@ -480,7 +480,7 @@ text-justify: inter-word;
 .grid-container7{
   margin: 0px 150px 0px 150px;
   display: grid;
-  padding: 0px 30px 30px 30px;
+  padding: 0px 30px 10px 30px;
   gap: 0px 20px;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: auto auto;
