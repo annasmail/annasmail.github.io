@@ -206,7 +206,7 @@ p5 {
     margin: 0px;
     text-align: center;
     text-justify: inter-word;
-	background-color: #EEF6FF;
+	background-color: #008BF5;
 }
 
 
@@ -367,7 +367,7 @@ postheader > div {
   padding: 5px 35px 10px 35px;
   justify-content: left;
   text-align: left;
-  background-color: #FFFFFF;
+  background-color: #EEF6FF;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0);
 }
 
