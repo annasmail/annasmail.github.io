@@ -203,10 +203,11 @@ p5 {
     font-size: 1.2em;
     font-family:'Spline Sans Mono';
     line-height: 1.2em;
-    margin: 0px;
+    margin: 0px 0px 5px 0px;
     text-align: center;
     text-justify: inter-word;
-	background-color: #008BF5;
+    background-color: #008BF5;
+    color: #FFFFFF;
 }
 
 
