@@ -590,6 +590,30 @@ text-justify: inter-word;
   text-justify: inter-word;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+th {
+  padding: 8px 15px;
+  font-family: 'Spline Sans Mono';
+  text-align: left;
+  border-bottom: 2px solid #FFFFFF;
+  background: #F5F5F5;
+}
+
+td {
+  padding: 4px 15px;
+  font-family: 'DM Sans';
+  text-align: left;
+  vertical-align: text-top;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+tr:hover {background-color: #E3EFFF;}
+
 .footer{
     display: flex;
     justify-content: flex-start;
