@@ -154,12 +154,31 @@ $$ {\small \overrightarrow{F}_{mag} = \frac{4 \pi a^3}{3} \frac{\mu_0 \chi}{(1+\
 </div>
 <div class="grid-container9">
 	<div class="grid-item9">
-	<p1>We chose to analyse the two-magnet setup outlined by Shapiro and determine the configuration that had the best combination of <b>local-minima distance</b> and <b>exerted force strength</b> which both vary as the magnets are rotated about their central pivot. </p1>
+	<p1>We chose to analyse the two-magnet setup outlined by Shapiro to see if we could create a large push force at a distance of 30-50 mm. We would determine the optimal configuration that had the best combination of <b>local-minima distance</b> and <b>exerted force strength</b> which both vary as the magnets are rotated about their central pivot. </p1>
 	</div>
 </div>
 <div class="grid-container0">
 	<h4>Computer modelling</h4>
 </div>
+
+<div class="grid-container9">
+	<div class="grid-item9">
+	<p1>In order to calculate any exerted forces, we first need to calculate the magnetic feild. This can be done using <a href="https://www.researchgate.net/publication/224493118_Calculation_of_the_magnetic_stray_field_of_a_uniaxial_magnetic_domain">Engel-Herbert's</a> equation for a cuboidal magnet's magnetic field in x, y and z directions (below).
+	</div>
+</div>
+
+  <div class="grid-container9">
+	<div class="grid-item9">
+	<p1>$$ {\small{H}_{x}{(x,y,z)} = \frac{\small{M}_{0}}{4 \pi} \sum_{k,l,m=1}^2 (-1)^{k+l+m}  ln(z +(-1)^{m}) \small{z}_{b} + \sqrt{(x+(-1)^{k}\small{x}_{b})^2 + (y+(-1)^{l}\small{y}_{b})^2 + (z+(-1)^{m}\small{z}_{b})^2}} \\$$ </p1>
+	</div>
+</div>
+  
+  <div class="grid-container9">
+	<div class="grid-item9">
+	<p1>$$ {\small{H}_{y}{(x,y,z)} = \frac{\small{-M}_{0}}{4 \pi} \sum_{k,l,m=1}^2 (-1)^{k+l+m} \frac{(y+(-1)^l\small{y}_{b})(x+(-1)^k\small{x}_{b})}{|y+(-1)^l\small{y}_{b}||x+(-1)^k\small{x}_{b}|} \cdot tan^{-1}\left[\frac{|x+(-1)^k\small{x}_{b}|(z+(-1)^m\small{z}_{b})}{|y+(-1)^l\small{y}_{b}| \sqrt{(x+(-1)^{k}\small{x}_{b})^2 + (y+(-1)^{l}\small{y}_{b})^2 + (z+(-1)^{m}\small{z}_{b})^2}} \right]} \\$$ </p1>
+	</div>
+</div>
+	
    
     </body>
 
