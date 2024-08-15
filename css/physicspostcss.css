@@ -631,3 +631,50 @@ tr:hover {background-color: #E3EFFF;}
   color: #858585;
   border-top: 1px solid #CCCCCC;
 }
+
+
+p6 {
+    font-size: 1em;
+    font-family:'DM Sans';
+    color: #F6F6F6;
+    line-height: 1.4em;
+    margin-bottom: 1em; 
+    text-align: justify;
+    text-justify: inter-word;
+}
+.grid-container11 {
+  border-radius: 20px;
+  margin: 5px 180px 5px 180px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 20px 30px;
+  background-color: #F6F6F6;
+}
+.grid-container10 {
+  border-radius: 30px;
+  margin: 10px 150px 10px 150px;
+  justify-content: left;
+  text-align: left;
+  padding: 0px 30px;
+}
+package {color: #0075F2; font-weight: bold;}
+hash {color: #B8B8B8;}
+action {color: #66B9F9;}
+label{
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFFF;
+  background-color: #008BF5;
+  padding: 3px 13px;
+  border-radius: 15px;
+  margin-top: 0px;
+}
+.content {display: none;}
+#ch {display: none;}
+#ch: checked ~ .content{display: block;}
+#ch: checked ~ label{display: none;}
+.content{display: none;}
+
