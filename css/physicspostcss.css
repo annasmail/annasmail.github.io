@@ -642,7 +642,7 @@ p6 {
 }
 .grid-container11 {
   border-radius: 20px;
-  margin: 5px 180px 5px 180px;
+  margin: 5px 150px 5px 150px;
   font-family: 'Spline Sans Mono';
   font-size: 0.9em;
   line-height: 1.4em;
@@ -661,18 +661,24 @@ p6 {
 package {color: #0075F2; font-weight: bold;}
 hash {color: #B8B8B8;}
 action {color: #66B9F9;}
-label{
-  display: inline-block;
-  cursor: pointer;
-  color: #FFFFFFF;
-  background-color: #008BF5;
-  padding: 3px 13px;
-  border-radius: 15px;
-  margin-top: 0px;
-}
-.content {display: none;}
-#ch {display: none;}
-#ch: checked ~ .content{display: block;}
-#ch: checked ~ label{display: none;}
-.content{display: none;}
 
+button{
+  background-color: #EBEBEB;
+  font-size: 0.9em;
+  font-family: inherit;
+  border: 0px;
+  padding: 6px 13px;
+  border-radius: 15px;
+  margin: 20px 0px 10px 0px;
+  transition: 0.4s;
+  cursor: pointer;
+  color: #000000;
+}
+
+#myBtn{
+  color: #000000;
+ }
+
+button:hover{
+  background-color: #E0E0E0;
+}
