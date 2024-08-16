@@ -218,10 +218,11 @@ $$ {\small \overrightarrow{F}_{mag} = \frac{4 \pi a^3}{3} \frac{\mu_0 \chi}{(1+\
   <div class = "grid-container10">
     <p1> First we will write the code for one magnet, using the above equations. </p1>
   </div>
-  <div class = "grid-container11">
-  import <package>matplotlib.pyplot</package> as plt <br>
+			
+  <div class="grid-container11">
+import <package>matplotlib.pyplot</package> as plt <br>
   import <package>numpy</package> as np <br>
-   <br>
+   <span id="dots">...</span><span id="more"><br>
     <hash># Make a square plot of 500 x 500 grid spaces.</hash> <br> <br>
     fig, ax = plt.subplots(figsize=(6, 6)) <br>
     x, y = np.meshgrid(np.linspace(-120, 120, 500), np.linspace(-120, 120, 500)) <br>
@@ -253,8 +254,10 @@ $$ {\small \overrightarrow{F}_{mag} = \frac{4 \pi a^3}{3} \frac{\mu_0 \chi}{(1+\
     ax.streamplot(x, y, x_direct(x,y), y_direct(x,y), color = 'w', linewidth = 0.5, zorder=10, density=0.5)<br>
     plt.show()<br><br>
 <hash># Example plot</hash><br><br>
-plot_graph(10,20,5,70,0) 
-    </div>
+plot_graph(10,20,5,70,0)
+    </span><br>
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+  </div>
 
     </body>
 
@@ -275,4 +278,24 @@ plot_graph(10,20,5,70,0)
   	}
 	}	
   </script>
+
+<script>
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Show less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
   </html>
