@@ -659,7 +659,7 @@ p6 {
   padding: 0px 30px;
 }
 package {color: #0075F2; font-weight: bold;}
-hash {color: #B8B8B8;}
+hash {color: #B8B8B8; font-style: italic;}
 action {color: #66B9F9;}
 
 button{
