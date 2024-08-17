@@ -321,6 +321,7 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
   </div>
 
 <div class="grid-container11">
+...<br>
     MAG1X = x_direct(x-trans,y,rot)*np.cos(rot*np.pi/180) - y_direct(x-trans,y,rot)*np.sin(rot*np.pi/180)<br>
     <new>MAG2X = x_direct(x+trans,y,-rot)*np.cos(-rot*np.pi/180) - y_direct(x+trans,y,-rot)*np.sin(-rot*np.pi/180)</new><br>
     MAG1Y = x_direct(x-trans,y,rot)*np.sin(rot*np.pi/180) + y_direct(x-trans,y,rot)*np.cos(rot*np.pi/180)<br>
@@ -328,6 +329,7 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
     TOTX = MAG1X - MAG2X<br>
     TOTY = MAG1Y - MAG2Y<br>
     TOTM = np.sqrt(TOTX**2 + TOTY**2)</new><br>
+	...
 </div>
 			
     </body>
