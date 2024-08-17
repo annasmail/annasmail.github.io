@@ -765,3 +765,13 @@ row: 1;
 text-align: center;
 text-justify: inter-word;
 }
+
+.mySelect {
+  border:0px;
+  border-radius: 15px;
+  background-color: #EEF6FF;
+  color: #008BF5;
+  font-family: 'Spline Sans Mono';
+  padding:7px;
+  margin:0px 100px;
+}
