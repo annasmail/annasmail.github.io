@@ -354,6 +354,20 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
 		<p1>Two rotated and translated bar magnets and resultant magnetic field.</p1>
 	</div>
 </div>
+
+  <div class=grid-container13>
+    <div class="grid-item131">
+  <img src="" id="imgBruegel" style="width: 300px; height: 300px" /> <br><br>
+  <select class="mySelect" id="selPainting" onchange="changePainting()">
+    <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnHA53AbMC5T3skXVv4A8wLbwFxRjpEzeVcA&s">Monkeys</option>
+    <option value="https://hbr.org/resources/images/article_assets/2018/04/apr18-20-nasa-apollo-proj-archive-01.jpg">Babel</option>
+    <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3AnR6AYLkfWBej3RAIBHgOIsPSzLCtPGl-AulFz-i6fBMO7CgawKtzQdXug4alxtGgo&usqp=CAU">Space</option>
+  </select>
+  </div>
+    <div class="grid-item132">
+      <p> hello </p>
+    </div>
+  </div>
 			
     </body>
 
@@ -410,4 +424,16 @@ function myFunction2() {
 }
 
 </script>
+
+  <script>
+    function changePainting(){
+      let filename = document.getElementById("selPainting").value;
+      document.getElementById("imgBruegel").src = filename;
+    }
+    
+    let element = document.getElementById("selPainting");
+    element.dispatchEvent(new Event("change"));
+    
+  </script>
+		
   </html>
