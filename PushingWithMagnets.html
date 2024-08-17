@@ -278,7 +278,7 @@ import <package>matplotlib.pyplot</package> as plt <br>
   <div class="grid-container11">
 import <package>matplotlib.pyplot</package> as plt <br>
   import <package>numpy</package> as np 
-   <span id="dots"></span><span id="more">
+   <span id="dots2"></span><span id="more2">
     <br><br><package>def</package> <b>plot_graph</b>(rot,trans,xb,yb,zb,M0,z): <br> <br>
     &nbsp;fig, ax = plt.subplots(figsize=(6, 6)) <br>
     &nbsp;x, y = np.meshgrid(np.linspace(-120, 120, 500), np.linspace(-120, 120, 500)) <br>
@@ -312,7 +312,7 @@ import <package>matplotlib.pyplot</package> as plt <br>
     &nbsp;plt.show()<br><br>
     plot_graph(45,30,10,20,5,70,0)<br>
     </span><br>
-    <button onclick="myFunction()" id="myBtn">Read more</button>
+    <button onclick="myFunction2()" id="myBtn2">Read more</button>
   </div>
 			
     </body>
@@ -348,6 +348,22 @@ function myFunction() {
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
+    btnText.innerHTML = "Show less";
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots2.style.display = "none";
     btnText.innerHTML = "Show less";
     moreText.style.display = "inline";
   }
