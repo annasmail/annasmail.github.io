@@ -731,7 +731,7 @@ button:hover{
   background-position: center;
   aspect-ratio: 1/1;
   padding: 10px;
-  margin: 20px;
+  margin: 15px;
   border-radius: 15px;
 }
 .grid-item122{
@@ -743,7 +743,7 @@ button:hover{
   background-position: center;
   aspect-ratio: 1/1;
   padding: 10px;
-  margin: 20px;
+  margin: 15px;
   border-radius: 15px;
 }
 .grid-item123{
@@ -754,7 +754,8 @@ button:hover{
   background-size: 100%;
   background-position: center;
   aspect-ratio: 1/1;
-  padding: 10px;margin: 20px;
+  padding: 10px;
+  margin: 15px;
   border-radius: 15px;
 }
 .grid-item124{
