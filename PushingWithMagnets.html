@@ -315,6 +315,20 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
     </span>
     <button onclick="myFunction2()" id="myBtn2">Read more</button>
   </div>
+
+  <div class = "grid-container10">
+    <h5>Step Three</h5><br><p1>Finally we can add in a second magnet by just inserting the following few lines. We subtract <co>MAG2X</co> and <co>MAG2Y</co> from <co>MAG1X</co> and <co>MAG1Y</co> because of the opposite pole orientation.</p1>
+  </div>
+
+<div class="grid-container11">
+    MAG1X = x_direct(x-trans,y,rot)*np.cos(rot*np.pi/180) - y_direct(x-trans,y,rot)*np.sin(rot*np.pi/180)
+    <new>MAG2X = x_direct(x+trans,y,-rot)*np.cos(-rot*np.pi/180) - y_direct(x+trans,y,-rot)*np.sin(-rot*np.pi/180)</new>
+    MAG1Y = x_direct(x-trans,y,rot)*np.sin(rot*np.pi/180) + y_direct(x-trans,y,rot)*np.cos(rot*np.pi/180)
+    <new>MAG2Y = x_direct(x+trans,y,-rot)*np.sin(-rot*np.pi/180) + y_direct(x+trans,y,-rot)*np.cos(-rot*np.pi/180)
+    TOTX = MAG1X - MAG2X
+    TOTY = MAG1Y - MAG2Y
+    TOTM = np.sqrt(TOTX**2 + TOTY**2)</new>
+</div>
 			
     </body>
 
