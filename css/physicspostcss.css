@@ -227,6 +227,12 @@ p6 {
     background-color: #EEF6FF;
     color: #008BF5;
 }
+co{
+  font-family: 'Spline Sans Mono';
+  background-color: #EEF6FF;
+  color:#008BF5;
+  font-size: 0.9em;
+}
 
 
 postheader {
