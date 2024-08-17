@@ -707,3 +707,56 @@ button{
 button:hover{
   background-color: #E0E0E0;
 }
+
+.grid-container12 {
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 15px  30px;
+  margin: 0px 150px 0px 150px;
+  padding: 5px 35px 10px 35px;
+  justify-content: left;
+  text-align: left;
+}
+
+.grid-container12 > div {
+}
+
+.grid-item121{
+  row: 2;
+  column: 1;
+  background-image: url("../images/code-36.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  aspect-ratio: 1/1;
+  padding: 10px;
+}
+.grid-item122{
+  row: 2;
+  column: 2;
+  background-image: url("../images/code-37.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  aspect-ratio: 1/1;
+  padding: 10px;
+}
+.grid-item123{
+  row: 2;
+  column: 3;
+  background-image: url("../images/code-33.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  aspect-ratio: 1/1;
+  padding: 10px;
+}
+.grid-item124{
+font-family: "DM Sans";
+margin: 10px;
+row: 1;
+text-align: center;
+text-justify: inter-word;
+}
