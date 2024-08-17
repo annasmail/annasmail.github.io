@@ -773,5 +773,30 @@ text-justify: inter-word;
   color: #008BF5;
   font-family: 'Spline Sans Mono';
   padding:7px;
-  margin:0px 100px;
+  margin: 15px 100px 0px 100px;
+}
+
+.grid-container13 {
+  margin: 30px 150px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 300px 1fr;
+}
+
+.grid-container13 > div{
+}
+
+.grid-item131{
+  grid-column: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.grid-item132{
+  grid-column:2;
+  width: 100%;
+  padding: 0px 20px;
+  border-radius: 20px;
+  background-color: #F5F5F5;
 }
