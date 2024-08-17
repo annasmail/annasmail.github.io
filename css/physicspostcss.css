@@ -773,7 +773,7 @@ text-justify: inter-word;
   color: #008BF5;
   font-family: 'Spline Sans Mono';
   padding:7px;
-  margin: 15px 100px 0px 100px;
+  margin: 15px auto 0px auto;
 }
 
 .grid-container13 {
@@ -790,7 +790,6 @@ text-justify: inter-word;
   grid-column: 1;
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
 }
 
 .grid-item132{
