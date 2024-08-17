@@ -686,6 +686,7 @@ package {color: #0075F2; font-weight: bold;}
 hash {color: #B8B8B8; font-style: italic;}
 action {color: #66B9F9;}
 new {color: #FB4D3D}
+bol {font-weight: bold;}
 
 button{
   background-color: #EBEBEB;
