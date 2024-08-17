@@ -780,7 +780,7 @@ text-justify: inter-word;
   margin: 30px 150px;
   display: grid;
   gap: 30px;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 400px 1fr;
 }
 
 .grid-container13 > div{
@@ -790,13 +790,15 @@ text-justify: inter-word;
   grid-column: 1;
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  width: 400px;
 }
 
 .grid-item132{
   grid-column:2;
   width: 100%;
-  padding: 0px 20px;
+  padding: 30px 40px;
   border-radius: 20px;
+  text-align: justify;
+  text-justify: inter-word;
   background-color: #F5F5F5;
 }
