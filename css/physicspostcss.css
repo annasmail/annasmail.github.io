@@ -395,7 +395,7 @@ postheader > div {
   grid-template-rows: auto auto;
   gap: 15px  30px;
   margin: 0px 150px 0px 150px;
-  padding: 5px 35px 10px 35px;
+  padding: 5px 0px 10px 0px;
   justify-content: left;
   text-align: left;
 }
