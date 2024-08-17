@@ -732,6 +732,8 @@ button:hover{
   background-position: center;
   aspect-ratio: 1/1;
   padding: 10px;
+  margin: 20px;
+  border-radius: 15px;
 }
 .grid-item122{
   row: 2;
@@ -742,6 +744,8 @@ button:hover{
   background-position: center;
   aspect-ratio: 1/1;
   padding: 10px;
+  margin: 20px;
+  border-radius: 15px;
 }
 .grid-item123{
   row: 2;
@@ -751,7 +755,8 @@ button:hover{
   background-size: 100%;
   background-position: center;
   aspect-ratio: 1/1;
-  padding: 10px;
+  padding: 10px;margin: 20px;
+  border-radius: 15px;
 }
 .grid-item124{
 font-family: "DM Sans";
