@@ -408,7 +408,7 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
 
 <div class="grid-container9">
 	<div class="grid-item9">
-	<p1>We can finally replicate this measurement with our code to see how well it predicts the experimental outcome, as shown below. While the code successfully predicts the overall shape of the experimental results, it is clear that as the angle gets smaller, the code begins to diverge from what we would expect.</p1>
+	<p1>Finally, we can test our experimentally obtained values to against the code's output to determine its' success. This comparison, at each angle interval, is shown below. </p1>
 	</div>
 </div>
 
@@ -416,18 +416,16 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
 </div>
 
 
-<div class="grid-container9">
-	<div class="grid-item9">
-	<p1>This could be due to a variety of reasons</p1><br>
-		<p1> &nbsp;• An initial misalignment of the wooden board.</p1><br>
-		<p1> &nbsp;• The magnets were attatched to a mild steel which may have impacted when measuring M0.</p1><br>
-		<p1> &nbsp;• The area was not cleared of other magnetic materials.</p1><br>
-		<p1> &nbsp;• The hall probe was not correctly zeroed before measurements.</p1>
-	</div>
-</div>
-
 <div class="grid-container0">
 	<h3>Conclusions</h3>
+</div>
+
+<div class="grid-container9">
+	<div class="grid-item9">
+		<p1>Looking at the above plots, there is a clear positive shift in the graph’s x-direction from the computed to the experimentally measured values that is consistent among all angles, suggesting that there was a systematic error in our experimental measurements such as an initial misalignment of the wooden board. The computed plot also looks as though it has been ‘squeezed’. The experimentally obtained value for M0 was used in the computer code and its value had a significant impact on the overall shape of the curve by vertically stretching it. The error of ± 0.1 A mm-1 due to the measurements of the magnets’ dimensions and their pole strengths were not significant enough to make it align with the experimentally measured values. Instead, the mild steel that was used to atatch it to the board may have caused a systematic error when measuring the pole strength.</p1><br><br><p1>Other causes could be due to limitations when clearing the area of any other magnetic materials, as this could have a significant impact on the readings. Additionally, we could have used a Zero Gauss Chamber to zero the probe before each reading. Otherwise, the overall shapes of the Hx plots are close to what was expected, with an increasing resemblance as the angle gets larger. </p1>
+	<br><br>
+		<p1>In regard to the suitability of configurations for medical uses, for an intended distance of 30-50 mm of an inner ear, an angle of 65° would be most appropriate of the angles tested in this project. We found it to have a local minimum distance of 62 ± 2 mm experimentally which could comfortably reach the inner ear. Additionally - outside the scope of this blog - we looked at the values of ∇(||H||2) after each local minimum and, of the 6 setups that we investigated, it was found to have the largest singular value of (2.25 ± 2.04) x 10-7 T2 mm-1 and hence would exert the largest force so that anatomical barriers such as the RWM or hydrodynamic drag forces could be overcome. </p1>
+	</div>
 </div>
 			
     </body>
