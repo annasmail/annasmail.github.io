@@ -393,9 +393,9 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
 
 <div class="grid-container9">
 	<div class="grid-item9">
-	<p1>To validate our code, we will fix two identical magnets to a board such that they can be rotated with screws. We will set their center's 60 mm apart (30 mm translation from common origin) and align a hall probe (measures magnetic field) with their common origin such that it measures the magnetic field in the x direction. Starting with 15° and working up to 65° in intervals of 10°, we take measurements of with the hall probe at 4 mm intervals along the y-axis.</p1>
+	<p1>To validate our code, we will fix two identical magnets to a board such that they can be rotated with screws. We will set their center's 60 mm apart (30 mm translation from common origin) and align a hall probe (which measures magnetic field) with their common origin such that it measures the magnetic field in the x direction. Starting with 15° and working up to 65° in intervals of 10°, we take measurements with the hall probe at 4 mm intervals along the y-axis.</p1>
 	<br><br>
-	<p1>We expect that the local minimum location will be detected when the magnetic field <b>changes direction</b> as seen in the field lines, e.g. when the hall probe measurement changes from negative to positive.</p1>
+	<p1>We expect that the local minimum location will be detected when the magnetic field <b>changes direction</b> as seen in the field lines, e.g. when the hall probe measurement changes from <b>negative to positive</b>.</p1>
 	</div>
 </div>
 
@@ -404,7 +404,7 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
 
 <div class="grid-container9">
 	<div class="grid-item9">
-	<p1>We can then replicate this measurement with our code to see how well it predicts the experimental outcome. </p1>
+	<p1>We can finally replicate this measurement with our code to see how well it predicts the experimental outcome, as shown below. While the code successfully predicts the overall shape of the experimental results, it is clear that as the angle gets smaller, the code begins to diverge from what we would expect.</p1>
 	</div>
 </div>
 
