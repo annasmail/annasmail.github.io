@@ -831,14 +831,14 @@ text-justify: inter-word;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
-  margin: 40px 180px;
+  margin: 0px 180px 30px 180px;
 }
 
 .grid-container17 > div{
 }
 
 .grid-item171{
-  background-color: #D6E9FF;
+  background-color: #EEF6FF;
   font-family: 'Spline Sans Mono';
   text-align: center;
   color: #008BF5;
