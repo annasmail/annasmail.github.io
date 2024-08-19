@@ -361,10 +361,9 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
 			
 <div class=grid-container13>
     <div class="grid-item132">
-      <p1>Now that we have our model, we can start to experiment with the variables to see how the system works. To start with we define <co>xb</co>, <co>yb</co> and <co>zb</co> as 10, 20 and 5 respectively because they are the dimensions of the magnets we have on hand to later validate our code. We will also define <co>M0</co> as 5.6 based on experimental measurement of the magnets.</p1><br><br>
-      <p1>Second, we chose to set <co>trans</co> at 30 for consistency so that we can focus on the effect that rotation has on the location of the local minimum. </p1><br><br>
+      <p1>Now that we have our model, we can start to experiment with the variables to see how the system works. To start with we define <co>xb</co>, <co>yb</co> and <co>zb</co> as 10, 20 and 5 respectively because they are the dimensions of the magnets we have on hand to later validate our code. We will also define <co>M0</co> as 5.6 based on experimental measurement of the magnets. Second, we chose to set <co>trans</co> at 30 for consistency so that we can focus on the effect that rotation has on the location of the local minimum. </p1><br><br>
       <p1>On the left, we can select a certain angle of rotation. For higher angles, we can see that a lighter patch on the contour plot comes closer to the magnets. Around this point, the field lines change direction, showing the point is a minimum.</p1><br><br>
-      <p1>This change in direction corresponds to a minimum because if you were to plot just the magnetic field's x-direction, we would see a change from negative (field lines pointing left) to positive (field lines pointing right). This change in sign means that the gradient before and after that point are opposite - a local minimum. As 'reverse' gradient is what causes MNPs to be pushed rather than pulled beyond this point.</p1>
+      <p1>This change in direction corresponds to a minimum because if you were to plot just the magnetic field's x-direction, we would see a change from negative (field lines pointing left) to positive (field lines pointing right). Below, I have plotted this below, zoomed into the minima point to see how the magnetic field, its' square and its' square's gradient varies. We can see that a change from negative to positive magnetic field also corresponds to change of negative to positive of its' squared gradient. We know that this is proportional force is what causes MNPs to be pushed rather than pulled beyond this point.</p1>
     </div>
     <div class="grid-item131">
   <img src="" id="imgBruegel" style="width: 300px; height: 300px, border-radius: 15px;" /> <br><br>
@@ -377,6 +376,9 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
     <option value="../images/contours-34.png">65 degrees</option>
   </select>
   </div>
+</div>
+			
+<div class="grid-container15">
 </div>
 
 <div class="grid-container0">
@@ -398,6 +400,9 @@ import <bol>matplotlib.pyplot</bol> as plt <br>
 	<div class="grid-item9">
 	<p1>We can then replicate this measurement with our code to see how well it predicts the experimental outcome. </p1>
 	</div>
+</div>
+
+<div class="grid-container16">
 </div>
 			
     </body>
