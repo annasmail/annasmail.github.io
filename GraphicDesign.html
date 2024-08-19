@@ -73,10 +73,6 @@ body {
     max-width: 100%;
     padding: 0px;
     margin: 0px;
-    background-image: url("../images/background2-06.png");
-		background-position-y: 100px;
-  background-size: 100%;
-	background-repeat: no-repeat;
 }
 header {
     display: flex;
@@ -185,8 +181,9 @@ h1 {
     font-size: 2.3em;
     font-family:'DM Sans';
     color:#000000;
-    line-height: 1.1em;
+    line-height: 1.0em;
     font-weight: bold;
+    margin: 10px;
 }
 .grid-container1{
   display: grid;
@@ -203,7 +200,7 @@ h1 {
 }
 .grid-item2{
   grid-row: 2;
-  aspect-ratio: 2/1;
+  aspect-ratio: 1/2;
 }
 .grid-item3{
   grid-row: 3;
@@ -229,7 +226,25 @@ h1 {
 }
 sub{
       font-family: 'Spline Sans Mono';
+      font-size: 1.5em;
     }
+ .contentfade{
+  width: 100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  background: rgba(255,255,255,0.85);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.4s;
+  font-family: 'DM Sans";
+}
+.contentfade:hover{
+  opacity: 1;
+}
 
   </style>
 
