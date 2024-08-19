@@ -809,3 +809,20 @@ text-justify: inter-word;
   background-size: contain;
   background-position: center;
 }
+
+.grid-container15{
+  margin: 10px 150px 10px 150px;
+  height: 320px;
+  background-image: url("../images/again-28.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.grid-container16{
+  margin: 10px 150px 10px 150px;
+  height: 320px;
+  background-image: url("../images/6comp-27.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
