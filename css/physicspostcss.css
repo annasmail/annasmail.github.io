@@ -831,7 +831,7 @@ text-justify: inter-word;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
-  margin: 0px 180px 30px 180px;
+  margin: 10px 180px 30px 180px;
 }
 
 .grid-container17 > div{
@@ -843,5 +843,5 @@ text-justify: inter-word;
   text-align: center;
   color: #008BF5;
   border-radius: 15px;
-  padding: 10px;
+  padding: 20px;
 }
