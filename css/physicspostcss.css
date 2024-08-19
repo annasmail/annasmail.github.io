@@ -826,3 +826,22 @@ text-justify: inter-word;
   background-size: contain;
   background-position: center;
 }
+
+.grid-container17{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 40px 150px;
+}
+
+.grid-container17 > div{
+}
+
+.grid-item171{
+  background-color: #D6E9FF;
+  font-family: 'Spline Sans Mono';
+  text-align: center;
+  color: #008BF5;
+  border-radius: 15px;
+  padding: 10px;
+}
