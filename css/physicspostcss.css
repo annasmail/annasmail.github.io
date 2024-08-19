@@ -779,8 +779,8 @@ text-justify: inter-word;
 .grid-container13 {
   margin: 30px 180px;
   display: grid;
-  gap: 30px;
-  grid-template-columns: 400px 1fr;
+  gap: 20px;
+  grid-template-columns: 300px 1fr;
 }
 
 .grid-container13 > div{
