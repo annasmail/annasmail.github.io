@@ -9,7 +9,6 @@
 <script>
 
 d3.csv("Books.csv").then(function(datapoints) {
-  console.log(datapoints)
   const year = [];
   const rating = [];
 
@@ -17,6 +16,8 @@ d3.csv("Books.csv").then(function(datapoints) {
   year.push(datapoints[i].year)
   rating.push(datapoints[i].rating)
   }
+
+  console.log(year)
  const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
