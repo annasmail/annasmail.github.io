@@ -1,0 +1,387 @@
+---
+Title: Anna Smail
+---
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/physicscss.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		</head>
+    <body>
+		   <postheader>
+      <div class="prev">
+        <a href="/SamsQuiz" class="prevgrid">
+          <div class="prevgrid1">
+          </div>
+         back
+        </a>
+        </div>
+         <div id="quiz">
+  <div class="container">
+<div class="question-container">
+  <div id="question"></div>
+</div>
+<div class="picture-container">
+<img />
+</div>
+<div id="options"></div>   
+</div>
+</div>
+         
+    </postheader>
+      
+    </body>
+</html>
+
+<script>
+  const quizData = [
+    {
+      question: "Where is this?",
+      options: ["Tesco", "Cafe", "Swimming Pool", "School"],
+      answer: "Swimming Pool",
+      img: "https://pbs.twimg.com/media/Elb0aLRWMAE665q?format=jpg&name=large"
+    },
+    {
+      question: "What food is this?",
+      options: ["Banana", "Weetabix", "Porridge", "Yogurt"],
+      answer: "Banana",
+      img: "https://images.everydayhealth.com/images/diet-nutrition/how-many-calories-are-in-a-banana-1440x810.jpg"
+    },
+    {
+      question: "Who is this?",
+      options: ["Thomas", "Henry", "Gordon", "Emily"],
+      answer: "Gordon",
+      img: "https://i.pinimg.com/736x/d8/2d/95/d82d9552d9a0f72fcfc6e97437106f73.jpg"
+    },
+  {
+      question: "Who sings this song?",
+      options: ["Dua Lipa", "AJ Tracey", "George Ezra", "The Killers"],
+      answer: "AJ Tracey",
+      img: "https://i.ytimg.com/vi/r_Q40kOt9X0/maxresdefault.jpg"
+    },
+  {
+      question: "What is this?",
+      options: ["Car", "Ambulance", "Police Car", "Bus"],
+      answer: "Bus",
+      img: "https://live.staticflickr.com/65535/50025586466_da4000b1f1_b.jpg"
+    },
+  ];
+  
+  const questionElement = document.getElementById("question");
+  const optionsElement = document.getElementById("options");
+  const submitButton = document.getElementById("submit");
+  const questImg = document.querySelector('.picture-container > img');
+  
+  let currentQuestion = 0;
+  let score = 0;
+  
+  function showQuestion() {
+    const question = quizData[currentQuestion];
+    questionElement.innerText = question.question;
+    questImg.src = question.img;
+    
+    optionsElement.innerHTML = "";
+    question.options.forEach(option => {
+      const button = document.createElement("button");
+      button.innerText = option;
+      optionsElement.appendChild(button);
+      button.addEventListener("click", selectAnswer);
+    });
+  }
+  
+  function selectAnswer(e) {
+    const selectedButton = e.target;
+    const answer = quizData[currentQuestion].answer;
+  
+    if (selectedButton.innerText === answer) {
+      score++;
+    }
+  
+    currentQuestion++;
+  
+    if (currentQuestion < quizData.length) {
+      showQuestion();
+    } else {
+      showResult();
+    }
+  }
+
+  
+  function showResult() {
+    quiz.innerHTML = `
+      <h1>Quiz Completed!</h1>
+      <p><h>You got <b>${score}/${quizData.length}</b></h> correct!</p>
+    `;
+  }
+
+showQuestion();
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(#FDFEFF,#DDEDFF);
+  align-content: center;
+  height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 100px;
+    padding: 10px 80px 10px 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+  background-color: #FFFFFF;
+  transition: all 0.4s ease-in-out;
+  z-index: 999;
+}
+header.active{
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 20px 2px rgba(0, 0, 0, .1);
+    padding: 0px 80px 0px 80px;
+     
+}
+a {
+    text-decoration: none;
+    font-family:'Spline Sans Mono';
+    color:#000000;
+}
+a:hover {
+    text-decoration: none;
+    font-weight: normal;
+}
+a.btn {
+    text-decoration: none;
+}
+.top {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.top:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #E3EFFF;
+    border-radius: 25px;
+}
+.github {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 6px 15px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.github:hover {
+    color: #FFFFFF;
+    background-color: #0075F2;
+    border-radius: 25px;
+    font-weight: normal;
+}
+nav ul {
+    font-family:'DM Sans';
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+}
+logo {
+    font-family: 'DM Sans';
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.container{
+  margin: 20px auto 50px auto;
+  max-width: 660px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  display: grid;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.question-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEF6FF;
+  margin: 20px 30px 10px 30px;
+  border-radius: 25px 25px 5px 5px;
+}
+
+.picture-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.picture-container > img{
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0px 30px 30px 30px;
+  border-radius: 5px 5px 25px 25px;
+}
+
+#question{
+  font-family: 'DM Sans';
+  font-size: 2em;
+  margin: 10px;
+  text-align: center;
+}
+
+#options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  padding: 0px 70px 20px 70px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 10px 12px;
+  background-color: #E3F0FF;
+  color: #131313;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 1em;
+  font-family: 'Spline Sans Mono';
+}
+
+button:hover {
+  background-color: #008BF5;
+  color: #FFFFFF;
+}
+
+h1{
+  font-family: 'DM Sans';
+  font-size: 3em;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+h3{
+  font-family: 'DM Sans';
+  font-size: 3em;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+}
+
+h{
+  background-color: #EBEFFF;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+p{
+  font-family: 'Spline Sans Mono';
+  text-align: center;
+  padding: 10px;
+}
+
+postheader {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    justify-content: space-between;
+    align-items: top;
+    max-width: 100%;
+    padding: 30px 30px 0px 30px;
+    margin: 0px;
+  transition: all 0.5s ease-in-out;
+	z-index: 101;
+}
+postheader.active{
+    padding: 0px 80px 0px 80px;
+  top:0;
+     
+}
+postheader > div {
+  text-align: center;
+  text-justify: inter-word;
+}
+
+.prev {
+	box-sizing: border-box;
+  grid-column: 1;
+}
+.prevgrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px 10px;
+  margin: 20px;
+  align-items: center;
+  font-family:'Spline Sans Mono';
+  font-weight: normal;
+  color:#008BF5;
+  background-color: #EEF6FF;
+  border-radius: 25px;
+  gap: 10px;
+  height:30px;
+  width: 90px;
+  transition: 0.3s;
+}
+.prevgrid:hover{
+  color:#EEF6FF;
+  background-color: #008BF5;
+  text-decoration: none;
+}
+.prevgrid1{
+  column: 1;
+  background-image: url("../images/arrow-25.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+a {
+    text-decoration: none;
+    font-family:'DM Sans';
+    color:#008BF5;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: normal;
+}
+a.btn {
+    text-decoration: none;
+}
+</style>
