@@ -1,0 +1,261 @@
+---
+Title: Anna Smail
+---
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		</head>
+		<header>
+			<logo>Anna Smail</logo>
+			<nav>
+	    			<ul class="nav_links">
+	        			<li><a href="/" class="btn top">Home</a></li>
+					<li><a href="/physics" class="btn top">Physics</a></li>
+					<li><a href="/EarthSciences" class="btn top">Earth Sciences</a></li>
+					<li><a href="https://github.com/annasmail" class="btn github">My Github</a></li>
+</ul>
+</nav>
+</header>
+    
+<body>
+      
+<div class="container1">
+  <h1>Hi Sam!</h1>
+</div>
+      
+<div class="container2">
+  <h2>What game would you like to play?</h2>
+</div>	
+  
+<div class="container3">
+</div>
+  
+<div class="grid-container">
+  <div class="grid-item">
+    Music
+  </div>
+  <div class="grid-item">
+    Places
+  </div>
+  <div class="grid-item">
+    Food
+  </div>
+</div>
+			
+</body>
+
+ <script>
+	const nav = document.querySelector('header')
+	window.addEventListener('scroll', fixNav)
+	function fixNav() {
+    	if (window.scrollY > 10) {
+        nav.classList.add('active')
+  	} else {
+        nav.classList.remove('active')
+  	}
+	}	
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    background: linear-gradient(#FDFEFF,#DDEDFF);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 100px;
+    padding: 10px 80px 10px 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+  background-color: #FFFFFF;
+  transition: all 0.4s ease-in-out;
+  z-index: 999;
+}
+header.active{
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 20px 2px rgba(0, 0, 0, .1);
+    padding: 0px 80px 0px 80px;
+     
+}
+a {
+    text-decoration: none;
+    font-family:'Spline Sans Mono';
+    color:#000000;
+}
+a:hover {
+    text-decoration: none;
+    font-weight: normal;
+}
+a.btn {
+    text-decoration: none;
+}
+.top {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.top:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #E3EFFF;
+    border-radius: 25px;
+}
+.github {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 6px 15px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.github:hover {
+    color: #FFFFFF;
+    background-color: #0075F2;
+    border-radius: 25px;
+    font-weight: normal;
+}
+nav ul {
+    font-family:'DM Sans';
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+}
+logo {
+    font-family: 'DM Sans';
+    font-size: 2.3em;
+    font-weight: bold;
+}
+h1 {
+    font-size: 7em;
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+h2{
+  font-size: 2em;
+  font-family:'DM Sans';
+  color:#000000;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+
+@keyframes chainReaction {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(20px);
+	}
+}
+
+.container1{
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+  text-align: center;
+  font-family: 'DM Sans';
+}
+
+.container2{
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 1.7s;
+  text-align: center;
+  font-family: 'DM Sans';
+}
+
+.container3{
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 1.7s;
+  text-align: center;
+  font-family: 'DM Sans';
+  background-image: url("../images/sam arrow-42.png");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  margin: 5px auto 30px auto;
+}
+
+.grid-container{
+  animation: chainReaction 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 40px 180px;
+}
+
+.grid-container > div{
+}
+
+.grid-item{
+  background-image: linear-gradient(to bottom right, #E3EFFF,#D1E6FF);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: Spline Sans Mono;
+  font-size: 1.2em;
+  text-align: center;
+  transition: 0.4s;
+  border: 5px solid white;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05), 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.grid-item:hover{
+  background-color: #B9D8FF;
+  cursor: pointer;
+  border: 5px solid rgba(0,0,0,0);
+}
+
+  </style>
