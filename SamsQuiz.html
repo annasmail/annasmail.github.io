@@ -35,13 +35,13 @@ Title: Anna Smail
 </div>
   
 <div class="grid-container">
-  <div class="grid-item">
+  <div href="/FirstQuiz" class="grid-item">
     Music
   </div>
-  <div class="grid-item">
+  <div href="/FirstQuiz" class="grid-item">
     Places
   </div>
-  <div class="grid-item">
+  <div href="/FirstQuiz" class="grid-item">
     Food
   </div>
 </div>
@@ -69,6 +69,7 @@ body {
     margin: 0px;
     height: 100vh;
     background: linear-gradient(#FDFEFF,#DDEDFF);
+    justify-content: center;
 }
 header {
     display: flex;
@@ -160,7 +161,7 @@ h1 {
     color:#000000;
     line-height: 1.1em;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 0px;
 }
 h2{
@@ -232,9 +233,10 @@ h2{
   animation-fill-mode: forwards;
   animation-delay: 3s;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 150px 150px 150px;
   gap: 20px;
-  margin: 40px 180px;
+  margin: 40px auto;
+  justify-content: center;
 }
 
 .grid-container > div{
