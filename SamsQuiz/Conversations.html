@@ -1,0 +1,435 @@
+---
+Title: Anna Smail
+---
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/physicscss.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		</head>
+ 
+    
+      
+<div id="quiz">
+	<body>
+<header>
+  <div class="headerside">
+    <div class="prev">
+        <a href="/SamsQuiz" class="prevgrid">
+          <div class="prevgrid1">
+          </div>
+         back
+        </a>
+         </div>
+  </div>
+  <div class="title">Conversations Quiz!</div>
+</header>
+   
+  <postheader>
+  <div class="container">
+<div class="question-container">
+  <div id="question"></div>
+</div>
+<div class="picture-container">
+<img />
+</div>
+<div id="options"></div>   
+</div>
+  </postheader>
+</body>
+</div>
+</html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../images/sam background2-44.png");
+    background-position-y: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center;
+    height: 100vh;
+}
+.quiz{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+  }
+a {
+    text-decoration: none;
+    font-family:'Spline Sans Mono';
+    color:#000000;
+}
+a:hover {
+    text-decoration: none;
+    font-weight: normal;
+}
+a.btn {
+    text-decoration: none;
+}
+
+.container{
+  margin: 20px auto 50px auto;
+  max-width: 660px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  display: grid;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  background-color: #F2F8FF;
+}
+
+.question-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAF5FF;
+  margin: 20px 30px 10px 30px;
+  border-radius: 25px 25px 5px 5px;
+}
+
+.picture-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.picture-container > img{
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0px 30px 30px 30px;
+  border-radius: 5px 5px 25px 25px;
+}
+
+#question{
+  font-family: 'DM Sans';
+  font-size: 2em;
+  margin: 10px;
+  text-align: center;
+}
+
+#options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  padding: 0px 70px 20px 70px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 10px 12px;
+  background-color: #EFF6FF;
+  color: #131313;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 1em;
+  font-family: 'Spline Sans Mono';
+}
+
+button:hover {
+  background-color: #F8FBFF;
+  color: #000000;
+}
+
+h1{
+  font-family: 'DM Sans';
+  font-size: 7em;
+  text-align: center;
+  margin: 0px 0px;
+  padding: 0px;
+}
+h4{
+  font-family: 'DM Sans';
+  font-size: 2.8em;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+
+h3{
+  font-family: 'DM Sans';
+  font-size: 3em;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+h2{
+  font-family: 'DM Sans';
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+}
+
+h{
+  background-color: #EBEFFF;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+p{
+  font-family: 'DM Sans';
+  text-align: center;
+  padding: 0px;
+  font-size: 2em;
+  margin: 0px auto 10px auto;
+}
+.prev {
+	box-sizing: border-box;
+  grid-column: 1;
+}
+.prevgrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px 10px;
+  margin: auto;
+  align-items: center;
+  font-family:'Spline Sans Mono';
+  font-weight: normal;
+  color:#008BF5;
+  background-color: #EEF6FF;
+  border-radius: 25px;
+  gap: 10px;
+  height:30px;
+  width: 90px;
+  transition: 0.3s;
+}
+.prevgrid:hover{
+  color:#EEF6FF;
+  background-color: #008BF5;
+  text-decoration: none;
+}
+.prevgrid1{
+  column: 1;
+  background-image: url("../images/arrow-25.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+.back{
+  padding: 8px 12px;
+  margin: 0px;
+  align-items: center;
+  font-family:'Spline Sans Mono';
+  font-weight: normal;
+  color:#FFFFFF;
+  background-color: #008BF5;
+  border-radius: 25px;
+  transition: 0.3s;
+  justify-content: center;
+}
+.back:hover{
+  color:#000000;
+  background-color: #D1E6FF;
+  text-decoration: none;
+}
+
+.endcontainer{
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.endcontainer > div{}
+
+.enditem1{
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
+
+.enditem2{
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 15px auto;
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.enditem3{
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+header{
+  top:0px;
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+  height: 100px;
+}
+
+.title{
+  font-family: DM Sans;
+  font-size: 3em;
+  text-align: center;
+  grid-column: 2;
+  font-weight: bold;
+  margin: auto;
+  padding: 0px;
+}
+
+.headerside{
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+@keyframes chainReaction {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(20px);
+	}
+}
+</style>
+
+<script>
+	const quizData = [
+    {
+      question: "What do we order here?",
+      options: ["Yogurt", "Porridge", "Cake", "Pasta"],
+      answer: "Cake",
+      img: "https://s0.geograph.org.uk/geophotos/06/61/66/6616645_303c0dbc.jpg"
+    },
+    {
+      question: "What number bus do we get into Shrewsbury?",
+      options: ["435", "24", "19", "852"],
+      answer: "435",
+      img: "https://live.staticflickr.com/65535/50025586466_da4000b1f1_b.jpg"
+    },
+    {
+      question: "What is the weather in this picture?",
+      options: ["Rainy", "Sunny", "Stormy", "Cloudy"],
+      answer: "Sunny",
+      img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/69/4e/cd/carding-mill-valley.jpg?w=500&h=-1&s=1"
+    },
+  {
+      question: "What is your favourite thing to have for dinner?",
+      options: ["Weetabix", "Cake", "Chocolate", "Pasta"],
+      answer: "Pasta",
+      img: "https://cachevalleyfamilymagazine.com/wp-content/uploads/2023/10/AdobeStock_111979999-scaled.jpeg"
+    },
+  {
+      question: "On your walk, what do you see?",
+      options: ["a waterfall", "school", "the trains", "tesco"],
+      answer: "the trains",
+      img: "https://miro.medium.com/v2/resize:fit:1400/1*FY8Scj1ufbFBzlwHI9fZ6w.jpeg"
+    },
+  ];
+  
+  const questionElement = document.getElementById("question");
+  const optionsElement = document.getElementById("options");
+  const submitButton = document.getElementById("submit");
+  const questImg = document.querySelector('.picture-container > img');
+  
+  let currentQuestion = 0;
+  let score = 0;
+  
+  function showQuestion() {
+    const question = quizData[currentQuestion];
+    questionElement.innerText = question.question;
+    questImg.src = question.img;
+    
+    optionsElement.innerHTML = "";
+    question.options.forEach(option => {
+      const button = document.createElement("button");
+      button.innerText = option;
+      optionsElement.appendChild(button);
+      button.addEventListener("click", selectAnswer);
+    });
+  }
+  
+  function selectAnswer(e) {
+    const selectedButton = e.target;
+    const answer = quizData[currentQuestion].answer;
+  
+    if (selectedButton.innerText === answer) {
+      score++;
+    }
+  
+    currentQuestion++;
+  
+    if (currentQuestion < quizData.length) {
+      showQuestion();
+    } else {
+      showResult();
+    }
+  }
+
+  
+  function showResult() {
+    quiz.innerHTML = `
+    <div class="endcontainer">
+    <div class="enditem1">
+      <h1>Yay!</h1>
+      </div>
+      <div class="enditem2">
+      <h4> Well done Sam...</h4>
+      <p>You got ${score} out of ${quizData.length} correct!</p>
+      </div>
+      <div class="enditem3">
+        <a href="/SamsQuiz" class="back">
+         more quizzes
+        </a>
+        </div>
+        </div>
+    `;
+  }
+
+showQuestion();
+</script>
