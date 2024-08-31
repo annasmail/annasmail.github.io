@@ -23,27 +23,11 @@ Title: Anna Smail
 				</ul>
 			</nav>
 		</header>
-  
-  
-    <postheader>
-      <div class="prev">
-        </div>
-      
-      
-      <div class="posttitle">
-        <h2> Kings & Queens of England </h2>
-        <p4>From 1066 to 1714.</p4>
-      </div>
-      
-       <div class="next">
-        </div>
-      
-    </postheader>
-    
-    
-    
-    
-		<body>
+<body>
+<div class="grid-container">
+   <h1>Kings & Queens of England</h1>
+   <sub>From 1066 to 1714</sub>
+</div>
 
 <div class="grid-container0"><h3>House of Normandy</h3></div>
       
@@ -312,80 +296,6 @@ h10{
   opacity: 1;
 }
 
-.prev {
-	box-sizing: border-box;
-  grid-column: 1;
-}
-.prevgrid{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 10px 10px;
-  align-items: center;
-  font-family:'Spline Sans Mono';
-  font-weight: normal;
-  color:#F5C053;
-  background-color: #FEF5DF;
-  border-radius: 25px;
-  gap: 10px;
-  height:30px;
-  width: 90px;
-  transition: 0.3s;
-}
-.prevgrid:hover{
-  color:#FEF5DF;
-  background-color: #F5C053;
-  text-decoration: none;
-}
-.prevgrid1{
-  column: 1;
-  background-image: url("../images/yellowarrow-41.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  border-radius: 15px;
-  width: 26px;
-  height: 26px;
-}
-
-
-
-
-.next {
-	box-sizing: border-box;
-	color:#008BF5;
-  grid-column: 5;
-}
-.nextgrid{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 10px 10px;
-  align-items: center;
-  color:#F5C053;
-  font-family:'Spline Sans Mono';
-  font-weight: normal;
-  background-color: #FEF5DF;
-  border-radius: 25px;
-  gap: 10px;
-  height:30px;
-  width: 90px;
-  transition: 0.3s;
-}
-.nextgrid:hover{
-  color:#FEF5DF;
-  background-color: #F5C053;
-  text-decoration: none;
-}
-.nextgrid1{
-  column: 1;
-  background-image: url("../images/yellowarrow-40.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  border-radius: 15px;
-  width: 26px;
-  height: 26px;
-}
-
 .top {
     color: #000000;
     font-family:'Spline Sans Mono';
@@ -422,6 +332,22 @@ h10{
     background-color: #F5C053;
     border-radius: 25px;
     font-weight: normal;
+}
+.grid-container{
+      text-align: left;
+	margin: 0px 180px;
+}
+sub{
+      font-family: 'Spline Sans Mono';
+      font-size: 1.2em;
+    }
+h1 {
+    font-size: 2.3em;
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.0em;
+    font-weight: bold;
+    margin: 20px 0px;
 }
 </style>
 
