@@ -1,0 +1,74 @@
+---
+Title: Anna Smail
+---
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/physicscss.css">
+		</head>
+		<header>
+			<logo>Anna Smail</logo>
+			<nav>
+	    			<ul class="nav_links">
+	        			<li><a href="/" class="btn top">Home</a></li>
+					<li><a href="/physics" class="btn topcurrent">Physics</a></li>
+					<li><a href="/EarthSciences" class="btn top">Earth Sciences</a></li>
+					<li><a href="https://github.com/annasmail" class="btn github">My Github</a></li>
+				</ul>
+			</nav>
+		</header>
+		<body>
+			
+<div class="grid-container7">
+	<div class="magnets" href="/PushingWithMagnets">
+	</div>
+	<div class="flex-item71">
+		<div class="title">
+			<h2>The Hydrogen Atom</h2>
+		</div>
+		<div class="des">
+			<a href="/physics/TheHydrogenAtom" class="btn readme">read more</a>
+	 </div>
+</div>
+	<div class="flex-item71">
+		<div class="title">
+			<h2>Kings & Queens <br> of England</h2>
+		</div>
+		<div class="des">
+			<a href="/KingsAndQueens2" class="btn readme">read more</a>
+		</div>
+</div>
+</div>
+
+
+			
+			
+</body>
+
+ <script>
+	const nav = document.querySelector('header')
+	window.addEventListener('scroll', fixNav)
+	function fixNav() {
+    	if (window.scrollY > 10) {
+        nav.classList.add('active')
+  	} else {
+        nav.classList.remove('active')
+  	}
+	}	
+  </script>
+
+  <style>
+    .magnets{
+    	background-image: url("/images/physicscover-02.png);
+      background-size: contain;
+	    border-radius: 25px;
+	    padding: 20px 0px 35px 0px;
+	    transition: 0.3s;
+    flex: 1;
+    width: 315px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+    }
+  </style>
