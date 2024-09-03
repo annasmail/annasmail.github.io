@@ -25,7 +25,12 @@ Title: Anna Smail
 		</header>
 <body>
 <div class="titlecontainer">
-   <h1><b>Kings & Queens of England</b> 1066 - 1714</h1>
+<div class="title1">
+   <h1><b>Kings & Queens of England</b></h1>
+    </div>
+    <div class="title2">
+    <h1> 1066 - 1714</h1>
+    </div>
 </div>
 
 <div class="housename"><h3>House of Normandy</h3></div>
@@ -341,8 +346,17 @@ h10{
     font-weight: normal;
 }
 .titlecontainer{
-      text-align: left;
-	margin: 0px 180px;
+  display: grid;
+  grid-template-columns: auto auto;
+	justify-content: space-between;
+  gap: 10px;
+  margin: 20px 150px;
+}
+.title1{
+  grid-column: 1;
+}
+.title2{
+  grid-column: 2;
 }
 h1 {
     font-size: 2.3em;
