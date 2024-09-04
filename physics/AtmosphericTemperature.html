@@ -75,8 +75,13 @@ Title: Anna Smail
 	<div class="clickmore" href="#" onclick="toggle()"> Click for derivation </div>
 </div>
 <div id="popup">
+	<div class="container4">
+		<div class="item4-1">
+			<p>Hello this is the first step of the derivation i am just going to keep typing to see if the text will justify and wrap properly. I dont think that was enough so here we go again.</p>
+		</div>
 		<div class="planck">
 		</div>
+	</div>
 </div>
 <div class="container3">
 <p>We can better this approximation by including a single layer atmosphere that absorbs and reemits terrestrial infrared radiation.</p>
@@ -100,8 +105,18 @@ Title: Anna Smail
 	background-image: url("../images/planck.png");
 	background-size: contain;
 	width: 400px;
-	aspect-ratio: 4/2;
+	aspect-ratio: 3/2;
 	margin: 10px auto;
+	background-repeat: no-repeat;
+	column: 2;
+}
+.container4{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.item4-1{
+	column: 1;
+	font-family: DM Sans;
 }
 .clickmore{
 	padding: 5px 15px;
