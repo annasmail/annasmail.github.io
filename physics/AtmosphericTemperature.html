@@ -54,8 +54,10 @@ Title: Anna Smail
   <div class="item1-1">
     </div>
     <div class="item1-2">
+	    <div class="greyout">
 	    <p>On the left is a plot of the Earth's atmospheric temperature. Two temperature inversions are highlighted, defining the atmospheric layers: stratosphere and thermosphere. But why does this pattern occur? Furthermore, why does temperature decrease in the troposphere and mesosphere? This post will outline the physical causes for these observations.</p>
-	    <sub>The Barometric Law</sub>
+	    </div>
+		    <sub>The Barometric Law</sub>
       <p>First, we need to derive the barometric law to describe how pressure, p, changes with altitude, z. For this, we define the rate of change of pressure as a linear decrease, proportional to gravity. We will also use the ideal gas equation.</p>
 	    $$ {\frac{dp}{dz} = -gp}\qquad{p = \frac{\rho k_B T}{\mu m_p}}\\$$
 	    </div>
@@ -84,6 +86,8 @@ sub{
 p{
 	margin: 10px 0px 10px 0px;
 	padding: 0px;
+	text-align: justify;
+  	text-justify: inter-word;
 }
 .container1{
   display: grid;
@@ -101,6 +105,12 @@ p{
 .item1-2{
   font-family: DM Sans;
   padding: 10px 30px;
+}
+.greyout{
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	margin: 0px;
+	padding: 10px 30px;
 }
 
 body {
