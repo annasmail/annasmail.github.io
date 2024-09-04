@@ -59,10 +59,10 @@ Title: Anna Smail
     </div>
     <div class="item1-2">
 		    <sub>The Barometric Law</sub>
-      <p>First, we need to derive the barometric law which can describe how certain physical attributes, such as pressure and density, change with altitude, z. For this, we define the rate of change of pressure as a function for <i>p</i> multiplied by gravitational constant, <i>g</i> (Eq.1). For the <i>p</i>-function will use <a href="https://en.wikipedia.org/wiki/Ideal_gas_law">the ideal gas equation</a> (Eq.2).</p>
-	    $$ {\frac{dp}{dz} = -gp\quad (1)}\qquad{p = \frac{\rho k_B T}{\mu m_p}\quad (2)}\\$$
-	<p>By assuming <i>T</i>, <i>u</i> and <i>g</i> as constant with respect to altitude, we can substitute (1) into (2) and integrate with respect to <i>z</i> giving (Eq.3).</p>
-	 	    $$ {p(z) = p(0)exp\left(-\frac{z}{H}\right)\quad (3)}\qquad{H = \frac{k_B T}{g \mu m_p}\quad (4)}\\$$
+      <p>First, we need to derive the barometric law which can describe how certain physical attributes, such as pressure and density, change with altitude, z. For this, we define the rate of change of pressure as a function for <i>p</i> multiplied by gravitational constant, <i>g</i> (1). For the <i>p</i>-function will use <a href="https://en.wikipedia.org/wiki/Ideal_gas_law">the ideal gas equation</a> (2).</p>
+	    $$ {\frac{dp}{dz} = -gp\quad (1)}\qquad\qquad{p = \frac{\rho k_B T}{\mu m_p}\quad (2)}\\$$
+	<p>By assuming <i>T</i>, <i>u</i> and <i>g</i> as constant with respect to altitude, we can substitute (1) into (2) and integrate with respect to <i>z</i> giving (3).</p>
+	 	    $$ {p(z) = p(0)exp\left(-\frac{z}{H}\right)\quad (3)}\qquad\qquad{H = \frac{k_B T}{g \mu m_p}\quad (4)}\\$$
 	   <p><i>H</i> is defined as the <b>atmospheric scale height</b> (8.5km for Earth). The above equation shows there is an exponential decrease in <b>pressure</b> with z and as pressure is proportional to <b>density</b> (ref. ideal gas equation) we can find the barometric law:</p>
 	    $$ {\rho(z) = \rho(0)exp \left(-\frac{z}{H} \right)\quad (5)}\\$$
 	    </div>
@@ -70,15 +70,17 @@ Title: Anna Smail
 
 <div class="container2">
 	<sub>Estimating a planet's surface temperature</sub>
-	<p>It is possible to estimate exoplanet's surface temperatures. To do so, we start with measuring the radiation emitted by their host star. By assuming that the star and planet are in radiative equilibrium, we find that the planet's <b>equilibrium temperature</b> is related to the star's <b>effective temperature</b> by the following equation.</p>
-	$$ {T_{eq} = \left(\frac{1-A_B}{4}\right)^{\frac{1}{4}}\left(\frac{R_{star}}{r}\right)^{\frac{1}{2}}}\\$$
-	<div class="clickmore" href="#" onclick="toggle()"> Click for derivation </div>
+	<p>It is possible to estimate an exoplanet's surface temperature. To do so, we start with measuring the radiation emitted by their host star. By assuming that the star and planet are in radiative equilibrium, we find that the planet's <b>equilibrium temperature</b> is related to the star's <b>effective temperature</b> by the following equation.</p>
+	$$ {T_{eq} = \left(\frac{1-A_B}{4}\right)^{\frac{1}{4}}\left(\frac{R_{star}}{r}\right)^{\frac{1}{2}}\qquad (6)}\\$$
+	<div class="clickmore" href="#" onclick="toggle()">Click for derivation!</div>
 </div>
 <div id="popup">
 	<div class="container4">
 		<div class="item4-1">
-			<p>On the right is the plot of <b>Planck's Function</b>. This describes the spectral density of electromagnetic radiation emitted by a black body (e.g. a star) and is described by the following equation. <br><br> This has then been integrated to find the equation on the right where we have defined the relationship between temperature and intensity along with the <b>Stefan-Boltzmann constant</b>.</p>
-			$${I(\lambda) = \frac{2 \pi h c^2}{\lambda^5}\frac{1}{exp\left(\frac{hc}{\lambda k_B T}\right)-1}}\qquad\qquad{I = \sigma_{SB}T^4}\\$$
+			<p>On the right is the plot of <b>Planck's Function</b>. This describes the spectral density of electromagnetic radiation emitted by a black body (e.g. a star) and is described by (6.1). </p>
+			$${I(\lambda) = \frac{2 \pi h c^2}{\lambda^5}\frac{1}{exp\left(\frac{hc}{\lambda k_B T}\right)-1}\qquad(6.1)}\\$$
+			<p>This has then been integrated to find (6.2) we have defined the relationship between temperature and intensity with the <b>Stefan-Boltzmann constant</b>.</p>
+			$${I = \sigma_{SB}T^4\qquad(6.2)}\\$$
 		</div>
 		<div class="planck">
 		</div>
@@ -105,7 +107,7 @@ Title: Anna Smail
 .planck{
 	background-image: url("../images/planck.png");
 	background-size: contain;
-	width: 400px;
+	width: 450px;
 	aspect-ratio: 3/2;
 	margin: 0px;
 	background-repeat: no-repeat;
