@@ -124,7 +124,15 @@ Title: Anna Smail
 </div>
 <div class="container6">
 	<div class="item6-1">
-		<p>Hello this is the text.</p>
+		<sub2>A simple greenhouse model</sub2>
+		<p>On the left shows a simple greenhouse model. The atmosphere is transparent to visible light, so all that is <b>not</b> reflected (1-AB) 
+		is transmitted to the planet's surface. The heated surface will re-emit radiation, but at infrared wavelengths. IR <b>is</b> absorbed
+		by the atmosphere which subsequently re-emits it - both upwards and downwards.</p>
+		<p>The goal of this section is get an equation for <b>surface temperature</b>. To start with, we state that both the atmosphere and planetary
+		surface are in radiative equilbrium, meaning radiation entering is equal to radiation emerging. Therefore we can equate the following...</p>
+		$${(1-A_B)\frac{S_{star}}{4} = \sigma_{SB}T_{at}^4 = \sigma_{SB}T_{eq}^4}\\$$
+		$${(1-A_B)\frac{S_{star}}{4} + \sigma_{SB}T_{at}^4 = \sigma_{SB}T_{eq}^4 + \sigma_{SB}T_{at}^4 = \sigma_{SB}T_{s}^4}\\$$
+		$${T_s = 2^{\frac{1}{4}}T_{eq}}\\$$
 	</div>
 	<div class="greenhouse">
 	</div>
@@ -239,6 +247,13 @@ Title: Anna Smail
 sub{
 	font-family: DM Sans;
 	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+sub2{
+	font-family: DM Sans;
+	font-size: 1.1em;
 	font-weight: bold;
 	margin: 0px;
 	padding: 0px;
