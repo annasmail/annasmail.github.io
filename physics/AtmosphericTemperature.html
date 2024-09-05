@@ -161,9 +161,7 @@ Title: Anna Smail
 </div>
 
 <div class="container8">
-  <div class="item1-3">
-    </div>
-    <div class="item1-2">
+    <div class="item8-1">
 	<sub1>Improving our model with radiative transfer</sub1>
 	<p>We can further refine our model by considering how transparent an atmosphere is to radiation or how the radiation propogates through it. For this
 	we need to start with Lambert's Law which describes how radiation intensity changes as particle number density changes with altitude <i>(n(z))</i>.</p>
@@ -171,9 +169,11 @@ Title: Anna Smail
 	<p>We can integrate this and identify a new variable <i>chi</i> for <i>optical depth</i>. It is defined as equal to 0 at the top of the atmosphere and
 	increases with decreasing altitude.</p>
 	$${\chi = \int_z^{\infty}kn(z)dz}\qquad (10) \qquad\qquad {I(z) = I(\infty) exp(-\chi)}\qquad (11)\\$$
-	<div class="clickmore" href="#" onclick="toggle2()">Click for derivation!</div>
-	    </div>
+	</div>
+    <div class="item8-2">
+    </div>
 </div>
+<div class="clickmore" href="#" onclick="toggle2()">Click for derivation!</div>
 <div id="popup2">
 	<div class="container4">
 		<div class="item4-1">
@@ -205,18 +205,23 @@ Title: Anna Smail
   margin: 10px 180px;
   gap: 10px;
 }
+.item8-1{
+  background-image: url("../images/twostream-03.png");
+  grid-column: 2;
+  width: 100%;
+  aspect-ratio: 380/230;
+  background-size: cover;
+}
+.item8-2{
+  font-family: DM Sans;
+  padding: 10px 30px;
+  grid-column: 1;
+}
 .container7 {
   border-radius: 30px;
   margin: 30px 180px 15px 180px;
   justify-content: left;
   text-align: left;
-}
-.item1-3{
-  background-image: url("../images/twostream-03.png");
-  column: 1;
-  width: 100%;
-  aspect-ratio: 380/230;
-  background-size: cover;
 }
 table {
   margin: 20px 0px;
