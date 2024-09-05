@@ -159,6 +159,29 @@ Title: Anna Smail
 	warms the surface. Finally, Mars' calculated value is quite a bit colder than we would expect. This suggests that its' atmosphere is thinner and absorbs less
 	IR radiation. All of these inferences turn out to be correct!</p>
 </div>
+
+<div class="container2">
+	<sub1>Improving our model with radiative transfer</sub1>
+	<p>We can further refine our model by considering how transparent an atmosphere is to radiation or how the radiation propogates through it. For this
+	we need to start with Lambert's Law which describes how radiation intensity changes as particle number density changes with altitude (n(z)).</p>
+	$${dI = Ikn(z)dz}\qquad (9)\\$$
+	<p>We can integrate this and identify a new variable <i>chi</i> for <i>optical depth</i>. It is defined as equal to 0 at the top of the atmosphere and
+	increases with decreasing altitude.</p>
+	$${\chi = \int_z^{\infty}kn(z)dz}\qquad (10) \qquad\qquad {I(z) = I(\infty) exp(-\chi)}\qquad (11)\\$$
+	<div class="clickmore" href="#" onclick="toggle2()">Click for derivation!</div>
+</div>
+<div id="popup2">
+	<div class="container4">
+		<div class="item4-1">
+			<p> </p> 
+		</div>
+		<div class="planck">
+		</div>
+	</div>
+	<div class="container5">
+		<p></p>
+	</div>
+</div>
 	
 </body>
     
@@ -596,6 +619,10 @@ postheader > div {
 <script>
 	    function toggle(){
     var popup = document.getElementById('popup');
+    popup.classList.toggle('active');
+  }
+function toggle2(){
+    var popup = document.getElementById('popup2');
     popup.classList.toggle('active');
   }
 	
