@@ -173,6 +173,13 @@ Title: Anna Smail
     <div class="item8-1">
     </div>
 </div>
+<div class="container2">
+	<p>We can now find the <b>radiative transfer equation</b> which allows us to include changes in radiation intensity due to atmospheric absorption. First we
+	should use (9) to find the total change in radiation intensity due to changes in atmospheric absorption <i>and</i> emission respectively.</p>
+	$${dI = dI_{em} - dI_{ab} = I_{em}kn(z)dz - I_{ab}kn(z)dz = \sigma_{SB}T^4(z) - I_{ab}kn(z)dz}\qquad (12)\\$$
+	<p>We can then use (10) to define an equation that describes the rate of change of radiation with optical depth, or the radiative transfer equation:</p>
+	$${\frac{dI}{d\chi} = I-\sigma_{SB}T^4(\chi)}\qquad (13)\\$$
+</div>
 <div class="clickmore" href="#" onclick="toggle2()">Click for derivation!</div>
 <div id="popup2">
 	<div class="container4">
@@ -203,7 +210,7 @@ Title: Anna Smail
   display: grid;
   grid-template-columns: auto auto;
   margin: 10px 180px;
-  gap: 10px;
+  gap: 20px;
 }
 .item8-1{
   background-image: url("../images/twostream-03.png");
