@@ -163,7 +163,7 @@ Title: Anna Smail
 <div class="container2">
 	<sub1>Improving our model with radiative transfer</sub1>
 	<p>We can further refine our model by considering how transparent an atmosphere is to radiation or how the radiation propogates through it. For this
-	we need to start with Lambert's Law which describes how radiation intensity changes as particle number density changes with altitude (n(z)).</p>
+	we need to start with Lambert's Law which describes how radiation intensity changes as particle number density changes with altitude <i>(n(z))</i>.</p>
 	$${dI = Ikn(z)dz}\qquad (9)\\$$
 	<p>We can integrate this and identify a new variable <i>chi</i> for <i>optical depth</i>. It is defined as equal to 0 at the top of the atmosphere and
 	increases with decreasing altitude.</p>
@@ -173,13 +173,13 @@ Title: Anna Smail
 <div id="popup2">
 	<div class="container4">
 		<div class="item4-1">
-			<p> </p> 
+			<p>hello this is the derivation</p> 
 		</div>
 		<div class="planck">
 		</div>
 	</div>
 	<div class="container5">
-		<p></p>
+		<p>hello again</p>
 	</div>
 </div>
 	
@@ -310,6 +310,31 @@ tr:hover {background-color: #EEF6FF;}
 }
 
 #popup.active{
+  padding: 0px;
+  height: auto;
+  visibility: visible;
+  margin: 10px 180px;
+  opacity: 1;
+}
+#popup2{
+  padding: 0px;
+  margin: 0px 180px;
+  padding: 0px;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 999;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: DM Sans;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  background-color: #FAFAFA;
+}
+
+#popup2.active{
   padding: 0px;
   height: auto;
   visibility: visible;
