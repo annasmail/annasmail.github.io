@@ -172,18 +172,11 @@ Title: Anna Smail
 		the change in radiation intensity due to absorption from emission as it passes through a thin atmospheric layer of thickness <i>dz</i>.
 		We can then use (10) to define an equation that describes the rate of change of radiation with optical depth, or the radiative transfer equation (13).</p>
 	$${dI = dI_{em} - dI_{ab} = I_{em}kn(z)dz - I_{ab}kn(z)dz = \sigma_{SB}T^4(z) - I_{ab}kn(z)dz}\qquad (12) \qquad \qquad {\frac{dI}{d\chi} = I-\sigma_{SB}T^4(\chi)}\qquad (13)\\$$
-</div>
-<div class="container8">
-    <div class="item8-2">
-	<sub1>Improving our model with radiative transfer</sub1>
-	<p>We can further refine our model by considering how transparent an atmosphere is to radiation or how the radiation propogates through it. For this
-	we need to start with Lambert's Law which describes how radiation intensity changes as particle number density changes with altitude <i>(n(z))</i>. We can integrate this and identify a new variable <i>chi</i> 
-		for <i>optical depth</i>. It is defined as equal to 0 at the top of the atmosphere and
-	increases with decreasing altitude.</p>
-	$${dI = Ikn(z)dz} \qquad \qquad {\chi = \int_z^{\infty}kn(z)dz} \qquad\qquad {I(z) = I(\infty) exp(-\chi)}\qquad (9,10,11)\\$$
-	</div>
-    <div class="item8-1">
-    </div>
+	<p>Now we can use the radiative transfer equation to construct a <b>two stream approximation</b>. From here we can create a better model for estimating
+	surface temperature - it will be more accurate than that used in (8) as it takes an atmosphere's optical depth into consideration. As outlined underneath 
+	Table 1, the main issue with the simple greenhouse model was that it didn't consider the atmosphere's characteristics and its' interaction with radiation. Following a
+	derivation (see below), we obtain the (14).</p>
+	$${\frac{dI}{d\chi}=I-\sigma_{SB}T^4(\chi)}\qquad (14)\\$$
 </div>
 <div class="clickmore" href="#" onclick="toggle2()">Click for derivation!</div>
 <div id="popup2">
@@ -197,6 +190,19 @@ Title: Anna Smail
 	<div class="container5">
 		<p>hello again</p>
 	</div>
+</div>
+
+<div class="container8">
+    <div class="item8-2">
+	<sub1>Improving our model with radiative transfer</sub1>
+	<p>We can further refine our model by considering how transparent an atmosphere is to radiation or how the radiation propogates through it. For this
+	we need to start with Lambert's Law which describes how radiation intensity changes as particle number density changes with altitude <i>(n(z))</i>. We can integrate this and identify a new variable <i>chi</i> 
+		for <i>optical depth</i>. It is defined as equal to 0 at the top of the atmosphere and
+	increases with decreasing altitude.</p>
+	$${dI = Ikn(z)dz} \qquad \qquad {\chi = \int_z^{\infty}kn(z)dz} \qquad\qquad {I(z) = I(\infty) exp(-\chi)}\qquad (9,10,11)\\$$
+	</div>
+    <div class="item8-1">
+    </div>
 </div>
 	
 </body>
