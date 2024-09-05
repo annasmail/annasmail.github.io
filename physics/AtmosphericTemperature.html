@@ -182,20 +182,10 @@ Title: Anna Smail
 
 <div id="popup2">
 	<div class="container8">
-		<div class="item8-1">
-			<p>The aim of this derivation is to find atmospheric temperature as a function of optical depth.</p> 
-			$${I_u - I_d = (1-A_B)\frac{S_{star}}{4} = \sigma_{SB}T^4(\chi)} \qquad {I_u +I_d = 2\sigma_{SB}T^4(\chi)}\\$$
-			<p>Use (13) to find the rate of change of upwards and downwards IR intensities.</p>
-			$${\frac{dI_u}{d\chi}=I_u - \sigma_{SB}T^4(\chi) \qquad -\frac{dI_d}{d\chi}=I_d - \sigma_{SB}T^4(\chi)}\\$$
-			<p>By finding Iu + Id and Iu - Id and substituting, we can obtain the following.</p>
-			$${\frac{d}{d\chi}(I_u+I_d) = \sigma T_{eq}^4 = 2\sigma_{SB}\frac{dT^4(\chi)}{d\chi}}\\$$
-		</div>
-		<div class="item8-2">
-		</div>
-	</div>
-	<div class="container5">
-		<p>We now need to use the chain rule and integrate the left hand side with respect to optical depth, this isn't shown but the result is:</p>
-		$${T^4(\chi)=T^4(0)+\frac{T_{eq}^\chi}{2}}\\$$
+		$${I_u - I_d = (1-A_B)\frac{S_{star}}{4}=\sigma_{SB}T_{eq}^4}\\$$
+		$${radiative transfer equation: \qquad \frac{dI_u}{d\chi} = I_u = \sigma T^4(\chi) \qquad -\frac{dI_d}{d\chi} = I_d = \sigma T^4(\chi)}\\$$
+		$${\frac{d}{d\chi}(I_u-I_d) \qquad \Rightarrow \qquad I_u + I_d = 2 \sigma_{SB} T^4(\chi)}\\$$
+		$${\frac{d}{d\chi}(I_u+I_d) \qquad \Rightarrow \qquad I_u - I_d = 2 \sigma_{SB} T_{eq}^4}\\$$
 	</div>
 </div>
 	
@@ -216,9 +206,6 @@ Title: Anna Smail
 	font-family: DM Sans;
 }
 .container8{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
   padding: 15px 15px 15px 25px;
 }
 .item8-2{
