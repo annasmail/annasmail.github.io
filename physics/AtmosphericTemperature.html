@@ -59,27 +59,39 @@ Title: Anna Smail
     </div>
     <div class="item1-2">
 		    <sub>The Barometric Law</sub>
-      <p>First, we need to derive the barometric law which can describe how certain physical attributes, such as pressure and density, change with altitude, z. For this, we define the rate of change of pressure as a function for <i>p</i> multiplied by gravitational constant, <i>g</i> (1). For the <i>p</i>-function will use <a href="https://en.wikipedia.org/wiki/Ideal_gas_law">the ideal gas equation</a> (2).</p>
+      <p>First, we need to derive the barometric law which can describe how certain physical attributes, such as pressure and density, 
+	      change with altitude, z. For this, we define the rate of change of pressure as a function for <i>p</i> multiplied by 
+	      gravitational constant, <i>g</i> (1). For the <i>p</i>-function will use 
+	      <a href="https://en.wikipedia.org/wiki/Ideal_gas_law">the ideal gas equation</a> (2).</p>
 	    $$ {\frac{dp}{dz} = -gp\quad (1)}\qquad\qquad{p = \frac{\rho k_B T}{\mu m_p}\quad (2)}\\$$
-	<p>By assuming <i>T</i>, <i>u</i> and <i>g</i> as constant with respect to altitude, we can substitute (1) into (2) and integrate with respect to <i>z</i> giving (3).</p>
+	<p>By assuming <i>T</i>, <i>u</i> and <i>g</i> as constant with respect to altitude, we can substitute (1) into (2) and integrate with 
+		respect to <i>z</i> giving (3).</p>
 	 	    $$ {p(z) = p(0)exp\left(-\frac{z}{H}\right)\quad (3)}\qquad\qquad{H = \frac{k_B T}{g \mu m_p}\quad (4)}\\$$
-	   <p><i>H</i> is defined as the <b>atmospheric scale height</b> (8.5km for Earth). The above equation shows there is an exponential decrease in <b>pressure</b> with z and as pressure is proportional to <b>density</b> (ref. ideal gas equation) we can find the barometric law:</p>
+	   <p><i>H</i> is defined as the <b>atmospheric scale height</b> (8.5km for Earth). The above equation shows there is an exponential 
+		   decrease in <b>pressure</b> with z and as pressure is proportional to <b>density</b> (ref. ideal gas equation) we can find 
+		   the barometric law:</p>
 	    $$ {\rho(z) = \rho(0)exp \left(-\frac{z}{H} \right)\quad (5)}\\$$
 	    </div>
   </div>
 
 <div class="container2">
 	<sub>Estimating a planet's surface temperature</sub>
-	<p>It is possible to estimate an exoplanet's surface temperature. To do so, we start with measuring the radiation emitted by their host star. By assuming that the star and planet are in radiative equilibrium, we find that the planet's <b>equilibrium temperature</b> is related to the star's <b>effective temperature</b> by the following equation.</p>
+	<p>It is possible to estimate an exoplanet's surface temperature. To do so, we start with measuring the radiation 
+		emitted by their host star. By assuming that the star and planet are in radiative equilibrium, we find that the planet's 
+		<b>equilibrium temperature</b> is related to the star's <b>effective temperature</b> by the following equation.</p>
 	$$ {T_{eq} = \left(\frac{1-A_B}{4}\right)^{\frac{1}{4}}\left(\frac{R_{star}}{r}\right)^{\frac{1}{2}}\qquad (6)}\\$$
 	<div class="clickmore" href="#" onclick="toggle()">Click for derivation!</div>
 </div>
 <div id="popup">
 	<div class="container4">
 		<div class="item4-1">
-			<p>On the right is the plot of <b>Planck's Function</b>. This describes the spectral density of electromagnetic radiation emitted by a black body (e.g. a star) and is described by (6.1). </p>
+			<p>On the right is the plot of <b>Planck's Function</b> representing 3 bodies with different temperatures. It describes the intensity
+				of the electromagnetic radiation emitted by each body and is described by (6.1). </p>
 			$${I(\lambda) = \frac{2 \pi h c^2}{\lambda^5}\frac{1}{exp\left(\frac{hc}{\lambda k_B T}\right)-1}\qquad(6.1)}\\$$
-			<p>This has then been integrated to find (6.2) we have defined the relationship between temperature and intensity with the <b>Stefan-Boltzmann constant</b>.</p>
+			<p>This equation is for bodies that act similarly to <b>black bodies</b> such as stars. A black body is an object that absorbs <i>all</i>
+				incident radiation upon it and then re-emits it as a spectrum based on the temperature of the body. 
+			<p>(6.1) has then been integrated to find (6.2) where we have defined the relationship between temperature and intensity 
+				with the <b>Stefan-Boltzmann constant</b>.</p>
 			$${I = \sigma_{SB}T^4\qquad(6.2)}\\$$
 		</div>
 		<div class="planck">
