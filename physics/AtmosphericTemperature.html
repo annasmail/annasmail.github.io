@@ -106,7 +106,13 @@ Title: Anna Smail
 			<p><b>T(eq)</b>&emsp;Equilbrium temperature, the temperature of a planet assuming its it <i>radiative equilbrium</i> with its host star.</p>
 		</div>
 		<p>Now we need to define luminosity, <i>L</i> and intensity at a distance from a star, <i>S</i>, as:</p>
-		$${I_{star} = \sigma_{SB}T_{eff}^4}\qquad{L_{star} = 4\pi R_{star}^2 I_{star}}\qquad{S_{star} = \frac{L_{star}}{4\pi r^2}}\\$$
+		$${I_{star} = \sigma_{SB}T_{eff}^4}\qquad{L_{star} = 4\pi R_{star}^2 I_{star}}\qquad{S_{star} = \frac{L_{star}}{4\pi r^2}}\qquad(6.3,.4,.5)\\$$
+		<p>The intensity re-emitted by a planet is dependent on a few things. First, it will reflect a fraction of the incoming radition (<i>AB</i>)
+		and so will absorb 1-<i>AB</i>. Also, the radiation is only incident on the cross sectional area of the planet, but will emit radiation 
+		over its' entire surface area, so we account for that with (6.6). Putting this altogether gives (6.7).</p>
+		$${\frac{\pi R_p^2}{4\pi R_p^2}}\qquad(6.6)\qquad\qquad{(1-A_B)\frac{S_{star}}{4} = I_p = \sigma_{SB}T_{eq}^4}\qquad(6.7)\\$$
+		<p>We can then substitute (6.5) in to (6.7) to obtain our final equation...</p>
+		$$ {T_{eq} = \left(\frac{1-A_B}{4}\right)^{\frac{1}{4}}\left(\frac{R_{star}}{r}\right)^{\frac{1}{2}}\qquad (6)}\\$$
 	</div>
 </div>
 <div class="container3">
@@ -139,7 +145,7 @@ Title: Anna Smail
 	border-radius: 20px;
 }
 .definitions{
-	padding: 10px 20px;
+	padding: 10px 30px;
 	margin: 5px 80px;
 	font-family: DM Sans;
 	background-color: #F5F5F5;
