@@ -175,7 +175,7 @@ Title: Anna Smail
 	<p>Now we can use the radiative transfer equation to construct a <b>two stream approximation</b>. From here we can create a better model for estimating
 	surface temperature - it will be more accurate than that used in (8) as it takes an atmosphere's optical depth into consideration. As outlined underneath 
 	Table 1, the main issue with the simple greenhouse model was that it didn't consider the atmosphere's characteristics and its' interaction with radiation. Following a
-	derivation (see below), we obtain the (14).</p>
+	derivation (see below), we obtain (14).</p>
 	$${T_s = \left(1+ \frac{\chi_s}{2} \right)^{\frac{1}{4}}T_{eq}}\qquad (14)\\$$
 	<div class="clickmore" href="#" onclick="toggle2()">Click for derivation!</div>
 </div>
@@ -183,13 +183,17 @@ Title: Anna Smail
 <div id="popup2">
 	<div class="container8">
 		<div class="item8-1">
-			<p>hello this is the derivation this is just a test will it wrap or wont it i am not sure i hope this is enough okay i am going to stop now.</p> 
+			<p>The aim of this derivation is to find atmospheric temperature as a function of optical depth.</p> 
+			$${I_u - I_d = (1-A_B)\frac{S_{star}}{4} = \sigma_{SB}T^4(\chi)} \qquad {I_u +I_d = 2\sigma_{SB}T^4(\chi)}\\$$
+			$${\frac{dI_u}{d\chi}=I_u - \sigma_{SB}T^4(\chi) \qquad -\frac{dI_d}{d\chi}=I_d - \sigma_{SB}T^4(\chi)}\\$$
+			$${\frac{d}{d\chi}(I_u+I_d)=\sigmaT_{eq}^4 = 2\sigma_{SB}\frac{dT^4(\chi)}{d\chi}}\\$$
 		</div>
 		<div class="item8-2">
 		</div>
 	</div>
 	<div class="container5">
-		<p>hello again</p>
+		<p>We now need to use the chain rule and integrate the left hand side with respect to optical depth, this isn't shown but the result is:</p>
+		$${T^4(\chi)=T^4(0)+\frac{T_{eq}^\chi}{2}}\\$$
 	</div>
 </div>
 	
