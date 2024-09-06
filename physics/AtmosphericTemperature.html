@@ -175,8 +175,8 @@ Title: Anna Smail
 	<p>Now we can use the radiative transfer equation to construct a <b>two stream approximation</b>. From here we can create a better model for estimating
 	surface temperature - it will be more accurate than that used in (8) as it takes an atmosphere's optical depth into consideration. As outlined underneath 
 	Table 1, the main issue with the simple greenhouse model was that it didn't consider the atmosphere's characteristics and its' interaction with radiation. Following a
-	derivation (see below), we obtain (14).</p>
-	$${T_s = \left(1+ \frac{\chi_s}{2} \right)^{\frac{1}{4}}T_{eq}}\qquad (14)\\$$
+	derivation (see below), we obtain (14) and (15).</p>
+	$${T^4(\chi)=\left(\frac{1+\chi}{2}\right)T_{eq}^4}\qquad (14) \qquad \qquad {T_s = \left(1+ \frac{\chi_s}{2} \right)^{\frac{1}{4}}T_{eq}}\qquad (15)\\$$
 	<div class="clickmore" href="#" onclick="toggle2()">Click for derivation!</div>
 </div>
 
@@ -215,11 +215,24 @@ Title: Anna Smail
 		$${I_u = \sigma_{SB}T^4(\chi_s)+ \frac{\sigma_{SB}T_{eq}^4}{2} = \sigma_{SB}T_s^4}\\$$
 		Simplifying this gives us:
 		$${T^4(\chi_s) = T_s^4 - \frac{T_{eq}^4}{2}}\\$$
-		Finally we use add this to F and obtain: 
-		<div class="highlight2">$${T_s = \left(1+\frac{\chi_s}{2}\right)^{\frac{1}{4}}T_{eq}}\\$$</div>
+		Finally we add this to F and obtain: 
+		<div class="highlight">$${T_s = \left(1+\frac{\chi_s}{2}\right)^{\frac{1}{4}}T_{eq}}\\$$</div>
 	</div>
 </div>
-	
+<div class="container11">
+	<div class="item11-1">
+		<sub2>Radiative heat transport</sub2>
+		<p>Now we refer back to barometric law (5) to find temperature as a function of altitude, <i>z</i>. We can do this 
+		because optical depth is directly proportional to number density and hence pressure. </p>
+		$${\chi(z) = \chi_s exp\left(-\frac{z}{H}\right)}\\$$
+		Substituting this into (14) we find the following equation which is plotted on the right.
+		$${T(z) = \left(\frac{1+ \chi_s exp(-\frac{z}{H})}{2}\right)^{\frac{1}{4}}T_{eq}}\\$$
+		While this model is successful at some parts, it also has two problems: it does not account for the <b>temperature inversions</b> 
+		and it has a <b>discontinuity</b> at the surface due to the atmosphere being warmed by <b>conduction</b> there.
+	</div>
+	<div class="justrad">
+	</div>
+</div>
 </body>
     
 
@@ -232,6 +245,24 @@ Title: Anna Smail
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+.container11{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 10px 180px;
+  gap: 15px;
+}	
+.justrad{
+  background-image: url("../images/justrad.png");
+  grid-column: 2;
+  width: 100%;
+  aspect-ratio: 576/432;
+  background-size: cover;
+}
+.item11-1{
+  font-family: DM Sans;
+  padding: 0px;
+  grid-column: 1;
+}	
 .twostream{
   background-image: url("../images/twostream-03.png");
   width: 35%;
@@ -242,17 +273,6 @@ Title: Anna Smail
 }
 .highlight{
   border: 2px solid #ccc;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  font-size: 1.1em;
-  width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.highlight2{
-  border: 2px solid #fff;
-  background-color: #fff;
   margin-top: 20px;
   margin-bottom: 15px;
   border-radius: 15px;
