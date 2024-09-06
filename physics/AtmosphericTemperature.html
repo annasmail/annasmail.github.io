@@ -227,10 +227,27 @@ Title: Anna Smail
 		$${\chi(z) = \chi_s exp\left(-\frac{z}{H}\right)}\\$$
 		Substituting this into (14) we find the following equation which is plotted on the right.
 		$${T(z) = \left(\frac{1+ \chi_s exp(-\frac{z}{H})}{2}\right)^{\frac{1}{4}}T_{eq}}\\$$
-		While this model is successful at some parts, it also has two problems: it does not account for the <b>temperature inversions</b> 
+		While this model is useful for understanding temperature profiles, it also has two problems: it does not account for the <b>temperature inversions</b> 
 		and it has a <b>discontinuity</b> at the surface due to the atmosphere being warmed by <b>conduction</b> there.
 	</div>
 	<div class="justrad">
+	</div>
+</div>
+
+<div class="container9">
+	<sub2>Convective heat transport</sub2>
+	<p>Convection is the transport of energy through bulk motion of matter in the atmosphere, as opposed to the microscopic interactions responsible for radiative
+	energy transport. To derive the role convection plays in atmospheric heating, we consider an air parcel that expands and condenses <b>adiabatically</b> (no
+	heat transfer). Using the following equations,</p>
+	$${dU = dQ - dW}\qquad{pV = Nk_B T}\qquad{R = C_p - C_v = \frac{Nk_B}{m}}\qquad{\frac{dP}{dz}=-g\rho}\\$$
+	<p>we find an expression for the vertical temperature gradient in an atmosphere dominated by convection, where we have defined a new variable as the 
+	<b>dry adiabatic lapse rate</b>. This is a measure of the rate at which gas cools (Kelvin per km).</p>
+	$${\frac{dT}{dz}=-\frac{g}{C_p} = \Gamma_d}\\$$
+	<p>There is also the moist and average adiabatic lapse rates that differ to the dry rate due to the presence of gases that condense as a parcel cools and
+	rises. The point at which the <i>average</i> adiabatic lapse rate and radiative equilibrium model cross (see below), roughly marks the tropopause.</p>
+	<div class="container9-1">
+	<div class="DALR"></div>
+	<div class="2SvsAALR"></div>
 	</div>
 </div>
 </body>
@@ -245,6 +262,28 @@ Title: Anna Smail
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+.container9-1{
+	margin: 0px;
+	display: grid;
+	grid-template-column: auto auto;
+	gap: 20px;
+}
+.DALR{
+  background-image: url("../images/DALR-04.png");
+  width: 100%;
+  aspect-ratio: 450/250;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 25px auto;
+}
+.2SvsAALR{
+  background-image: url("../images/2SvsAALR.png");
+  width: 100%;
+  aspect-ratio: 576/432;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 25px auto;
+}
 .container11{
   display: grid;
   grid-template-columns: 3fr 1fr;
