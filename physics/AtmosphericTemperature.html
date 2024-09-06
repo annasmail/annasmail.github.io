@@ -183,24 +183,39 @@ Title: Anna Smail
 <div id="popup2">
 	<div class="twostream"></div>
 	<div class="container8">
+		First we assume there is radiative equilibrium and equate upwards to downwards radiation.
 		$${I_u - I_d = (1-A_B)\frac{S_{star}}{4}=\sigma_{SB}T_{eq}^4}\\$$
+		Next we use the radiative transfer equation for upwards and downwards radiation.
 		$${Eq.13: \qquad \frac{dI_u}{d\chi} = I_u = \sigma T^4(\chi) \qquad -\frac{dI_d}{d\chi} = I_d = \sigma T^4(\chi)}\\$$
+		Now we add these equations...
 		$${\frac{d}{d\chi}(I_u-I_d) \qquad \Rightarrow \qquad I_u + I_d = 2 \sigma_{SB} T^4(\chi)} \qquad (A)\\$$
+		and also subtract them...
 		$${\frac{d}{d\chi}(I_u+I_d) \qquad \Rightarrow \qquad I_u - I_d = \sigma_{SB} T_{eq}^4} \qquad (B)\\$$
+		to find equations A and B. From here, the derivation splits in two:
 	</div>
 	<div class="container10">
 		<div class="item10-1">
-			Substitute A into B
+			Here we substitute A into B,
 			$${\frac{d}{d\chi}(2\sigma_{SB}T^4(\chi)) = \sigma_{SB}T_{eq}^4}\\$$
-			Perform the chain rule to integrate
-			<div class="highlight">$${T^4(\chi) = T^4(0)+\frac{T_{eq}^4\chi}{2}}\\$$</div>
+			and then perform the chain rule to obtain:
+			<div class="highlight">$${T^4(\chi) = T^4(0)+\frac{T_{eq}^4\chi}{2}}\qquad(C)\\$$</div>
 		</div>
 		<div class="item10-2">
 			$${\left[I_u - I_d = \sigma_{SB}T_{eq}^4\right] + \left[I_u + I_d = \sigma_{SB}T^4(\chi)\right]}\\$$
-			$${\Rightarrow \quad I_u = \sigma_{SB}T^4(\chi)+ \frac{\sigma_{SB}T_{eq}^4}{2}}\\$$
+			<div class="highlight">$${\Rightarrow \quad I_u = \sigma_{SB}T^4(\chi)+ \frac{\sigma_{SB}T_{eq}^4}{2}}\qquad(D)\\$$</div>
 			$${\chi = 0, \quad I_u = (1 - A_B)\frac{S_{star}}{4} \quad \Rightarrow \quad \sigma_{SB}T^4(0)+\frac{\sigma_{SB}T_{eq}^4}{2}=\sigma_{SB}T_{eq}^4}\\$$
-			<div class="highlight">$${\Rightarrow \quad T^4(0) = \frac{\sigma_{SB}T_{eq}^4}{2}}\\$$</div>
+			<div class="highlight">$${\Rightarrow \quad T^4(0) = \frac{\sigma_{SB}T_{eq}^4}{2}}\qquad(E)\\$$</div>
 		</div>
+	</div>
+	<div class="container8">
+		Now we can substitute E into C to give us atmospheric temperature as a function of optical depth:
+		<div class="highlight">$${T^4(\chi)=\Left(\frac{1+\chi}{2}\Right)T_{eq}^4}\qquad (F)\\$$</div>
+		To obtain an equation for surface temperature, we set optical depth = surface optical depth in D and equate it to outgoing surface radiation:
+		$${I_u = \sigma_{SB}T^4(\chi_s)+ \frac{\sigma_{SB}T_{eq}^4}{2} = \sigma_{SB}T_s^4}\\$$
+		Simplifying this gives us:
+		$${T^4(\chi_s) = T_s^4 - \frac{T_{eq}^4}{2}}\\$$
+		Finally we use add this to F and obtain: 
+		<div class="highlight">$${T_s = \Left(1+\frac{\chi_s}{2}\Right)^{\frac{1}{4}}T_{eq}}\$$</div>
 	</div>
 </div>
 	
@@ -218,10 +233,10 @@ Title: Anna Smail
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 .twostream{
   background-image: url("../images/twostream-03.png");
-  width: 60%;
+  width: 35%;
   aspect-ratio: 380/230;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 15px auto;
 }
 .highlight{
