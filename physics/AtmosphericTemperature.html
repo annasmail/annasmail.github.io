@@ -182,6 +182,7 @@ Title: Anna Smail
 
 <div id="popup2">
 	<div class="container8">
+		
 		$${I_u - I_d = (1-A_B)\frac{S_{star}}{4}=\sigma_{SB}T_{eq}^4}\\$$
 		$${Eq.13: \qquad \frac{dI_u}{d\chi} = I_u = \sigma T^4(\chi) \qquad -\frac{dI_d}{d\chi} = I_d = \sigma T^4(\chi)}\\$$
 		$${\frac{d}{d\chi}(I_u-I_d) \qquad \Rightarrow \qquad I_u + I_d = 2 \sigma_{SB} T^4(\chi)} \qquad (A)\\$$
@@ -192,13 +193,13 @@ Title: Anna Smail
 			Substitute A into B
 			$${\frac{d}{d\chi}(2\sigma_{SB}T^4(\chi)) = \sigma_{SB}T_{eq}^4}\\$$
 			Perform the chain rule to integrate
-			$${T^4(\chi) = T^4(0)+\frac{T_{eq}^4\chi}{2}}\\$$
+			<div class="highlight">$${T^4(\chi) = T^4(0)+\frac{T_{eq}^4\chi}{2}}\\$$</div>
 		</div>
 		<div class="item10-2">
 			$${\left[I_u - I_d = \sigma_{SB}T_{eq}^4\right] + \left[I_u + I_d = \sigma_{SB}T^4(\chi)\right]}\\$$
 			$${\Rightarrow \quad I_u = \sigma_{SB}T^4(\chi)+ \frac{\sigma_{SB}T_{eq}^4}{2}}\\$$
 			$${\chi = 0, \quad I_u = (1 - A_B)\frac{S_{star}}{4} \quad \Rightarrow \quad \sigma_{SB}T^4(0)+\frac{\sigma_{SB}T_{eq}^4}{2}=\sigma_{SB}T_{eq}^4}\\$$
-			$${\Rightarrow \quad T^4(0) = \frac{\sigma_{SB}T_{eq}^4}{2}}\\$$
+			<div class="highlight">$${\Rightarrow \quad T^4(0) = \frac{\sigma_{SB}T_{eq}^4}{2}}\\$$</div>
 		</div>
 	</div>
 </div>
@@ -215,6 +216,15 @@ Title: Anna Smail
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+.highlight{
+  border: 2px solid #ccc;
+  margin-top: 20px;
+  border-radius: 15px;
+  font-size: 1.2em;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .container9{
 	margin: 30px 180px 5px 180px;
 	font-family: DM Sans;
@@ -232,7 +242,9 @@ Title: Anna Smail
 	text-align: center;
 	background-color: #f5f5f5;
 	border-radius: 20px;
-	padding: 15px;
+	padding: 30px 15px;
+	font-family: DM Sans;
+  	font-size: 0.8em;
 }
 .item10-2{
 	grid-column: 2;
@@ -241,10 +253,14 @@ Title: Anna Smail
 	background-color: #f5f5f5;
 	border-radius: 20px;
 	padding: 15px;
+	font-size: 0.8em;
 }
 .container8{
   padding: 15px 15px 15px 25px;
   width: 100%;
+  text-align: center;
+  line-height: 0.7em;
+  font-size: 0.8em;
 }
 .container7 {
   border-radius: 30px;
