@@ -246,12 +246,11 @@ Title: Anna Smail
 	<p>There is also the moist and average adiabatic lapse rates that differ to the dry rate due to the presence of gases that condense as a parcel cools and
 	rises. The point at which the <i>average</i> adiabatic lapse rate and radiative equilibrium model cross (see below), roughly marks the tropopause.</p>
 	<p>So is the troposphere dominated by convection or radiative heat transport? If radiative equilibrium is established, a gas parcel that is warmed 
-	at the planetary surface will rise and cool at the <b>average adiabatic lapse rate</b> until it reaches an altitude of equal temperature. This is the
+	at the planetary surface will rise and cool at the <i>average</i> adiabatic lapse rate until it reaches an altitude of equal temperature. This is the
 	process of heat transport by convection and the gas parcel is said to be <b>unstable against convection</b>.</p>
 	<p>When the parcel becomes cooler than its surroundings, it will start to sink. This altiitude is defined as the point where radiative equilibrium and
 	average ALR intersect on the plot below (the tropopause). Above this altitude, a gas parcel will be <b>stable against convection</b> and radiative transfer 
-	dominates how heat is transported.</p>
-	<p>We thereore conclude that convective heat transport dominates the troposphere.</p>
+	dominates how heat is transported. We therefore conclude that convective heat transport dominates the troposphere.</p>
 	<div class="container9-1">
 	<div class="DALR"></div>
 	<div class="SvsAALR"></div>
@@ -260,7 +259,14 @@ Title: Anna Smail
 
 <div class="container9">
 	<sub1>Temperature Inversions</sub1>
-	<p>Now we can use some of the derived equations to explain why temperature inversions occur in the thermosphere and stratosphere. </p>
+	<p>Now we can use some of our derived equations to explain why temperature inversions occur in the thermosphere and stratosphere.</p> 
+	<p>In the thermosphere, atomic oxygen dominates. Its' first electron ionisation potential is 13.6eV which corresponds to a wavelength of 
+	roughly 100 nm. This means that energetic photons such as X-rays and EUVs strongly ionise <b>and heat</b> the oxygen atoms.</p>
+	<p>If we refer back to Lambert's Law, (9), and the barometric law, (5), we can create an altitude-dependant function of EUV intensity as it 
+	propogates through the thermosphere. </p>
+	$${n_O(z) = n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)} \qquad \qquad {I_{EUV}(z) = I_{EUV}(\infty)exp\left(-H_O k_O n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)\right)}\\$$
+	<p>We can then equate the <b>heating rate</b> to the rate of change of EUV intensity with altitude to get...</p>
+	$${\frac{dQ}{dt} = I_{EUV}(\infty)H_O k_O n_O(z_t)exp\left(-\left\frac{z-z_t}{H_O}+(-H_O k_O n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)\right)\right)}\\$$
 </div>
 </body>
     
