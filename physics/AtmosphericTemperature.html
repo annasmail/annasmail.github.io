@@ -259,14 +259,21 @@ Title: Anna Smail
 
 <div class="container9">
 	<sub1>Temperature Inversions</sub1>
-	<p>Now we can use some of our derived equations to explain why temperature inversions occur in the thermosphere and stratosphere.</p> 
+	<sub2>The Thermosphere</sub2>
+	<p>Now we can use some of our derived equations to explain why temperature inversions occur in the thermosphere and stratosphere!</p> 
 	<p>In the thermosphere, atomic oxygen dominates. Its' first electron ionisation potential is 13.6eV which corresponds to a wavelength of 
 	roughly 100 nm. This means that energetic photons such as X-rays and EUVs strongly ionise <b>and heat</b> the oxygen atoms.</p>
 	<p>If we refer back to Lambert's Law, (9), and the barometric law, (5), we can create an altitude-dependant function of EUV intensity as it 
 	propogates through the thermosphere. </p>
 	$${n_O(z) = n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)} \qquad \qquad {I_{EUV}(z) = I_{EUV}(\infty)exp\left(-H_O k_O n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)\right)}\\$$
 	<p>We can then equate the <b>heating rate</b> to the rate of change of EUV intensity with altitude to get...</p>
-	$${\frac{dQ}{dt} = I_{EUV}(\infty)H_O k_O n_O(z_t)exp\left(-\left\frac{z-z_t}{H_O}+(-H_O k_O n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)\right)\right)}\\$$
+	$${\frac{dQ}{dt} = I_{EUV}(\infty)k_O n_O(z_t)exp\left(-\left(\frac{z-z_t}{H_O}+H_O k_O n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)\right)\right)}\\$$
+	<sub2>The Stratosphere</sub2>
+	<p>Stratospheric heating is similar to thermospheric, but instead involves the photo-dissociation of O2 and O3 molecules by UV photons. These molecules have a 
+	binding energy of 5.1eV and 4.2eV respectively meaning they can dissociate into O + O or O2 + O by UV photons with wavelengths between 100-300nm. We find similar equations...</p>
+	$${n_O_2(z) = n_O_2(0)exp\left(-\frac{z}{H}\right)} \qquad \qquad {I_{UV}(z) = I_{UV}(\infty)exp\left(-H k_O_2 n_O_2(0)exp\left(-\frac{z}{H}\right)\right)}\\$$
+	$${\frac{dQ}{dt} = I_{UV}(\infty)k_O_2 n_O_2(0)exp\left(-\left(\frac{z}{H}+H k_O_2 n_O_2(0)exp\left(-\frac{z}{H}\right)\right)\right)}\\$$
+	<p>Finally we can plot these to show the rate of heating with altitude!</p>
 </div>
 </body>
     
