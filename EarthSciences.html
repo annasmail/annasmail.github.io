@@ -1,74 +1,76 @@
 ---
 Title: Anna Smail
 ---
-
 <!DOCTYPE html>
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/earthsciencescss.css">
 		</head>
 		<header>
 			<logo>Anna Smail</logo>
 			<nav>
 	    			<ul class="nav_links">
 	        			<li><a href="/" class="btn top">Home</a></li>
-					<li><a href="/physics" class="btn top">Physics</a></li>
-					<li><a href="/EarthSciences" class="btn topcurrent">Earth Sciences</a></li>
+					<li><a href="/physics" class="btn topcurrent">Physics</a></li>
+					<li><a href="/EarthSciences" class="btn top">Earth Sciences</a></li>
 					<li><a href="https://github.com/annasmail" class="btn github">My Github</a></li>
 				</ul>
 			</nav>
 		</header>
 		<body>
 			
+  <div class="container1">
+  <h1>Earth Sciences</h1>
+</div>
+      
 <div class="grid-container7">
 	<div class="flex-item71">
 		<div class="title">
-			<h2>Remote<br> Sensing</h2>
+			<h2>Remote <br> sensing</h2>
 		</div>
 		<div class="des">
-			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
+			<a href="/PushingWithMagnets" class="btn readme">read more</a>
 		</div>
 	</div>
 	<div class="flex-item71">
 		<div class="title">
-			<h2>Monitoring<br> Peat Health</h2>
+			<h2>Monitoring <br> peat health</h2>
 		</div>
 		<div class="des">
-			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
+			<a href="/physics/AtmosphericTemperature" class="btn readme">read more</a>
 	 </div>
 </div>
 	<div class="flex-item71">
 		<div class="title">
-			<h2>Lidar<br> Data</h2>
+			<h2>Modelling heat <br> mortality</h2>
 		</div>
 		<div class="des">
-			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
+			<a href="/KingsAndQueens2" class="btn readme">read more</a>
 		</div>
 </div>
 		<div class="flex-item71">
 		<div class="title">
-			<h2>Remote<br> Sensing</h2>
+			<h2>Landscape <br> monitoring</h2>
 		</div>
 		<div class="des">
-			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
+			<a href="/physics/PushingWithMagnets" class="btn readme">read more</a>
 		</div>
 	</div>
 	<div class="flex-item71">
 		<div class="title">
-			<h2>Monitoring<br> Peat Health</h2>
+			<h2>History of weather monitoring</h2>
 		</div>
 		<div class="des">
-			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
+			<a href="/physics/TheHydrogenAtom" class="btn readme">read more</a>
 	 </div>
 </div>
 	<div class="flex-item71">
 		<div class="title">
-			<h2>Lidar<br> Data</h2>
+			<h2>Site suitability <br> with ArcGIS</h2>
 		</div>
 		<div class="des">
-			<a href="/physics/pushing-with-magnets" class="btn readme">read more</a>
+			<a href="/physics/StokesEquation" class="btn readme">read more</a>
 		</div>
 </div>
 </div>
@@ -89,3 +91,224 @@ Title: Anna Smail
   	}
 	}	
   </script>
+    
+    
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@keyframes chainReaction {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(20px);
+	}
+}
+
+.container1{
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+  text-align: center;
+  font-family: 'DM Sans';
+}
+   
+  h1 {
+    font-size: 5em;
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+   
+   body {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-image: linear-gradient(#fff, #E2FF7A);
+    background-position-y: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 100px;
+    padding: 10px 80px 10px 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+  background-color: #FFFFFF;
+  transition: all 0.4s ease-in-out;
+}
+header.active{
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 20px 2px rgba(0, 0, 0, .1);
+    padding: 0px 80px 0px 80px;
+     
+}
+a {
+    text-decoration: none;
+    font-family:'Spline Sans Mono';
+    color:#000000;
+}
+a:hover {
+    text-decoration: none;
+    font-weight: normal;
+}
+a.btn {
+    text-decoration: none;
+}
+.top {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.top:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #F2F8DD;
+    border-radius: 25px;
+}
+.topcurrent {
+    color: #00A073;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.topcurrent:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #F2F8DD;
+    border-radius: 25px;
+}
+.github {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 6px 15px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.github:hover {
+    color: #FFFFFF;
+    background-color: #00A073;
+    border-radius: 25px;
+    font-weight: normal;
+}
+nav ul {
+    font-family:'DM Sans';
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+}
+logo {
+    font-family: 'DM Sans';
+    font-size: 2.3em;
+    font-weight: bold;
+}
+.grid-container7{
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px;
+  margin: 40px 120px 80px 120px;
+  justify-content: center;
+}
+
+.flex-item71{
+  background-color: rgba(255,255,255,0.2);
+	border-radius: 15px;
+	padding: 10px 0px 30px 0px;
+	transition: 0.3s;
+	margin: 15px;
+	display: grid;
+  	gap: 0px;
+ 	transition: 0.3s;
+  	justify-content: center;
+    flex: 1;
+    max-width: 350px;
+    min-width: 350px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.05);
+}
+
+.flex-item71:hover{
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, .1);
+}
+
+.title {
+	text-align: center;
+	padding: 0px 30px 0px 30px;
+  margin: 0px;
+}
+.des {
+	text-align:center;
+}
+.readme {
+    color: #000000;
+    font-size: 0.9em;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.readme:hover {
+    background-color: rgba(255,255,255,0);
+    border-radius: 25px;
+    font-weight: normal;
+}
+h2 {
+    font-size: 1.8em;
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: normal;
+  padding: 0px;
+  margin: 20px;
+}
+ </style>
