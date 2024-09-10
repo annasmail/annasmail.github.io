@@ -1,28 +1,8 @@
 ---
-Title: Anna Smail
+layout: layout
+title: Anna Smail
 ---
-
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		</head>
-		<header>
-			<logo>Anna Smail</logo>
-			<nav>
-	    			<ul class="nav_links">
-	        			<li><a href="/" class="btn top">Home</a></li>
-					<li><a href="/physics" class="btn top">Physics</a></li>
-					<li><a href="/EarthSciences" class="btn top">Earth Sciences</a></li>
-					<li><a href="https://github.com/annasmail" class="btn github">My Github</a></li>
-</ul>
-</nav>
-</header>
-    
-<body>
-      
+     
 <div class="container1">
   <h1>Hi Sam!</h1>
 </div>
@@ -42,9 +22,9 @@ Title: Anna Smail
    <a href="/SamsQuiz/Hard">Hard</a> 
   </div>
 </div>
-			
-</body>
 
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
  <script>
 	const nav = document.querySelector('header')
 	window.addEventListener('scroll', fixNav)
@@ -71,90 +51,6 @@ body {
     background-size: contain;
     background-position-y: 120px;
     background-position-x: center;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    height: 100px;
-    padding: 10px 80px 10px 80px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    margin: 0px;
-  background-color: #FFFFFF;
-  transition: all 0.4s ease-in-out;
-  z-index: 999;
-}
-header.active{
-    background-color: #FFFFFF;
-    box-shadow: 0px 12px 20px 2px rgba(0, 0, 0, .1);
-    padding: 0px 80px 0px 80px;
-     
-}
-a {
-    text-decoration: none;
-    font-family:'Spline Sans Mono';
-    color:#000000;
-}
-a:hover {
-    text-decoration: none;
-    font-weight: normal;
-}
-a.btn {
-    text-decoration: none;
-}
-.top {
-    color: #000000;
-    font-family:'Spline Sans Mono';
-    font-weight: normal;
-    padding: 6px 15px;
-    border-radius: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
-    transition: 0.3s;
-    padding: 8px 17px;
-    background-color: #FFFFFF;
-    border-radius: 25px;
-}
-.top:hover {
-    font-weight: normal;
-    padding: 8px 17px;
-    color: #000000;
-    background-color: #E3EFFF;
-    border-radius: 25px;
-}
-.github {
-    color: #000000;
-    font-family:'Spline Sans Mono';
-    font-weight: normal;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 6px 15px;
-    background-color: #FFFFFF;
-    border-radius: 25px;
-    transition: 0.3s;
-}
-.github:hover {
-    color: #FFFFFF;
-    background-color: #0075F2;
-    border-radius: 25px;
-    font-weight: normal;
-}
-nav ul {
-    font-family:'DM Sans';
-    padding: 0px;
-    list-style: none;
-    text-align: center;
-}
-nav ul li {
-    display: inline;
-}
-logo {
-    font-family: 'DM Sans';
-    font-size: 2.3em;
-    font-weight: bold;
 }
 h1 {
     font-size: 7em;
