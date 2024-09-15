@@ -24,13 +24,13 @@ layout: postlayout
 </postheader>
 
 <div class="comments">
-	I have compiled a spreadsheet of all the books I have read in since 2021 with information such as
-	month/year it was read, genre, my rating and number of pages. The following post shows some of the uses
-	of the python library, <b>pandas</b>, when analysing and displaying data from dataframes. 
+	I have compiled a spreadsheet of all the books I have read since 2021 with information such as
+	when it was read, its' genre, a rating out of 5 and the number of pages. It is used as an example in the following post 
+	to show some of the uses of the python library, <b>pandas</b>, when analysing and displaying data in dataframes. 
 	<br><br>
-	First, I'll import some of the libraries I will be needing, and the font manager to import and use 
-	new fonts on any plots. Also, for this project I chose to work in Google Colab, so I need to <code>import drive</code>
-	to access other files. 
+	First, I'll import the libraries I will be needing as well as the <code>font_manager</code> so that I can customise the font 
+	on any plots I make. Also, for this project I chose to work in Google Colab, so I need to <code>import drive</code>
+	to access files located in my Google Drive. 
 </div>
 <div class="code">
 	import <b>pandas</b> as pd <hash># library for managing dataframes</hash> <br> 
@@ -41,7 +41,34 @@ layout: postlayout
 	import <b>matplotlib.font_manager</b> as fm <hash># managing fonts</hash><br>
 <br>
 	from <b>google.colab</b> import <b>drive</b> <hash># connect to google drive</hash><br>
-	drive.mount('/content/gdrive')
+	drive.mount(<links>'/content/gdrive'</links>)
+</div>
+<div class="comments">
+	I've made sure that the dataframe <b>Book.xlsx</b> is in the same location at my Google Colab file 
+	so that I can easily locate and read it using the function <code>.read_excel()</code>. In the second line I have named the dataframe as Books_df.
+</div>
+<div class="code">
+	path=<links>'/content/gdrive/MyDrive/Website/Books.xlsx'</links> <br>
+	Books_df = pd.read_excel(path)
+</div>
+<div class="comments">
+	Then I will import the font DM Sans. I've done this by downloading the font file (in weights regular, medium and bold) from Google Fonts and 
+	copying the file into my Google Drive.
+</div>
+<div class="code">
+	!wget <links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Regular.ttf'</links><br>
+	!wget <links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Medium.ttf'</links><br>
+	!wget <links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Bold.ttf'</links><br>
+	<br>
+	fm.fontManager.addfont(<links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Regular.ttf'</links>)<br>
+	fm.fontManager.addfont(<links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Medium.ttf'</links>)<br>
+	fm.fontManager.addfont(<links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Bold.ttf'</links>)<br>
+
+mpl.rc('font', family='DM Sans')
+</div>
+<div class="comments">
+</div>
+<div class="code">
 </div>
 
 <div class="footer">
@@ -74,5 +101,8 @@ hash{
 code{
 	font-family: Spline Sans Mono;
 	background-color: #F5F5F5;
-}	
+}
+links{
+	color: #FF7EBC;
+}
 </style>
