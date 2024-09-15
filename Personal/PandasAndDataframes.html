@@ -33,14 +33,14 @@ layout: postlayout
 	to access other files. 
 </div>
 <div class="code">
-	import pandas as pd <hash># library for managing dataframes</hash> <br> 
-	import numpy as np <hash># library for mathematical functions </hash> <br>
+	import <b>pandas</b> as pd <hash># library for managing dataframes</hash> <br> 
+	import <b>numpy</b> as np <hash># library for mathematical functions </hash> <br>
 <br>
-	import matplotlib as mpl <hash># library for plotting data</hash><br>
-	import matplotlib.pyplot as plt  <br>
-	import matplotlib.font_manager as fm <hash># managing fonts</hash><br>
+	import <b>matplotlib</b> as mpl <hash># library for plotting data</hash><br>
+	import <b>matplotlib.pyplot</b> as plt  <br>
+	import <b>matplotlib.font_manager</b> as fm <hash># managing fonts</hash><br>
 <br>
-	from google.colab import drive <hash># connect to google drive</hash><br>
+	from <b>google.colab</b> import <b>drive</b> <hash># connect to google drive</hash><br>
 	drive.mount('/content/gdrive')
 </div>
 
@@ -58,13 +58,15 @@ layout: postlayout
 	font-family: DM Sans;
 }
 .code{
-	text-align: justify;
-  	text-justify: inter-word;
-	margin: 20px 180px;
-	font-family: Spline Sans Mono;
-	background-color: #F5F5F5;
-	border-radius: 15px;
-	padding: 20px 30px;
+  border-radius: 10px;
+  margin: 25px 200px 25px 200px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #F6F6F6;
 }
 hash{
 	color: #CCCCCC;
