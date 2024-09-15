@@ -223,6 +223,40 @@ plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links
 		</div>
 	</div>
 	</div>
+	<div class="comments2">
+		This is a bit boring and doesn't show very much information! First, to spread out the data a bit, I'll incorporate the <code>Month</code> column to create
+		a new column with a decimal-year value. Then I'll use the <code>plt.scatter</code> argument <code>s=</code> to alter the size of the data points. For this example, I will choose
+		the <code>Rating</code> column to define the scatter sizes. <br>
+		<note>Note: As the scatter points are reletively small for s=1,2,3..., I have changed the sizing to <code>(Rating**3)*2</code>.</note><br>
+		Finally, I'll asign each <code>Genre</code> a different hex code so that I can change the colours of the data points (using the <code>c=</code>
+		argument in <code>plt.scatter</code>).	
+	</div>
+	<div class="code2">
+		<hash># Step One</hash><br><br>
+		Books_df[<links>'MonthYear'</links>] = Books_df[<links>'Year_read'</links>] + Books_df[<links>'Month'</links>] / 12 <br><br>
+		<hash># Step Two</hash><br><br>
+		plt.scatter(Books_df[<links>'MonthYear'</links>], Books_df[<links>'Pages'</links>], s=(Books_df[<links>'Rating'</links>]**3)*2) >br><br>
+		<hash># Step Three, first find the Genre names</hash><br><br>
+		genres = pd.unique(Books_df[<links>'Genre'</links>])<br>
+		print(genres)<br>
+		<hash># Fiction (purple shades)</hash><br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Classics', <hash>'Colour'</hash>] = '#A5AFFB'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Fiction', <hash>'Colour'</hash>] = '#7887F7'<br>
+<hash># Science (yellow shades)</hash><br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Encyclopedia', <hash>'Colour'</hash>] = '#F4F2B9'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Nutrition', <hash>'Colour'</hash>] = '#EEEB95'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Physics', <hash>'Colour'</hash>] = '#E9E572'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Space', <hash>'Colour'</hash>] = '#E6E260'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Natural Sciences', <hash>'Colour'</hash>] = '#F9F8DC'<br>
+<hash># Other (pink shades)</hash><br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Autobiography', <hash>'Colour'</hash>] = '#F88CC0'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Design', <hash>'Colour'</hash>] = '#F99FCA'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Feminist', <hash>'Colour'</hash>] = '#FAB2D5'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Philosophy', <hash>'Colour'</hash>] = '#FBC5E0'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'History', <hash>'Colour'</hash>] = '#F88CC0'<br>
+Books_df.loc[Books_df[<hash>'Genre'</hash>] == 'Sport', <hash>'Colour'</hash>] = '#FDECF5'
+		
+	</div>
 </div>
 </div>
 <div id="popup2">
@@ -488,6 +522,9 @@ code{
 }
 links{
 	color: #FF7EBC;
+}
+note{
+	color: #CCC;
 }
 </style>
 <script>
