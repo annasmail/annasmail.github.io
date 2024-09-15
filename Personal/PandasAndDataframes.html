@@ -158,24 +158,42 @@ Books_df.head(1)
 	Now I can start plotting! Below are a few examples of what I've made with this dataframe (click to expand!).
 </div>
 
- <div class="plotname" href="#" onclick="toggle()">
+<div class="plotsgrid"> 
+<div class="plotname" href="#" onclick="toggle()">
+  <div class="graph">
+  </div>
     <div class="name">
-      Basic scatter plots
+      Basic <br>scatter plots
     </div>
  </div>
 
-<div id="popup">
-	hello
-</div>
-
 <div class="plotname" href="#" onclick="toggle2()">
+  <div class="graph">
+  </div>
     <div class="name">
       Fitting polynomial lines of best fit
     </div>
- </div>
+ </div>  
+  
+<div class="plotname" href="#" onclick="toggle3()">
+  <div class="graph">
+  </div>
+    <div class="name">
+      Fitting polynomial lines of best fit
+    </div>
 
+</div>
+</div>
+
+
+<div id="popup">
+  hello
+</div>
 <div id="popup2">
-	hello again
+ hello again
+</div>
+<div id="popup3">
+ hello again again
 </div>
 
 
@@ -194,19 +212,48 @@ Books_df.head(1)
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-h2{
-	font-family: DM Sans;
-	font-size: 1.2em;
-	font-weight: bold;
+.graph1{
+  background-image: url('../images/1.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px auto;
+}
+.graph2{
+  background-image: url('../images/2.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px auto;
+}
+.graph3{
+  background-image: url('../images/3.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px auto;
+}
+.plotsgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 180px;
+  gap: 20px;
 }
 .plotname{
+  display: grid;
+  grid-template-rows: auto auto;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0);
-    align-items: left;
+    align-items: center;
     transition: 0.4s;
     background-color: #F3F4FF;
     color: #000000;
-  margin: 10px 180px;
   padding: 10px 30px;
   }
   .plotname:hover{
@@ -217,9 +264,10 @@ h2{
   }
   .name{
     font-family: 'DM Sans';
-    font-size: 1.4em;
-    text-align: left;
+    font-size: 1.2em;
+    text-align: center;
     font-weight: normal;
+    margin-bottom: 10px;
   }
 
 #popup{
@@ -258,6 +306,27 @@ h2{
 }
 
 #popup2.active{
+  padding: 0px;
+  height: auto;
+  visibility: visible;
+  margin: 0px 180px;
+  opacity: 1;
+}
+#popup3{
+  padding: 0px;
+  margin: 0px 180px;
+  height: 0px;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 999;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#popup3.active{
   padding: 0px;
   height: auto;
   visibility: visible;
@@ -322,6 +391,10 @@ links{
   }
     function toggle2(){
     var popup = document.getElementById('popup2');
+    popup.classList.toggle('active');
+  }
+    function toggle3(){
+    var popup = document.getElementById('popup3');
     popup.classList.toggle('active');
   }
 </script>
