@@ -50,6 +50,29 @@ title: Anna Smail
 </postheader>
 <body>
 
+<div class="comments">
+	I have compiled a spreadsheet of all the books I have read in since 2021 with information such as
+	month/year it was read, genre, my rating and number of pages. The following post shows some of the uses
+	of the python library, <b>pandas</b>, when analysing and displaying data from dataframes. 
+	<br>
+	First, I'll import some of the libraries I will be needing, and the font manager to import and use 
+	new fonts on any plots. Also, for this project I chose to work in Google Colab, so I need to <code>import drive</code>
+	to access other files. 
+</div>
+<div class="code">
+	import pandas as pd <hash># library for managing dataframes</hash>    
+	import numpy as np <hash># library for mathematical functions </hash>
+
+	import matplotlib as mpl <hash># library for plotting data</hash>
+	import matplotlib.pyplot as plt  
+	import matplotlib.font_manager as fm <hash># managing fonts</hash>
+
+	from google.colab import drive <hash># connect to google drive</hash>
+	drive.mount('/content/gdrive')
+</div>
+
+	
+
 </body>
 <div class="footer">
   last updated: 15th September 2024
@@ -60,6 +83,28 @@ title: Anna Smail
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+.comments{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 10px 180px;
+	font-family: DM Sans;
+}
+.code{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 10px 180px;
+	font-family: Spline Sans Mono;
+	background-color: #F5F5F5;
+	border-radius: 15px;
+	padding: 10px 20px;
+}
+hash{
+	color: #CCCCCC;
+}
+code{
+	font-family: Spline Sans Mono;
+	background-color: #F5F5F5;
+}
 header {
     display: flex;
     justify-content: space-between;
