@@ -189,6 +189,7 @@ layout: postlayout
 
 
 <div id="popup">
+<div class="popupoutline">
 	<div class="comments">
 		<h21>Basic Scatter Plots</h21>
 		First I started with a basic scatter plot. In the below code, I have defined a few characteristics of the plot's basic aesthetics 
@@ -224,6 +225,7 @@ plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links
 	</div>
 	</div>
 </div>
+</div>
 <div id="popup2">
  hello again
 </div>
@@ -247,6 +249,12 @@ plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+.popupoutline{
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	margin: 0px;
+	padding: 0px 20px;
+}
 output{
   font-family: Spline Sans Mono;
   font-weight: normal;
@@ -348,7 +356,7 @@ h21{
   }
 
 #popup{
-  padding: 0px 20px;
+  padding: 0px;
   margin: 0px;
   height: 0px;
   background: #fff;
@@ -359,8 +367,6 @@ h21{
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-	border-left: 1px solid #CCCCCC;
-	border-right: 1px solid #CCCCCC;
 }
 
 #popup.active{
