@@ -24,11 +24,11 @@ layout: postlayout
 </postheader>
 
 <div class="comments">
+	<h20>Preparing the dataframe</h20>
+	<br>
 	I have compiled a spreadsheet of all the books I have read since 2021 with information such as
 	when it was read, its' genre, a rating out of 5 and the number of pages. It is used as an example in this post 
 	to show some of the uses of the python library, <b>Pandas</b>, when analysing and displaying data in dataframes. 
-	<br>
-	<h20>Preparing the dataframe</h20>
 	<br>
 	<p20>First, I'll import the libraries I will be needing as well as the <code>font_manager</code> so that I can customise the font 
 	on any plots I make. Also, for this project I chose to work in Google Colab, so I need to <code>import drive</code>
@@ -190,6 +190,7 @@ layout: postlayout
 
 <div id="popup">
 	<div class="comments">
+		<h21>Basic Scatter Plots</h21>
 		First I started with a basic scatter plot. In the below code, I have defined a few characteristics of the plot's basic aesthetics 
 		and then used <code>plt.scatter</code> to create my scatter plot. To plot a column from the dataframe, 
 		<i>Pandas</i> uses the notation <code>dataframe['column_title']</code>. 
@@ -279,6 +280,13 @@ h20{
 	font-weight: bold;
 	line-height: 2em;
 }
+h21{
+	font-family: DM Sans;
+	font-size: 1.3em;
+	margin: 10px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 1.8em;
+}
 .graph1{
   background-image: url('../images/1.png');
   width: 100%;
@@ -340,7 +348,7 @@ h20{
   }
 
 #popup{
-  padding: 0px;
+  padding: 0px 20px;
   margin: 0px;
   height: 0px;
   background: #fff;
@@ -351,6 +359,8 @@ h20{
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
 }
 
 #popup.active{
