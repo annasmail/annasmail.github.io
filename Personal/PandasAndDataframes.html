@@ -190,7 +190,7 @@ layout: postlayout
 
 <div id="popup">
 <div class="popupoutline">
-	<div class="comments">
+	<div class="comments2">
 		<h21>Basic Scatter Plots</h21>
 		First I started with a basic scatter plot. In the below code, I have defined a few characteristics of the plot's basic aesthetics 
 		and then used <code>plt.scatter</code> to create my scatter plot. To plot a column from the dataframe, 
@@ -217,7 +217,7 @@ plt.title('BOOK LENGTH', loc='left', fontsize=16, weight='bold', y=1.02)<br><br>
 <hash># scatter plot</hash><br><br>
 plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links>])
 	</div>	
-	<div class="comments">
+	<div class="comments2">
 		<output>Output</output>
 	<div class="container_graph">
 		<div class="graph_container">
@@ -252,7 +252,7 @@ plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links
 .popupoutline{
 	border-left: 1px solid #CCCCCC;
 	border-right: 1px solid #CCCCCC;
-	margin: 0px;
+	margin: 180px;
 	padding: 0px 20px;
 }
 output{
@@ -445,6 +445,12 @@ tr:hover {background-color: #DDE1FF;}
 	text-align: justify;
   	text-justify: inter-word;
 	margin: 10px 180px;
+	font-family: DM Sans;
+}
+.comments2{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 0px;
 	font-family: DM Sans;
 }
 .code{
