@@ -191,12 +191,12 @@ layout: postlayout
 <div id="popup">
 <div class="popupoutline">
 	<div class="comments2">
-		<h21>Basic Scatter Plots</h21>
+		<h21>Basic Scatter Plots</h21><br>
 		First I started with a basic scatter plot. In the below code, I have defined a few characteristics of the plot's basic aesthetics 
 		and then used <code>plt.scatter</code> to create my scatter plot. To plot a column from the dataframe, 
 		<i>Pandas</i> uses the notation <code>dataframe['column_title']</code>. 
 	</div>
-	<div class="code">
+	<div class="code2">
 <hash># set up plot with grey background and dashed grid lines</hash><br><br>
 ax = plt.axes()<br>
 ax.set_facecolor('#FAFAFA')<br>
@@ -252,7 +252,7 @@ plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links
 .popupoutline{
 	border-left: 1px solid #CCCCCC;
 	border-right: 1px solid #CCCCCC;
-	margin: 180px;
+	margin: 10px 180px;
 	padding: 0px 20px;
 }
 output{
@@ -456,6 +456,18 @@ tr:hover {background-color: #DDE1FF;}
 .code{
   border-radius: 10px;
   margin: 25px 200px 25px 200px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #F6F6F6;
+  width: 100%;
+}
+.code2{
+  border-radius: 10px;
+  margin: 20px;
   font-family: 'Spline Sans Mono';
   font-size: 0.9em;
   line-height: 1.4em;
