@@ -215,10 +215,12 @@ plt.title('BOOK LENGTH', loc='left', fontsize=16, weight='bold', y=1.02)<br><br>
 <hash># scatter plot</hash><br><br>
 plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links>])
 	</div>	
-	<div class="container_graph">
+	<div class="comments">
 		<output>Output</output>
+	<div class="container_graph">
 		<div class="graph_container">
 		</div>
+	</div>
 	</div>
 </div>
 <div id="popup2">
@@ -250,10 +252,14 @@ output{
   font-size: 1em;
 }
 .container_graph{
-	margin: 20px 250px;
+	margin: 10px 0px;
+	display: grid;
+  	grid-template-columns: 1fr 4fr 1fr;
+        gap: 10px;
 }
 .graph_container{
   background-size: contain;
+  grid-column: 2;
   border-radius: 20px;
   padding: 0px;
   background-image: url('../images/3_1.png');
