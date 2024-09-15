@@ -29,10 +29,10 @@ layout: postlayout
 	to show some of the uses of the python library, <b>Pandas</b>, when analysing and displaying data in dataframes. 
 	<br><br>
 	<h20>Preparing the dataframe</h20>
-	<br><br>
-	First, I'll import the libraries I will be needing as well as the <code>font_manager</code> so that I can customise the font 
+	<br>
+	<p20>First, I'll import the libraries I will be needing as well as the <code>font_manager</code> so that I can customise the font 
 	on any plots I make. Also, for this project I chose to work in Google Colab, so I need to <code>import drive</code>
-	to access files located in my Google Drive. 
+	to access files located in my Google Drive.</p20> 
 </div>
 <div class="code">
 	import <b>pandas</b> as pd <hash># library for managing dataframes</hash> <br> 
@@ -156,8 +156,8 @@ Books_df.head(1)
 </div>
 
 <div class="comments">
-	<h20>Now I can start plotting!</h20><br><br>
-	Below are a few examples of what I've made with this dataframe (click to expand!).
+	<h20>Now I can start plotting!</h20><br>
+	<p20>Below are a few examples of what I've made with this dataframe (click to expand!).</p20>
 </div>
 
 <div class="plotsgrid"> 
@@ -214,6 +214,11 @@ Books_df.head(1)
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+p20{
+	font-family: DM Sans;
+	font-size: 1em;
+	line-height: 1.5em;
+}
 h20{
 	font-family: DM Sans;
 	font-size: 1.5em;
