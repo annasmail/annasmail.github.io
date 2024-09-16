@@ -272,7 +272,7 @@ Books_df.loc[Books_df[<links>'Genre'</links>] == 'Sport', <links>'Colour'</links
 <div id="popup2">
 	<div class="popupoutline">
 	<div class="comments2">
-		<h21>Finding averages</h21>
+		<h21>Finding averages</h21><br>
 		For this plot, I wanted  to see if I could determine my favourite book length. This could be done multiple ways. For example I could catergorise the
 		books into rating categories (1,2,3,4 and 5) and then find the average book length in each category. Alternatively, I could categorise the books
 		into book length (e.g. 300-325, 325-350 pages) and then find the average rating in each category.  
@@ -286,7 +286,49 @@ Books_df.loc[Books_df[<links>'Genre'</links>] == 'Sport', <links>'Colour'</links
 		But I'll start with the first method! First, I'll find the frequency of each rating by...
 	</div>
 	<div class="code2">
-		Fave_length = pd.DataFrame(Books_df.value_counts([<links>'Rating'</links>]).reset_index(name=<links>'Frequency'</links>))
+		Avg_booklength = pd.DataFrame(Books_df.value_counts([<links>'Rating'</links>]).reset_index(name=<links>'Frequency'</links>))<br>
+		Avg_booklength.head(5)
+	</div>
+	<div class="comments2">
+	<table>
+  		<thr><th> </th><th>Rating</th><th>Frequency</th></thr>
+  		<tr><td>0</td><td>4</td><td>47</td></tr>
+		<tr><td>1</td><td>3</td><td>45</td></tr>
+		<tr><td>2</td><td>5</td><td>37</td></tr>
+		<tr><td>3</td><td>2</td><td>14</td></tr>
+		<tr><td>4</td><td>1</td><td>7</td></tr>
+	</table>
+	</div>
+	<div class="comments2">
+		And then I will need to make some functions that search for each book in the dataframe with the same ratings and then calculate the sum of all of 
+		their book lengths and append this value to the new dataframe <code>Avg_booklength</code>. Then I'll easily be able to calculate the average value.
+	</div>
+	<div class="code2">
+<hash># Goes through every row in Avg_booklength and returns the value in the 'Rating' column </hash>
+for i in range(0,5):
+   &emsp;Rating = Avg_booklength.loc[Avg_booklength.index == i, <links>'Rating'</links>].item()
+   &emsp;add_to_new(Rating)
+		
+<hash># Func. 1: searches Books_df for specific Rating values, finds their corresponding 'Pages' value and returns the total sum</hash>
+def find_tot(Rating):
+   &emsp;return (Books_df[(Books_df[<links>'Rating'</links>] == Rating)])[<links>'Pages'</links>].sum()
+		
+<hash># Func. 2: Excecutes Func. 1 for each Rating value in Avg_booklength and adds total sum values to 'Total' column</hash>
+def add_to_new(Rating):
+   &emsp;Avg_booklength.loc[(Avg_booklength[<links>'Rating'</links>] == Rating), <links>'Total'</links>] = find_tot(Rating)
+
+<hash># Creates a new column 'Average' in Avg_booklength with average values</hash>
+Avg_booklength[<links>'Average'</links>] = Avg_booklength[<links>'Total'</links>] / Avg_booklength[<links>'Frequency'</links>]
+	</div>
+<div class="comments2">
+	<table>
+  		<thr><th> </th><th>Rating</th><th>Frequency</th><th>Total</th><th>Average</th></thr>
+  		<tr><td>0</td><td>4</td><td>47</td><td>17386</td><td>369.91</td></tr>
+		<tr><td>1</td><td>3</td><td>45</td><td>13824</td><td>307.20</td></tr>
+		<tr><td>2</td><td>5</td><td>37</td><td>13892</td><td>375.46</td></tr>
+		<tr><td>3</td><td>2</td><td>14</td><td>4285</td><td>306.07</td></tr>
+		<tr><td>4</td><td>1</td><td>7</td><td>1982</td><td>283.14</td></tr>
+	</table>
 	</div>
 	
 	</div>
@@ -324,7 +366,7 @@ output{
   font-size: 1em;
 }
 .container_graph{
-	margin: 10px 0px;
+	margin: 15px 0px 20px 0px;
 	display: grid;
   	grid-template-columns: 1fr 2fr 1fr;
         gap: 10px;
