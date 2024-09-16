@@ -173,7 +173,7 @@ layout: postlayout
   <div class="graph1">
   </div>
     <div class="name" href="#" onclick="toggle2()">
-      Polynomial lines of best fit
+      Finding averages
     </div>
  </div>  
   
@@ -268,9 +268,30 @@ Books_df.loc[Books_df[<links>'Genre'</links>] == 'Sport', <links>'Colour'</links
 	</div>
 </div>
 </div>
+
 <div id="popup2">
- hello again
+	<div class="popupoutline">
+	<div class="comments2">
+		<h21>Finding averages</h21>
+		For this plot, I wanted  to see if I could determine my favourite book length. This could be done multiple ways. For example I could catergorise the
+		books into rating categories (1,2,3,4 and 5) and then find the average book length in each category. Alternatively, I could categorise the books
+		into book length (e.g. 300-325, 325-350 pages) and then find the average rating in each category.  
+		<br><br>
+		First, I'll just plot the basic data of rating against book length (below). I would say that based on this, the second method might produce a
+		more accurate result as the data in each rating category (especially 3) is very spread out. 
+		<div class="container_graph">
+			<div class="graph_container2">
+			</div>
+		</div>
+		But I'll start with the first method! First, I'll find the frequency of each rating by...
+	</div>
+	<div class="code2">
+		Fave_length = pd.DataFrame(Books_df.value_counts([<links>'Rating'</links>]).reset_index(name=<links>'Frequency'</links>))
+	</div>
+	
+	</div>
 </div>
+		
 <div id="popup3">
  hello again again
 </div>
@@ -447,6 +468,7 @@ h21{
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 #popup2.active{
@@ -468,6 +490,7 @@ h21{
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 #popup3.active{
