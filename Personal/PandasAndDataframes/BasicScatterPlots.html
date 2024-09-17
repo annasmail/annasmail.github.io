@@ -64,7 +64,15 @@ plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links
 		plt.scatter(Books_df[<links>'MonthYear'</links>], Books_df[<links>'Pages'</links>], s=(Books_df[<links>'Rating'</links>]**3)*2) <br><br>
 		<hash># Step Three, first find the Genre names</hash><br><br>
 		genres = pd.unique(Books_df[<links>'Genre'</links>])<br>
-		print(genres)<br>
+		print(genres)
+	</div>
+	<div class="codeoutput">
+		>>    ['Autobiography' 'Encyclopedia' 'Nutrition' 'Physics' 'Space' 'Design'
+ 'Fiction' 'Feminist' 'Classics' 'Philosophy' 'History' 'Natural Sciences'
+ 'Sport']
+	</div>
+	<div class="code">
+		<hash># Define each genre's colour</hash><br><br>
 		<hash># Fiction (purple shades)</hash><br>
 Books_df.loc[Books_df[<links>'Genre'</links>] == 'Classics', <links>'Colour'</links>] = '#A5AFFB'<br>
 Books_df.loc[Books_df[<links>'Genre'</links>] == 'Fiction', <links>'Colour'</links>] = '#7887F7'<br>
@@ -88,10 +96,16 @@ Books_df.loc[Books_df[<links>'Genre'</links>] == 'Sport', <links>'Colour'</links
 		legend2 = ax.legend(handles, ['1','2','3','4','5'], title="Rating",borderpad=1, loc='lower right')
 	</div>
 	<div class="comments">
+		Final output:
+	</div>
+	<div class="comments">
 	<div class="container_graph">
 		<div class="graph_container2">
 		</div>
 	</div>
+	</div>
+	<div class="comments">
+		<i>Note that this should have a legend for the colours-genres but I couldn't work out how to do that!</i>
 	</div>
 </body>
 
@@ -172,6 +186,17 @@ h21{
   text-align: left;
   padding: 30px 30px;
   background-color: #F6F6F6;
+}
+.codeoutput{
+  border-radius: 10px;
+  margin: 25px 200px 25px 200px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #FAFAFA;
 }
 .code2{
   border-radius: 10px;
