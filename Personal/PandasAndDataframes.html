@@ -161,6 +161,7 @@ layout: postlayout
 </div>
 
 <div class="plotsgrid"> 
+	
 <div class="plotname">
   <div class="graph3">
   </div>
@@ -170,99 +171,10 @@ layout: postlayout
 <div class="plotname">
   <div class="graph1">
   </div>
-    <div class="name" href="#" onclick="toggle2()">
-      Finding averages
+	<a href="/Personal/PandasAndDataframes/FindingAverages" class="name">Finding Averages</a>
     </div>
- </div>  
-  
-<div class="plotname">
-  <div class="graph2">
-  </div>
-    <div class="name" href="#" onclick="toggle3()">
-      Creating new dataframes
-    </div>
-
-</div>
-</div>
-
-
-<div id="popup2">
-	<div class="popupoutline">
-	<div class="comments2">
-		<h21>Finding averages</h21><br>
-		For this plot, I wanted  to see if I could determine my favourite book length. This could be done multiple ways. For example I could catergorise the
-		books into rating categories (1,2,3,4 and 5) and then find the average book length in each category. Alternatively, I could categorise the books
-		into book length (e.g. 300-325, 325-350 pages) and then find the average rating in each category.  
-		<br><br>
-		First, I'll just plot the basic data of rating against book length (below). I would say that based on this, the second method might produce a
-		more accurate result as the data in each rating category (especially 3) is very spread out. 
-		<div class="container_graph">
-			<div class="graph_container2">
-			</div>
-		</div>
-		But I'll start with the first method! First, I'll find the frequency of each rating by...
-	</div>
-	<div class="code2">
-		Avg_booklength = pd.DataFrame(Books_df.value_counts([<links>'Rating'</links>]).reset_index(name=<links>'Frequency'</links>))<br>
-		Avg_booklength.head(5)
-	</div>
-	<div class="comments2">
-	<table>
-  		<thr><th> </th><th>Rating</th><th>Frequency</th></thr>
-  		<tr><td>0</td><td>4</td><td>47</td></tr>
-		<tr><td>1</td><td>3</td><td>45</td></tr>
-		<tr><td>2</td><td>5</td><td>37</td></tr>
-		<tr><td>3</td><td>2</td><td>14</td></tr>
-		<tr><td>4</td><td>1</td><td>7</td></tr>
-	</table>
-	</div>
-	<div class="comments2">
-		And then I will need to make some functions that search for each book in the dataframe with the same ratings and then calculate the sum of all of 
-		their book lengths and append this value to the new dataframe <code>Avg_booklength</code>. Then I'll easily be able to calculate the average value.
-	</div>
-	<div class="code2">
-<hash># Goes through every row in Avg_booklength and returns the value in the 'Rating' column </hash>
-for i in range(0,5):
-   &emsp;Rating = Avg_booklength.loc[Avg_booklength.index == i, <links>'Rating'</links>].item()
-   &emsp;add_to_new(Rating)
-		
-<hash># Func. 1: searches Books_df for specific Rating values, finds their corresponding 'Pages' value and returns the total sum</hash>
-def find_tot(Rating):
-   &emsp;return (Books_df[(Books_df[<links>'Rating'</links>] == Rating)])[<links>'Pages'</links>].sum()
-		
-<hash># Func. 2: Excecutes Func. 1 for each Rating value in Avg_booklength and adds total sum values to 'Total' column</hash>
-def add_to_new(Rating):
-   &emsp;Avg_booklength.loc[(Avg_booklength[<links>'Rating'</links>] == Rating), <links>'Total'</links>] = find_tot(Rating)
-
-<hash># Creates a new column 'Average' in Avg_booklength with average values</hash>
-Avg_booklength[<links>'Average'</links>] = Avg_booklength[<links>'Total'</links>] / Avg_booklength[<links>'Frequency'</links>]
-	</div>
-<div class="comments2">
-	<table>
-  		<thr><th> </th><th>Rating</th><th>Frequency</th><th>Total</th><th>Average</th></thr>
-  		<tr><td>0</td><td>4</td><td>47</td><td>17386</td><td>369.91</td></tr>
-		<tr><td>1</td><td>3</td><td>45</td><td>13824</td><td>307.20</td></tr>
-		<tr><td>2</td><td>5</td><td>37</td><td>13892</td><td>375.46</td></tr>
-		<tr><td>3</td><td>2</td><td>14</td><td>4285</td><td>306.07</td></tr>
-		<tr><td>4</td><td>1</td><td>7</td><td>1982</td><td>283.14</td></tr>
-	</table>
-	</div>
-	
-	</div>
-</div>
-		
-<div id="popup3">
- hello again again
-</div>
-
-
-
-
-
-
-
-
-
+ 
+</div>  	
 
 <div class="footer">
   last updated: 15th September 2024
@@ -271,12 +183,6 @@ Avg_booklength[<links>'Average'</links>] = Avg_booklength[<links>'Total'</links>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-a{
-	color:#000;
-}
-a:hover{
-	text-decoration: none;
-}
 .popupoutline{
 	border-top: 1px solid #CCCCCC;
 	border-bottom: 1px solid #CCCCCC;
@@ -399,74 +305,7 @@ h21{
     background-color: #E2E5FF;
     cursor: pointer;
     text-decoration: none;
-  }
-
-#popup{
-  padding: 0px;
-  margin: 0px;
-  height: 0px;
-  background: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.4s;
-  z-index: 999;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-
-#popup.active{
-  padding: 0px;
-  height: auto;
-  visibility: visible;
-  margin: 0px;
-  opacity: 1;
-}
-#popup2{
-  padding: 0px;
-  margin: 0px;
-  height: 0px;
-  background: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.4s;
-  z-index: 999;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-
-#popup2.active{
-  padding: 0px;
-  height: auto;
-  visibility: visible;
-  margin: 0px;
-  opacity: 1;
-}
-#popup3{
-  padding: 0px;
-  margin: 0px;
-  height: 0px;
-  background: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.4s;
-  z-index: 999;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-
-#popup3.active{
-  padding: 0px;
-  height: auto;
-  visibility: visible;
-  margin: 0px;
-  opacity: 1;
-}	
+  }	
 table {
   margin: 20px 0px;
   border-collapse: collapse;
@@ -496,26 +335,9 @@ tr:hover {background-color: #DDE1FF;}
 	margin: 10px 180px;
 	font-family: DM Sans;
 }
-.comments2{
-	text-align: justify;
-  	text-justify: inter-word;
-	margin: 0px;
-	font-family: DM Sans;
-}
 .code{
   border-radius: 10px;
   margin: 25px 200px 25px 200px;
-  font-family: 'Spline Sans Mono';
-  font-size: 0.9em;
-  line-height: 1.4em;
-  justify-content: left;
-  text-align: left;
-  padding: 30px 30px;
-  background-color: #F6F6F6;
-}
-.code2{
-  border-radius: 10px;
-  margin: 20px;
   font-family: 'Spline Sans Mono';
   font-size: 0.9em;
   line-height: 1.4em;
@@ -538,17 +360,3 @@ note{
 	color: #CCC;
 }
 </style>
-<script>
-	function toggle(){
-    var popup = document.getElementById('popup');
-    popup.classList.toggle('active');
-  }
-    function toggle2(){
-    var popup = document.getElementById('popup2');
-    popup.classList.toggle('active');
-  }
-    function toggle3(){
-    var popup = document.getElementById('popup3');
-    popup.classList.toggle('active');
-  }
-</script>
