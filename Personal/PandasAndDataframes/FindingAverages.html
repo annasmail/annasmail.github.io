@@ -126,7 +126,7 @@ length_div[<links>'max'</links>] = [100,150,200,250,300,350,400,450,500,550,600,
   &emsp;return (Books_df[((Books_df[<links>'Pages'</links>] >= min) & (Books_df[<links>'Pages'</links>] <= max))])[<links>'Rating'</links>].sum()<br><br>
 <hash># creates new column in length_div called 'Total' and fills in with values from find_tot</hash><br><br>
 <b>def</b> add_to_col(min, max):<br>
-  &emsp;length_div.loc[(length_div[<links>'min'</links>] == min), <links>'Total'</links>] = find_tot2(min, max)<br><br>
+  &emsp;length_div.loc[(length_div[<links>'min'</links>] == min), <links>'Total'</links>] = find_tot(min, max)<br><br>
 <hash># creates a new column in length_div and and fills in with frequency of books in each range from Books_df</hash><br><br>
 <b>def</b> find_freq(min, max):<br>
   &emsp;length_div.loc[(length_div[<links>'min'</links>] == min), <links>'Freq'</links>] = len(Books_df[(Books_df[<links>'Pages'</links>] >= min) & (Books_df[<links>'Pages'</links>] <= max)])<br><br>
@@ -140,6 +140,23 @@ for i in range(0,13):<br>
   &emsp;find_freq(min, max)<br>
   &emsp;std2 = np.append(std2, (np.std(np.array((Books_df[((Books_df[<links>'Pages'</links>] >= min) & (Books_df[<links>'Pages'</links>] <= max))])[<links>'Rating'</links>]))))<br><br>
 length_div[<links>'Avg'</links>] = length_div[<links>'Total'</links>] / length_div[<links>'Freq'</links>]
+</div>
+<div class="comments">
+	Now I can plot this! I'll do this one as a bar chart.
+</div>
+<div class="code">
+	plt.bar((length_div[<links>'min'</links>]+length_div[<links>'max'</links>])/2, length_div[<links>'Avg'</links>], width=40, color='#7887F7', zorder=2)
+</div>
+<div class="comments">
+	<div class="container_graph">
+		<div class="graph_container3">
+		</div>
+	</div>
+</div>
+
+<div class="comments">
+	So looking at the two methods, I can see that the first suggests my favourite book length would be about 380 pages while the second one suggests around 
+	560 pages! Looking at the error bars on each plot suggests that both are quite inaccurate and the comparison shows how easily data can be misinterpreted!
 </div>
 
 <style>
@@ -170,6 +187,17 @@ length_div[<links>'Avg'</links>] = length_div[<links>'Total'</links>] / length_d
   border-radius: 20px;
   padding: 0px;
   background-image: url('../../images/4_2.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+.graph_container3{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../../images/4_3.png');
   width: 100%;
   aspect-ratio: 4/3;
   background-repeat: no-repeat;
