@@ -98,8 +98,8 @@ x = np.linspace(0.8,5.7, 100)<br>
 y = np.polyval(p, x)<br>
 plt.plot(x,y, color='#A5AFFB',  linewidth=2, zorder=2)<br>
 plt.axhline(y=379.11993224376215, linewidth=1, color='#A5AFFB', zorder=2)<br><br>
-e = np.array([ 49.88681066,  73.68316757, 126.61097021, 128.47581605, 107.65023307])<br>
-plt.errorbar(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'</links>], e, linestyle='none', linewidth=1, capsize=5, zorder=2, color='#FF86C0')
+errors = np.array([ 49.88681066,  73.68316757, 126.61097021, 128.47581605, 107.65023307])<br>
+plt.errorbar(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'</links>], errors, linestyle='none', linewidth=1, capsize=5, zorder=2, color='#FF86C0')
 </div>
 <div class="comments">
 	<div class="container_graph">
@@ -117,10 +117,29 @@ plt.errorbar(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'<
 length_div[<links>'max'</links>] = [100,150,200,250,300,350,400,450,500,550,600,650,700]
 </div>
 <div class="comments">
-	Then I'll define some functions very similar to those in Method one!
+	Then I'll define some functions very similar to those in the first method!
 </div>
+
 <div class="code">
-	
+<hash># goes through Books_df with given range between min and max and returns sum of values of every rating</hash><br><br>
+<b>def</b> find_tot(min, max):<br>
+  &emsp;return (Books_df[((Books_df[<links>'Pages'</links>] >= min) & (Books_df[<links>'Pages'</links>] <= max))])[<links>'Rating'</links>].sum()<br><br>
+<hash># creates new column in length_div called 'Total' and fills in with values from find_tot</hash><br><br>
+<b>def</b> add_to_col(min, max):<br>
+  &emsp;length_div.loc[(length_div[<links>'min'</links>] == min), <links>'Total'</links>] = find_tot2(min, max)<br><br>
+<hash># creates a new column in length_div and and fills in with frequency of books in each range from Books_df</hash><br><br>
+<b>def</b> find_freq(min, max):<br>
+  &emsp;length_div.loc[(length_div[<links>'min'</links>] == min), <links>'Freq'</links>] = len(Books_df[(Books_df[<links>'Pages'</links>] >= min) & (Books_df[<links>'Pages'</links>] <= max)])<br><br>
+
+<hash># goes through index 0-12 and excecutes each function for every row in length_div </hash><br><br>
+std2 = []<br>
+for i in range(0,13):<br>
+  &emsp;min = length_div.loc[length_div.index == i, <links>'min'</links>].item()<br>
+  &emsp;max = length_div.loc[length_div.index == i, <links>'max'</links>].item()<br>
+  &emsp;add_to_col(min, max)<br>
+  &emsp;find_freq(min, max)<br>
+  &emsp;std2 = np.append(std2, (np.std(np.array((Books_df[((Books_df[<links>'Pages'</links>] >= min) & (Books_df[<links>'Pages'</links>] <= max))])[<links>'Rating'</links>]))))<br><br>
+length_div[<links>'Avg'</links>] = length_div[<links>'Total'</links>] / length_div[<links>'Freq'</links>]
 </div>
 
 <style>
