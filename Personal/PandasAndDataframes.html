@@ -164,7 +164,7 @@ layout: postlayout
 <div class="plotname">
   <div class="graph3">
   </div>
-    <div class="name" href="#" onclick="toggle()">
+    <div class="name" href="/Personal/PandasAndDataframes/BasicScatterPlots">
       Basic scatter plots
     </div>
  </div>
@@ -187,87 +187,6 @@ layout: postlayout
 </div>
 </div>
 
-
-<div id="popup">
-<div class="popupoutline">
-	<div class="comments2">
-		<h21>Basic Scatter Plots</h21><br>
-		First I started with a basic scatter plot. In the below code, I have defined a few characteristics of the plot's basic aesthetics 
-		and then used <code>plt.scatter</code> to create my scatter plot. To plot a column from the dataframe, 
-		<i>Pandas</i> uses the notation <code>dataframe['column_title']</code>. 
-	</div>
-	<div class="code2">
-<hash># set up plot with grey background and dashed grid lines</hash><br><br>
-ax = plt.axes()<br>
-ax.set_facecolor('#FAFAFA')<br>
-plt.grid(axis = 'y', linestyle='dashed', color='#ccc', zorder=1)<br><br>
-<hash># keep only bottom plot outline and remove ticks along axis</hash><br><br>
-ax.spines[['top', 'right', 'left']].set_visible(False)<br>
-ax.spines[['bottom']].set_linewidth(1.4)<br>
-plt.tick_params(left = False)<br>
-plt.tick_params(bottom = False)<br><br>
-<hash># change x-axis tick intervals and edit both axis limits</hash><br><br>
-plt.xticks(np.arange(2021, 2026, 1))<br>
-plt.xlim(2020.9, 2025.1)<br>
-plt.ylim(20, 750)<br><br>
-<hash># axis and plot titles</hash><br><br>
-plt.xlabel('Year', labelpad=10, fontsize=12, weight='medium')<br>
-plt.ylabel('Number of pages', labelpad=10, fontsize=12, weight='medium')<br>
-plt.title('BOOK LENGTH', loc='left', fontsize=16, weight='bold', y=1.02)<br><br>
-<hash># scatter plot</hash><br><br>
-plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links>])
-	</div>	
-	<div class="comments2">
-	<div class="container_graph">
-		<div class="graph_container">
-		</div>
-	</div>
-	</div>
-	<div class="comments2">
-		This is a bit boring and doesn't show very much information! First, to spread out the data a bit, I'll incorporate the <code>Month</code> column to create
-		a new column with a decimal-year value. Then I'll use the <code>plt.scatter</code> argument <code>s=</code> to alter the size of the data points. For this example, I will choose
-		the <code>Rating</code> column to define the scatter sizes. <br><br>
-		Finally, I'll asign each <code>Genre</code> a different hex code so that I can change the colours of the data points (using the <code>colors =</code>
-		argument in <code>plt.scatter</code>).	
-	</div>
-	<div class="code2">
-		<hash># Step One</hash><br><br>
-		Books_df[<links>'MonthYear'</links>] = Books_df[<links>'Year_read'</links>] + Books_df[<links>'Month'</links>] / 12 <br><br>
-		<hash># Step Two</hash><br><br>
-		plt.scatter(Books_df[<links>'MonthYear'</links>], Books_df[<links>'Pages'</links>], s=(Books_df[<links>'Rating'</links>]**3)*2) <br><br>
-		<hash># Step Three, first find the Genre names</hash><br><br>
-		genres = pd.unique(Books_df[<links>'Genre'</links>])<br>
-		print(genres)<br>
-		<hash># Fiction (purple shades)</hash><br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Classics', <links>'Colour'</links>] = '#A5AFFB'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Fiction', <links>'Colour'</links>] = '#7887F7'<br>
-<hash># Science (yellow shades)</hash><br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Encyclopedia', <links>'Colour'</links>] = '#F4F2B9'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Nutrition', <links>'Colour'</links>] = '#EEEB95'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Physics', <links>'Colour'</links>] = '#E9E572'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Space', <links>'Colour'</links>] = '#E6E260'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Natural Sciences', <links>'Colour'</links>] = '#F9F8DC'<br>
-<hash># Other (pink shades)</hash><br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Autobiography', <links>'Colour'</links>] = '#F88CC0'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Design', <links>'Colour'</links>] = '#F99FCA'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Feminist', <links>'Colour'</links>] = '#FAB2D5'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Philosophy', <links>'Colour'</links>] = '#FBC5E0'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'History', <links>'Colour'</links>] = '#F88CC0'<br>
-Books_df.loc[Books_df[<links>'Genre'</links>] == 'Sport', <links>'Colour'</links>] = '#FDECF5'<br><br>
-
-		<hash># Final plot</hash><br><br>
-		scatter = ax.scatter(Books_df[<links>'MonthYear'</links>], Books_df[<links>'Pages'</links>], s=(Books_df[<links>'Rating'</links>]**3)*2, c=(Books_df[<links>'Colour'</links>])<br>
-		handles, labels = scatter.legend_elements(prop="sizes", alpha=0.8, color='#A5AFFB')<br>
-		legend2 = ax.legend(handles, ['1','2','3','4','5'], title="Rating",borderpad=1, loc='lower right')
-	</div>
-	<div class="comments2">
-	<div class="container_graph">
-		<div class="graph_container2">
-		</div>
-	</div>
-	</div>
-</div>
-</div>
 
 <div id="popup2">
 	<div class="popupoutline">
