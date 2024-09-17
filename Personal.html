@@ -6,43 +6,51 @@ title: Anna Smail
 <div class="container1">
   <h1>Personal projects</h1>
 </div>
-      
-<div class="grid-container7">
-	<div class="flex-item71">
-		<div class="title">
-			<h2>Kings and Queens</h2>
-		</div>
-		<div class="des">
-			<a href="/Personal/KingsAndQueens" class="btn readme">read more</a>
-		</div>
-	</div>
-	<div class="flex-item71">
-		<div class="title">
-			<h2>Sam's Quiz</h2>
-		</div>
-		<div class="des">
-			<a href="/Personal/SamsQuiz" class="btn readme">read more</a>
-	 </div>
-</div>
-	<div class="flex-item71">
-		<div class="title">
-			<h2>Graphic Design</h2>
-		</div>
-		<div class="des">
-			<a href="/Personal/GraphicDesign" class="btn readme">read more</a>
-		</div>
-</div>
-	<div class="flex-item71">
-		<div class="title">
-			<h2>Pandas and <br> dataframes</h2>
-		</div>
-		<div class="des">
-			<a href="/Personal/PandasAndDataframes" class="btn readme">read more</a>
-		</div>
-</div>
-		
-</div>
+<div class="wrapper">
+   <div class="box">
+     <div class="photo" style=" background-image: url('https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg');">
+    </div>
+     <div class="text">
+     <h2>Pandas and Dataframes</h2>
+       <p>A brief overview of English Monarchs from 1066 to 1714. I used CSS and JS to create popups upon clicking each monarch for more information.</p>
+       <div class="readmore">
+         click here to read more!
+       </div>
+     </div>
+   </div>
+   <div class="box">
+     <div class="photo" style=" background-image: url('https://hrp.imgix.net/https%3A%2F%2Fhistoricroyalpalaces.picturepark.com%2FGo%2F8MB9aNW8%2FV%2F52375%2F29?auto=format&s=c3b14e67831a198a8b53f53bdf1caf91');">
+    </div>
+     <div class="text">
+     <h2>Kings and Queens</h2>
+       <p>A brief overview of English Monarchs from 1066 to 1714. I used CSS and JS to create popups upon clicking each monarch for more information.</p>
+       <div class="readmore">
+         click here to read more!
+       </div>
+     </div>
+   </div><div class="box">
+     <div class="photo" style=" background-image: url('https://cmscdn.boutique-retreats.co.uk/cms-brShropshire/The%20Wrekin%20iStock-1019828752%20-%20resized.jpg');">
+    </div>
+     <div class="text">
+     <h2>Sam's Quiz</h2>
+       <p>A brief overview of English Monarchs from 1066 to 1714. I used CSS and JS to create popups upon clicking each monarch for more information.</p>
+       <div class="readmore">
+         click here to read more!
+       </div>
+     </div>
+   </div><div class="box">
+     <div class="photo" style=" background-image: url('https://www.lifewire.com/thmb/Y4UWY7oTH4BOVYpOO2C60Z0EXyk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hlx_8d8e946f1c5f4a40db87ba35414fdd5709cb489f-75430a12c48a4cef93056b012d4fff23.jpeg'); background-position: right;">
+    </div>
+     <div class="text">
+     <h2>Graphic Design</h2>
+       <p>A brief overview of English Monarchs from 1066 to 1714. I used CSS and JS to create popups upon clicking each monarch for more information.</p>
+       <div class="readmore">
+         click here to read more!
+       </div>
+     </div>
+   </div>
 
+</div>
 
 
 <style>
@@ -63,98 +71,86 @@ title: Anna Smail
 		transform: translatey(20px);
 	}
 }
-body {
-    max-width: 100%;
-    padding: 0px;
-    margin: 0px;
-    background-image: linear-gradient(#F6FBFF, #D8EAFF);
-    background-position-y: 100px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-.container1{
-  animation: chainReaction 2s, float 2s;
+   
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+   
+  .container1{
+      animation: chainReaction 2s, float 2s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
-  text-align: center;
-  font-family: 'DM Sans';
-}
-   
-  h1 {
-    font-size: 5em;
-    font-family:'DM Sans';
-    color:#000000;
-    line-height: 1.1em;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 0px;
-}
-  .grid-container7{
+    margin: 0px 150px 30px 150px;
+    text-align: center;
+  }
+  h1{
+    font-family: DM Sans;
+    font-size: 2.5em;
+    text-decoration: underline 2px #7887F7;
+    margin: 0px;
+  }
+.wrapper {
   animation: chainReaction 2s, float 2s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 1.2s;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0px;
-  margin: 40px 120px 80px 120px;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, 480px);
+  grid-row-gap: 40px;
+  grid-column-gap: 60px;
   justify-content: center;
+  margin: 30px;
 }
 
-.flex-item71{
-  background-color: rgba(255,255,255,0.2);
-	border-radius: 15px;
-	padding: 10px 0px 30px 0px;
-	transition: 0.3s;
-	margin: 15px;
-	display: grid;
-  	gap: 0px;
- 	transition: 0.3s;
-  	justify-content: center;
-    flex: 1;
-    max-width: 350px;
-    min-width: 350px;
-    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.05);
-}
-
-.flex-item71:hover{
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, .1);
-}
-
-.title {
-	text-align: center;
-	padding: 0px 30px 0px 30px;
-  margin: 0px;
-}
-.des {
-	text-align:center;
-}
-.readme {
-    color: #000000;
-    font-size: 0.9em;
-    font-family:'Spline Sans Mono';
-    font-weight: normal;
-    padding: 6px 15px;
-    background-color: #D8EAFF;
-    border-radius: 25px;
-    transition: 0.3s;
-}
-.readme:hover {
-    background-color: #FFFFFF;
-    border-radius: 25px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 1.8em;
-    font-family:'DM Sans';
-    color:#000000;
-    line-height: 1.1em;
-    font-weight: normal;
+.box {
   padding: 0px;
-  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+  aspect-ratio: 3/1;
+}
+
+.photo{
+  background-size: cover;
+    background-repeat: no-repeat;
+  grid-column: 1;
+  background-position: center;
+  border-radius: 15px 2px 2px 15px;
+}
+.text{
+  margin-top: 0px;  
+}
+
+h2{
+  font-family: DM Sans;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 15px;
+  padding: 0px;
+}
+p{
+  font-family: DM Sans;
+  margin: 5px 15px 11px 15px;
+  text-align: justify;
+}
+
+.readmore{
+  width: 290px;
+  height: 30px;
+  background-color: #6073FF;
+  margin-bottom: 0px;
+  color: #fff;
+  font-family: Spline Sans Mono;
+  margin: 2px 15px;
+  text-align: center;
+  align-content: center;
+  font-size: 0.9em;
+  border-radius: 2px 2px 15px 2px;
+  transition: 0.4s;
+}
+
+.readmore:hover{
+  background-color: #E1E4FF;
+  cursor: pointer;
+  color: #000;
 }
 </style>
