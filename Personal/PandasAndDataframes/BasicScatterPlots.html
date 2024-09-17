@@ -18,13 +18,13 @@ layout: postlayout
 
 
 <body>
-  	<div class="comments2">
+  	<div class="comments">
 		<h21>Basic Scatter Plots</h21><br>
 		First I started with a basic scatter plot. In the below code, I have defined a few characteristics of the plot's basic aesthetics 
 		and then used <code>plt.scatter</code> to create my scatter plot. To plot a column from the dataframe, 
 		<i>Pandas</i> uses the notation <code>dataframe['column_title']</code>. 
 	</div>
-	<div class="code2">
+	<div class="code">
 <hash># set up plot with grey background and dashed grid lines</hash><br><br>
 ax = plt.axes()<br>
 ax.set_facecolor('#FAFAFA')<br>
@@ -45,20 +45,20 @@ plt.title('BOOK LENGTH', loc='left', fontsize=16, weight='bold', y=1.02)<br><br>
 <hash># scatter plot</hash><br><br>
 plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links>])
 	</div>	
-	<div class="comments2">
+	<div class="comments">
 	<div class="container_graph">
 		<div class="graph_container">
 		</div>
 	</div>
 	</div>
-	<div class="comments2">
+	<div class="comments">
 		This is a bit boring and doesn't show very much information! First, to spread out the data a bit, I'll incorporate the <code>Month</code> column to create
 		a new column with a decimal-year value. Then I'll use the <code>plt.scatter</code> argument <code>s=</code> to alter the size of the data points. For this example, I will choose
 		the <code>Rating</code> column to define the scatter sizes. <br><br>
 		Finally, I'll asign each <code>Genre</code> a different hex code so that I can change the colours of the data points (using the <code>colors =</code>
 		argument in <code>plt.scatter</code>).	
 	</div>
-	<div class="code2">
+	<div class="code">
 		<hash># Step One</hash><br><br>
 		Books_df[<links>'MonthYear'</links>] = Books_df[<links>'Year_read'</links>] + Books_df[<links>'Month'</links>] / 12 <br><br>
 		<hash># Step Two</hash><br><br>
@@ -88,7 +88,7 @@ Books_df.loc[Books_df[<links>'Genre'</links>] == 'Sport', <links>'Colour'</links
 		handles, labels = scatter.legend_elements(prop="sizes", alpha=0.8, color='#A5AFFB')<br>
 		legend2 = ax.legend(handles, ['1','2','3','4','5'], title="Rating",borderpad=1, loc='lower right')
 	</div>
-	<div class="comments2">
+	<div class="comments">
 	<div class="container_graph">
 		<div class="graph_container2">
 		</div>
@@ -157,12 +157,7 @@ h21{
 	margin: 10px 180px;
 	font-family: DM Sans;
 }
-.comments2{
-	text-align: justify;
-  	text-justify: inter-word;
-	margin: 0px;
-	font-family: DM Sans;
-}
+
 .code{
   border-radius: 10px;
   margin: 25px 200px 25px 200px;
@@ -174,17 +169,7 @@ h21{
   padding: 30px 30px;
   background-color: #F6F6F6;
 }
-.code2{
-  border-radius: 10px;
-  margin: 20px;
-  font-family: 'Spline Sans Mono';
-  font-size: 0.9em;
-  line-height: 1.4em;
-  justify-content: left;
-  text-align: left;
-  padding: 30px 30px;
-  background-color: #F6F6F6;
-}
+
 hash{
 	color: #CCCCCC;
 }
