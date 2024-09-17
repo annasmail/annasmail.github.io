@@ -20,11 +20,12 @@ layout: postlayout
 		For this plot, I wanted  to see if I could determine my favourite book length. This could be done multiple ways. For example I could catergorise the
 		books into rating categories (1,2,3,4 and 5) and then find the average book length in each category. Alternatively, I could categorise the books
 		into book length (e.g. 300-350, 350-400 pages) and then find the average rating in each category.  
-		<br><br>
+		<br>
+		<h21>First Method</h21><br>
 		First, I'll just plot the basic data of rating against book length (below). I would say that based on this, the second method might produce a
 		more accurate result as the data in each rating category (especially 3) is very spread out. 
 		<div class="container_graph">
-			<div class="graph_container2">
+			<div class="graph_container">
 			</div>
 		</div>
 		But I'll start with the first method! First, I'll find the frequency of each rating using the <code>.value_counts()</code> <i>Pandas</i> function.
@@ -82,7 +83,7 @@ I will then find the standard deviation for each average using <code>np.std</cod
 <div class="code">
 std = []<br>
 for j in range(1,6):<br>
-  &emsp;std = np.append(std, (np.std(np.array((Books_df[(Books_df['Rating'] == j)])['Pages']))))<br><br>
+  &emsp;std = np.append(std, (np.std(np.array((Books_df[(Books_df[<links>'Rating'</links>] == j)])[<links>'Pages'</links>]))))<br><br>
 print(std)
 </div>
 <div class="codeoutput">
@@ -91,18 +92,18 @@ print(std)
 <div class="comments">Now, using the function <code>np.polyfit</code>, I can fit a polynomial line of best fit to the scatter points. I've chosen degree equal
 to 3 so that it is a cubic function. I've also found the max value of the polynomial fit and plotted a line using <code>plt.axhline</code>.</div>
 <div class="code">
-plt.scatter(Fave_length['Rating'], Fave_length['Average'], s=100, color='#FF86C0', edgecolors='#FAFAFA', linewidths=2, zorder=10)<br><br>
-p = np.polyfit(Fave_length['Rating'], Fave_length['Average'], deg=3)<br>
+plt.scatter(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'</links>], s=100, color='#FF86C0', edgecolors='#FAFAFA', linewidths=2, zorder=10)<br><br>
+p = np.polyfit(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'</links>], deg=3)<br>
 x = np.linspace(0.8,5.7, 100)<br>
 y = np.polyval(p, x)<br>
 plt.plot(x,y, color='#A5AFFB',  linewidth=2, zorder=2)<br>
 plt.axhline(y=379.11993224376215, linewidth=1, color='#A5AFFB', zorder=2)<br><br>
 e = np.array([ 49.88681066,  73.68316757, 126.61097021, 128.47581605, 107.65023307])<br>
-plt.errorbar(Fave_length['Rating'], Fave_length['Average'], e, linestyle='none', linewidth=1, capsize=5, zorder=2, color='#FF86C0')
+plt.errorbar(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'</links>], e, linestyle='none', linewidth=1, capsize=5, zorder=2, color='#FF86C0')
 </div>
 <div class="comments">
 	<div class="container_graph">
-		<div class="graph_container">
+		<div class="graph_container2">
 		</div>
 	</div>
 	</div>
@@ -123,7 +124,7 @@ plt.errorbar(Fave_length['Rating'], Fave_length['Average'], e, linestyle='none',
   grid-column: 2;
   border-radius: 20px;
   padding: 0px;
-  background-image: url('../../images/3_1.png');
+  background-image: url('../../images/4_1.png');
   width: 100%;
   aspect-ratio: 4/3;
   background-repeat: no-repeat;
@@ -134,7 +135,7 @@ plt.errorbar(Fave_length['Rating'], Fave_length['Average'], e, linestyle='none',
   grid-column: 2;
   border-radius: 20px;
   padding: 0px;
-  background-image: url('../../images/3.png');
+  background-image: url('../../images/4_2.png');
   width: 100%;
   aspect-ratio: 4/3;
   background-repeat: no-repeat;
