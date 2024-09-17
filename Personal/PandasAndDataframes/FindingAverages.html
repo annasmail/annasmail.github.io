@@ -1,0 +1,190 @@
+---
+title: Anna Smail
+layout: postlayout
+---
+<postheader>
+      <div class="prev">
+        <a href="/Personal/PandasAndDataframes" class="prevgrid">
+          <div class="prevgrid11">
+          </div>
+          back
+        </a>
+</div>  
+<div class="posttitle">
+        <h2> Basic Scatter Plots </h2>
+        <p4>Getting started displaying data from a dataframe </p4>
+</div>       
+</postheader>
+
+	<div class="comments">
+		<h21>Finding averages</h21><br>
+		For this plot, I wanted  to see if I could determine my favourite book length. This could be done multiple ways. For example I could catergorise the
+		books into rating categories (1,2,3,4 and 5) and then find the average book length in each category. Alternatively, I could categorise the books
+		into book length (e.g. 300-325, 325-350 pages) and then find the average rating in each category.  
+		<br><br>
+		First, I'll just plot the basic data of rating against book length (below). I would say that based on this, the second method might produce a
+		more accurate result as the data in each rating category (especially 3) is very spread out. 
+		<div class="container_graph">
+			<div class="graph_container2">
+			</div>
+		</div>
+		But I'll start with the first method! First, I'll find the frequency of each rating by...
+	</div>
+	<div class="code">
+		Avg_booklength = pd.DataFrame(Books_df.value_counts([<links>'Rating'</links>]).reset_index(name=<links>'Frequency'</links>))<br>
+		Avg_booklength.head(5)
+	</div>
+	<div class="comments">
+	<table>
+  		<thr><th> </th><th>Rating</th><th>Frequency</th></thr>
+  		<tr><td>0</td><td>4</td><td>47</td></tr>
+		<tr><td>1</td><td>3</td><td>45</td></tr>
+		<tr><td>2</td><td>5</td><td>37</td></tr>
+		<tr><td>3</td><td>2</td><td>14</td></tr>
+		<tr><td>4</td><td>1</td><td>7</td></tr>
+	</table>
+	</div>
+	<div class="comments">
+		And then I will need to make some functions that search for each book in the dataframe with the same ratings and then calculate the sum of all of 
+		their book lengths and append this value to the new dataframe <code>Avg_booklength</code>. Then I'll easily be able to calculate the average value.
+	</div>
+	<div class="code">
+<hash># Goes through every row in Avg_booklength and returns the value in the 'Rating' column </hash>
+for i in range(0,5):
+   &emsp;Rating = Avg_booklength.loc[Avg_booklength.index == i, <links>'Rating'</links>].item()
+   &emsp;add_to_new(Rating)
+		
+<hash># Func. 1: searches Books_df for specific Rating values, finds their corresponding 'Pages' value and returns the total sum</hash>
+def find_tot(Rating):
+   &emsp;return (Books_df[(Books_df[<links>'Rating'</links>] == Rating)])[<links>'Pages'</links>].sum()
+		
+<hash># Func. 2: Excecutes Func. 1 for each Rating value in Avg_booklength and adds total sum values to 'Total' column</hash>
+def add_to_new(Rating):
+   &emsp;Avg_booklength.loc[(Avg_booklength[<links>'Rating'</links>] == Rating), <links>'Total'</links>] = find_tot(Rating)
+
+<hash># Creates a new column 'Average' in Avg_booklength with average values</hash>
+Avg_booklength[<links>'Average'</links>] = Avg_booklength[<links>'Total'</links>] / Avg_booklength[<links>'Frequency'</links>]
+	</div>
+<div class="comments">
+	<table>
+  		<thr><th> </th><th>Rating</th><th>Frequency</th><th>Total</th><th>Average</th></thr>
+  		<tr><td>0</td><td>4</td><td>47</td><td>17386</td><td>369.91</td></tr>
+		<tr><td>1</td><td>3</td><td>45</td><td>13824</td><td>307.20</td></tr>
+		<tr><td>2</td><td>5</td><td>37</td><td>13892</td><td>375.46</td></tr>
+		<tr><td>3</td><td>2</td><td>14</td><td>4285</td><td>306.07</td></tr>
+		<tr><td>4</td><td>1</td><td>7</td><td>1982</td><td>283.14</td></tr>
+	</table>
+	</div>
+
+
+<style>
+  .container_graph{
+	margin: 15px 0px 20px 0px;
+	display: grid;
+  	grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+	width: 100%;
+	padding: 15px 0px;
+	border-radius: 15px;
+	border: 1px solid #ccc;
+}
+.graph_container{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../../images/3_1.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+.graph_container2{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../../images/3.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+p20{
+	font-family: DM Sans;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+h20{
+	font-family: DM Sans;
+	font-size: 1.5em;
+	margin: 30px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 2em;
+}
+h21{
+	font-family: DM Sans;
+	font-size: 1.3em;
+	margin: 10px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.comments{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 10px 180px;
+	font-family: DM Sans;
+}
+.comments2{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 0px;
+	font-family: DM Sans;
+}
+.code{
+  border-radius: 10px;
+  margin: 25px 200px 25px 200px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #F6F6F6;
+}
+.code2{
+  border-radius: 10px;
+  margin: 20px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #F6F6F6;
+}
+hash{
+	color: #CCCCCC;
+}
+code{
+	font-family: Spline Sans Mono;
+	background-color: #F5F5F5;
+}
+links{
+	color: #FF7EBC;
+}
+note{
+	color: #CCC;
+}
+.prevgrid11{
+  column: 1;
+  background-image: url("../../images/arrow-25.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+</style>
