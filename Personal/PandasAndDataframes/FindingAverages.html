@@ -57,11 +57,11 @@ for i in range(0,5):<br>
 		
 <hash># Func. 1: searches Books_df for specific 'Rating' values, finds their corresponding 'Pages' value and returns the total sum of all the 'Pages' values
 with the same 'Rating'.</hash><br><br>
-def find_tot(Rating):<br>
+<b>def</b> find_tot(Rating):<br>
    &emsp;return (Books_df[(Books_df[<links>'Rating'</links>] == Rating)])[<links>'Pages'</links>].sum()<br><br>
 		
 <hash># Func. 2: Excecutes Func. 1 for each 'Rating' value in Avg_booklength and adds total sum values to 'Total' column</hash><br><br>
-def add_to_new(Rating):<br>
+<b>def</b> add_to_new(Rating):<br>
    &emsp;Avg_booklength.loc[(Avg_booklength[<links>'Rating'</links>] == Rating), <links>'Total'</links>] = find_tot(Rating)<br><br>
 
 <hash># Creates a new column 'Average' in Avg_booklength with average values</hash><br><br>
@@ -107,6 +107,21 @@ plt.errorbar(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'<
 		</div>
 	</div>
 	</div>
+
+<div class="comments">
+	<h21>Second Method</h21><br>
+	Now I'll try the second method! First I'll create a new dataframe, <code>length_div</code> with columns for min and max values of the page ranges.
+</div>
+<div class="code">
+	length_div = pd.DataFrame(data=[50,100,150,200,250,300,350,400,450,500,550,600,650], columns=[<links>'min'</links>])<br>
+length_div[<links>'max'</links>] = [100,150,200,250,300,350,400,450,500,550,600,650,700]
+</div>
+<div class="comments">
+	Then I'll define some functions very similar to those in Method one!
+</div>
+<div class="code">
+	
+</div>
 
 <style>
   .container_graph{
