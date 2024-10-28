@@ -1,0 +1,135 @@
+---
+layout: layout
+title: Anna Smail
+---
+
+<div class="container1">
+  <h1>Quantitative Climate and Environmental Science MPhil</h1>
+</div>
+
+ <div class="box">
+     <div class="photo" style=" background-image: url('../images/dates-20.png');">
+    </div>
+     <a href="/QCES/28October"  class="text">
+     <h2>28th October</h2>
+       </a>
+     </div>
+
+<div class="wrapper">
+   <div class="box">
+     <div class="photo" style=" background-image: url('../images/dates-19.png');">
+    </div>
+     <a href="/QCES/21October"  class="text">
+     <h2>21st October</h2>
+        </a>
+   </div>
+
+   
+
+  </body>
+</div>
+
+
+<style>
+  @keyframes chainReaction {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(20px);
+	}
+}
+   
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+   
+  .container1{
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+    margin: 0px 150px 40px 150px;
+    text-align: center;
+  }
+  h1{
+    font-family: DM Sans;
+    font-size: 2.5em;
+    text-decoration: underline 2px #008BF5;
+    margin: 0px;
+  }
+.wrapper {
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 70px;
+  justify-content: center;
+  margin: 30px;
+}
+
+.box {
+  padding: 0px;
+  display: grid;
+  grid-template-rows: 10fr 2fr;
+  gap: 10px;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 12/15;
+  border-radius: 15px;
+}
+
+.photo{
+  background-size: cover;
+    background-repeat: no-repeat;
+  background-position: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0px;
+  border-radius: 15px 15px 5px 5px;
+}
+.text{
+  margin: 0px; 
+  padding: 0px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-content: center;
+  text-align: center;
+  background-color: #EEF6FF;
+  border-radius: 5px 5px 15px 15px;
+  transition: 0.4s;
+}
+
+
+.text:hover{
+	cursor: pointer;
+	background-color: #3CA6F8;
+	color: #fff;
+}
+
+
+h2{
+  font-family: Spline Sans Mono;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0px 15px;
+  padding: 0px;
+}
+p{
+  font-family: DM Sans;
+  margin: 5px 15px 15px 15px;
+  text-align: justify;
+}
+
+  
+</style>
