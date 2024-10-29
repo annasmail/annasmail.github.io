@@ -39,6 +39,28 @@ title: Anna Smail
 	<p>These areas are <b>at risk of thawing due to rises in global temperatures</b> - scientists predict that there will be widespread thawing by 2100 – 
 	and this could have various serious implications.</p>
 </div>
+
+<div class="fourphotos">
+     <div class="box">
+     <div class="photo" style=" background-image: url('../images/hazards-29.png');"></div>
+     <div class="caption">Flooding & Migration</div>
+     </div>
+
+     <div class="box">
+     <div class="photo" style=" background-image: url('../images/hazards-27.png');"></div>
+     <div class="caption">Erosion</div>
+     </div>
+
+     <div class="box">
+     <div class="photo" style=" background-image: url('../images/hazards-30.png');"></div>
+     <div class="caption">Diseases</div>
+     </div>
+
+     <div class="box">
+     <div class="photo" style=" background-image: url('../images/hazards-28.png');"></div>
+     <div class="caption">Land destabilisation</div>
+     </div>
+</div>
 		
 <div class="aside">
   <subsubtitle>Feedback Loops</subsubtitle>
@@ -105,5 +127,45 @@ p{
 	font-family: DM Sans;
 	text-align: justify;
 }
+fourphotos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 20px;
+  justify-content: center;
+  margin: 180px;
+}
+.box {
+  padding: 0px;
+  display: grid;
+  grid-template-rows: 10fr 2fr;
+  gap: 10px;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 12/15;
+  border-radius: 15px;
+}
+.photo{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0px;
+  border-radius: 15px 15px 5px 5px;
+}
+.caption{
+  margin: 0px; 
+  padding: 0px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-content: center;
+  text-align: center;
+  background-color: #EEF6FF;
+  border-radius: 5px 5px 15px 15px;
+  font-family: Spline Sans Mono;
+  font-size: 1em;
+}
+
 
 </style>
