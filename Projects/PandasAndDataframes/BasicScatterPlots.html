@@ -1,0 +1,238 @@
+---
+title: Anna Smail
+layout: postlayout
+---
+<postheader>
+      <div class="prev">
+        <a href="/Personal/PandasAndDataframes" class="prevgrid">
+          <div class="prevgrid11">
+          </div>
+          back
+        </a>
+</div>  
+<div class="posttitle">
+        <h2> Basic Scatter Plots </h2>
+        <p4>Getting started displaying data from a dataframe </p4>
+</div>       
+</postheader>
+
+
+<body>
+  	<div class="comments">
+		In the below code, I have defined a few aesthetics for my plots 
+		and then used <code>plt.scatter</code> to create my scatter plot. To plot a column from the dataframe, 
+		<i>Pandas</i> uses the notation <code>dataframe['column_title']</code>. 
+	</div>
+	<div class="code">
+<hash># set up plot with grey background and dashed grid lines</hash><br><br>
+ax = plt.axes()<br>
+ax.set_facecolor('#FAFAFA')<br>
+plt.grid(axis = 'y', linestyle='dashed', color='#ccc', zorder=1)<br><br>
+<hash># keep only bottom plot outline and remove ticks along axis</hash><br><br>
+ax.spines[['top', 'right', 'left']].set_visible(False)<br>
+ax.spines[['bottom']].set_linewidth(1.4)<br>
+plt.tick_params(left = False)<br>
+plt.tick_params(bottom = False)<br><br>
+<hash># change x-axis tick intervals and edit both axis limits</hash><br><br>
+plt.xticks(np.arange(2021, 2026, 1))<br>
+plt.xlim(2020.9, 2025.1)<br>
+plt.ylim(20, 750)<br><br>
+<hash># axis and plot titles</hash><br><br>
+plt.xlabel('Year', labelpad=10, fontsize=12, weight='medium')<br>
+plt.ylabel('Number of pages', labelpad=10, fontsize=12, weight='medium')<br>
+plt.title('BOOK LENGTH', loc='left', fontsize=16, weight='bold', y=1.02)<br><br>
+<hash># scatter plot</hash><br><br>
+plt.scatter(Books_df[<links>'Year_read'</links>], Books_df[<links>'Pages'</links>])
+	</div>	
+	<div class="comments">
+	<div class="container_graph">
+		<div class="graph_container">
+		</div>
+	</div>
+	</div>
+	<div class="comments">
+		This is a bit boring and doesn't show very much information! First, to spread out the data a bit, I'll incorporate the <code>Month</code> column to create
+		a new column with a decimal-year value (<code><links>'MonthYear</links></code>). Then I'll use the <code>plt.scatter</code> argument <code>s=</code> to alter the size of the data points. For this example, I will choose
+		the <code>Rating</code> column to define the scatter sizes. <br><br>
+		Finally, I'll asign each <code>Genre</code> a different hex code so that I can change the colours of the data points (using the <code>c=</code>
+		argument in <code>plt.scatter</code>).	
+	</div>
+	<div class="code">
+		<hash># Step One</hash><br><br>
+		Books_df[<links>'MonthYear'</links>] = Books_df[<links>'Year_read'</links>] + Books_df[<links>'Month'</links>] / 12 <br><br>
+		<hash># Step Two</hash><br><br>
+		plt.scatter(Books_df[<links>'MonthYear'</links>], Books_df[<links>'Pages'</links>], s=(Books_df[<links>'Rating'</links>]**3)*2) <br><br>
+		<hash># Step Three, first find the Genre names</hash><br><br>
+		genres = pd.unique(Books_df[<links>'Genre'</links>])<br>
+		print(genres)
+	</div>
+	<div class="codeoutput">
+		>>    ['Autobiography' 'Encyclopedia' 'Nutrition' 'Physics' 'Space' 'Design'
+ 'Fiction' 'Feminist' 'Classics' 'Philosophy' 'History' 'Natural Sciences'
+ 'Sport']
+	</div>
+	<div class="code">
+		<hash># Define each genre's colour</hash><br><br>
+		<hash># Fiction (purple shades)</hash><br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Classics', <links>'Colour'</links>] = '#A5AFFB'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Fiction', <links>'Colour'</links>] = '#7887F7'<br>
+<hash># Science (yellow shades)</hash><br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Encyclopedia', <links>'Colour'</links>] = '#F4F2B9'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Nutrition', <links>'Colour'</links>] = '#EEEB95'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Physics', <links>'Colour'</links>] = '#E9E572'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Space', <links>'Colour'</links>] = '#E6E260'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Natural Sciences', <links>'Colour'</links>] = '#F9F8DC'<br>
+<hash># Other (pink shades)</hash><br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Autobiography', <links>'Colour'</links>] = '#F88CC0'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Design', <links>'Colour'</links>] = '#F99FCA'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Feminist', <links>'Colour'</links>] = '#FAB2D5'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Philosophy', <links>'Colour'</links>] = '#FBC5E0'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'History', <links>'Colour'</links>] = '#F88CC0'<br>
+Books_df.loc[Books_df[<links>'Genre'</links>] == 'Sport', <links>'Colour'</links>] = '#FDECF5'<br><br>
+
+		<hash># Final plot</hash><br><br>
+		scatter = ax.scatter(Books_df[<links>'MonthYear'</links>], Books_df[<links>'Pages'</links>], s=(Books_df[<links>'Rating'</links>]**3)*2, c=(Books_df[<links>'Colour'</links>])<br>
+		<br><hash># Create legend for scatter sizes</hash><br><br>
+		handles, labels = scatter.legend_elements(prop="sizes", alpha=0.8, color='#A5AFFB')<br>
+		legend2 = ax.legend(handles, ['1','2','3','4','5'], title="Rating",borderpad=1, loc='lower right')
+	</div>
+	<div class="comments">
+	<div class="container_graph">
+		<div class="graph_container2">
+		</div>
+	</div>
+	</div>
+	<div class="comments">
+		<i>Note that this should have a legend for the colours-genres but I couldn't work out how to do that!</i>
+	</div>
+</body>
+
+<div class="footer">
+  last updated: 16th September 2024
+</div>
+
+
+
+
+<style>
+  .container_graph{
+	margin: 15px 0px 20px 0px;
+	display: grid;
+  	grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+	width: 100%;
+	padding: 15px 0px;
+	border-radius: 15px;
+	border: 1px solid #ccc;
+}
+.graph_container{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../../images/3_1.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+.graph_container2{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../../images/3.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+p20{
+	font-family: DM Sans;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+h20{
+	font-family: DM Sans;
+	font-size: 1.5em;
+	margin: 30px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 2em;
+}
+h21{
+	font-family: DM Sans;
+	font-size: 1.3em;
+	margin: 10px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.comments{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 10px 180px;
+	font-family: DM Sans;
+}
+.comments2{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 0px;
+	font-family: DM Sans;
+}
+.code{
+  border-radius: 10px;
+  margin: 25px 200px 25px 200px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #F6F6F6;
+}
+.codeoutput{
+  border-radius: 10px;
+  margin: 25px 200px 25px 200px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #FAFAFA;
+}
+.code2{
+  border-radius: 10px;
+  margin: 20px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #F6F6F6;
+}
+hash{
+	color: #CCCCCC;
+}
+code{
+	font-family: Spline Sans Mono;
+	background-color: #F5F5F5;
+}
+links{
+	color: #FF7EBC;
+}
+note{
+	color: #CCC;
+}
+.prevgrid11{
+  column: 1;
+  background-image: url("../../images/arrow-25.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+</style>
