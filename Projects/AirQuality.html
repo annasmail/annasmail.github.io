@@ -29,9 +29,31 @@ title: Anna Smail
 </postheader>
 <body>
 
-  <div class="subtitle">
-    Project Set Up
+<div class="comments">
+	<h20>Project Set Up</h20>
+	<div class="halfandhalf">
+    <div class="halftext">
+      <div class="doesthiswork">
+	Since the 1990s there has been a push towards improving the natural ventilation of buildings. A well ventilated building is necessary to reduce build-up of harmful indoor air pollutants and excess moisture; poor ventilation has been shown to reduce both productivity of quality of life (Hou, J. et al. 2021, Apte, M.G. et al. 2000). 
+  <br><br>
+For this project, I was given a low cost air quality monitor that recorded various atmospheric concentrations such as CO2, VOC and PM10, where readings were taken every 5 minutes. To begin with, I just left the monitor running for a few days to see if anything interesting showed in the data. 
+    </div>
   </div>
+  <div class="halfimage">
+  </div>
+</div>
+  </div>
+
+<div class="comments">
+    I found that overnight while I was asleep, the CO2 concentrations seemed to level out – suggesting a steady state had been reached between my respiration rate and the room’s ventilation rate. What was interesting was that the steady state occurred at different CO2 levels each night. 
+</div>
+  
+</body>
+
+
+<div class="footer">
+  Last updated: 20th February 2025
+</div>
 
 
 
@@ -52,6 +74,59 @@ title: Anna Smail
   border-radius: 25px;
   color: #008BF5;
   font-weight: 450;
+}
+
+h20{
+	font-family: DM Sans;
+	font-size: 1.5em;
+	margin: 30px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 2em;
+}
+
+.comments{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 10px 180px 10px 180px;
+	font-family: DM Sans;
+}
+
+.halfandhalf{
+    display: grid;
+  grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 15px 0px;
+    margin-bottom: 0px;
+  height:auto;
+  background-color: #FEFEFE;
+  gap: 40px;
+}
+
+.halftext{
+  grid-column: 1;
+  padding: 30px;
+  background-color: #EEF6FF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.doesthiswork{
+  margin: auto;
+  vertical-align: middle;
+}
+
+.halfimage{
+  grid-column: 2;
+   background-image: url("/images/airmonitor-38.png");
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: 50%;
+  max-width: 100%;
 }
   
 </style>
