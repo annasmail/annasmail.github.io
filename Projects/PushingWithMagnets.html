@@ -1,0 +1,499 @@
+---
+layout: postlayout
+title: Anna Smail
+---
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/physicspostcss.css">
+</head>
+<postheader>
+      <div class="prev">
+        <a href="/Projects/SamsQuiz" class="prevgrid">
+          <div class="prevgrid1">
+          </div>
+          prev.
+        </a>
+</div>
+      
+      
+<div class="posttitle">
+        <h2> Pushing with Magnets </h2>
+        <p4>My final-year physics project, completed on the 17th January 2024.</p4>
+</div>
+      
+<div class="next">
+        <a href="/Projects/GraphicDesign" class="nextgrid">
+        next  
+	<div class="nextgrid1">
+	  </div>
+        </a>
+</div>
+      
+</postheader>
+		<body>
+
+<div class="grid-container0">
+	<h3>Magnets and medicine</h3>
+</div>
+      
+<div class="grid-container">
+	<div class="grid-item1">
+  <p1> Magnets were first used for medicinal purposes around 70 years ago. In 1957, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1450524/">Gilchrist <i>et al.</i></a> injected tumours with biocompatible, magnetic nanoparticles (MNPs). The particles were then subjected to induction heating which successfully destroyed the metastases, while not affecting the surrounding healthy tissue. 
+  </p1>
+  <p1>
+Current research focuses on the use of <b>external</b> magnets to guide and trap drug-carrying MNPs. This has the promising ability to concentrate drugs at disease locations by pulling the MNPs towards the external magnet thereby minimising exposure of healthy tissues to potentially cytotoxic drugs.
+  </p1>
+  <p11>
+There have been a number of studies looking at different magnetic configurations, each with varying abilities to manipulate the MNPs within anatomical structures. 
+</p11>
+      </div>
+	<div class="grid-item2">
+	</div>
+</div>
+<div class="grid-container2">
+	<div class="grid-item22">
+	</div>
+	<div class="grid-item21">
+	</div>
+	<div class="grid-item23">
+	</div>
+	<div class="grid-item24">
+		<p5>Single-layered Array</p5><br>
+		<p1>Two or more permanent magnets arranged in a single layer. The most simple and cost-effective setup.</p1>
+	</div>
+	<div class="grid-item24">
+		<p5>Annular Halbach Arrays</p5><br>
+		<p1>These have multiple layers of magnets which 'squeezes' the magnetic field and creates a greater magnetic field strength.</p1>
+	</div>
+	<div class="grid-item24">
+		<p5>Tip-Top System</p5><br>
+		<p1>An angular tip will concentrate the magnetic field, exerting a larger force on MNPs than bar magnets.</p1>
+	</div>
+</div>
+
+<div class="grid-container4">
+	<div class="grid-item40">
+	<p1>On a conventional magnetic field line diagram, closer field lines indicate a stronger magnetic field strength. A single bar magnet’s field and contour lines are shown below, where we can see that the contour-line density decreases away from the magnet, indicating the decay of the magnetic field strength with distance. 
+		On the right is a plot of magnetic field strength versus distance from one of the magnet's poles. This decay over distance fits with what we would expect, based on the countour lines and field plot.</p1>
+	</div>
+	<div class="grid-item41">
+	</div>
+	<div class="grid-item42">
+	</div>
+</div>
+			
+<div class="grid-container0">
+	<h3>Fields and forces</h3>
+</div>
+			
+<div class="grid-container7">
+<div class="grid-item71">
+  <div class="grid-item711">
+    <p1>MNPs will experience a force when they interact with a magnetic field. A force will always act in the direction of <b>low to high magnetic field strength</b> so in the case of the single bar magnet seen above, the direction from low to high magnetic field strength will be <b>towards</b> the magnet as the field lines get denser towards the poles. </p1>
+ </div>
+  <div class="grid-item711">
+    <p1> The exerted force from a single bar magnet on a spherical magnetic particle is given by the following equation, </p1>
+$$ {\small \overrightarrow{F}_{mag} = \frac{4 \pi a^3}{3} \frac{\mu_0 \chi}{(1+\frac{\chi}{3})} \left[\frac{\partial\overrightarrow{H}}{\partial\overrightarrow{x}}\right]^T \overrightarrow{H} = \frac{2 \pi a^3}{3} \frac{\mu_0 \chi}{(1+\frac{\chi}{3})} \nabla\left(||\overrightarrow{H}||^2\right) = k \nabla\left(||\overrightarrow{H}||^2\right)} \\$$
+<p1>where F is magnetic <b>force</b>, X is magnetic susceptability, H is magnetic <b>field</b>, u is vacuum permeability, a is MNP diameter and x is distance from the magnet. On the right-hand side, <i>k</i> has replaced all the constants showing that the exerted force is directly proportional to the rate of change of the magnetic field at its' location.</p1> 
+  </div>
+  <div class="grid-item711">
+    <p1>One single-layered array was suggested by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3020086/">Shapiro in 2010</a>. Shapiro’s setup takes two identical bar magnets and rotates one by 180 degrees so that the north-south poles are oppositely oriented. They are then angled towards one another and bought closer, creating an overlap in their magnetic fields (shown above). </p1> 
+  </div>
+  <div class="grid-item711">
+    <p1>Magnetic fields are <b>linear</b>, so a magnetic field created by <i>n</i> number of bar magnets can be calculated by simply adding <i>n</i> number of terms of the above equation. For example, the overall force from two bar magnets can be found by adding together two terms. However, as we’ve rotated one of the magnets, we instead need to <b>subtract</b> one from the other.</p1>
+</div>
+</div>
+  <div class="grid-item73">
+	  <div class="contentfade">
+		<p>This field results from two magnets with the <b>same</b> orientation. It produces an even decay of magnetic field strength, similar to that of a single bar magnet.</p>
+	  </div>
+  </div>
+  <div class="grid-item72">
+	  <div class="contentfade">
+		<p>This field results from two magnets with <b>different</b> orientations. The white spot at the top of the plot in <b>local minimum</b>.</p>
+	  </div>
+  </div>
+</div>
+
+<div class="grid-container9">
+	<div class="grid-item9">
+	<p1>Looking at the oppositely oriented magnet plot, we can see that there is a light area in the magnetic field around at the top. This is known as a <b>local minimum</b> and is created by the two magnetic fields cancelling at that point. This local minimum gives us the ability to push with magnets; we know that a force will always act in the direction of low to high magnetic field strength, so if an MNP were to be placed slightly beyond this local minimum, the increase in magnetic field strength <b>away</b> from the magnet would <b>push</b> the MNP away from the magnet.</p1>
+	</div>
+</div>
+<div class="grid-container8">
+</div>
+<div class="grid-container0">
+	<h3>The project</h3>
+</div>
+<div class="grid-container9">
+	<div class="grid-item9">
+	<p1>Typical research in this area starts with the development of a computer model that can calculate the magnetic field of a setup. These are then validated experimentally with magnets and a Hall Probe to measure their resultant field. This was the methodology that we aimed to replicate.</p1>
+	</div>
+</div>
+<div class="grid-container9">
+	<div class="grid-item9">
+	<p1> Due to the rapid decay of a magnet's force over distance, magnetic drug targeting (MDT) is best suited to shallow anatomical structures such as the inner ear. Access to the inner ear is blocked by a semi-permeable membrane, meaning only low concentrations of drugs for common conditions such as <b>tinnitus</b>, <b>Ménière’s disease</b> and <b>sensorineural hearing loss</b> can pass through. The inner ear is approximately <b>30-50 mm</b> away from the skins' surface, making it an ideal candidate for MDT, but the required force to pass MNPs through the membrane must be sufficiently high.</p1>
+	</div>
+</div>
+<div class="grid-container9">
+	<div class="grid-item9">
+	<p1>We chose to analyse the two-magnet setup outlined by Shapiro to see if we could create a large push force at a distance of 30-50 mm. We would determine the optimal configuration that had the best combination of <b>local-minima distance</b> and <b>exerted force strength</b> which both vary as the magnets are rotated about their central pivot. </p1>
+	</div>
+</div>
+<div class="grid-container0">
+	<h4>Computer modelling</h4>
+</div>
+
+<div class="grid-container9">
+	<div class="grid-item9">
+	<p1>In order to calculate any exerted forces, we first need to calculate the magnetic feild. This can be done using <a href="https://www.researchgate.net/publication/224493118_Calculation_of_the_magnetic_stray_field_of_a_uniaxial_magnetic_domain">Engel-Herbert's</a> equation for a cuboidal magnet's magnetic field in x, y and z directions. For our scenario we are only interested in the x-y plane so only need these two equations, where each of the variables are described in the following table.</p1>
+	</div>
+</div>
+
+  <div class="grid-container9">
+	<div class="grid-item9">
+	<p1>$$ {\small{H}_{x}{(x,y,z)} = \frac{\small{M}_{0}}{4 \pi} \sum_{k,l,m=1}^2 (-1)^{k+l+m}  ln(z +(-1)^{m}) \small{z}_{b} + \sqrt{(x+(-1)^{k}\small{x}_{b})^2 + (y+(-1)^{l}\small{y}_{b})^2 + (z+(-1)^{m}\small{z}_{b})^2}} \\$$ </p1>
+	</div>
+</div>
+  
+  <div class="grid-container9">
+	<div class="grid-item9">
+	<p1>$$ {\small{H}_{y}{(x,y,z)} = \frac{\small{-M}_{0}}{4 \pi} \sum_{k,l,m=1}^2 (-1)^{k+l+m} \frac{(y+(-1)^l\small{y}_{b})(x+(-1)^k\small{x}_{b})}{|y+(-1)^l\small{y}_{b}||x+(-1)^k\small{x}_{b}|} \cdot tan^{-1}\left[\frac{|x+(-1)^k\small{x}_{b}|(z+(-1)^m\small{z}_{b})}{|y+(-1)^l\small{y}_{b}| \sqrt{(x+(-1)^{k}\small{x}_{b})^2 + (y+(-1)^{l}\small{y}_{b})^2 + (z+(-1)^{m}\small{z}_{b})^2}} \right]} \\$$ </p1>
+	</div>
+</div>
+
+<div class = "grid-container9">
+  <div class="grid-item9">
+<table>
+  <thr>
+    <th>Variable</th>
+    <th>Definition</th>
+    <th>Unit</th>
+    <th>Our Value</th>
+  </thr>
+  <tr>
+    <td>x<sub>b</sub></td>
+    <td>Half the width of a bar magnet. </td>
+    <td>Millimeters</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>y<sub>b</sub></td>
+    <td>Half the length of a bar magnet. </td>
+    <td>Millimeters</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>z<sub>b</sub></td>
+    <td>Half the height of a bar magnet. </td>
+    <td>Millimeters</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>k, l, m</td>
+    <td>Constants used to iterate the sum.</td>
+    <td>Unitless</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>M<sub>0</sub></td>
+    <td>A magnet's magnetization. </td>
+    <td>Amps per millimeter</td>
+    <td>5.60</td>
+  </tr>
+</table>
+  </div>
+  </div>
+
+  <div class = "grid-container10">
+    <h5>Step One</h5><br> <p1>First we will write the code for one magnet using the above equations. Note that the contour plot of <co>TOTM</co> is shown as its' logarithm; this will allow local minima to be more visible.  </p1> 
+  </div>
+			
+  <div class="grid-container11">
+   <span id="dots">Magnetic field of one magnet<br></span><span id="more">
+	import <bol>matplotlib.pyplot</bol> as plt <br>
+  import <bol>numpy</bol> as np 
+    <br><br><hash># Make a square plot of 500 x 500 grid spaces.</hash> <br> <br>
+    fig, ax = plt.subplots(figsize=(6, 6)) <br>
+    x, y = np.meshgrid(np.linspace(-120, 120, 500), np.linspace(-120, 120, 500)) <br>
+    plt.axis('equal') <br> <br>
+    <hash># This uses the x,y meshgrid above to calculate the x-component of the magnetic field at each point on the grid.</hash> <br>
+    <br>
+    def <bol>x_direct</bol>(X,Y):<br>
+        &nbsp; x_direct_sum = 0<br>
+    &nbsp; &nbsp; for <bol>k</bol> in range (1,3):<br>
+            &nbsp; &nbsp; &nbsp; for <bol>l</bol> in  range (1,3):<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; for <bol>m</bol> in  range (1,3):<br>  
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x_direct = (-1)**(k+l+m)*np.log(z+zb*(-1)**m + np.sqrt((x+xb*(-1)**k)**2 + (y+yb*(-1)**l)**2 + (z+zb*(-1)**m)**2))<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x_direct_sum += x_direct<br>
+    &nbsp;  return((M0/4*np.pi)*x_direct_sum) <br> <br>
+    <hash># This uses the x,y meshgrid above to calculate the y-component of the magnetic field at each point on the grid.</hash> <br>
+    <br>
+    def <bol>y_direct</bol>(X,Y):<br>
+        &nbsp; y_direct_sum = 0<br>
+    &nbsp; &nbsp; for <bol>k</bol> in range (1,3):<br>
+            &nbsp; &nbsp; &nbsp; for <bol>l</bol> in  range (1,3):<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; for <bol>m</bol> in range (1,3):<br>  
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y_direct = -(((-1)**(k+l+m)*(y+yb*(-1)**l)*(x+xb*(-1)**k))/((np.absolute(y+yb*(-1)**l))*(np.absolute(x+xb*(-1)**k))))*(np.arctan((np.absolute(x+xb*(-1)**k))*(z+zb*(-1)**m)/(np.absolute(y+yb*(-1)**l)*np.sqrt((x+xb*(-1)**k)**2 + (y+yb*(-1)**l)**2 + (z+zb*(-1)**m)**2))))<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;y_direct_sum += y_direct<br>
+    &nbsp;  return((M0/4*np.pi)*x_direct_sum)<br> <br>
+    <hash># Calculate the magnitude of the total magnetic field. </hash><br><br>
+    TOTM = np.sqrt(x_direct(x,y)**2 + y_direct(x,y)**2)<br><br>
+    <hash># Plot contour and streamlines</hash><br><br>
+    ax.contourf(x, y, np.log(TOTM), 30, cmap = cm.seismic, zorder=1)<br>
+    ax.streamplot(x, y, x_direct(x,y), y_direct(x,y), color = 'w', linewidth = 0.5, zorder=10, density=0.5)<br>
+    plt.show()<br>
+    </span>
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+  </div>
+
+  <div class = "grid-container10">
+    <h5>Step Two</h5><br><p1>Now we need to <b>rotate</b> and <b>translate</b> the magnet. To do so we need to use a <b>rotation matrix</b> and <b>reverse rotation matrix</b>:</p1>
+  </div>
+
+ <div class="grid-container9">
+	<div class="grid-item9">
+			 $$ {\small{R}_{\theta} = \begin{bmatrix}cos \theta & -sin \theta\\sin\theta & cos\theta\end{bmatrix}}\qquad \qquad {\small{R}_{\theta}^{'} = \begin{bmatrix}cos \theta & sin \theta\\-sin\theta & cos\theta\end{bmatrix}} \\$$
+	</div></div>
+			
+<div class = "grid-container10">
+    <p1>These can be used to rotate the x,y meshgrid onto a new meshgrid: xx,yy using a specified angle <co>rot</co> that we want to rotate the 'magnet'. The code will then calculate the magnetic field based in the newly rotated xx,yy coordinates before using the reverse rotation matrix to rotate it back to the x,y coordinates.</p1>
+  </div>
+
+<div class = "grid-container10">
+    <p1>We've also added in <co>trans</co> which is just a value that will be subtracted from the 'x' argument in the functions <co>x_direct</co> and <co>y_direct</co> allowing it to be translated about the x-axis. Lastly, we've made the entire code into one function <co>plot_graph</co> with arguments <i>rot</i> and <i>trans</i> so that we can easily make a plot using any values we want.</p1> 
+</div>
+
+  <div class="grid-container11">
+   <span id="dots2">Magnetic field of one magnet with rotation and translation<br></span><span id="more2">
+import <bol>matplotlib.pyplot</bol> as plt <br>
+  import <bol>numpy</bol> as np <br>
+    <br><new>def <bol>plot_graph</bol>(rot,trans,xb,yb,zb,M0,z):</new> <br> <br>
+    &nbsp;fig, ax = plt.subplots(figsize=(6, 6)) <br>
+    &nbsp;x, y = np.meshgrid(np.linspace(-120, 120, 500), np.linspace(-120, 120, 500)) <br>
+    &nbsp;plt.axis('equal') <br> <br>
+    &nbsp;def <bol>x_direct</bol>(X,Y):<br>
+	<new>&nbsp;&nbsp;xx = X*np.cos(rot*np.pi/180)+Y*np.sin(rot*np.pi/180)<br>
+        &nbsp;&nbsp;yy = -X*np.sin(rot*np.pi/180)+Y*np.cos(rot*np.pi/180)<br></new>
+        &nbsp;&nbsp; x_direct_sum = 0<br>
+   &nbsp; &nbsp; &nbsp; for <bol>k</bol> in range (1,3):<br>
+            &nbsp;&nbsp; &nbsp; &nbsp; for <bol>l</bol> in  range (1,3):<br>
+                &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; for <bol>m</bol> in  range (1,3):<br>  
+                    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x_direct = (-1)**(k+l+m)*np.log(z+zb*(-1)**m + np.sqrt((<new>xx</new>+xb*(-1)**k)**2 + (<new>yy</new>+yb*(-1)**l)**2 + (z+zb*(-1)**m)**2))<br>
+                    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x_direct_sum += x_direct<br>
+    &nbsp;&nbsp;  return((M0/4*np.pi)*x_direct_sum) <br> <br>
+    &nbsp; def <bol>y_direct</bol>(X,Y):<br>
+	<new>&nbsp;&nbsp;xx = X*np.cos(rot*np.pi/180)+Y*np.sin(rot*np.pi/180)<br>
+        &nbsp;&nbsp;yy = -X*np.sin(rot*np.pi/180)+Y*np.cos(rot*np.pi/180)<br></new>
+        &nbsp;&nbsp; y_direct_sum = 0<br>
+    &nbsp;&nbsp; &nbsp; for <bol>k</bol> in range (1,3):<br>
+            &nbsp;&nbsp; &nbsp; &nbsp; for <bol>l</bol> in  range (1,3):<br>
+                &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; for <bol>m</bol> in  range (1,3):<br>  
+                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y_direct = -(((-1)**(k+l+m)*(<new>yy</new>+yb*(-1)**l)*(<new>xx</new>+xb*(-1)**k))/((np.absolute(<new>yy</new>+yb*(-1)**l))*(np.absolute(<new>xx</new>+xb*(-1)**k))))*(np.arctan((np.absolute(<new>xx</new>+xb*(-1)**k))*(z+zb*(-1)**m)/(np.absolute(<new>yy</new>+yb*(-1)**l)*np.sqrt((<new>xx</new>+xb*(-1)**k)**2 + (<new>yy</new>+yb*(-1)**l)**2 + (z+zb*(-1)**m)**2))))<br>
+                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;y_direct_sum += y_direct<br>
+    &nbsp;&nbsp;  return((M0/4*np.pi)*x_direct_sum)<br> <br>
+    &nbsp;<hash># Rotate back to x,y coordinates.</hash><br><br>
+    <new>&nbsp;MAG1X = x_direct(x-trans,y,rot)*np.cos(rot*np.pi/180) - y_direct(x-trans,y,rot)*np.sin(rot*np.pi/180)<br>
+    &nbsp;MAG1Y = x_direct(x-trans,y,rot)*np.sin(rot*np.pi/180) + y_direct(x-trans,y,rot)*np.cos(rot*np.pi/180)<br>
+    &nbsp;TOTM = np.sqrt(MAG1X**2 + MAG1Y**2)<br><br></new>
+    &nbsp;ax.contourf(x, y, np.log(TOTM), 30, cmap = cm.seismic, zorder=1)<br>
+    &nbsp;ax.streamplot(x, y, x_direct(x,y), y_direct(x,y), color = 'w', linewidth = 0.5, zorder=10, density=0.5)<br>
+    &nbsp;plt.show()<br><br>
+	   <hash># Example function call.</hash><br><br>
+    <new>plot_graph(45,30,10,20,5,5.6,0)<br></new>
+    </span>
+    <button onclick="myFunction2()" id="myBtn2">Read more</button>
+  </div>
+
+  <div class = "grid-container10">
+    <h5>Step Three</h5><br><p1>Finally, we can add in a second magnet by inserting the following few lines, remembering to subtract <co>MAG2X</co> and <co>MAG2Y</co> from <co>MAG1X</co> and <co>MAG1Y</co> because of the opposite pole orientations.</p1>
+  </div>
+
+<div class="grid-container11">
+    MAG1X = x_direct(x-trans,y,rot)*np.cos(rot*np.pi/180) - y_direct(x-trans,y,rot)*np.sin(rot*np.pi/180)<br>
+    <new>MAG2X = x_direct(x+trans,y,-rot)*np.cos(-rot*np.pi/180) - y_direct(x+trans,y,-rot)*np.sin(-rot*np.pi/180)</new><br>
+    MAG1Y = x_direct(x-trans,y,rot)*np.sin(rot*np.pi/180) + y_direct(x-trans,y,rot)*np.cos(rot*np.pi/180)<br>
+    <new>MAG2Y = x_direct(x+trans,y,-rot)*np.sin(-rot*np.pi/180) + y_direct(x+trans,y,-rot)*np.cos(-rot*np.pi/180)<br>
+    TOTX = MAG1X - MAG2X<br>
+    TOTY = MAG1Y - MAG2Y<br>
+    TOTM = np.sqrt(TOTX**2 + TOTY**2)</new>
+</div>
+
+  <div class = "grid-container10">
+    <h5>Code Outputs</h5>
+  </div>
+
+<div class="grid-container12">
+	<div class="grid-item122">
+	</div>
+	<div class="grid-item121">
+	</div>
+	<div class="grid-item123">
+	</div>
+	<div class="grid-item124">
+		<p5>Step One</p5><br>
+		<p1>A single bar magnet's magnetic field.</p1>
+	</div>
+	<div class="grid-item124">
+		<p5>Step Two</p5><br>
+		<p1>A rotated and translated bar magnet's magnetic field.</p1>
+	</div>
+	<div class="grid-item124">
+		<p5>Step Three</p5><br>
+		<p1>Two rotated and translated bar magnets and resultant magnetic field.</p1>
+	</div>
+</div>
+
+  <div class = "grid-container10">
+    <h5>Varying Rotation</h5>
+  </div>			
+			
+<div class=grid-container13>
+    <div class="grid-item132">
+      <p1>Now that we have our model, we can start to experiment with the variables to see how the system works. To start with we define <co>xb</co>, <co>yb</co> and <co>zb</co> as 10, 20 and 5 respectively because they are the dimensions of the magnets we have on hand to later validate our code. We will also define <co>M0</co> as 5.6 based on experimental measurement of the magnets. Second, we chose to set <co>trans</co> at 30 for consistency so that we can focus on the effect that rotation has on the location of the local minimum. </p1><br><br>
+      <p1>On the left, we can select a certain angle of rotation. For higher angles, we can see that a lighter patch on the contour plot comes closer to the magnets. Around this point, the field lines change direction, showing the point is a minimum.</p1><br><br>
+      <p1>This change in direction corresponds to a minimum because if you were to plot just the magnetic field's x-direction, we would see a change from negative (field lines pointing left) to positive (field lines pointing right). Below is a zoomed-in plot around the minima point to see how the magnetic field, its' square and its' square's gradient varies. We can see that a change from negative to positive magnetic field also corresponds to change of its' square's gradient from negative to positive. As this is proportional force, it indicates the change of pull to push experienced by the MNPs.</p1>
+    </div>
+    <div class="grid-item131">
+  <img src="" id="imgBruegel" style="width: 300px; height: 300px, border-radius: 15px;" /> <br><br>
+  <select class="mySelect" id="selPainting" onchange="changePainting()">
+    <option value="../images/contours-33.png">15 degrees</option>
+    <option value="../images/contours-35.png">25 degrees</option>
+    <option value="../images/contours-37.png">35 degrees</option>
+    <option value="../images/contours-38.png">45 degrees</option>
+    <option value="../images/contours-36.png">55 degrees</option>
+    <option value="../images/contours-34.png">65 degrees</option>
+  </select>
+  </div>
+</div>
+			
+<div class="grid-container15">
+</div>
+
+<div class="grid-container0">
+	<h4>Experimental Validation</h4>
+</div>
+
+<div class="grid-container9">
+	<div class="grid-item9">
+	<p1>To validate our code, we will fix two identical magnets to a board such that they can be rotated with screws. We will set their center's 60 mm apart (30 mm translation from common origin) and align a hall probe (which measures magnetic field) with their common origin such that it measures the magnetic field in the x direction. Starting with 15° and working up to 65° in intervals of 10°, we take measurements with the hall probe at 4 mm intervals along the y-axis.</p1>
+	<br><br>
+	<p1>We expect that the local minimum location will be detected when the magnetic field <b>changes direction</b> as seen in the field lines, e.g. when the hall probe measurement changes from <b>negative to positive</b>.</p1>
+	</div>
+</div>
+
+<div class="grid-container14">
+</div>
+
+<div class="grid-container0">
+	<h4>Results</h4>
+</div>
+
+<div class="grid-container9">
+	<div class="grid-item9">
+	<p1>Finally, we can test our experimentally obtained values to against the code's output to determine its' success. This comparison, at each angle interval, is shown below. </p1>
+	</div>
+</div>
+
+<div class="grid-container16">
+</div>
+
+
+<div class="grid-container0">
+	<h3>Conclusions</h3>
+</div>
+
+<div class="grid-container9">
+	<div class="grid-item9">
+		<p1>Looking at the above plots, there is a clear positive shift in the graph’s x-direction from the computed to the experimentally measured values that is consistent among all angles, suggesting that there was a systematic error in our experimental measurements such as an initial misalignment of the wooden board. The computed plot also looks as though it has been ‘squeezed’. The experimentally obtained value for M0 was used in the computer code and its value had a significant impact on the overall shape of the curve by vertically stretching it. The error of ± 0.1 A mm-1 due to the measurements of the magnets’ dimensions and their pole strengths were not significant enough to make it align with the experimentally measured values. Instead, the mild steel that was used to atatch it to the board may have caused a systematic error when measuring the pole strength.</p1><br><br><p1>Other causes could be due to limitations when clearing the area of any other magnetic materials, as this could have a significant impact on the readings. Additionally, we could have used a Zero Gauss Chamber to zero the probe before each reading. Otherwise, the overall shapes of the Hx plots are close to what was expected, with an increasing resemblance as the angle gets larger. </p1>
+	<br><br>
+		<p1>In regard to the suitability of configurations for medical uses, for an intended distance of 30-50 mm of an inner ear, an angle of 65° would be most appropriate of the angles tested in this project. We found it to have a local minimum distance of 62 ± 2 mm experimentally which could comfortably reach the inner ear. Additionally - outside the scope of this blog - we looked at the values of ∇(||H||2) after each local minimum and, of the 6 setups that we investigated, it was found to have the largest singular value of (2.25 ± 2.04) x 10-7 T2 mm-1 and hence would exert the largest force so that anatomical barriers such as the RWM or hydrodynamic drag forces could be overcome. </p1>
+	</div>
+</div>
+
+<div class="grid-container0">
+	<h4>Skills obtained from this project</h4>
+</div>
+
+<div class="grid-container17">
+  <div class="grid-item171">
+    Python Development
+  </div>
+  <div class="grid-item171">
+    Group Work
+  </div>
+  <div class="grid-item171">
+    Report Writing
+  </div>
+  <div class="grid-item171">
+    Experimental procedures
+  </div>
+</div>
+			
+    </body>
+
+<div class="footer">
+  last updated: 19th August 2024
+</div>
+
+		
+    
+     <script>
+	const nav = document.querySelector('postheader')
+	window.addEventListener('scroll', fixNav)
+	function fixNav() {
+    	if (window.scrollY > 80) {
+        nav.classList.add('active')
+  	} else {
+        nav.classList.remove('active')
+  	}
+	}	
+  </script>
+
+<script>
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Show less";
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText.innerHTML = "Show less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+  <script>
+    function changePainting(){
+      let filename = document.getElementById("selPainting").value;
+      document.getElementById("imgBruegel").src = filename;
+    }
+    
+    let element = document.getElementById("selPainting");
+    element.dispatchEvent(new Event("change"));
+    
+  </script>
+		
+  </html>
