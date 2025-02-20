@@ -1,0 +1,333 @@
+---
+title: Anna Smail
+layout: postlayout
+---
+<postheader>
+      <div class="prev">
+        <a href="/Projects/PandasAndDataframes" class="prevgrid">
+          <div class="prevgrid11">
+          </div>
+          back
+        </a>
+</div>  
+<div class="posttitle">
+        <h2> Finding Averages </h2>
+        <p4>Creating functions to manipulate dataframes</p4>
+</div>       
+</postheader>
+
+<body>
+
+	<div class="comments">
+		For this plot, I wanted  to see if I could determine my favourite book length. This could be done multiple ways. For example I could catergorise the
+		books into rating categories (1,2,3,4 and 5) and then find the average book length in each category. Alternatively, I could categorise the books
+		into book length (e.g. 300-350, 350-400 pages) and then find the average rating in each category.  
+		<br><br>
+		First, I'll just plot the basic data of rating against book length (below). I would say that based on this, the second method might produce a
+		more accurate result as the data in each rating category (especially 3) is very spread out. 
+		<div class="container_graph">
+			<div class="graph_container">
+			</div>
+		</div>
+		<h21>First Method</h21><br>
+		But I'll start with the first method! First, I'll find the frequency of each rating using the <code>.value_counts()</code> <i>Pandas</i> function.
+		Here I have also reset the index to <code><links>'Frequency'</links></code> so that the outputed table has the correct column headers. 
+	</div>
+	<div class="code">
+		Avg_booklength = pd.DataFrame(Books_df.value_counts([<links>'Rating'</links>]).reset_index(name=<links>'Frequency'</links>))<br>
+		Avg_booklength.head(5)
+	</div>
+	<div class="comments">
+	<table>
+  		<thr><th> </th><th>Rating</th><th>Frequency</th></thr>
+  		<tr><td>0</td><td>4</td><td>47</td></tr>
+		<tr><td>1</td><td>3</td><td>45</td></tr>
+		<tr><td>2</td><td>5</td><td>37</td></tr>
+		<tr><td>3</td><td>2</td><td>14</td></tr>
+		<tr><td>4</td><td>1</td><td>7</td></tr>
+	</table>
+	</div>
+	<div class="comments">
+		I will then need to make some functions that search for each book in the dataframe with the same ratings and then calculate the sum of all of 
+		their book lengths and append this value to the new dataframe, which I have named <code>Avg_booklength</code>. Then I'll easily be able to calculate the average value.
+	</div>
+	<div class="code">
+<hash># Goes through every row in Avg_booklength and returns the value in the 'Rating' column </hash><br><br>
+for i in range(0,5):<br>
+   &emsp;Rating = Avg_booklength.loc[Avg_booklength.index == i, <links>'Rating'</links>].item()<br>
+   &emsp;add_to_new(Rating)<br><br>
+		
+<hash># Func. 1: searches Books_df for specific 'Rating' values, finds their corresponding 'Pages' value and returns the total sum of all the 'Pages' values
+with the same 'Rating'.</hash><br><br>
+<b>def</b> find_tot(Rating):<br>
+   &emsp;return (Books_df[(Books_df[<links>'Rating'</links>] == Rating)])[<links>'Pages'</links>].sum()<br><br>
+		
+<hash># Func. 2: Excecutes Func. 1 for each 'Rating' value in Avg_booklength and adds total sum values to 'Total' column</hash><br><br>
+<b>def</b> add_to_new(Rating):<br>
+   &emsp;Avg_booklength.loc[(Avg_booklength[<links>'Rating'</links>] == Rating), <links>'Total'</links>] = find_tot(Rating)<br><br>
+
+<hash># Creates a new column 'Average' in Avg_booklength with average values</hash><br><br>
+Avg_booklength[<links>'Average'</links>] = Avg_booklength[<links>'Total'</links>] / Avg_booklength[<links>'Frequency'</links>]
+	</div>
+<div class="comments">
+	<table>
+  		<thr><th> </th><th>Rating</th><th>Frequency</th><th>Total</th><th>Average</th></thr>
+  		<tr><td>0</td><td>4</td><td>47</td><td>17386</td><td>369.91</td></tr>
+		<tr><td>1</td><td>3</td><td>45</td><td>13824</td><td>307.20</td></tr>
+		<tr><td>2</td><td>5</td><td>37</td><td>13892</td><td>375.46</td></tr>
+		<tr><td>3</td><td>2</td><td>14</td><td>4285</td><td>306.07</td></tr>
+		<tr><td>4</td><td>1</td><td>7</td><td>1982</td><td>283.14</td></tr>
+	</table>
+	</div>
+<div class="comments">
+I will then find the standard deviation for each average using <code>np.std</code>. This will give me a good idea of how reliable the average points are.
+</div>
+<div class="code">
+std = []<br>
+for j in range(1,6):<br>
+  &emsp;std = np.append(std, (np.std(np.array((Books_df[(Books_df[<links>'Rating'</links>] == j)])[<links>'Pages'</links>]))))<br><br>
+print(std)
+</div>
+<div class="codeoutput">
+	>>    [ 49.88681066  73.68316757 126.61097021 128.47581605 107.65023307]
+</div>
+<div class="comments">Now, using the function <code>np.polyfit</code>, I can fit a polynomial line of best fit to the scatter points. I've chosen degree equal
+to 3 so that it is a cubic function. I've also found the max value of the polynomial fit and plotted a line using <code>plt.axhline</code>.</div>
+<div class="code">
+plt.scatter(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'</links>], s=100, color='#FF86C0', edgecolors='#FAFAFA', linewidths=2, zorder=10)<br><br>
+p = np.polyfit(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'</links>], deg=3)<br>
+x = np.linspace(0.8,5.7, 100)<br>
+y = np.polyval(p, x)<br>
+plt.plot(x,y, color='#A5AFFB',  linewidth=2, zorder=2)<br>
+plt.axhline(y=379.11993224376215, linewidth=1, color='#A5AFFB', zorder=2)<br><br>
+errors = np.array([ 49.88681066,  73.68316757, 126.61097021, 128.47581605, 107.65023307])<br>
+plt.errorbar(Fave_length[<links>'Rating'</links>], Fave_length[<links>'Average'</links>], errors, linestyle='none', linewidth=1, capsize=5, zorder=2, color='#FF86C0')
+</div>
+<div class="comments">
+	<div class="container_graph">
+		<div class="graph_container2">
+		</div>
+	</div>
+	</div>
+
+<div class="comments">
+	<h21>Second Method</h21><br>
+	Now I'll try the second method! First I'll create a new dataframe, <code>length_div</code> with columns for min and max values of the page ranges.
+</div>
+<div class="code">
+	length_div = pd.DataFrame(data=[50,100,150,200,250,300,350,400,450,500,550,600,650], columns=[<links>'min'</links>])<br>
+length_div[<links>'max'</links>] = [100,150,200,250,300,350,400,450,500,550,600,650,700]
+</div>
+<div class="comments">
+	Then I'll define some functions very similar to those in the first method!
+</div>
+
+<div class="code">
+<hash># goes through Books_df with given range between min and max and returns sum of values of every rating</hash><br><br>
+<b>def</b> find_tot(min, max):<br>
+  &emsp;return (Books_df[((Books_df[<links>'Pages'</links>] >= min) & (Books_df[<links>'Pages'</links>] <= max))])[<links>'Rating'</links>].sum()<br><br>
+<hash># creates new column in length_div called 'Total' and fills in with values from find_tot</hash><br><br>
+<b>def</b> add_to_col(min, max):<br>
+  &emsp;length_div.loc[(length_div[<links>'min'</links>] == min), <links>'Total'</links>] = find_tot(min, max)<br><br>
+<hash># creates a new column in length_div and and fills in with frequency of books in each range from Books_df</hash><br><br>
+<b>def</b> find_freq(min, max):<br>
+  &emsp;length_div.loc[(length_div[<links>'min'</links>] == min), <links>'Freq'</links>] = len(Books_df[(Books_df[<links>'Pages'</links>] >= min) & (Books_df[<links>'Pages'</links>] <= max)])<br><br>
+
+<hash># goes through index 0-12 and excecutes each function for every row in length_div </hash><br><br>
+std2 = []<br>
+for i in range(0,13):<br>
+  &emsp;min = length_div.loc[length_div.index == i, <links>'min'</links>].item()<br>
+  &emsp;max = length_div.loc[length_div.index == i, <links>'max'</links>].item()<br>
+  &emsp;add_to_col(min, max)<br>
+  &emsp;find_freq(min, max)<br>
+  &emsp;std2 = np.append(std2, (np.std(np.array((Books_df[((Books_df[<links>'Pages'</links>] >= min) & (Books_df[<links>'Pages'</links>] <= max))])[<links>'Rating'</links>]))))<br><br>
+length_div[<links>'Avg'</links>] = length_div[<links>'Total'</links>] / length_div[<links>'Freq'</links>]
+</div>
+<div class="comments">
+	Now I can plot this! I'll do this one as a bar chart.
+</div>
+<div class="code">
+	plt.bar((length_div[<links>'min'</links>]+length_div[<links>'max'</links>])/2, length_div[<links>'Avg'</links>], width=40, color='#7887F7', zorder=2)
+</div>
+<div class="comments">
+	<div class="container_graph">
+		<div class="graph_container3">
+		</div>
+	</div>
+</div>
+
+<div class="comments">
+	So looking at the two methods, I can see that the first suggests my favourite book length would be about 380 pages while the second one suggests around 
+	560 pages! Looking at the error bars on each plot suggests that both are quite inaccurate and the comparison shows how easily data can be misinterpreted!<br><br>
+	Looking back at the original scatter plot of <code>Rating</code> and <code>Pages</code> there is only a very weak correlation between the two variables (higher ratings
+	seem to have a slightly higher rating), so these inconsistent results were expected. 
+</div>
+
+  </body>
+	  
+<div class="footer">
+  last updated: 17th September 2024
+</div>
+
+<style>
+  .container_graph{
+	margin: 15px 0px 20px 0px;
+	display: grid;
+  	grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+	width: 100%;
+	padding: 15px 0px;
+	border-radius: 15px;
+	border: 1px solid #ccc;
+}
+.graph_container{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../../images/4_1.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+.graph_container2{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../../images/4_2.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+.graph_container3{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../../images/4_3.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+table {
+  margin: 20px 0px;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  padding: 8px 15px;
+  font-family: 'Spline Sans Mono';
+  text-align: left;
+  border-bottom: 2px solid #FFFFFF;
+  background: #CDD2FF;
+}
+td {
+  padding: 4px 15px;
+  font-family: 'DM Sans';
+  text-align: left;
+  vertical-align: text-top;
+  border-bottom: 1px solid #FFFFFF;
+}
+tr{
+	background-color: #EAECFF;
+}
+tr:hover {background-color: #DDE1FF;}
+.comments{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 10px 180px;
+	font-family: DM Sans;
+}
+p20{
+	font-family: DM Sans;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+h20{
+	font-family: DM Sans;
+	font-size: 1.5em;
+	margin: 30px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 2em;
+}
+h21{
+	font-family: DM Sans;
+	font-size: 1.3em;
+	margin: 10px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.comments{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 10px 180px;
+	font-family: DM Sans;
+}
+.comments2{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 0px;
+	font-family: DM Sans;
+}
+.code{
+  border-radius: 10px;
+  margin: 25px 200px 25px 200px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #F6F6F6;
+}
+.code2{
+  border-radius: 10px;
+  margin: 20px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #F6F6F6;
+}
+.codeoutput{
+  border-radius: 10px;
+  margin: 25px 200px 25px 200px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #FAFAFA;
+}
+hash{
+	color: #CCCCCC;
+}
+code{
+	font-family: Spline Sans Mono;
+	background-color: #F5F5F5;
+}
+links{
+	color: #FF7EBC;
+}
+note{
+	color: #CCC;
+}
+.prevgrid11{
+  column: 1;
+  background-image: url("../../images/arrow-25.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+</style>
