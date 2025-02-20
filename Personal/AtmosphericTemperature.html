@@ -1,0 +1,862 @@
+---
+layout: postlayout
+title: Anna Smail
+---
+  
+<postheader>
+      <div class="prev">
+        <a href="/University/PushingWithMagnets" class="prevgrid">
+          <div class="prevgrid1">
+          </div>
+          prev.
+        </a>
+</div>
+      
+      
+<div class="posttitle">
+        <h2> Atmospheric Temperature </h2>
+        <p4>Mathematically describing the observed temperature patterns of Earth's atmosphere.</p4>
+</div>
+      
+<div class="next">
+        <a href="/University/PushingWithMagnets" class="nextgrid">
+        next  
+	<div class="nextgrid1">
+	  </div>
+        </a>
+</div>
+      
+</postheader>
+<body>
+
+	<div class="greyout">
+	    <p>Below is a plot of the Earth's atmospheric temperature. Two temperature inversions are highlighted, defining the atmospheric layers: stratosphere and thermosphere. But why does this pattern occur? Furthermore, why does the temperature decrease in the troposphere and mesosphere? This post will outline the physical causes for these observations.</p>
+	    </div>
+  
+  <div class="container1">
+  <div class="item1-1">
+    </div>
+    <div class="item1-2">
+		    <sub1>The Barometric Law</sub1>
+      <p>First, we need to derive the barometric law which can describe how certain physical attributes, such as pressure and density, 
+	      change with altitude, z. For this, we define the rate of change of pressure as a function for <i>p</i> multiplied by 
+	      gravitational constant, <i>g</i> (1). For the <i>p</i>-function will use 
+	      <a href="https://en.wikipedia.org/wiki/Ideal_gas_law">the ideal gas equation</a> (2).</p>
+	    $$ {\frac{dp}{dz} = -gp\quad (1)}\qquad\qquad{p = \frac{\rho k_B T}{\mu m_p}\quad (2)}\\$$
+	<p>By assuming <i>T</i>, <i>u</i> and <i>g</i> as constant with respect to altitude, we can substitute (1) into (2) and integrate with 
+		respect to <i>z</i> giving (3).</p>
+	 	    $$ {p(z) = p(0)exp\left(-\frac{z}{H}\right)\quad (3)}\qquad\qquad{H = \frac{k_B T}{g \mu m_p}\quad (4)}\\$$
+	   <p><i>H</i> is defined as the <b>atmospheric scale height</b> (8.5km for Earth). The above equation shows there is an exponential 
+		   decrease in <b>pressure</b> with z and as pressure is proportional to <b>density</b> (ref. ideal gas equation) we can find 
+		   the barometric law:</p>
+	    $$ {\rho(z) = \rho(0)exp \left(-\frac{z}{H} \right)\quad (5)}\\$$
+	    </div>
+  </div>
+
+<div class="container2">
+	<sub1>Estimating a planet's surface temperature</sub1>
+	<p>It is possible to estimate an exoplanet's surface temperature. To do so, we start with measuring the radiation 
+		emitted by their host star. By assuming that the star and planet are in radiative equilibrium, we find that the planet's 
+		<b>equilibrium temperature</b> is related to the star's <b>effective temperature</b> by the following equation, where <i>AB</i> is the bond albedo, 
+		a measure of how reflective a surface is; <i>Rstar</i> is the star's radius and <i>r</i> is the distance from the star
+	to the planet.</p>
+	$$ {T_{eq} = \left(\frac{1-A_B}{4}\right)^{\frac{1}{4}}\left(\frac{R_{star}}{r}\right)^{\frac{1}{2}}\qquad (6)}\\$$
+	<div class="clickmore" href="#" onclick="toggle()">Click for derivation!</div>
+</div>
+<div id="popup">
+	<div class="container4">
+		<div class="item4-1">
+			<p>On the right is the plot of <b>Planck's Function</b> representing 3 bodies with different temperatures. It describes the intensity
+				of the electromagnetic radiation emitted by each body and is described by (6.1). </p>
+			$${I(\lambda) = \frac{2 \pi h c^2}{\lambda^5}\frac{1}{exp\left(\frac{hc}{\lambda k_B T}\right)-1}\qquad(6.1)}\\$$
+			<p>This equation is for bodies that act similarly to <b>black bodies</b> such as stars. A black body is an object that absorbs <i>all</i>
+				incident radiation upon it and then re-emits it as a spectrum based on the temperature of the body. 
+		</div>
+		<div class="planck">
+		</div>
+	</div>
+	<div class="container5">
+		<p>(6.1) has then been integrated to find (6.2) where we have defined the relationship between temperature and radiation intensity 
+				by the <b>Stefan-Boltzmann Law</b> with the <b>Stefan-Boltzmann constant</b>:</p>
+			$${I = \sigma_{SB}T^4\qquad(6.2)}\\$$
+		<p>Before going any further, we need to define two important terms...</p>
+		<div class="definitions">
+			<p><b>T(eff)</b>&emsp;Effective temperature, the temperature of a black body that emits the <i>same total intensity</i> as an emitting body.</p>
+			<p><b>T(eq)</b>&emsp;Equilbrium temperature, the temperature of a planet assuming its it <i>radiative equilbrium</i> with its host star.</p>
+		</div>
+		<p>Now we need to define luminosity, <i>L</i> and intensity at a distance from a star, <i>S</i>, as:</p>
+		$${I_{star} = \sigma_{SB}T_{eff}^4}\qquad{L_{star} = 4\pi R_{star}^2 I_{star}}\qquad{S_{star} = \frac{L_{star}}{4\pi r^2}}\qquad(6.3,.4,.5)\\$$
+		<p>The intensity re-emitted by a planet is dependent on a few things. First, it will reflect a fraction of the incoming radition (<i>AB</i>)
+		and so will absorb 1-<i>AB</i>. Also, the radiation is only incident on the cross sectional area of the planet, but will emit radiation 
+		over its' entire surface area, so we account for that with (6.6). Putting this altogether gives (6.7).</p>
+		$${\frac{\pi R_p^2}{4\pi R_p^2}}\qquad(6.6)\qquad\qquad{(1-A_B)\frac{S_{star}}{4} = I_p = \sigma_{SB}T_{eq}^4}\qquad(6.7)\\$$
+		<p>We can then substitute (6.5) in to (6.7) to obtain our final equation...</p>
+		$$ {T_{eq} = \left(\frac{1-A_B}{4}\right)^{\frac{1}{4}}\left(\frac{R_{star}}{r}\right)^{\frac{1}{2}}}\\$$
+	</div>
+</div>
+<div class="container3">
+<p>While (6) can be a good approximation for a planet's effective temperature, is can be significantly different to its' surface temperature due to 
+	greenhouse gases in its' atmosphere. Gases such as C02, H2O and CH4 strongly absorb <b>infrared radiation</b>. Using <a href="https://en.wikipedia.org/wiki/Wien%27s_displacement_law">Wien's displacement law </a>(7), we can
+	see that at terrestrial temperatures (~230K), a planet's emittance spectra will peak at infrared wavelengths. Overall this means that a large portion of
+	outgoing radiation is absorbed by the atmosphere which warms the planetary surface.</p>
+	$${\lambda_{max} = \frac{2.9 \times 10^{-3}mK^{-1}}{T} = \frac{2.9 \times 10^{-3}mK^{-1}}{230} \approx 10\mu m \qquad(7)}\\$$
+</div>
+<div class="container6">
+	<div class="item6-1">
+		<sub2>A simple greenhouse model</sub2>
+		<p>On the left shows a simple greenhouse model. The atmosphere is transparent to visible light, so all radiation that is <b>not</b> reflected (1-AB) 
+		is transmitted to the planet's surface. The heated surface will emit infrared radiation. IR <b>is</b> absorbed
+		by the atmosphere which subsequently re-emits it - both upwards and downwards.</p>
+		<p>The goal of this section is get an equation for <b>surface temperature</b>. To start with, we state that both the atmosphere and planetary
+		surface are in radiative equilbrium. We can then equate the following...</p>
+		$${(1-A_B)\frac{S_{star}}{4} = \sigma_{SB}T_{at}^4 = \sigma_{SB}T_{eq}^4}\qquad (8.1)\\$$
+		$${(1-A_B)\frac{S_{star}}{4} + \sigma_{SB}T_{at}^4 = \sigma_{SB}T_{eq}^4 + \sigma_{SB}T_{at}^4 = \sigma_{SB}T_{s}^4}\qquad (8.2)\\$$
+	</div>
+	<div class="greenhouse">
+	</div>
+</div>
+	
+<div class="container2">
+	<p>Now we can define our equation for surface temperature in terms of the equilibrium temperature! The table below shows the outputs 
+	using measured values for bond albedo and distance from the sun for the planets Earth, Venus and Mars. The table also compares the calculated values 
+	for surface temperature with the actual value for each of the planets. Why do they vary?</p>
+	$${T_{eq} = \left(\frac{1-A_B}{4}\right)^{\frac{1}{4}}\left(\frac{R_{star}}{r}\right)^{\frac{1}{2}}}\qquad (6) \qquad \qquad{T_s = 2^{\frac{1}{4}}T_{eq}} \qquad (8)\\$$
+</div>
+	
+<div class = "container7">
+<table>
+  <thr><th>Planet</th><th>A<sub>B</sub></th><th>r</th><th>T<sub>eq</sub></th><th>T<sub>s</sub></th><th>T<sub>actual</sub></th></thr>
+  <tr><td>Earth</td><td>0.3</td><td>1 AU</td><td>255 K</td><td>303 K</td><td>288 K</td></tr>
+  <tr><td>Venus</td><td>0.75</td><td>0.72 AU</td><td>232 K</td><td>276 K</td><td>276 K</td></tr>
+  <tr><td>Mars</td><td>0.25</td><td>1.52 AU</td><td>210 K</td><td>250 K</td><td>208 K</td></tr>
+</table>
+</div>
+
+<div class="container2">
+	<p>For Earth, the calculated value is slightly warmer than expected. This suggests that the atmosphere absorbs <100% of the surface's emitted IR radiation.
+	In comparison, Venus is estimated to be much colder than it actually is. This suggests that Venus has a much more massive atmosphere that further 
+	warms the surface. Finally, Mars' calculated value is quite a bit colder than we would expect. This suggests that its' atmosphere is thinner and absorbs less
+	IR radiation. All of these inferences turn out to be correct!</p>
+</div>
+
+<div class="container9">
+	<sub1>Improving our model with radiative transfer</sub1>
+	<p>We can further refine our model by considering how transparent an atmosphere is to radiation or how the radiation propogates through it. For this
+	we need to start with Lambert's Law which describes how radiation intensity changes as particle number density changes with altitude <i>(n(z))</i>. We can integrate this and identify a new variable <i>chi</i> 
+		for <i>optical depth</i>. It is defined as equal to 0 at the top of the atmosphere and
+	increases with decreasing altitude.</p>
+	$${dI = Ikn(z)dz} \qquad \qquad {\chi = \int_z^{\infty}kn(z)dz} \qquad\qquad {I(z) = I(\infty) exp(-\chi)}\qquad (9,10,11)\\$$
+	<p>We can now find the <b>radiative transfer equation</b> which allows us to include changes in radiation intensity due to atmospheric absorption. First we
+	should use (9) to find the total change in radiation intensity due to changes in atmospheric absorption <i>and</i> emission respectively (12). Here we have subtracted 
+		the change in radiation intensity due to absorption from emission as it passes through a thin atmospheric layer of thickness <i>dz</i>.
+		We can then use (10) to define an equation that describes the rate of change of radiation with optical depth, or the radiative transfer equation (13).</p>
+	$${dI = dI_{em} - dI_{ab} = I_{em}kn(z)dz - I_{ab}kn(z)dz = \sigma_{SB}T^4(z) - I_{ab}kn(z)dz}\qquad (12) \qquad \qquad {\frac{dI}{d\chi} = I-\sigma_{SB}T^4(\chi)}\qquad (13)\\$$
+	<p>Now we can use the radiative transfer equation to construct a <b>two stream approximation</b>. From here we can create a better model for estimating
+	surface temperature - it will be more accurate than that used in (8) as it takes an atmosphere's optical depth into consideration. As outlined underneath 
+	Table 1, the main issue with the simple greenhouse model was that it didn't consider the atmosphere's characteristics and its' interaction with radiation. Following a
+	derivation (see below), we obtain (14) and (15).</p>
+	$${T^4(\chi)=\left(\frac{1+\chi}{2}\right)T_{eq}^4}\qquad (14) \qquad \qquad {T_s = \left(1+ \frac{\chi_s}{2} \right)^{\frac{1}{4}}T_{eq}}\qquad (15)\\$$
+	<div class="clickmore" href="#" onclick="toggle2()">Click for derivation!</div>
+</div>
+
+<div id="popup2">
+	<div class="container8">
+	<sub2>The two-stream model for a planetary atmosphere in radiative equilibrium</sub2>
+	<div class="twostream"></div>
+		First we assume there is radiative equilibrium and equate upwards to downwards radiation.
+		$${I_u - I_d = (1-A_B)\frac{S_{star}}{4}=\sigma_{SB}T_{eq}^4}\\$$
+		Next we use the radiative transfer equation for upwards and downwards radiation.
+		$${Eq.13: \qquad \frac{dI_u}{d\chi} = I_u = \sigma T^4(\chi) \qquad -\frac{dI_d}{d\chi} = I_d = \sigma T^4(\chi)}\\$$
+		Now we add these equations...
+		$${\frac{d}{d\chi}(I_u-I_d) \qquad \Rightarrow \qquad I_u + I_d = 2 \sigma_{SB} T^4(\chi)} \qquad (A)\\$$
+		and also subtract them...
+		$${\frac{d}{d\chi}(I_u+I_d) \qquad \Rightarrow \qquad I_u - I_d = \sigma_{SB} T_{eq}^4} \qquad (B)\\$$
+		to find equations A and B. From here, the derivation splits in two:
+	</div>
+	<div class="container10">
+		<div class="item10-1">
+			Here we substitute A into B,
+			$${\frac{d}{d\chi}(2\sigma_{SB}T^4(\chi)) = \sigma_{SB}T_{eq}^4}\\$$
+			and then perform the chain rule to obtain:
+			<div class="highlight">$${T^4(\chi) = T^4(0)+\frac{T_{eq}^4\chi}{2}}\qquad(C)\\$$</div>
+		</div>
+		<div class="item10-2">
+			$${\left[I_u - I_d = \sigma_{SB}T_{eq}^4\right] + \left[I_u + I_d = \sigma_{SB}T^4(\chi)\right]}\\$$
+			<div class="highlight">$${\Rightarrow \quad I_u = \sigma_{SB}T^4(\chi)+ \frac{\sigma_{SB}T_{eq}^4}{2}}\qquad(D)\\$$</div>
+			$${\chi = 0, \quad I_u = (1 - A_B)\frac{S_{star}}{4} \quad \Rightarrow \quad \sigma_{SB}T^4(0)+\frac{\sigma_{SB}T_{eq}^4}{2}=\sigma_{SB}T_{eq}^4}\\$$
+			<div class="highlight">$${\Rightarrow \quad T^4(0) = \frac{\sigma_{SB}T_{eq}^4}{2}}\qquad(E)\\$$</div>
+		</div>
+	</div>
+	<div class="container8">
+		Now we can substitute E into C to give us atmospheric temperature as a function of optical depth:
+		<div class="highlight">$${T^4(\chi)=\left(\frac{1+\chi}{2}\right)T_{eq}^4}\qquad (F)\\$$</div>
+		To obtain an equation for surface temperature, we set optical depth = surface optical depth in D and equate it to outgoing surface radiation:
+		$${I_u = \sigma_{SB}T^4(\chi_s)+ \frac{\sigma_{SB}T_{eq}^4}{2} = \sigma_{SB}T_s^4}\\$$
+		Simplifying this gives us:
+		$${T^4(\chi_s) = T_s^4 - \frac{T_{eq}^4}{2}}\\$$
+		Finally we add this to F and obtain: 
+		<div class="highlight">$${T_s = \left(1+\frac{\chi_s}{2}\right)^{\frac{1}{4}}T_{eq}}\\$$</div>
+	</div>
+</div>
+<div class="container11">
+	<div class="item11-1">
+		<sub2>Radiative heat transport</sub2>
+		<p>Now we refer back to barometric law (5) to find temperature as a function of altitude, <i>z</i>. We can do this 
+		because optical depth is directly proportional to number density and hence pressure. </p>
+		$${\chi(z) = \chi_s exp\left(-\frac{z}{H}\right)}\\$$
+		Substituting this into (14) we find the following equation which is plotted on the right.
+		$${T(z) = \left(\frac{1+ \chi_s exp(-\frac{z}{H})}{2}\right)^{\frac{1}{4}}T_{eq}}\\$$
+		While this model is useful for understanding temperature profiles, it also has two problems: it does not account for the <b>temperature inversions</b> 
+		and it has a <b>discontinuity</b> at the surface due to the atmosphere being warmed by <b>conduction</b> there.
+	</div>
+	<div class="justrad">
+	</div>
+</div>
+
+<div class="container9">
+	<sub1>Convective heat transport</sub1>
+	<p>Convection is the transport of energy through bulk motion of matter in the atmosphere, as opposed to the microscopic interactions responsible for radiative
+	energy transport. To derive the role convection plays in atmospheric heating, we consider an air parcel that expands and condenses <b>adiabatically</b> (no
+	heat transfer). Using the following equations,</p>
+	$${dU = dQ - dW}\qquad{pV = Nk_B T}\qquad{R = C_p - C_v = \frac{Nk_B}{m}}\qquad{\frac{dP}{dz}=-g\rho}\\$$
+	<p>we find an expression for the vertical temperature gradient in an atmosphere dominated by convection, where we have defined a new variable as the 
+	<b>dry adiabatic lapse rate</b>. This is a measure of the rate at which gas cools (Kelvin per km).</p>
+	$${\frac{dT}{dz}=-\frac{g}{C_p} = \Gamma_d}\\$$
+	<p>There is also the moist and average adiabatic lapse rates that differ to the dry rate due to the presence of gases that condense as a parcel cools and
+	rises. The point at which the <i>average</i> adiabatic lapse rate and radiative equilibrium model cross (see below), roughly marks the tropopause.</p>
+	<p>So is the troposphere dominated by convection or radiative heat transport? If radiative equilibrium is established, a gas parcel that is warmed 
+	at the planetary surface will rise and cool at the <i>average</i> adiabatic lapse rate until it reaches an altitude of equal temperature. This is the
+	process of heat transport by convection and the gas parcel is said to be <b>unstable against convection</b>.</p>
+	<p>When the parcel becomes cooler than its surroundings, it will start to sink. This altiitude is defined as the point where radiative equilibrium and
+	average ALR intersect on the plot below (the tropopause). Above this altitude, a gas parcel will be <b>stable against convection</b> and radiative transfer 
+	dominates how heat is transported. We therefore conclude that convective heat transport dominates the troposphere.</p>
+	<div class="container9-1">
+	<div class="DALR"></div>
+	<div class="SvsAALR"></div>
+	</div>
+</div>
+
+<div class="container9">
+	<sub1>Temperature Inversions</sub1><br><br>
+	<sub3>The Thermosphere</sub3>
+	<p>Now we can use some of our derived equations to explain why temperature inversions occur in the thermosphere and stratosphere!</p> 
+	<p>In the thermosphere, atomic oxygen dominates. Its' first electron ionisation potential is 13.6eV which corresponds to a wavelength of 
+	roughly 100 nm. This means that energetic photons such as X-rays and EUVs strongly ionise <b>and heat</b> the oxygen atoms.</p>
+	<p>If we refer back to Lambert's Law, (9), and the barometric law, (5), we can create an altitude-dependant function of EUV intensity as it 
+	propogates through the thermosphere. </p>
+	$${n_O(z) = n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)} \qquad \qquad {I_{EUV}(z) = I_{EUV}(\infty)exp\left(-H_O k_O n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)\right)}\\$$
+	<p>We can then equate the <b>heating rate</b> to the rate of change of EUV intensity with altitude to get...</p>
+	$${\frac{dQ}{dt} = I_{EUV}(\infty)k_O n_O(z_t)exp\left(-\left(\frac{z-z_t}{H_O}+H_O k_O n_O(z_t)exp\left(-\frac{z-z_t}{H_O}\right)\right)\right)}\\$$
+	<sub2>The Stratosphere</sub2>
+	<p>Stratospheric heating is similar to thermospheric, but instead involves the photo-dissociation of O2 and O3 molecules by UV photons. These molecules have a 
+	binding energy of 5.1eV and 4.2eV respectively meaning they can dissociate into O + O or O2 + O by UV photons with wavelengths between 100-300nm. We find similar equations...</p>
+	$${n_{O_2}(z) = n_{O_2}(0)exp\left(-\frac{z}{H}\right)} \qquad \qquad {I_{UV}(z) = I_{UV}(\infty)exp\left(-H k_{O_2} n_{O_2}(0)exp\left(-\frac{z}{H}\right)\right)}\\$$
+	$${\frac{dQ}{dt} = I_{UV}(\infty)k_{O_2} n_{O_2}(0)exp\left(-\left(\frac{z}{H}+H k_{O_2} n_{O_2}(0)exp\left(-\frac{z}{H}\right)\right)\right)}\\$$
+	<p>Finally we can plot these to show the rate of heating with altitude!</p>
+	<div class="container9-2">
+	<div class="strat"></div>
+	<div class="therm"></div>
+	</div>
+</div>
+</body>
+    
+
+<div class="footer">
+  last updated: 5th September 2024
+</div>
+    
+</html>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+.container9-1{
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  margin: 20px 0px;
+	  gap: 20px;
+}
+.container9-2{
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  margin: 20px 250px;
+	  gap: 20px;
+}
+.strat{
+  background-image: url("../images/stratosphere2.png");
+  width: 100%;
+  aspect-ratio: 506/518;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 0px;
+}
+.therm{
+  background-image: url("../images/thermosphere2.png");
+  aspect-ratio: 506/518;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 0px;
+}
+.DALR{
+  background-image: url("../images/DALR-05.png");
+  width: 100%;
+  aspect-ratio: 576/432;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 0px;
+}
+.SvsAALR{
+  background-image: url("../images/2SvsAALR.png");
+  aspect-ratio: 576/432;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 0px;
+}
+.container11{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 10px 180px;
+  gap: 15px;
+}	
+.justrad{
+  background-image: url("../images/justrad2.png");
+  grid-column: 2;
+  width: 100%;
+  aspect-ratio: 576/432;
+  background-size: cover;
+}
+.item11-1{
+  font-family: DM Sans;
+  padding: 0px;
+  grid-column: 1;
+}	
+.twostream{
+  background-image: url("../images/twostream-03.png");
+  width: 35%;
+  aspect-ratio: 380/230;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 25px auto;
+}
+.highlight{
+  border: 2px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  font-size: 1.1em;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container9{
+	margin: 30px 180px 5px 180px;
+	font-family: DM Sans;
+}
+.container10{
+	padding: 15px 30px;
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 40px;
+	width: 100%;
+	margin-top: 10px;
+}
+.item10-1{
+	grid-column: 1;
+	text-align: center;
+	background-color: #f5f5f5;
+	border-radius: 20px;
+	padding: 60px 10px;
+	font-family: DM Sans;
+  	font-size: 0.9em;
+}
+.item10-2{
+	grid-column: 2;
+	text-align: center;
+	background-color: #f5f5f5;
+	border-radius: 20px;
+	padding: 15px 5px;
+	font-size: 0.9em;
+}
+.container8{
+  padding: 20px 15px 0px 25px;
+  width: 100%;
+  text-align: center;
+  line-height: 0.7em;
+  font-size: 0.9em;
+}
+.container7 {
+  border-radius: 30px;
+  margin: 30px 180px 15px 180px;
+  justify-content: left;
+  text-align: left;
+}
+table {
+  margin: 20px 0px;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  padding: 8px 15px;
+  font-family: 'Spline Sans Mono';
+  text-align: left;
+  border-bottom: 2px solid #FFFFFF;
+  background: #F5F5F5;
+}
+td {
+  padding: 4px 15px;
+  font-family: 'DM Sans';
+  text-align: left;
+  vertical-align: text-top;
+  border-bottom: 1px solid #FFFFFF;
+}
+tr:hover {background-color: #EEF6FF;}
+
+.container6{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 10px 180px;
+  gap: 15px;
+}	
+.greenhouse{
+  background-image: url("../images/greenhouse-02.png");
+  grid-column: 2;
+  width: 100%;
+  aspect-ratio: 420/300;
+  background-size: cover;
+}
+.item6-1{
+  font-family: DM Sans;
+  padding: 0px;
+  grid-column: 1;
+}
+.planck{
+	background-image: url("../images/planck.png");
+	background-size: contain;
+	width: 280px;
+	aspect-ratio: 576/432;
+	margin: 0px 20px 0px 0px;
+	background-repeat: no-repeat;
+	column: 2;
+	background-position: center;
+	border-radius: 20px;
+}
+.definitions{
+	padding: 10px 30px;
+	margin: 5px 70px;
+	font-family: DM Sans;
+	background-color: #F5F5F5;
+	border-radius: 20px;
+}
+.container5{
+	padding: 5px 30px;
+	font-family: DM Sans;
+	width: 100%;
+}
+.container4{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
+	padding: 10px 0px 5px 0px;
+}
+.item4-1{
+	grid-column: 1;
+	font-family: DM Sans;
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px 30px;
+}
+.clickmore{
+	padding: 5px 15px;
+	background-color: #FFFFFF;
+	border-radius: 50px;
+	font-family: Spline Sans Mono;
+	color: #8C8C8C;
+	width: 170px;
+	margin: 10px auto 0px auto;
+	text-align: center;
+	transition: 0.4s;
+	font-size: 0.8em;
+}
+.clickmore:hover{
+	cursor: pointer;
+	background-color: #F5F5F5;
+}
+#popup{
+  padding: 0px;
+  margin: 0px 180px;
+  padding: 0px;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 999;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: DM Sans;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  background-color: #FAFAFA;
+}
+
+#popup.active{
+  padding: 0px;
+  height: auto;
+  visibility: visible;
+  margin: 10px 180px;
+  opacity: 1;
+}
+#popup2{
+  padding: 0px;
+  margin: 0px 180px;
+  padding: 0px;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 999;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: DM Sans;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  background-color: #FAFAFA;
+}
+
+#popup2.active{
+  padding: 10px 0px 0px 0px;
+  height: auto;
+  visibility: visible;
+  margin: 10px 180px;
+  opacity: 1;
+}
+sub1{
+	font-family: DM Sans;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+sub2{
+	font-family: DM Sans;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+sub3{
+	font-family: DM Sans;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 10px 0px 0px 0px;
+	padding: 30px 0px 0px 0px;
+}
+p{
+	margin: 10px 0px 10px 0px;
+	padding: 0px;
+	text-align: justify;
+  	text-justify: inter-word;
+}
+.container1{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 10px 180px;
+  gap: 10px;
+}
+.item1-1{
+  background-image: url("../images/atmos temp-01.png");
+  column: 1;
+  width: 100%;
+  aspect-ratio: 5/6;
+  background-size: cover;
+}
+.item1-2{
+  font-family: DM Sans;
+  padding: 10px 30px;
+}
+.greyout{
+	background-color:  #FAFAFA;
+	border-radius: 15px;
+	font-family: DM Sans;
+	margin: 20px 180px;
+	padding: 10px 30px;
+}
+.container2{
+	margin: 20px 180px 5px 180px;
+	font-family: DM Sans;
+}
+.container3{
+	margin: 0px 180px 20px 180px;
+	font-family: DM Sans;
+}
+
+body {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFFFFF;
+  height: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 120px;
+    padding: 0px 80px 0px 80px;
+    top: 0;
+    margin: 0px;
+  background-color: #FFFFFF;
+  transition: all 0.4s ease-in-out;
+}
+a {
+    text-decoration: none;
+    font-family:'DM Sans';
+    color:#008BF5;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: normal;
+}
+a.btn {
+    text-decoration: none;
+}
+.top {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.top:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #EEF6FF;
+    border-radius: 25px;
+}
+.topcurrent {
+    color: #0075F2;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.topcurrent:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #E3EFFF;
+    border-radius: 25px;
+}
+.github {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 6px 15px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.github:hover {
+    color: #FFFFFF;
+    background-color: #0075F2;
+    border-radius: 25px;
+    font-weight: normal;
+}
+nav ul {
+    font-family:'DM Sans';
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+}
+logo {
+    font-family: 'DM Sans';
+    font-size: 2.3em;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.8em;
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: bold;
+   margin: 5px;
+}
+
+p4 {
+    font-size: 0.9em;
+    font-family:'Spline Sans Mono';
+    line-height: 1.2em;
+    margin: 0px;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+postheader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 15px 80px 15px 80px;
+    margin: 0px;
+  height:80px;
+  background-color: #FEFEFE;
+  transition: all 0.5s ease-in-out;
+     position: -webkit-sticky;
+    position: sticky;
+	z-index: 101;
+}
+postheader.active{
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 20px 2px rgba(0, 0, 0, .1);
+    padding: 15px 80px 15px 80px;
+  top:0;
+     
+}
+postheader > div {
+  text-align: center;
+  text-justify: inter-word;
+}
+
+
+
+.prev {
+	box-sizing: border-box;
+  grid-column: 1;
+}
+.prevgrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px 10px;
+  align-items: center;
+  font-family:'Spline Sans Mono';
+  font-weight: normal;
+  color:#008BF5;
+  background-color: #EEF6FF;
+  border-radius: 25px;
+  gap: 10px;
+  height:30px;
+  width: 90px;
+  transition: 0.3s;
+}
+.prevgrid:hover{
+  color:#EEF6FF;
+  background-color: #008BF5;
+  text-decoration: none;
+}
+.prevgrid1{
+  column: 1;
+  background-image: url("../images/arrow-25.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+
+
+
+.next {
+	box-sizing: border-box;
+	color:#008BF5;
+  grid-column: 5;
+}
+.nextgrid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px 10px;
+  align-items: center;
+  color:#008BF5;
+  font-family:'Spline Sans Mono';
+  font-weight: normal;
+  background-color: #EEF6FF;
+  border-radius: 25px;
+  gap: 10px;
+  height:30px;
+  width: 90px;
+  transition: 0.3s;
+}
+.nextgrid:hover{
+  color:#EEF6FF;
+  background-color: #008BF5;
+  text-decoration: none;
+}
+.nextgrid1{
+  column: 1;
+  background-image: url("../images/arrow2-26.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+.posttitle{
+  grid-column:3;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    height: 60px;
+    padding: 0px 180px 0px 180px;
+    bottom: 0;
+    margin: 20px 0px 0px 0px;
+  background-color: #FFFFFF;
+  font-family:'Spline Sans Mono';
+  font-size: 0.8em;
+  color: #858585;
+  border-top: 1px solid #CCCCCC;
+}
+
+</style>
+
+    
+<script>
+	    function toggle(){
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active');
+  }
+function toggle2(){
+    var popup = document.getElementById('popup2');
+    popup.classList.toggle('active');
+  }
+	
+	const nav = document.querySelector('postheader')
+	window.addEventListener('scroll', fixNav)
+	function fixNav() {
+    	if (window.scrollY > 80) {
+        nav.classList.add('active')
+  	} else {
+        nav.classList.remove('active')
+  	}
+	}	
+  </script>
