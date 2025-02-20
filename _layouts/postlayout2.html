@@ -1,0 +1,285 @@
+---
+title: Anna Smail
+---
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+			<link rel="icon" href="/images/snail-322.png" type="image/x-icon"/>
+			<link rel="shortcut icon" href="/images/snail-322.png" type="image/x-icon" />
+			
+		</head>
+		<header>
+			<logo>Anna Smail</logo>
+			<nav>
+	    	<ul class="nav_links">
+	        <li><a href="/" class="btn top">Home</a></li>
+					<li><a href="/Projects" class="btn top">Projects</a></li>
+					<li><a href="https://github.com/annasmail" class="btn github">My Github</a></li>
+				</ul>
+			</nav>
+		</header>
+<body>
+     {{ content }} 
+</body>
+    
+  </html>
+
+<style>
+  
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    height: 60px;
+    padding: 0px 180px 0px 180px;
+    bottom: 0;
+    margin: 20px 0px 0px 0px;
+  background-color: #FFFFFF;
+  font-family:'Spline Sans Mono';
+  font-size: 0.8em;
+  color: #858585;
+  border-top: 1px solid #CCCCCC;
+}
+postheader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 15px 80px 15px 80px;
+    margin: 0px;
+  height:80px;
+  background-color: #FEFEFE;
+  transition: all 0.5s ease-in-out;
+     position: -webkit-sticky;
+    position: sticky;
+	z-index: 101;
+}
+postheader.active{
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 20px 2px rgba(0, 0, 0, .1);
+    padding: 15px 80px 15px 80px;
+  top:0;
+     
+}
+postheader > div {
+  text-align: center;
+  text-justify: inter-word;
+}
+
+
+
+.prev {
+	box-sizing: border-box;
+  grid-column: 1;
+}
+.prevgrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px 10px;
+  align-items: center;
+  font-family:'Spline Sans Mono';
+  font-weight: normal;
+  color:#008BF5;
+  background-color: #EEF6FF;
+  border-radius: 25px;
+  gap: 10px;
+  height:30px;
+  width: 90px;
+  transition: 0.3s;
+}
+.prevgrid:hover{
+  color:#EEF6FF;
+  background-color: #008BF5;
+  text-decoration: none;
+}
+.prevgrid1{
+  column: 1;
+  background-image: url("../images/arrow-25.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+
+
+
+.next {
+	box-sizing: border-box;
+	color:#008BF5;
+  grid-column: 5;
+}
+.nextgrid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px 10px;
+  align-items: center;
+  color:#008BF5;
+  font-family:'Spline Sans Mono';
+  font-weight: normal;
+  background-color: #EEF6FF;
+  border-radius: 25px;
+  gap: 10px;
+  height:30px;
+  width: 90px;
+  transition: 0.3s;
+}
+.nextgrid:hover{
+  color:#EEF6FF;
+  background-color: #008BF5;
+  text-decoration: none;
+}
+.nextgrid1{
+  column: 1;
+  background-image: url("../images/arrow2-26.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  width: 26px;
+  height: 26px;
+}
+
+.posttitle{
+  grid-column:3;
+}  
+p4 {
+    font-size: 0.9em;
+    font-family:'Spline Sans Mono';
+    line-height: 1.2em;
+    margin: 0px;
+    text-align: center;
+    text-justify: inter-word;
+}
+h2 {
+    font-size: 1.8em;
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: bold;
+   margin: 5px;
+}
+body {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFFFFF;
+  height: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 120px;
+    padding: 0px 80px 0px 80px;
+    top: 0;
+    margin: 0px;
+  background-color: #FFFFFF;
+  transition: all 0.4s ease-in-out;
+}
+a {
+    text-decoration: none;
+    font-family:'DM Sans';
+    color:#008BF5;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: normal;
+}
+a.btn {
+    text-decoration: none;
+}
+.top {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.top:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #EEF6FF;
+    border-radius: 25px;
+}
+.topcurrent {
+    color: #0075F2;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.topcurrent:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #E3EFFF;
+    border-radius: 25px;
+}
+.github {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 6px 15px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.github:hover {
+    color: #FFFFFF;
+    background-color: #0075F2;
+    border-radius: 25px;
+    font-weight: normal;
+}
+nav ul {
+    font-family:'DM Sans';
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+}
+logo {
+    font-family: 'DM Sans';
+    font-size: 2.3em;
+    font-weight: bold;
+}
+</style>
+
+<script>
+	const nav = document.querySelector('postheader')
+	window.addEventListener('scroll', fixNav)
+	function fixNav() {
+    	if (window.scrollY > 80) {
+        nav.classList.add('active')
+  	} else {
+        nav.classList.remove('active')
+  	}
+	}	
+</script>
