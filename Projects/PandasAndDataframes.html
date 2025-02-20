@@ -1,0 +1,364 @@
+---
+title: Anna Smail
+layout: postlayout
+---
+<postheader>
+      <div class="prev">
+        <a href="/Projects/Permafrost" class="prevgrid">
+          <div class="prevgrid1">
+          </div>
+          prev.
+        </a>
+</div>  
+<div class="posttitle">
+        <h2> Pandas and Dataframes </h2>
+        <p4>Using Python library <i>Pandas</i> to analyse and display data from a dataframe!</p4>
+</div>    
+<div class="next">
+        <a href="/Projects/KingsAndQueens" class="nextgrid">
+        next  
+	<div class="nextgrid1">
+	  </div>
+        </a>
+</div>    
+</postheader>
+
+<div class="comments">
+	<h20>Preparing the dataframe</h20>
+	<br>
+	I have compiled a spreadsheet of all the books I have read since 2021 with information such as
+	when it was read, its' genre, a rating out of 5 and the number of pages. It is used as an example in this post 
+	to show some of the uses of the python library, <b>Pandas</b>, when analysing and displaying data in dataframes. 
+	<br>
+	<p20>First, I'll import the libraries I will be needing as well as the <code>font_manager</code> so that I can customise the font 
+	on any plots I make. Also, for this project I chose to work in Google Colab, so I need to <code>import drive</code>
+	to access files located in my Google Drive.</p20> 
+</div>
+<div class="code">
+	import <b>pandas</b> as pd <hash># library for managing dataframes</hash> <br> 
+	import <b>numpy</b> as np <hash># library for mathematical functions </hash> <br>
+<br>
+	import <b>matplotlib</b> as mpl <hash># library for plotting data</hash><br>
+	import <b>matplotlib.pyplot</b> as plt  <br>
+	import <b>matplotlib.font_manager</b> as fm <hash># managing fonts</hash><br>
+<br>
+	from <b>google.colab</b> import <b>drive</b> <hash># connect to google drive</hash><br>
+	drive.mount(<links>'/content/gdrive'</links>)
+</div>
+<div class="comments">
+	I've made sure that the dataframe <b>Book.xlsx</b> is in the same location at my Google Colab file 
+	so that I can easily locate and read it using the function <code>.read_excel()</code>. In the second line of the following code
+	I have named the dataframe <b>Books_df</b>.
+</div>
+<div class="code">
+	path=<links>'/content/gdrive/MyDrive/Website/Books.xlsx'</links> <br>
+	Books_df = pd.read_excel(path)
+</div>
+<div class="comments">
+	Then I will import the font <b>DM Sans</b>. I've done this by downloading the font files (in weights Regular, Medium and Bold) from Google Fonts and 
+	copying the files into my Google Drive which I can then read like this...
+</div>
+<div class="code">
+	!wget <links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Regular.ttf'</links><br>
+	!wget <links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Medium.ttf'</links><br>
+	!wget <links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Bold.ttf'</links><br>
+	<br>
+	fm.fontManager.addfont(<links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Regular.ttf'</links>)<br>
+	fm.fontManager.addfont(<links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Medium.ttf'</links>)<br>
+	fm.fontManager.addfont(<links>'/content/gdrive/MyDrive/Website/DM_Sans/DMSans-Bold.ttf'</links>)<br>
+	<br>
+	mpl.rc('font', family='DM Sans')
+</div>
+<div class="comments">
+	Now I can use the <code>.head()</code> function to read the first few rows in the dataframe!
+</div>
+<div class="code">
+	Books_df.head(3)
+</div>
+<div class="comments">
+<table>
+  <thr>
+    <th> </th>
+    <th>Title</th>
+    <th>No. of pages</th>
+    <th>Year published</th>
+	  <th>Genre</th>
+	  <th>Month</th>
+	  <th>Year I read it</th>
+	  <th>My rating</th>
+  </thr>
+  <tr>
+    <td>0</td>
+    <td>Becoming</td>
+    <td>573</td>
+    <td>2018</td>
+	  <td>Autobiography</td>
+	  <td>1</td>
+	  <td>2021</td>
+	  <td>3</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Spoon Fed</td>
+    <td>181</td>
+    <td>2020</td>
+	  <td>Nutrition</td>
+	  <td>1</td>
+	  <td>2021</td>
+	  <td>3</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>A Short History of Nearly Everything</td>
+    <td>676</td>
+    <td>2003</td>
+	  <td>Encyclopedia</td>
+	  <td>2</td>
+	  <td>2021</td>
+	  <td>3</td>
+  </tr>
+</table>
+</div>
+<div class="comments">
+	Some of these column titles aren't great so I will rename them!
+</div>
+<div class="code">
+	Books_df.rename(columns={<links>"No. of pages"</links>: <links>"Pages"</links>, 
+                         <links>"Year published"</links>: <links>"Year_publ"</links>, 
+                         <links>"Year I read it"</links> : <links>"Year_read"</links>, 
+                         <links>"My rating" </links>: <links>"Rating"</links>},
+                          inplace = True)
+	<br><br>Books_df.head(1)
+</div>
+<div class="comments">
+	<table>
+  <thr>
+    <th> </th>
+    <th>Title</th>
+    <th>Pages</th>
+    <th>Year_publ</th>
+	  <th>Genre</th>
+	  <th>Month</th>
+	  <th>Year_read</th>
+	  <th>Rating</th>
+  </thr>
+  <tr>
+    <td>0</td>
+    <td>Becoming</td>
+    <td>573</td>
+    <td>2018</td>
+	  <td>Autobiography</td>
+	  <td>1</td>
+	  <td>2021</td>
+	  <td>3</td>
+  </tr>
+</table>
+</div>
+
+<div class="comments">
+	<h20>Now I can start plotting!</h20><br>
+	<p20>Below are a few examples of what I've made with this dataframe (click to expand!).</p20>
+</div>
+
+<div class="plotsgrid"> 
+	
+<div class="plotname">
+  <div class="graph3">
+  </div>
+      <a href="/Projects/PandasAndDataframes/BasicScatterPlots" class="name">Basic scatter plots</a>
+ </div>
+
+<div class="plotname">
+  <div class="graph1">
+  </div>
+	<a href="/Projects/PandasAndDataframes/FindingAverages" class="name">Finding Averages</a>
+    </div>
+ 
+</div>  	
+
+<div class="footer">
+  last updated: 15th September 2024
+</div>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+.popupoutline{
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	margin: 10px 160px;
+	padding: 30px 40px;
+}
+output{
+  font-family: Spline Sans Mono;
+  font-weight: normal;
+  font-size: 1em;
+}
+.container_graph{
+	margin: 15px 0px 20px 0px;
+	display: grid;
+  	grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+	width: 100%;
+	padding: 15px 0px;
+	border-radius: 15px;
+	border: 1px solid #ccc;
+}
+.graph_container{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../images/3_1.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+.graph_container2{
+  background-size: contain;
+  grid-column: 2;
+  border-radius: 20px;
+  padding: 0px;
+  background-image: url('../images/3.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+p20{
+	font-family: DM Sans;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+h20{
+	font-family: DM Sans;
+	font-size: 1.5em;
+	margin: 30px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 2em;
+}
+h21{
+	font-family: DM Sans;
+	font-size: 1.3em;
+	margin: 10px 0px 10px 0px;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.graph1{
+  background-image: url('../images/4_3.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px auto;
+}
+.graph2{
+  background-image: url('../images/2.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px auto;
+}
+.graph3{
+  background-image: url('../images/3.png');
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px auto;
+}
+.plotsgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 220px;
+  gap: 50px;
+}
+.plotname{
+  display: grid;
+  grid-template-rows: auto auto;
+    border-radius: 35px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0);
+    align-items: center;
+    transition: 0.4s;
+    color: #000000;
+  padding: 10px 30px;
+	box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+	margin: 10px 0px;
+  }
+  .name{
+    font-family: 'DM Sans';
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: normal;
+	  padding: 10px;
+    margin: 10px 0px;
+	  border-radius: 5px 5px 25px 25px;
+	  background-color: #F3F4FF;
+	  transition: 0.3s;
+	  color: #000000;
+  }
+  .name:hover{
+    background-color: #E2E5FF;
+    cursor: pointer;
+    text-decoration: none;
+  }	
+table {
+  margin: 20px 0px;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  padding: 8px 15px;
+  font-family: 'Spline Sans Mono';
+  text-align: left;
+  border-bottom: 2px solid #FFFFFF;
+  background: #CDD2FF;
+}
+td {
+  padding: 4px 15px;
+  font-family: 'DM Sans';
+  text-align: left;
+  vertical-align: text-top;
+  border-bottom: 1px solid #FFFFFF;
+}
+tr{
+	background-color: #EAECFF;
+}
+tr:hover {background-color: #DDE1FF;}
+.comments{
+	text-align: justify;
+  	text-justify: inter-word;
+	margin: 10px 180px;
+	font-family: DM Sans;
+}
+.code{
+  border-radius: 10px;
+  margin: 25px 200px 25px 200px;
+  font-family: 'Spline Sans Mono';
+  font-size: 0.9em;
+  line-height: 1.4em;
+  justify-content: left;
+  text-align: left;
+  padding: 30px 30px;
+  background-color: #F6F6F6;
+}
+
+hash{
+	color: #CCCCCC;
+}
+code{
+	font-family: Spline Sans Mono;
+	background-color: #F5F5F5;
+}
+links{
+	color: #FF7EBC;
+}
+note{
+	color: #CCC;
+}
+</style>
