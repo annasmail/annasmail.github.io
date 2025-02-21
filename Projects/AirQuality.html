@@ -91,6 +91,12 @@ The Air Change Rate (ACR) of a room can be calculated using just CO2 concentrati
   <br> I obtained wind data from a nearby weather station, courtesy of the Met Office and was able to plot each of the time series against my derived ACR timeseries. 
 </div>
 
+<div class="figure4">
+</div>
+
+<div class="comments">
+To quantify the strength of the ACR-wind speed relationship I plotted them against each other and fitted a linear regression and r2 value. 
+</div>
 	
 </body>
 
@@ -232,10 +238,19 @@ grid-column: 1;
 }
 
 .figure3{
-  margin: 30px 220px;
+  margin: 30px 220px 10px 220px;
   aspect-ratio: 4/1;
   background-size: contain;
   background-image: url('/images/figure3.png');
+  background-repeat: no-repeat;
+  background-position: 50%;	
+}
+
+.figure4{
+  margin: 30px 220px 10px 220px;
+  aspect-ratio: 4/1;
+  background-size: contain;
+  background-image: url('/images/TempACR.png');
   background-repeat: no-repeat;
   background-position: 50%;	
 }
