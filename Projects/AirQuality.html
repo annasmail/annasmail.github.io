@@ -61,21 +61,30 @@ The Air Change Rate (ACR) of a room can be calculated using just CO2 concentrati
 </div>
   </div>
 
- <div class="threepoints">
+<div class="threepoints">
    <div class="firstthree">
      <b>1. Build Up</b>
 	<br>
 	   1 occupant enters the room after being outside long enough for the concentration to almost reach atmospheric concentrations.
-   </div>
+     <div class="equation">
+       $$ {ACR_{BU} = 6\times10^4 E \frac{\sum{\frac{1}{C_{t}-C_{out}}}}{VT}-\frac{1}{\Delta t}\ln{\frac{C_{fin}-C_{out}}{C_{ini}-C_{out}}}} \\$$
+     </div>
+   </div>  
    <div class="firstthree">
      <b>2. Steady State</b>
 	<br>
 	   1 occupant asleep in the room, CO2 concentrations level out for over one hour (varies by less than 50ppm).
+     <div class="equation">
+       $$ {ACR_{SS} = \frac{6\times10^4 E}{V(C_{SS}-C_{out})} } \\$$
+     </div>
    </div>
    <div class="firstthree">
      <b>3. Decay</b>
 	<br>
 	   After a period of high CO2 concentration the occupant leaves the room with the window closed.
+      <div class="equation">
+       $$ {ACR_{D} = -\frac{1}{\Delta t}\ln{\frac{C_{fin}-C_{out}}{C_{ini}-C_{out}}}} \\$$
+     </div>
    </div>
   </div>
 
@@ -216,6 +225,16 @@ grid-column: 1;
   vertical-align: middle;
 }
 
+.firstthree{
+  background-color: #EEF6FF;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-family:'DM Sans';
+  border-radius: 10px;
+  align-items: center;
+}
+
 .threepoints{
   display: grid;
   grid-auto-flow: column;
@@ -228,13 +247,13 @@ grid-column: 1;
   gap: 20px;
 }
 
-.firstthree{
-  background-color: #EEF6FF;
-  color: black;
-  text-align: center;
-  padding: 20px;
-  font-family:'DM Sans';
+.equation{
+  background-color: white;
   border-radius: 10px;
+  margin: 10px auto 0px auto;
+  color: #008BF5;
+  padding: 10px;
+  font-size: 9px;
 }
 
 .figure3{
