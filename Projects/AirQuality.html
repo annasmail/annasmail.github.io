@@ -104,7 +104,16 @@ The Air Change Rate (ACR) of a room can be calculated using just CO2 concentrati
 </div>
 
 <div class="comments">
-To quantify the strength of the ACR-wind speed relationship I plotted them against each other and fitted a linear regression and r2 value. 
+To quantify the strength of the ACR-wind speed relationship I plotted them against each other and fitted a linear regression and r<sup>2</sup> value. 
+</div>
+
+<div class="figure5">
+</div>
+
+<div class="comments">
+These plots show there is <i>some</i> relationship between the two variables, but it is not conclusive. An r<sup>2</sup> value of <code>0.578</code> (decay periods) suggests that there is a moderately strong correlation, while the <code>0.149</code> (build up periods) suggests there is next to none. However, this may just be down to poor data collection – the build up states are always going to be <b>chaotic</b>, while I am awake and moving around in the room, while decay states have basically no interferences. This suggests that with better planning and higher quality control measures, a stronger relationship may have been found! 
+<br>
+Overall, this project allowed me to be creative and come up with my own direction for research, which I really enjoyed. I also improved my skills in importing and handling data in Python, in particular with the use of the Pandas Library. 
 </div>
 	
 </body>
@@ -119,7 +128,12 @@ To quantify the strength of the ACR-wind speed relationship I plotted them again
 
 
 <style>
-  
+
+code{
+	font-family: Spline Sans Mono;
+	background-color: #EEF6FF;
+}
+	
   .subtitle {
   display: grid;
   margin: 20px 165px;
@@ -253,7 +267,7 @@ grid-column: 1;
   margin: 10px auto 0px auto;
   color: #008BF5;
   padding: 10px;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .figure3{
@@ -270,6 +284,15 @@ grid-column: 1;
   aspect-ratio: 4/1;
   background-size: contain;
   background-image: url('/images/TempACR.png');
+  background-repeat: no-repeat;
+  background-position: 50%;	
+}
+
+.figure5{
+  margin: 30px 260px 10px 260px;
+  aspect-ratio: 3/1;
+  background-size: contain;
+  background-image: url('/images/figure5.png');
   background-repeat: no-repeat;
   background-position: 50%;	
 }
