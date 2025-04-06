@@ -23,8 +23,8 @@ title: Anna Smail
 
 <body>
 <postheader>
-      <div class="prev">
-        <a href="/Portfolio/Technical" class="prevgrid">
+      <div class="back">
+        <a href="/Portfolio" class="prevgrid">
           <div class="prevgrid1">
           </div>
           prev.
@@ -34,16 +34,22 @@ title: Anna Smail
         <h2> Publicity Officer </h2>
         <p4>In 2024 I was Publicity Officer for Phab Nottingham, these are some of the Instagram posts and publicity materials I made!</p4>
 </div>    
-<div class="next">
-        <a href="/Portfolio/Illustrations" class="nextgrid">
-        next  
-	<div class="nextgrid1">
-	  </div>
-        </a>
-</div>    
+   
 </postheader>
 
-<div class="grid-container" id="fade-container">
+<div class="sticker-container">
+  <div class="sticker-item">
+    <img srcset="/images/phab/Sticker Mockup 1.png" loading="lazy">
+  </div>
+</div>
+
+<div class="some-text">
+<div class="text-contain">
+	<p>This is some text to describe what i did at Phab.</p>	
+</div>
+</div>
+
+<div class="grid-container">
   <div class="grid-item">
     <img srcset="/images/phab/committee-01.png" loading="lazy">
   </div>
@@ -80,6 +86,33 @@ title: Anna Smail
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+.some-text {
+	width:100%;
+	padding: 20px 180px;
+}
+.text-contain {
+	width: 100%;
+	background-color: #F1EBFF;
+	border-radius: 25px;
+}
+p{
+	font-family: 'DM Sans';
+}
+
+.sticker-container {
+  padding: 0px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.sticker-item {
+  overflow: hidden;
+  aspect-ratio: 5/1;
+}
+.sticker-item img {
+  object-fit: fill;
+  height: 100%;
+}
+	
 body {
     max-width: 100%;
     padding: 0px;
@@ -461,46 +494,3 @@ logo {
 }
 
   </style>
-
-
-
-
-
-
-
-
-
-
- <script>
-
-   window.addEventListener('scroll', function() {
-  const fadeContainer = document.getElementById('fade-container');
-  const containerPosition = fadeContainer.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-
-  if (containerPosition < windowHeight * 0.8) {
-    fadeContainer.classList.add('show');
-  }
-});
-
-   window.addEventListener('scroll', function() {
-  const fadeContainer = document.getElementById('fade-container2');
-  const containerPosition = fadeContainer.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-
-  if (containerPosition < windowHeight * 0.8) {
-    fadeContainer.classList.add('show');
-  }
-});
-
-   window.addEventListener('scroll', function() {
-  const fadeContainer = document.getElementById('fade-container3');
-  const containerPosition = fadeContainer.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-
-  if (containerPosition < windowHeight * 0.8) {
-    fadeContainer.classList.add('show');
-  }
-});
-
-  </script>
