@@ -70,9 +70,16 @@ title: Anna Smail
   </div>
 </div>
 
-  <div class="waveline" style='background-image: url("/images/wavyline-08.png"); background-size: cover'>
-<div class="textbox">hello test</div>
+  <div class="waveline" style='background-image: url("/images/wavy-08.png"); background-size: cover'>
   </div>
+
+<div class="grid-container2">
+  <div class="grid-item2">
+    <img srcset="/images/greenflyer.png" loading="lazy">
+  </div> 
+  <div class="grid-item2">
+    <img srcset="/images/phab/stickers.png" loading="lazy">
+  </div> 
 
 
 </body>
@@ -92,10 +99,10 @@ title: Anna Smail
         overflow: hidden;
 	object-fit: fill;
 }
-.textbox{margin-top: 80px;
+.textbox{margin-top: 120px;
 	font-family: 'Spline Sans Mono';
 	color: #fff;
-	font-size: 40px;
+	font-size: 20px;
 	  text-align: center;
 }
 	  
@@ -248,6 +255,25 @@ margin: 20px 100px;
 }
 
 .grid-item img {
+  object-fit: fill;
+  height: 100%;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  gap: 20px;
+  padding: 0px;
+  justify-content: center;
+margin: 20px 100px;
+}
+
+.grid-item2 {
+  overflow: hidden;
+  aspect-ratio: 3/2;
+}
+
+.grid-item2 img {
   object-fit: fill;
   height: 100%;
 }
