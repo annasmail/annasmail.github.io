@@ -24,7 +24,7 @@ title: Anna Smail
 </div>    
 </postheader>
 
-<div class="grid-container">
+<div class="grid-container" id="fade-container">
   <div class="grid-item">
     <img srcset="/images/phab/committee-01.png" loading="lazy">
   </div>
@@ -241,15 +241,6 @@ sub{
 
 
  <script>
-	const nav = document.querySelector('postheader')
-	window.addEventListener('scroll', fixNav)
-	function fixNav() {
-    	if (window.scrollY > 10) {
-        nav.classList.add('active')
-  	} else {
-        nav.classList.remove('active')
-  	}
-	}	
 
    window.addEventListener('scroll', function() {
   const fadeContainer = document.getElementById('fade-container');
