@@ -33,6 +33,13 @@ title: Anna Smail
   </div>
 
  <div class="bluewave" style='background-image: url("/images/music-04.png"); background-size: cover'>
+  <div class="grid-container"> 
+     <div class="grid-item">
+       Here is an analysis of my 16 all-time favourite songs to try and find similarities between them! I'm going to look at BPM, length, year of release, genre and the 
+	     artist's nationality and then compare these to my number of listens to see if there are any strong correlations. For example, I expect there to be 
+	     most of my favourites to be American and also to have a similar BPM and genre. Let's see...
+     </div>
+     </div>
   </div>
 
 </body>
@@ -53,11 +60,32 @@ title: Anna Smail
 }
 
 .bluewave{
-	aspect-ratio: 1900/700;
+	aspect-ratio: 1900/300;
 	width: 100vw;
 	margin: 0px;
 	overflow: hidden;
 	object-fit: fill;
 	max-width: 100%;
+}
+
+.grid-container{
+  margin: 30px;
+  gap: 20px;
+  display: flex;
+  grid-template-columns: 1fr;
+  align-content: center;
+}
+
+.grid-item{
+  overflow: hidden;
+	object-fit: fill;
+	max-width: 100%;
+  aspect-ratio: 3/1;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  font-family: 'Spline Sans Mono';
+  color: #fff;
+  font-size: 30px;
 }
 </style>
