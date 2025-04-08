@@ -318,8 +318,10 @@ Below, we can select a certain angle of rotation. For higher angles, we can see 
 This change in direction corresponds to a minimum because if you were to plot just the magnetic field's x-direction, we would see a change from negative (field lines pointing left) to positive (field lines pointing right). Below is a zoomed-in plot around the minima point to see how the magnetic field, its' square and its' square's gradient varies. We can see that a change from negative to positive magnetic field also corresponds to change of its' <b>square's gradient</b> from negative to positive. As this is proportional force, it indicates the <b>change of pull to push</b> experienced by the MNPs.
   </div>
   
+   <div class="container41">
+    <div class="text">Change the angle to see how the minimum's position changes!</div>
   <div class="container4">
-    <img src="" id="imgBruegel" style="width: 300px; height: 300px, border-radius: 15px;" /> <br><br>
+    <img src="" id="imgBruegel" style="width: 300px; height: 300px; border-radius: 15px; aspect-ratio:1/1; margin: 20px auto;" /> <br><br>
   <select class="mySelect" id="selPainting" onchange="changePainting()">
     <option value="https://www.stanfordmagnets.com/wp-content/uploads/2020/06/Tips_for_the_Use_of_Magnets.jpg">15 degrees</option>
     <option value="https://www.stanfordmagnets.com/wp-content/uploads/2020/06/Tips_for_the_Use_of_Magnets.jpg">25 degrees</option>
@@ -329,8 +331,61 @@ This change in direction corresponds to a minimum because if you were to plot ju
     <option value="../images/contours-34.png">65 degrees</option>
   </select>
   </div>
+  </div>
  
+<div class="textcontain">
+This change in direction corresponds to a minimum because if you were to plot just the magnetic field's x-direction, we would see a change from negative (field lines pointing left) to positive (field lines pointing right). Below is a zoomed-in plot around the minima point to see how the magnetic field, its' square and its' square's gradient varies. We can see that a change from negative to positive magnetic field also corresponds to change of its' <b>square's gradient</b> from negative to positive. As this is proportional force, it indicates the <b>change of pull to push</b> experienced by the MNPs.
+  </div>
+  
+  <div class="image5"></div>
+  
+  <h3>Experimental Validation</h3>
+  <div class="textcontain">
+    To validate our code, we will fix two identical magnets to a board such that they can be rotated with screws. We will set their center's 60 mm apart (30 mm translation from common origin) and align a hall probe (which measures magnetic field) with their common origin such that it measures the magnetic field in the x direction. Starting with 15° and working up to 65° in intervals of 10°, we take measurements with the hall probe at 4 mm intervals along the y-axis.
+	<br><br>
+	We expect that the local minimum location will be detected when the magnetic field <b>changes direction</b> as seen in the field lines, e.g. when the hall probe measurement changes from <b>negative to positive</b>.
+  </div>
+    
+    
+ <div class="image6"></div>   
+  
+  
+  <h3>Results</h3>
+  <div class="textcontain">
+    Finally, we can test our experimentally obtained values to against the code's output to determine its' success. This comparison, at each angle interval, is shown below.</div>
+  <div class="image7"></div>
+  
+  
+  <subsub>Conclusions</subsub>
+  <div class="textcontain">
+    Looking at the above plots, there is a clear positive shift in the graph’s x-direction from the computed to the experimentally measured values that is consistent among all angles, suggesting that there was a <b>systematic error</b> in our experimental measurements such as an initial misalignment of the wooden board. The computed plot also looks as though it has been ‘squeezed’. The experimentally obtained value for <code>M0</code> was used in the computer code and its value had a significant impact on the overall shape of the curve by vertically stretching it. The error of <b>± 0.1 A mm<sup>-1</sup></b> due to the measurements of the magnets’ dimensions and their pole strengths were not significant enough to make it align with the experimentally measured values. Instead, the <b>mild steel</b> that was used to atatch it to the board may have caused a systematic error when measuring the pole strength.
+<br><br>
+Other causes could be due to limitations when clearing the area of any other <b>magnetic materials</b>, as this could have a significant impact on the readings. Additionally, we could have used a <b>Zero Gauss Chamber</b> to zero the probe before each reading. Otherwise, the overall shapes of the <code>Hx</code> plots are close to what was expected, with an increasing resemblance <b>as the angle gets larger</b>.
+<br><br>
+In regard to the suitability of configurations for medical uses, for an intended distance of 30-50 mm of an inner ear, <b>an angle of 65° would be most appropriate</b> of the angles tested in this project. We found it to have a local minimum distance of <b>62 ± 2 mm</b> experimentally which could comfortably reach the inner ear. Additionally - outside the scope of this blog - we looked at the values of <b>∇</b>(||<b>H</b>||<sup>2</sup>) after each local minimum and, of the 6 setups that we investigated, it was found to have the largest singular value of <b>(2.25 ± 2.04) x 10-7 T<sup>2</sup> mm<sup>-1</sup></b> and hence would exert the largest force so that anatomical barriers such as the RWM or hydrodynamic drag forces could be overcome.
+  </div>
+  
+  <subsub>Skills Improved</subsub>
+  
+  <div class="grid-container17">
+  <div class="grid-item171">
+    Python Development
+  </div>
+  <div class="grid-item171">
+    Group Work
+  </div>
+  <div class="grid-item171">
+    Report Writing
+  </div>
+  <div class="grid-item171">
+    Experimental procedures
+  </div>
+</div>
+    
 </body>
+
+
+
 
 
 <style>
@@ -599,15 +654,80 @@ new{
   background-color: #EEF6FF;
   color: #008BF5;
   font-family: 'Spline Sans Mono';
-  padding:7px;
-  margin: 15px auto 0px auto;
+  padding: 7px;
+  margin: auto;
+  max-height: 40px;
 }
 
-.container4{
-  margin: 10px auto;
+.container41{
+  padding: 5px 0px 10px 0px;
+  border-radius: 25px;
+  background-color: #EEF6FF;
   align-content: center;
-  background-color: #ccc;
-  padding: 0px 300px;
+  margin: 10px 180px;
+  border: 2px dotted #B3DCFD;
+}
+.container4{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px auto;;
+  align-items: center;
+  max-width: 350px;
+}
+
+.text{
+  font-family: 'Spline Sans Mono';
+  font-size: 1.2em;
+  font-weight: normal;
+  text-align: center;
+  color: #008BF5;
+  margin: 20px 30px 5px 30px;
+  background: #fff;
+  padding: 12px;
+  border-radius: 25px;
+}
+
+.image5{
+  margin: 20px 180px;
+  aspect-ratio: 145/40;
+  background-image: url('https://study.com/cimages/multimages/16/sciencediagrams1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.image6{
+  margin: 20px 180px;
+  aspect-ratio: 145/40;
+  background-image: url('https://study.com/cimages/multimages/16/sciencediagrams1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.image7{
+  margin: 20px 180px;
+  aspect-ratio: 145/40;
+  background-image: url('https://study.com/cimages/multimages/16/sciencediagrams1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.grid-container17{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 10px 180px 30px 180px;
+}
+
+.grid-item171{
+  background-color: #EEF6FF;
+  font-family: 'Spline Sans Mono';
+  text-align: center;
+  color: #008BF5;
+  border-radius: 15px;
+  padding: 20px;
 }
 </style>
 
