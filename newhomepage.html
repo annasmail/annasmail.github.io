@@ -1,0 +1,688 @@
+<body>
+
+<div class="welcomebar"></div>
+
+<div class="navbar">
+  <a href="#">Projects</a>
+  <a href="#">Design</a>
+  <a href="#">Github</a>
+</div>
+
+    <div class="gallery">
+        <div class="gallery-container">
+            <img class="gallery-item gallery-item-1" src='/carousel/carwash.png' data-index="1">
+            <img class="gallery-item gallery-item-2" src='/carousel/martian.png' data-index="2">
+            <img class="gallery-item gallery-item-3" src='/carousel/isaac.png' data-index="3">
+            <img class="gallery-item gallery-item-4" src='/carousel/ava.png' data-index="4">
+            <img class="gallery-item gallery-item-5" src='/carousel/MHW.png' data-index="5">
+        </div>
+    </div>
+    <div class="controlsbg">
+    <div class="myinterests">Swipe to see some of my work!</div>
+    <div class="gallery-controls"></div>
+    </div>
+
+    <div class="mybgtitle">
+    <p class="cursor mybgtitle2">My background...</p>
+    </div>
+
+    <div class="block">
+        <div class="container1">
+            <div class="painting"></div>
+            <div class="text1">
+                <div class="sub">Art or Science?</div>
+                <div class="bod">
+                    My first experience of graphic design came in <b>Year 7</b> where we had to make a menu for a fish and chips restaurant and I instantly loved it! 
+                    In the following years, I continued to enjoy art and design classes, but tended to prioritise science and maths.
+                </div>
+                <div class="bod">
+                    When it came to picking a degree, I decided on ‘product design engineering’ as the <b>perfect middle ground between science and art</b>. 
+                    I started my course in 2020 and got some fun experience with working to briefs and learning new software like Affinity and Fusion360.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="block">
+        <div class="container1">
+            <div class="text1">
+                <div class="sub">Both but neither...</div>
+                <div class="bod">
+                    After a year of designing dental-floss dispensers and garden equipment, I realised that by finding the middle ground, I had ended up doing neither of my interests. 
+                    I decided to change course - to <b>physics and earth sciences</b>. 
+                </div>
+                <div class="bod">
+                    I loved the course and was pleased with the change, but I still gravitated back to design: leaning more into the data presentation and mapping aspects of my degree, 
+                    as well as developing my illustration skills for personal projects and university societies. 
+                </div>
+            </div>
+            <div class="solar"></div>
+        </div>
+    </div>
+
+    <div class="blueblock">
+        <div class="block">
+            <div class="container2">
+            <div class="sub2">Discovering web design!</div>
+            <div class="bod">
+                    I started a Masters in Quantitative Climate and Environmental Science, where I discovered my love for coding! 
+                    At the same time, the Cambridge Climate Society were looking for a new designer for their website...
+            </div>
+            <div class="bod">
+                    Now combining my three interests: <bold2>climate science, coding AND design</bold2>, I quickly became addicted to web design. 
+                    I mainly used WebFlow, but also created my own Github webpage, learning how to code in HTML, CSS and JavaScript. 
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="block">
+        <div class="container3">
+        <div class="sub">And now...</div>
+        <div class="bod">
+                I have just graduated and am now in training to become an operational meteorologist. With a flexible work schedule, 
+                I have quite a bit of free time and am hoping to continue to develop my skills in web design, data presentation and scientific communication! This webpage is the current work in progress :)
+        </div>
+        </div>
+    </div>
+
+    <div class="footer">
+    <div class="footertext">
+        Anna Smail <br> <subtext>Exeter</subtext>
+    </div>
+    </div>
+
+</body>
+
+
+<script>
+
+    const galleryContainer = document.querySelector('.gallery-container');
+    const galleryControlsContainer = document.querySelector('.gallery-controls');
+    const galleryControls = ['previous', 'next'];
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    class Carousel{
+
+        constructor(container, items, controls){
+            this.carouselContainer = container;
+            this.carouselControls = controls;
+            this.carouselArray = [...items];
+        }
+
+    updateGallery(){
+        this.carouselArray.forEach(el => {
+            el.classList.remove('gallery-item-1');
+            el.classList.remove('gallery-item-2');
+            el.classList.remove('gallery-item-3');
+            el.classList.remove('gallery-item-4');
+            el.classList.remove('gallery-item-5');
+        });
+
+        this.carouselArray.slice(0, 5).forEach((el, i) => {
+            el.classList.add(`gallery-item-${i+1}`);
+        });
+    }
+
+    setCurrentState(direction){
+        if (direction.className == 'gallery-controls-previous'){
+            this.carouselArray.unshift(this.carouselArray.pop());
+        }else{
+            this.carouselArray.push(this.carouselArray.shift());
+        }
+        this.updateGallery();
+        }
+
+    setControls() {
+        this.carouselControls.forEach(control => {
+            galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
+            //            document.querySelector(`.gallery-controls-${control}`).innerText = control;
+        });
+    }
+
+    useControls(){
+        const triggers = [...galleryControlsContainer.childNodes];
+        triggers.forEach(control => {
+            control.addEventListener('click', e => {
+                e.preventDefault();
+                this.setCurrentState(control);  
+            });
+        });
+    }
+}
+
+const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
+
+exampleCarousel.setControls();
+exampleCarousel.useControls();
+
+
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
+
+
+
+</script>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
+body{
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: 'DM Sans';
+     background-color: #f9f6f1;
+}
+
+header {
+  padding: 60px 60px 40px 60px;
+  text-align: center;
+  color: #EDE0FA;
+}
+
+.welcomebar{
+    width: 100%;
+    aspect-ratio: 190/41;
+    background-image: url('/mybackground/banner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.navbar a {
+  color: #181515;
+  padding: 10px 16px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+  margin: 5px 10px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  max-width: 60%;
+  font-family: 'DM Sans';
+  border: solid 2px #181515;
+
+}
+
+.navbar a:hover {
+  background-color: #4b66c7;
+  border: solid 2px #4b66c7;
+  color: #f8f6f3;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar a {   
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 18px;
+  }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.8;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0px);
+    }
+}
+
+.block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
+
+.gallery{
+    width: 100%;
+}
+
+.gallery-container{
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.gallery-item{
+    height: 250px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+    border-radius: 15px;
+    background-size: cover;
+    aspect-ratio: 210/290;
+}
+
+.gallery-item-1{
+    left: 15%;
+    opacity: 1;
+    transform: translateX(-20%) rotate(-6deg);
+    transition: 0.2s;
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.15);
+}
+
+.gallery-item-2, .gallery-item-4{
+    height: 290px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.gallery-item-2{
+    left: 30%;
+    transform: translateX(-40%) rotate(-3deg);
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.25);
+}
+
+.gallery-item-3{
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+    height: 340px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+.gallery-item-4{
+    left: 65%;
+    transform: translateX(-40%) rotate(3deg);
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.25);
+}
+
+.gallery-item-5{
+    left: 85%;
+    opacity: 1;
+    transform: translateX(-80%) rotate(6deg);
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.15);
+}
+
+.myinterests{
+    color: #181515;
+    margin: 10px;
+}
+
+.gallery-controls{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    height: 50px;
+}
+
+.gallery-controls button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 50px;
+    padding: 0 12px;
+    text-transform: capitalize;
+}
+
+.gallery-controls-previous:focus{
+    outline: none;
+}
+
+.gallery-controls-previous{
+    position: relative;
+}
+
+.gallery-controls-previous::before{
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    left: 0px;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%) rotate(180deg);
+    transition: left 0.20s; 
+    background-image: url('/mybackground/arrowblack.png');  
+    background-size: cover;
+}
+
+.gallery-controls-previous:hover::before{
+    left: -5px;
+    background-image: url('/mybackground/arrowblue.png');  
+    background-size: cover;
+}
+
+.gallery-controls-next{
+    position: relative;
+}
+
+.gallery-controls-next::before{
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    right: 0px;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    transition: right 0.20s;  
+    background-image: url('/mybackground/arrowblack.png');  
+    background-size: cover;
+}
+
+.gallery-controls-next:hover::before{
+    right: -5px;
+    background-image: url('/mybackground/arrowblue.png');  
+    background-size: cover;
+}
+
+.controlsbg{
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    aspect-ratio: 190/15;
+    background-position: center;
+}
+
+.cursor{
+    position: relative;
+    width: 12em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.mybgtitle{
+    margin: 50px 300px 0px 300px;
+}
+
+.mybgtitle2{
+    font-family: Spline Sans Mono;
+    font-size: 3rem;
+    color: #181515;
+    text-align: center;
+    animation: 
+    typewriter 3s steps(16) 2s 1 normal both, 
+    blinkingCursor 1000ms steps(40) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0;}
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(0, 0, 0, .75); }
+  to { border-right-color: transparent; }
+}
+
+
+.container1{
+    margin: 0px 150px 0px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.painting{
+    background-image: url('/mybackground/Untitled_Artwork 1.png');
+    background-size: contain;
+    aspect-ratio: 506/570;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.solar{
+    background-image: url('/mybackground/Untitled_Artwork.png');
+    background-size: contain;
+    aspect-ratio: 506/570;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text1{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 70%;
+    align-items: center;
+}
+
+.sub{
+    font-family: Spline Sans Mono;
+    color: #4b66c7;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.sub2{
+    font-family: Spline Sans Mono;
+    color: #d7e2f7;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.bod{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+b{
+    font-weight: 900;
+    background-color: #f5a7e37c;
+    color: black;
+    padding: 0px 3px;
+}
+
+bold2{
+    font-weight: 900;
+    background-color: #f9f6f1;
+    color: #4b66c7;
+    padding: 0px 3px;
+}
+
+.blueblock{
+    margin: 0px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color: #f9f6f1;
+    background-color: #4b66c7;
+    width: 100%;
+}
+
+.container2{
+    margin: 50px 150px;
+}
+
+.container3{
+    margin: 50px 200px 0px 200px;
+    text-align: center;
+}
+
+.sub2{
+    font-family: Spline Sans Mono;
+    color: #f9f6f1;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.footer{
+    width: 100%;
+    aspect-ratio: 190/41;
+    background-image: url('/mybackground/footer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footertext{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 100px;
+    font-family: Spline Sans Mono;
+    color: #e5ddd3;
+}
+
+subtext{
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+}
+
+@media screen and (max-width: 950px) {
+  .footertext{
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+  subtext{
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .footer{
+    margin-top: 20px;
+  }
+  .navbar{
+    margin-top: 10px;
+  }
+  .welcomebar{
+    background-image: url('/mybackground/banner_small.png');
+    aspect-ratio: 76/73;
+  }
+  .container3{
+    margin: 50px 100px 0px 100px;
+  }
+  .container2{
+    margin: 70px 100px;
+  }
+  .text1{
+    width: 100%;
+  }
+  .container1{
+    margin: 0px 100px;
+  }
+  .mybgtitle2{
+    font-size: 2.3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sticktext{
+    position: sticky;
+    top: 20%;
+    text-align: left;
+    margin: 100px 200px 100px 200px;
+    width: 50%;
+}
+
+.parallax-container {
+  display: flex;
+  min-height: 200vh;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom, #fff, #c0d9f8);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  row-gap: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+
+.slidepics-cont{
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    width: 20%;
+}
+
+.slidepics{
+    background-image: url('/mybackground/computer.png');
+    background-size: contain;
+    aspect-ratio: 506/570;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1400px) {
+  .sticktext {   
+    width:60%;
+    margin: 100px auto;
+  }
+  .slidepics-cont {
+    display: none;
+  }
+  .parallax-container{
+    min-height: 120vh;
+  }
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.block-fade{
+    animation: fadein linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+
+
+
+</style>
