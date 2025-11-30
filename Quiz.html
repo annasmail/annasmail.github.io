@@ -199,6 +199,14 @@
     </div>
 </div>
 
+<div id="devicePopup">
+    <div class="popup-content">
+        <h2>Choose your experience...</h2>
+        <button onclick="closePopup()">Stay on Desktop</button>
+        <button onclick="window.location.href='/Quiz-mobile.html';">to Mobile</button>
+    </div>
+</div>
+
 </body>
 
 
@@ -549,7 +557,10 @@ $(".activity3-btn").click(function (event) {
         scrollTop: $(".score-cont").offset().top
     }, 1500);});
 
-
+function closePopup() {
+    document.getElementById('devicePopup').style.display = 'none';
+}
+    
 </script>
 
 <style>
@@ -1250,6 +1261,42 @@ body{
   font-size: 2.5rem;
 }
 
+/*Pop Up*/
+    #devicePopup {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        width: 300px;
+        font-family: 'DM Sans';
+        box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    }
+    button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 0px;
+        background-color: #EEF2FC;
+        border-radius: 20px;
+        font-family: 'Spline Sans Mono';
+        color: #4B66C7;
+        transition: 0.3s;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: #DBE4F9;
+    }
 /*GLOBAL*/
 .story{
     font-size: 2.5rem;
