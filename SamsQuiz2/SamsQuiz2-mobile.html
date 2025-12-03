@@ -1,5 +1,15 @@
 <body>
-<div class="viewheight-cont" style="background-color: #edf2fb;">
+
+<div class="navbar">
+    <a href="http://google.com" style="text-decoration: none;">
+    <div class="logo-cont">
+    <div class="snail"></div>
+    <div class="logo">Anna Smail</div>
+    </div>
+    </a>
+</div>
+    
+<div class="viewheight-cont2" style="background-color: #edf2fb;">
     <div class="heysam"></div>
     <div class="welcomeText" style="animation-delay: 0.5s">This is a quiz I made for my brother Sam! It follows his daily routine and some of his favourite activities.</div>
     <div class="welcomeText" style="animation-delay: 2s">There are <b>10 questions</b> - let’s see how many you can get right!</div>
@@ -487,6 +497,11 @@ body{
     align-content: center;
     padding: 10% 0;
 }
+.viewheight-cont2{
+    height: 80%;
+    width: 100%;
+    padding: 10% 0;
+}
 .heysam{
     background-image: url('heysam2.png');
     background-size: contain;
@@ -814,6 +829,41 @@ body{
     border: 0px solid #fd6d3f;
     color: #fff;
 }
+
+/*header*/
+.logo{
+    font-family: 'DM Sans';
+    font-size: 50px;
+    text-align: left;
+    font-weight: 600;
+    margin: auto 20px;
+    color: #0e0e0e;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 25px 4%;
+  align-items: center;
+  gap: 30px;
+  width: 92%;
+  background-color: #fff;
+}
+.logo-cont{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 0px;
+    margin: 10px 1%;
+    width: 100%;
+}
+.snail{
+    width: 100%;
+    background-image: url('/samQuizImages/snail.png');
+    aspect-ratio: 1/1;
+    background-size: contain;
+    margin: auto;
+}
+    
 </style>
 
 
