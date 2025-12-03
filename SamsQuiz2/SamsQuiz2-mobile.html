@@ -1,0 +1,838 @@
+<body>
+<div class="viewheight-cont" style="background-color: #edf2fb;">
+    <div class="heysam"></div>
+    <div class="welcomeText" style="animation-delay: 0.5s">This is a quiz I made for my brother Sam! It follows his daily routine and some of his favourite activities.</div>
+    <div class="welcomeText" style="animation-delay: 2s">There are <b>10 questions</b> - let’s see how many you can get right!</div>
+    <div class="welcomeText" style="animation-delay: 3.6s">It starts early in the morning when Sam likes to wake up.</div>
+    <div class="nextButton" style="animation-delay: 3.6s">Start Quiz</div>
+</div>
+
+<div class="viewheight-cont" style="background-color: #bbd3f7;" id="question1">
+    <div class="wakeup"></div>
+    <div class="questionbox">
+        <div class="story">It’s the start of a new day! You have just woken up at 5am.</div>
+        <div class="question">What would you like to do?</div>
+    </div>
+    <div class="answersbox">
+        <button class="answer1" data-correct="false">It's early - I'll go back to sleep</button>
+        <button class="answer1" data-correct="false">Let's read a book!</button>
+        <button class="answer1" data-correct="true">I want breakfast</button>
+    </div>
+</div>
+
+<div class="viewheight-cont" style="background-color: #4b66c7; color: #fff;" id="question2">
+    <div class="questionbox" style="margin-top: 35%;">
+        <div class="story">Okay, let's make our way downstairs to the kitchen...</div>
+        <div class="question">Can you find everything you need for a nice bowl of Weetabix?</div>
+    </div>
+    <div class="kitchen">
+        <div class="sticker" onClick="FirstImage()" style="background-image: url('/Artboard 8.webp'); top: 56%; left: 4%; z-index: 3; aspect-ratio: 120/57; width: 17%"></div>
+        <div class="sticker" onClick="SecondImage()" style="background-image: url('/Artboard 36.webp'); top: 3%; left: 12%; z-index: 3; aspect-ratio: 140/70; width: 14%"></div>
+        <div class="sticker" onClick="ThirdImage()"style="background-image: url('/Artboard 10.webp'); top: 9%; left: 60%; z-index: 3; aspect-ratio: 115/127; width: 15%"></div>
+        <div class="sticker" style="background-image: url('/Artboard 11.webp'); top: 49%; left: 20%; z-index: 3; aspect-ratio: 112/84; width: 14%;"></div>
+        <div class="sticker" onClick="FourthImage()"style="background-image: url('/Artboard 12.webp'); top: 54%; left: 65%; z-index: 3; aspect-ratio: 105/137; width: 13%;"></div>
+        <div class="sticker" style="background-image: url('/Artboard 13.webp'); top: 68%; left: 78%; z-index: 3; aspect-ratio: 97/130; width: 10%;"></div>
+    </div>
+    <div class="width100" style="background-color: #4b1931; height: 100%;">
+    <div class="questionbox">
+        <div class="story">
+            <div class="checkers">
+                <img id="imageid1" src="/Artboard 14_1.webp" height="100%" width="100%">
+                <img id="imageid2" src="/Artboard 14_1.webp" height="100%" width="100%">
+                <img id="imageid3" src="/Artboard 14_1.webp" height="100%" width="100%">
+                <img id="imageid4" src="/Artboard 14_1.webp" height="100%" width="100%">
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="viewheight-cont" style="background-color: #fff;" id="question3">
+    <div class="width100">
+    <div class="questionbox" style="color: #000; margin-top: 25%;">
+        <div class="story">Let's watch some TV while we eat our breakfast!</div>
+        <div class="question">What would you like to watch? (flick through on the remote!)</div>
+    </div>
+    </div>
+    <div class="tvimage">
+        <div class="remotebutton" style="top: 59%; left: 74.3%; background-image:url('/Artboard 27.webp')" data-target="youtubeimg"></div>
+        <div class="remotebutton" style="top: 66.5%; left: 74.3%; background-image:url('/Artboard 28.webp')" data-target="bbcimg"></div>
+        <div class="remotebutton" style="top: 73.8%; left: 74.3%; background-image:url('/Artboard 29.webp')" data-target="netfliximg"></div>
+        <img class="remote-image" id="youtubeimg" src="/Artboard 35_2.webp">
+        <img class="remote-image" id="bbcimg" src="/Artboard 35.webp">
+        <img class="remote-image" id="netfliximg" src="/Artboard 35_1.webp">
+    </div>
+    <div class="width100" style=" background-color: #4b66c7; height: 100%;">
+    <div class="answersbox" style="color: #fff;">
+        <button class="answer3" data-correct="true">Music videos on YouTube</button>
+        <button class="answer3" data-correct="false">A BBC Crime Drama</button>
+        <button class="answer3" data-correct="false">A Netflix film</button>
+    </div>
+    </div>
+</div>
+
+<div class="viewheight-cont" style="background-color: #f5a7e3;" id="question4">
+    <div class="width100" style="background-color: #f5a7e3;">
+    <div class="questionbox" style="color: #4b1931;">
+        <div class="story">It’s time to go on a walk!</div>
+        <div class="question">Have a look at the weather outside - what might we need to take with us?</div>
+    </div>
+    </div>
+    <div class="walkweather"></div>
+    <div class="walkitems">
+        <div class="walksticker" id="coat" style="background-image: url('/Artboard 20.webp'); top: 2%; left: 6%; z-index: 3; aspect-ratio: 4/5; width: 45%"></div>
+        <div class="walksticker" id="glasses" style="background-image: url('/Artboard 21.webp'); top: 0%; left: 50%; z-index: 3; aspect-ratio: 400/286; width: 45%"></div>
+        <div class="walksticker" id="shorts" style="background-image: url('/Artboard 22.webp'); top: 37%; left: 46%; z-index: 3; aspect-ratio: 367/407; width: 40%"></div>
+    </div>
+</div>
+
+<div class="viewheight-cont" style="background-color: #000; color: #fff" id="question5">
+    <div class="questionbox">
+        <div class="story">We’re approaching an elderly couple on our walk...</div>
+        <div class="question">How should we greet them?</div>
+    </div>
+    <div class="onwalk"></div>
+    <div class="answersbox">
+        <div class="answer5" data-correct="false">Run directly towards them</div>
+        <div class="answer5" data-correct="true">Say hello and move on</div>
+        <div class="answer5" data-correct="false">Show them Blue Car (aggressively)</div>
+    </div>
+</div>
+
+<div class="viewheight-cont" style="background-color: #4b66c7; color: #fff" id="question6">
+    <div class="sandwich"></div>
+    <div class="questionbox">
+        <div class="story">We successfully make it round the walk and arrive home...</div>
+        <div class="question">There's a philadelphia sandwich waiting for us! What time must it be?</div>
+    </div>
+    <div class="answersbox">
+        <div class="answer6"  data-correct="false">11:00</div>
+        <div class="answer6"  data-correct="true">12:00</div>
+        <div class="answer6"  data-correct="false">13:00</div>
+    </div>
+</div>
+
+<div class="viewheight-cont" style="background-color: #000; color: #fff" id="question7">
+    <div class="questionbox">
+        <div class="story">Let’s go in the garden and play bouncy balls!</div>
+        <div class="question">Where should you throw them?</div>
+    </div>
+    <div class="bouncyballs">
+        <div class="answer7" data-correct="false" style="max-width: 200px; top: 47%; left: 5%; filter: drop-shadow(-5px 5px 0px #00000018);">Directly at the <br> house windows</div>
+        <div class="answer7" data-correct="true" style="max-width: 200px; top: 33%; left: 32%; filter: drop-shadow(0px 5px 0px #00000018);">To Anna</div>
+        <div class="answer7" data-correct="false" style="max-width: 250px; top: 75%; left: 56%; right: 5%; filter: drop-shadow(5px 5px 0px #00000018);">Over the fence into next door’s garden</div>
+    </div>
+</div>
+
+<div class="minviewheight-cont" style="background-color: #4b66c7; color: #fff" id="question8">
+    <div class="questionbox">
+        <div class="story">The sun is starting to go down!</div>
+        <div class="question">What last activity would you like to do today?</div>
+    </div>
+    <div class="width100">
+        <div class="imageanswer-cont">
+            <div class="imageanswer" style="background-image: url('/Artboard 11_2.webp')"></div>
+            <div class="answer8"  data-correct="false">Bowling</div>
+        </div>
+        <div class="imageanswer-cont">
+            <div class="imageanswer" style="background-image: url('/Artboard 11_1.webp')"></div>
+            <div class="answer8"  data-correct="true">Swimming</div>
+        </div>
+        <div class="imageanswer-cont">
+            <div class="imageanswer" style="background-image: url('/Artboard 11_3.webp')"></div>
+            <div class="answer8"  data-correct="false">Hit the town</div>
+        </div>
+    </div>
+</div>
+
+<div class="viewheight-cont" style="background-color: #f5a7e3; color: #4b1931" id="question9">
+    <div class="questionbox">
+        <div class="story">We swim 40 lengths! Let's say bye to everyone before we leave...</div>
+        <div class="question">How many swimmers are there that we need to say bye to?</div>
+    </div>
+    <div class="swimming"></div>
+    <div class="answersbox">
+        <div class="answer9"  data-correct="false">1 swimmer</div>
+        <div class="answer9"  data-correct="true">3 swimmers</div>
+        <div class="answer9"  data-correct="false">5 swimmers</div>
+    </div>
+</div>
+
+<div class="minviewheight-cont" style="background-color: #000; color: #fff" id="question10">
+    <div class="questionbox">
+        <div class="story">It’s the end of the day – you’ve been very busy!</div>
+        <div class="question">What’s your favourite way to wind down?</div>
+    </div>
+    <div class="width100">
+        <div class="imageanswer-cont">
+            <div class="imageanswer" style="background-image: url('/Artboard 13_1.webp')"></div>
+            <div class="answer10"  data-correct="false">Porridge</div>
+        </div>
+        <div class="imageanswer-cont">
+            <div class="imageanswer" style="background-image: url('/Artboard 13_2.webp')"></div>
+            <div class="answer10"  data-correct="false">Play with cars</div>
+        </div>
+        <div class="imageanswer-cont">
+            <div class="imageanswer" style="background-image: url('/Artboard 13_3.webp')"></div>
+            <div class="answer10"  data-correct="false">Dancing</div>
+        </div>
+        <div class="imageanswer-cont">
+            <div class="imageanswer" style="background-image: url('/Artboard 13_4.webp')"></div>
+            <div class="answer10"  data-correct="true">All of the above</div>
+        </div>
+    </div>
+</div>
+
+<div class="viewheight-cont" style="background-color: #4b66c7;" id="scoring-cont">
+    <div class="score-img">    
+        <div class="score-text-cont">
+            <div id="score-display">You scored 0 out of 13!</div>
+            <div id="score-display-percent">That means you are 0% like Sam.</div>
+            <div id="score-display-congrats">Congratulations!</div>
+        </div>
+    </div>
+</div>
+
+<div class="viewheight-cont">hello</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+    // quiz set up
+
+    let score = 0;
+    let score2 = 0;
+    let score3 = 0;
+    let score4 = 0;
+    let score5 = 0;
+    let score6 = 0;
+    let score7 = 0;
+    let score8 = 0;
+    let score9 = 0;
+    let score10 = 0;
+    const scoreDisplay = document.getElementById('score-display');
+
+    // question 1 - wake up 
+
+    $('.answer1').on('click', function() {
+    const isCorrect = $(this).data('correct');
+    if (isCorrect) {
+        $(this).addClass('selected-right');
+        score++;
+    } else {
+        $(this).addClass('selected-wrong');}
+    $('#score-display').text('You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!');
+    $('#score-display-percent').text('That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.');
+    $(this).siblings().prop('disabled', true);
+    $(this).prop('disabled', true);
+    });
+
+    // question 2 - weetabix
+
+    document.addEventListener("DOMContentLoaded", function() {
+    let totalClicks = 0;    
+    const maxAttempts = 4; 
+    let correctCount = 0; 
+
+    const correctStickers = [0, 1, 2, 4];
+
+    const checkerImgs = [
+        document.getElementById('imageid1'),
+        document.getElementById('imageid2'),
+        document.getElementById('imageid3'),
+        document.getElementById('imageid4')
+    ];
+
+    const stickers = document.querySelectorAll('.sticker');
+    const scoreDisplay = document.getElementById('score-display');
+    const scoreDisplayPer = document.getElementById('score-display-percent');
+
+    stickers.forEach((sticker, index) => {
+        sticker.addEventListener('click', function() {
+        if (totalClicks >= maxAttempts) return;
+
+        totalClicks++;
+
+        if (correctStickers.includes(index)) {
+            if (!sticker.classList.contains('found')) {
+            sticker.classList.add('found');
+            checkerImgs[correctCount].src = "/Artboard 14.webp";
+            correctCount++;
+            score2++;
+            }
+        } else {
+            sticker.classList.add('shake');
+            setTimeout(() => sticker.classList.remove('shake'), 500);
+        }
+
+        if (scoreDisplay) scoreDisplay.textContent = 'You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!';
+        if (scoreDisplayPer) scoreDisplayPer.textContent = 'That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.';
+
+        if (totalClicks >= maxAttempts) {
+            stickers.forEach(s => s.style.pointerEvents = 'none');
+            $('html, body').animate({ scrollTop: $("#question3").offset().top}, 1500);
+        }
+        });
+    });
+    });
+
+    // question 3 - wake up 
+
+    $('.answer3').on('click', function() {
+    const isCorrect = $(this).data('correct');
+    if (isCorrect) {
+        $(this).addClass('selected-right');
+        score3++;
+    } else {
+        $(this).addClass('selected-wrong');}
+    $('#score-display').text('You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!');
+    $('#score-display-percent').text('That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.');
+    $(this).siblings().prop('disabled', true);
+    $(this).prop('disabled', true);
+    });
+
+    // question 4 - walk clothes
+
+    document.addEventListener("DOMContentLoaded", function() {
+    let totalClicks = 0;    
+    const maxAttempts = 1; 
+    let correctCount = 0; 
+
+    const correctStickers = [0];
+
+    const stickers2 = document.querySelectorAll('.walksticker');
+    const scoreDisplay = document.getElementById('score-display');
+    const scoreDisplayPer = document.getElementById('score-display-percent');
+
+    stickers2.forEach((walksticker, index) => {
+        walksticker.addEventListener('click', function() {
+        if (totalClicks >= maxAttempts) return;
+
+        totalClicks++;
+
+        if (correctStickers.includes(index)) {
+            if (!walksticker.classList.contains('found')) {
+            walksticker.classList.add('found');
+            walksticker.style.backgroundImage = "url('/Artboard 20_1.webp')";
+            correctCount++;
+            score4++;
+            }
+        } else {
+                if (walksticker.id === "glasses") {
+                    walksticker.style.backgroundImage = "url('/Artboard 21_1.webp')";
+                } 
+                else if (walksticker.id === "shorts") {
+                    walksticker.style.backgroundImage = "url('/Artboard 22_1.webp')";
+                }
+            walksticker.classList.add('shake');
+            setTimeout(() => walksticker.classList.remove('shake'), 500);
+        }
+
+        if (scoreDisplay) scoreDisplay.textContent = 'You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!';
+        if (scoreDisplayPer) scoreDisplayPer.textContent = 'That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.';
+
+        if (totalClicks >= maxAttempts) {
+            stickers2.forEach(s => s.style.pointerEvents = 'none');
+        }
+
+        });
+    });
+    });
+
+
+    // question 5 - wake up 
+
+    $('.answer5').on('click', function() {
+    const isCorrect = $(this).data('correct');
+    if (isCorrect) {
+        $(this).addClass('selected-right');
+        score5++;
+    } else {
+        $(this).addClass('selected-wrong');}
+    $('#score-display').text('You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!');
+    $('#score-display-percent').text('That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.');
+    $(this).siblings().prop('disabled', true);
+    $(this).prop('disabled', true);
+    });
+
+    // question 6 - wake up 
+
+    $('.answer6').on('click', function() {
+    const isCorrect = $(this).data('correct');
+    if (isCorrect) {
+        $(this).addClass('selected-right');
+        score6++;
+    } else {
+        $(this).addClass('selected-wrong');}
+    $('#score-display').text('You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!');
+    $('#score-display-percent').text('That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.');
+    $(this).siblings().prop('disabled', true);
+    $(this).prop('disabled', true);
+    });
+
+    // question 7 - wake up 
+
+    $('.answer7').on('click', function() {
+    const isCorrect = $(this).data('correct');
+    if (isCorrect) {
+        $(this).addClass('selected-right');
+        score7++;
+    } else {
+        $(this).addClass('selected-wrong');}
+    $('#score-display').text('You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!');
+    $('#score-display-percent').text('That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.');
+    $(this).siblings().prop('disabled', true);
+    $(this).prop('disabled', true);
+    });
+
+    // question 8 - wake up 
+
+    $('.answer8').on('click', function() {
+    const isCorrect = $(this).data('correct');
+    if (isCorrect) {
+        $(this).addClass('selected-right');
+        score8++;
+    } else {
+        $(this).addClass('selected-wrong');}
+    $('#score-display').text('You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!');
+    $('#score-display-percent').text('That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.');
+    $(this).siblings().prop('disabled', true);
+    $(this).prop('disabled', true);
+    });
+
+    // question 9 - wake up 
+
+    $('.answer9').on('click', function() {
+    const isCorrect = $(this).data('correct');
+    if (isCorrect) {
+        $(this).addClass('selected-right');
+        score9++;
+    } else {
+        $(this).addClass('selected-wrong');}
+    $('#score-display').text('You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!');
+    $('#score-display-percent').text('That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.');
+    $(this).siblings().prop('disabled', true);
+    $(this).prop('disabled', true);
+    });
+
+    // question 10 - wake up 
+
+    $('.answer10').on('click', function() {
+    const isCorrect = $(this).data('correct');
+    if (isCorrect) {
+        $(this).addClass('selected-right');
+        score10++;
+    } else {
+        $(this).addClass('selected-wrong');}
+    $('#score-display').text('You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!');
+    $('#score-display-percent').text('That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.');
+    $(this).siblings().prop('disabled', true);
+    $(this).prop('disabled', true);
+    });
+
+// scrolling
+$(".nextButton").click(function (event) {event.preventDefault();$('html, body').animate({scrollTop: $("#question1").offset().top}, 1500);});
+$(".answer1").click(function (event) {event.preventDefault(); $('html, body').animate({scrollTop: $("#question2").offset().top}, 1500);});
+$(".answer3").click(function (event) {event.preventDefault(); $('html, body').animate({scrollTop: $("#question4").offset().top}, 1500);});
+$(".answer1").click(function (event) {event.preventDefault(); $('html, body').animate({scrollTop: $("#question2").offset().top}, 1500);});
+$(".answer5").click(function (event) {event.preventDefault(); $('html, body').animate({scrollTop: $("#question6").offset().top}, 1500);});
+$(".answer6").click(function (event) {event.preventDefault(); $('html, body').animate({scrollTop: $("#question7").offset().top}, 1500);});
+$(".answer7").click(function (event) {event.preventDefault(); $('html, body').animate({scrollTop: $("#question8").offset().top}, 1500);});
+$(".answer8").click(function (event) {event.preventDefault(); $('html, body').animate({scrollTop: $("#question9").offset().top}, 1500);});
+$(".answer9").click(function (event) {event.preventDefault(); $('html, body').animate({scrollTop: $("#question10").offset().top}, 1500);});
+$(".answer10").click(function (event) {event.preventDefault(); $('html, body').animate({scrollTop: $("#scoring-cont").offset().top}, 1500);});
+$(".walksticker").click(function (event) {event.preventDefault();setTimeout(function () {$('html, body').animate({scrollTop: $("#question5").offset().top}, 1500);}, 500);});
+
+</script>
+
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@keyframes appear {
+    from {opacity: 0; scale: 0.8; transform: translateY(-50px);}
+    to {opacity: 1; scale: 1; transform: translateY(0px);}}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}}
+.block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+.blockFadeIn{
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans;
+}
+.viewheight-cont{
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    align-content: center;
+}
+.minviewheight-cont{
+    min-height: 100vh;
+    width: 100%;
+    align-content: center;
+    padding: 10% 0;
+}
+.heysam{
+    background-image: url('/Artboard 18.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 389/360;
+}
+.welcomeText{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 300%;
+    margin-top: 3%;
+    text-align: left;
+    animation: fadein 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.nextButton{
+    border: 4px dashed #bbd3f7;
+    font-size: 300%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 50px;
+    width: 30%;
+    margin-left: 56%; margin-top: 3%;
+    transition: 0.3s;
+    animation: fadein 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.nextButton:hover{
+    border: 4px solid #bbd3f7;
+    background-color: #bbd3f7;
+}
+.wakeup{
+    background-image: url('/Artboard 1.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    aspect-ratio: 505/323;
+    border: 0px;
+    margin: 0 10%;
+    border-radius: 50px;
+}
+.questionbox{
+    width: 80%;
+    margin: 6% 10%;
+}
+.width100{
+    width: 100%;
+    padding: 5% 0;
+}
+.story{
+    font-size: 430%;
+    font-weight: 700;
+}
+.question{
+    margin-top: 2%;
+    font-size: 300%;
+}
+.answersbox{
+    width: 80%;
+    margin: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10%;
+    align-content: center;
+}
+.answer1{background-color: #aac5ef;border-radius: 50px;padding: 2%;width: 96%;text-align: center;font-size: 300%;border: 0px solid;font-family: DM Sans;}
+.answer3{color:#fff; background-color: #405cc2;border-radius: 50px;padding: 2%;width: 96%;text-align: center;font-size: 300%;border: 0px solid;font-family: DM Sans;}
+.answer5{color:#fff;background-color: #131313;border-radius: 50px;padding: 2%;width: 96%;text-align: center;font-size: 300%;border: 0px solid;font-family: DM Sans;}
+.answer6{color:#fff;background-color: #405cc2;border-radius: 50px;padding: 2%;width: 96%;text-align: center;font-size: 300%;border: 0px solid;font-family: DM Sans;}
+.answer8{color:#fff;background-color: #405cc2;border-radius: 50px;padding: 2%;width: 96%;text-align: center;font-size: 300%;border: 0px solid;font-family: DM Sans;}
+.answer9{color: #4b1931;background-color: #e993d5;border-radius: 50px;padding: 2%;width: 96%;text-align: center;font-size: 300%;border: 0px solid;font-family: DM Sans;}
+.answer10{color:#fff;background-color: #131313;border-radius: 50px;padding: 2%;width: 96%;text-align: center;font-size: 300%;border: 0px solid;font-family: DM Sans;}
+
+.answer1:disabled{cursor: default;color: #000;}
+.answer3:disabled{cursor: default;color: #fff;}
+.answer5:disabled{cursor: default;color: #fff;}
+.answer6:disabled{cursor: default;color: #fff;}
+.answer8:disabled{cursor: default;color: #fff;}
+.answer9:disabled{cursor: default;color: #4b1931;}
+.answer10:disabled{cursor: default;color: #fff;}
+
+.kitchen{
+    background-image: url('/Artboard 23_1.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 787/600;
+    border: 0px;
+    margin: 0;
+    position: relative;
+}
+.sticker{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sticker:hover{
+    transform: scale(1.03) rotate(5deg);
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateY(-5px); }
+  40% { transform: translateY(5px); }
+  60% { transform: translateY(-2.5px); }
+  80% { transform: translateY(2.5px); }
+}
+.shake {
+  animation: shake 0.5s;
+}
+.checkers{
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(4, 20%);
+    width: 80%;
+    margin: 0px 10% 20px 10%;
+}
+.tvimage{
+    background-image: url('/Artboard 19_1.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 1156/680;
+    border: 0px;
+    margin: 0;
+    position: relative;
+}
+.remote-image {
+    aspect-ratio: 3366/1774;
+    width: 58%;
+    border-radius: 5px;
+    background-size: cover;
+    position: absolute;
+    top: 19%; 
+    left: 8.3%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    }
+.remote-image.active {
+    opacity: 1;
+    z-index: 1;
+    }
+.remotebutton{
+    aspect-ratio: 296/45;
+    width: 19.1%;
+    background-size: contain;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.remotebutton:hover{
+    transform: scale(0.98);
+}
+.walkweather{
+    background-image: url('/Artboard 19.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    aspect-ratio: 848/634;
+    border: 0px;
+    margin: 0 10%;
+}
+.walkitems{
+    width: 90%;
+    margin: 5%;
+    aspect-ratio: 870/780;
+    position: relative;
+}
+.walksticker{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.walksticker:hover{
+    transform: scale(1.03) rotate(5deg);
+}
+.onwalk{
+    background-image: url('/Artboard 20_2.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    aspect-ratio: 1150/1460;
+    border: 0px;
+    margin: 0 10%;
+    border-radius: 50px;
+}
+.sandwich{
+    background-image: url('/Artboard 7_1.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    aspect-ratio: 847/578;
+    border: 0px;
+    margin: 0 10%;
+    border-radius: 50px;
+}
+.bouncyballs{
+    background-image: url('/Artboard 21_2.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    aspect-ratio: 1/1;
+    border: 0px;
+    margin: 10% 10%;
+    border-radius: 50px;
+    position: relative;
+}
+.swimming{
+    background-image: url('/Artboard 12_1.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    aspect-ratio: 1374/594;
+    border: 0px;
+    margin: 0 10%;
+    border-radius: 50px;
+}
+.imageanswer-cont{
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    gap: 5%;
+    width: 80%;
+    margin: 8% 10%;
+}
+.imageanswer{
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.answer7{
+    border-radius: 50px;
+    padding: 2% 3%;
+    background-color: #ffffffab;
+    color: #181515;
+    font-size: 200%;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.answer7:hover{
+    transform: scale(1.03) rotate(-3deg);
+    color: #fff;
+    background-color: #181515;
+}
+.disabled8 {
+    pointer-events: none;
+}
+.disabled8:hover {
+    transform: none;
+}
+/*Score*/
+.score-img{
+    width: 100%;
+    aspect-ratio: 950/1243;
+    margin: auto;
+    background-image: url('/Artboard 22_2.webp');
+    background-size: cover;
+    background-position: center;
+    background-color: #4b66c7;
+}
+.score-text-cont{
+    width: 45%;
+    position: relative;
+    top: 39%;
+    left: 40%;
+    color: #181515;
+    font-weight: normal;
+    text-align: center;
+}
+#score-display {
+  font-size: 400%;
+}
+#score-display-percent {
+  font-size: 250%;
+  margin-top: 2%;
+}
+#score-display-congrats {
+  font-size: 250%;
+  margin-top: 2%;
+}
+
+/*GLOBAL*/
+.selected-right { 
+    background-color: #08a982; 
+    border: 0px solid #08a982;
+    color: #fff;
+}
+.selected-right:hover { 
+    background-color: #08a982; 
+    border: 0px solid #08a982;
+    color: #fff;
+}
+.selected-wrong { 
+    background-color: #fd6d3f; 
+    border: 0px solid #fd6d3f;
+    color: #fff;
+}
+.selected-wrong:hover { 
+    background-color: #fd6d3f; 
+    border: 0px solid #fd6d3f;
+    color: #fff;
+}
+</style>
+
+
+
+
+<script>
+
+// show tv choices on screen
+
+const textBoxes = document.querySelectorAll('.remotebutton');
+const images = document.querySelectorAll('.remote-image');
+
+textBoxes.forEach(box => {
+    box.addEventListener('click', () => {
+    images.forEach(img => img.classList.remove('active'));
+
+    const targetId = box.getAttribute('data-target');
+    document.getElementById(targetId).classList.add('active');
+    });
+});
+
+
+</script>
