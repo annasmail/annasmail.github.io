@@ -10,7 +10,14 @@ Title: Anna Smail
 			<link rel="shortcut icon" href="/images/snail-322.png" type="image/x-icon" />
 		</head>
 		<header>
-			<logo><a href="/">Anna Smail</a></logo>
+			<logo>
+				<a href="/" style="text-decoration: none;">
+			    <div class="logo-cont">
+			    <div class="snail"></div>
+			    <div class="logo">Anna Smail</div>
+			    </div>
+			    </a>
+			</logo>
 			<nav>
 	    			<ul class="nav_links">
 					<li><a href="/AboutMe" class="btn top">About Me</a></li>
@@ -133,9 +140,26 @@ nav ul {
 nav ul li {
     display: inline;
 }
-logo {
+.logo{
     font-family: 'DM Sans';
-    font-size: 2.3em;
-    font-weight: bold;
+    font-size: 44px;
+    text-align: left;
+    font-weight: 600;
+    margin: auto 20px;
+    color: #0e0e0e;
+}
+.logo-cont{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 0px;
+    margin: 10px 1%;
+    width: 100%;
+}
+.snail{
+    width: 100%;
+    background-image: url('/samQuizImages/snail.png');
+    aspect-ratio: 1/1;
+    background-size: contain;
+    margin: auto;
 }
  </style>
