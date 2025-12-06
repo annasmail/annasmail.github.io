@@ -493,8 +493,7 @@ Layout: layout
     $('#score-display').text('You scored ' + (score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10) + ' out of 13!');
     $('#score-display-percent').text('That means you are ' + ((score + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10)*100/13).toFixed(2) + '% like Sam.');
 
-    $(this).siblings().prop('disabled', true);
-    $(this).prop('disabled', true);
+    $('.activity3-btn').prop('disabled', true);
     });
 
     // scroll
