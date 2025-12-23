@@ -23,13 +23,17 @@ title: Joan the Lobster
 
 <div class="bg3">
   <div class="text3 text-top" id="text-clue">
-    Sam’s training for a 10km. He completes his 3km lap around town in 16.5 minutes at race pace.  
+    Sam likes to take inspiration for his codes from the NYT daily wordle.  
   </div>
   <div class="prisonguard" id="guard"></div>
   <div class="text3 text-bottom" id="text-code">
-    He can’t get that goal time off his mind!!
+    Have a look at his phone as he walks past...
   </div>
-  <div class="next" style="top: 85%; left: 75%;" id="next3"></div>
+    <div class="wordlephone" style="top: 60%; left: 55%;" id="next3"></div>
+</div>
+
+<div class="bg3-5">
+    <div class="next" style="top: 85%; left: 40%;" id="next3-5"></div>
 </div>
 
 <div class="bg4" style="align-items: center;">
@@ -652,6 +656,28 @@ a{
     align-items: center;
     position: relative;
 }
+.wordlephone{
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url('Artboard 49_1.webp'); 
+    aspect-ratio: 532/657; 
+    width: 20%;   
+}
+.bg3-5{
+    aspect-ratio: 545/1000;
+    width: 100%;
+    margin: auto;
+    background-image: url('Artboard 53.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    align-items: center;
+    overflow: hidden;
+    position: relative;   
+}
 
 </style>
 
@@ -694,6 +720,10 @@ $("#next2").click(function (event) {
     }, 1500);
 });
 $("#next3").click(function (event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: $(".bg3-5").offset().top}, 1500);
+});
+$("#next3-5").click(function (event) {
     event.preventDefault();
     $('html, body').animate({scrollTop: $(".bg4").offset().top}, 1500);
 });
@@ -760,7 +790,7 @@ $("#next12").click(function (event) {
   const input = document.getElementById('answerInput');
   const hiddenImage = document.getElementById('hiddenImage');
 
-  const correctAnswer = "418355";
+  const correctAnswer = "41837";
 
   checkBtn.addEventListener('click', () => {
     const userAnswer = input.value.trim().toLowerCase();
