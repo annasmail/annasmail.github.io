@@ -27,7 +27,10 @@ title: Anna Smail
   </nav>
 </header>
 
-<div class="main">
+<main>
+<div class="container1">
+  <h1>Projects</h1>
+</div>
 <div class="wrapper">
 
 	<div class="box">
@@ -95,7 +98,7 @@ title: Anna Smail
    </div>
   
 </div>
-</div>
+</main>
 
 <footer>
   <div class="footertext">
@@ -112,6 +115,22 @@ title: Anna Smail
 * {
   box-sizing: border-box;
 }
+
+
+  .container1{
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+    margin: 10px 150px 40px 150px;
+    text-align: center;
+  }
+  h1{
+    font-family: DM Sans;
+    font-size: 2.5em;
+    text-decoration: underline 2px #4b1931;
+    margin: 0px;
+  }
 
     @keyframes chainReaction {
   0% {
@@ -131,7 +150,7 @@ title: Anna Smail
 	}
 }
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
 body{
   position: relative;
   margin: 0;
@@ -148,7 +167,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    padding: 100px 5% 100px 5%;
+    padding: 100px 2% 100px 2%;
     top: 0;
     margin: 0px;
     background-color: #FFFFFF;
@@ -168,7 +187,7 @@ a.btn {
 }
 .top {
     color: #000000;
-    font-family:'Spline Sans Mono';
+    font-family: Spline Sans Mono;
     font-weight: normal;
     padding: 6px 15px;
     border-radius: 15px;
@@ -188,7 +207,7 @@ a.btn {
 }
 .github {
     color: #000000;
-    font-family:'Spline Sans Mono';
+    font-family: Spline Sans Mono;
     font-weight: normal;
     margin-right: 10px;
     margin-left: 10px;
@@ -282,7 +301,7 @@ nav ul li {
 	background-color: #4b1931;
 }
 h2{
-  /*font-family: "Spline Sans Mono";*/
+  font-family: Spline Sans Mono;
   font-size: 0.8rem;
   font-weight: normal;
   margin: 0px 15px;
@@ -314,8 +333,6 @@ subtext{
     font-family: Spline Sans Mono;
 	font-weight: normal;
 }
-
-
 
 
 
