@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+  <logo>
+    <a href="/" style="text-decoration: none;">
+      <div class="logo-cont">
+      <div class="snail"></div>
+      <div class="logo">Anna Smail</div>
+      </div>
+      </a>
+  </logo>
+  <nav>
+        <ul class="nav_links">
+      <li><a href="/AboutMe" class="btn top">About</a></li>
+      <li><a href="/Projects" class="btn top">Projects</a></li>
+      <li><a href="https://github.com/annasmail" class="btn github">My Github</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="wrapper">
+
+	<div class="box">
+     <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_29.webp');">
+    </div>
+     <a href="/escapeRoom"  class="text" style='background-color: #fd6d3f; color: #fff;'>
+     <h2>Escape Room</h2>
+        </a>
+   </div>
+
+  <div class="box">
+     <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_27.webp');">
+    </div>
+     <a href="/Projects/AirQuality"  class="text" style='background-color: #d7e2f7;'>
+     <h2>Air Quality</h2>
+        </a>
+   </div>
+	
+   <div class="box">
+     <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_23.webp');">
+    </div>
+     <a href="/Projects/PandasAndDataframes"  class="text" style='background-color: #fbdcf4;'>
+     <h2>Pandas & Dataframes</h2>
+        </a>
+   </div>
+
+   <div class="box">
+     <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_26.webp');">
+    </div>
+     <a href="/Projects/Permafrost"  class="text" style='background-color: #4b66c7; color: #fff;'>
+     <h2>Permafrost</h2>
+        </a>
+   </div>
+
+<div class="box">
+     <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_28.webp');">
+    </div>
+     <a href="/Projects/Magnets" class="text" style='background-color: #d7e2f7;'>
+     <h2>Pushing with Magnets</h2>
+       </a>
+   </div>
+
+<div class="box">
+     <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_24.webp');">
+    </div>
+     <a href="/Projects/Portfolio" class="text" style='background-color: #fbdcf4;'>
+     <h2>Portfolio</h2>
+       </a>
+   </div>
+
+<div class="box">
+     <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_22.webp');">
+    </div>
+     <a href="/Quiz" class="text" style='background-color: #fec5b2;'>
+     <h2>Sam's Quiz</h2>
+       </a>
+   </div>
+
+<div class="box">
+     <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_25.webp');">
+    </div>
+     <a href="/Projects/TheAtmosphere" class="text" style='background-color: #d7e2f7;'>
+     <h2>The Atmosphere</h2>
+       </a>
+   </div>
+  
+</div>
+
+<footer>
+  <div class="footertext">
+	Anna Smail <br> <subtext>Exeter</subtext>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+    @keyframes chainReaction {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(20px);
+	}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 130vh;
+}
+header {
+    display: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px 80px 10px 80px;
+    top: 0;
+    margin: 0px;
+    background-color: #FFFFFF;
+    transition: all 0.8s ease-in-out;
+    z-index: 100;
+    border-bottom: dashed 2px #EEF6FF;
+}
+a {
+    text-decoration: none;
+    color:#000000;
+}
+a:hover {
+    text-decoration: none;
+}
+a.btn {
+    text-decoration: none;
+}
+.top {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.top:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #e5f0fe;
+    border-radius: 25px;
+}
+.github {
+    color: #000000;
+    font-family:'Spline Sans Mono';
+    font-weight: normal;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 6px 15px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.github:hover {
+    color: #FFFFFF;
+    background-color: #4b66c7;
+    border-radius: 25px;
+    font-weight: normal;
+}
+nav ul {
+    font-family:'DM Sans';
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: wrap;
+    margin: 3%;
+}
+.logo{
+    font-family: 'DM Sans';
+    font-size: 44px;
+    text-align: center;
+    font-weight: 600;
+    margin: auto 20px;
+    color: #0e0e0e;
+}
+.logo-cont{
+    display: wrap;
+    gap: 0px;
+    margin: 10px 1%;
+    width: 100%;
+}
+.snail{
+    width: 10%;
+    background-image: url('snail.png');
+    aspect-ratio: 1/1;
+    background-size: contain;
+    margin: auto;
+}
+
+.wrapper {
+  animation: chainReaction 2s, float 2s;
+  opacity: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+  display: grid;
+  grid-template-columns: repeat(2,45%);
+  gap: 5%;
+  justify-content: center;
+  margin: 7.5%;
+  padding: 0px 0px 30px 0px;
+}
+.box {
+  padding: 0px;
+  display: grid;
+  grid-template-rows: 10fr 2fr;
+  gap: 7px;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 12/15;
+  border-radius: 15px;
+}
+.photo{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0px;
+  border-radius: 15px 15px 5px 5px;
+}
+.text{
+  margin: 0px; 
+  padding: 0px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-content: center;
+  text-align: center;
+  border-radius: 5px 5px 15px 15px;
+  transition: 0.4s;
+}
+.text:hover{
+	cursor: pointer;
+	background-color: #4b1931;
+}
+h2{
+  /*font-family: "Spline Sans Mono";*/
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0px 15px;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
+}
+footer{
+    aspect-ratio: 190/41;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-image: url("/mybackground/footer.png");
+}
+.footertext{
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 100px;
+    font-family: DM Sans;
+	font-weight: 600;
+    color: #ddd4d4;
+}
+subtext{
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-family: Spline Sans Mono;
+	font-weight: normal;
+}
+
+
+
+
+
+@media (min-width: 900px) {
+  .wrapper {grid-template-columns: repeat(4, 20%);}
+  header {display: flex;}
+  nav ul li {display: inline; margin: 0;}
+  .snail {width: 100%;}
+  .logo-cont{display: grid; grid-template-columns: 1fr 5fr;}
+  .logo{text-align: left;}
+}
+</style>
