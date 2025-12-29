@@ -1,0 +1,248 @@
+---
+Title: Anna Smail
+---
+
+<body>
+
+<header>
+  <logo>
+    <a href="/" style="text-decoration: none;">
+      <div class="logo-cont">
+      <div class="snail"></div>
+      <div class="logo">Anna Smail</div>
+      </div>
+      </a>
+  </logo>
+  <nav>
+        <ul class="nav_links">
+      <li><a href="/AboutMe" class="btn top">About</a></li>
+      <li><a href="/Projects" class="btn top">Projects</a></li>
+      <li><a href="https://github.com/annasmail" class="btn github">Github</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="grid-container">
+<div class="grid-item1">
+  <h1>Hi! I recently graduated with an MPhil in <b>Quantitative Climate and Environmental Science</b> from the <u>University of Cambridge</u>.</h1>
+</div>
+<div class="grid-item2">
+  <h1>This is my <b>Github Page</b> where I will post about my projects!</h1>
+  </div>
+</div>
+
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
+.container1{
+  animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  }
+h1{
+    font-family: DM Sans;
+    font-size: 200%;
+    font-weight: 600;
+	margin: 0 0 auto 0;
+  }
+
+@keyframes chainReaction {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes float {
+	0% {transform: translatey(0px);}
+	100% {transform: translatey(20px);}
+}
+  
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+body {
+    width: 100%;
+    margin: 0;
+    background-image: url("/1x/Artboard 716.webp");
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+    min-height: 100vh;
+}
+header {
+    display: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 2% 5%;
+    top: 0;
+    margin: 0px;
+    background-color: #FFFFFF;
+    transition: all 0.8s ease-in-out;
+    z-index: 100;
+    border-bottom: dashed 2px #EEF6FF;
+}
+a {
+    text-decoration: none;
+    color:#000000;
+}
+a:hover {
+    text-decoration: none;
+}
+a.btn {
+    text-decoration: none;
+}
+.top {
+    color: #000000;
+    font-family: Spline Sans Mono;
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.top:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #e5f0fe;
+    border-radius: 25px;
+}
+.github {
+    color: #000000;
+    font-family: Spline Sans Mono;
+    font-weight: normal;
+    padding: 6px 15px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.github:hover {
+    color: #FFFFFF;
+    background-color: #4b66c7;
+    border-radius: 25px;
+    font-weight: normal;
+}
+nav ul {
+    font-family:'DM Sans';
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 1.2%;
+}
+.logo{
+    font-family: 'DM Sans';
+    font-size: 44px;
+    text-align: center;
+    font-weight: 600;
+    margin: auto 20px;
+    color: #0e0e0e;
+}
+.logo-cont{
+    display: wrap;
+    gap: 0px;
+    margin: 10px 1%;
+    width: 100%;
+}
+.snail{
+    width: 10%;
+    background-image: url('/samQuizImages/snail.png');
+    aspect-ratio: 1/1;
+    background-size: contain;
+    margin: auto;
+}
+
+/*---------------*/
+
+h1 {
+    font-size: 1.3em;
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: 600;
+	margin: 15px 0px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: 2fr 7fr 2fr;
+  padding: 40px 40px 0px 40px;
+  justify-content: center;
+  margin: 0px 0px;
+}
+.grid-container > div {
+  text-align: center;
+  text-justify: inter-word;
+}
+.grid-item1 {
+	box-sizing: border-box;
+	color:#000000;
+  grid-column: 2;
+	padding: 0px  0px;
+	border-radius: 25px;
+  margin: 0px;
+  order: 1;
+animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
+.grid-item2 {
+	box-sizing: border-box;
+	color:#000000;
+  grid-column: 2;
+	padding: 0px  0px;
+	border-radius: 25px;
+  margin: 0px;
+  order: 1;
+animation: chainReaction 2s, float 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+}
+b {
+    font-family:'DM Sans';
+    color:#4b66c7;
+    line-height: 1.1em;
+    font-weight: bold;
+}
+
+u {
+    font-family:'DM Sans';
+    color:#000000;
+    line-height: 1.1em;
+    font-weight: bold;
+    text-decoration: #4b66c7 underline;
+    text-decoration-thickness: 0.15rem;
+}
+
+@media (min-width: 900px) {
+  header {display: flex;}
+  nav ul li {display: inline; margin: 0;}
+  .snail {width: 100%;}
+  .logo-cont{display: grid; grid-template-columns: 1fr 5fr;}
+  .logo{text-align: left;}
+  .top{margin-right: 10px;margin-left: 10px;}
+  .github{margin-right: 10px;margin-left: 10px;}
+  body{background-image: url('1x/Artboard 15.webp')}
+  h1{font-size: 2.3em;}
+  .grid-container{grid-template-columns: 1fr 2fr 1fr; padding: 100px 40px 0px 40px;}
+}
+</style>
