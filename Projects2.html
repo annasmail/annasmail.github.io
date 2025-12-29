@@ -1,6 +1,7 @@
----
+<!------
 title: Anna Smail
----
+----
+-->
 
 <!DOCTYPE html>
 <html>
@@ -36,7 +37,7 @@ title: Anna Smail
 	<div class="box">
      <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_29.webp');">
     </div>
-     <a href="/escapeRoom"  class="text" style='background-color: #fd6d3f; color: #fff;'>
+     <a href="/escapeRoom"  class="text" style='color: #fff; --bg: #fd6d3f; --hover-bg: #e85525;'>
      <h2>Escape Room</h2>
         </a>
    </div>
@@ -44,7 +45,7 @@ title: Anna Smail
   <div class="box">
      <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_27.webp');">
     </div>
-     <a href="/Projects/AirQuality"  class="text" style='background-color: #d7e2f7;'>
+     <a href="/Projects/AirQuality"  class="text" style='--bg: #d7e2f7; --hover-bg: #c5d8fc;'>
      <h2>Air Quality</h2>
         </a>
    </div>
@@ -52,7 +53,7 @@ title: Anna Smail
    <div class="box">
      <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_23.webp');">
     </div>
-     <a href="/Projects/PandasAndDataframes"  class="text" style='background-color: #fbdcf4;'>
+     <a href="/Projects/PandasAndDataframes"  class="text" style='--bg: #fbdcf4; --hover-bg: #f9cbee;'>
      <h2>Pandas & Dataframes</h2>
         </a>
    </div>
@@ -60,7 +61,7 @@ title: Anna Smail
    <div class="box">
      <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_26.webp');">
     </div>
-     <a href="/Projects/Permafrost"  class="text" style='background-color: #4b66c7; color: #fff;'>
+     <a href="/Projects/Permafrost"  class="text" style='color: #fff; --bg: #4b66c7; --hover-bg: #3852b4;'>
      <h2>Permafrost</h2>
         </a>
    </div>
@@ -68,7 +69,7 @@ title: Anna Smail
 <div class="box">
      <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_28.webp');">
     </div>
-     <a href="/Projects/Magnets" class="text" style='background-color: #d7e2f7;'>
+     <a href="/Projects/Magnets" class="text" style='--bg: #d7e2f7; --hover-bg: #c5d8fc;'>
      <h2>Pushing with Magnets</h2>
        </a>
    </div>
@@ -76,7 +77,7 @@ title: Anna Smail
 <div class="box">
      <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_24.webp');">
     </div>
-     <a href="/Projects/Portfolio" class="text" style='background-color: #fbdcf4;'>
+     <a href="/Projects/Portfolio" class="text" style='--bg: #fbdcf4; --hover-bg: #f9cbee;'>
      <h2>Portfolio</h2>
        </a>
    </div>
@@ -84,7 +85,7 @@ title: Anna Smail
 <div class="box">
      <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_22.webp');">
     </div>
-     <a href="/Quiz" class="text" style='background-color: #fec5b2;'>
+     <a href="/Quiz" class="text" style='--bg: #fec5b2; --hover-bg: #ffb69b;'>
      <h2>Sam's Quiz</h2>
        </a>
    </div>
@@ -92,18 +93,22 @@ title: Anna Smail
 <div class="box">
      <div class="photo" style=" background-image: url('../aboutMeImages/Artboard 18_25.webp');">
     </div>
-     <a href="/Projects/TheAtmosphere" class="text" style='background-color: #d7e2f7;'>
+     <a href="/Projects/TheAtmosphere" class="text" style='--bg: #d7e2f7; --hover-bg: #c5d8fc;'>
      <h2>The Atmosphere</h2>
        </a>
    </div>
   
 </div>
+
+<footer>
+
 </main>
 
 <footer>
-  <div class="footertext">
+  <div class="footer-image"></div>
+  <!---<div class="footertext">
 	Anna Smail <br> <subtext>Exeter</subtext>
-  </div>
+  </div>-->
 </footer>
 
 </body>
@@ -114,49 +119,42 @@ title: Anna Smail
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
 
-  .container1{
+.container1{
   animation: chainReaction 2s, float 2s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
-    margin: 10px 150px 40px 150px;
-    text-align: center;
+  margin: 2% auto 0 auto;
+  text-align: center;
   }
-  h1{
+h1{
     font-family: DM Sans;
-    font-size: 2.5em;
-    text-decoration: underline 2px #4b1931;
-    margin: 0px;
+    font-size: 220%;
+    font-weight: 600;
   }
 
-    @keyframes chainReaction {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+@keyframes chainReaction {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 @keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	100% {
-		transform: translatey(20px);
-	}
+	0% {transform: translatey(0px);}
+	100% {transform: translatey(20px);}
 }
   
 html, body {
     height: 100%;
     margin: 0;
 }
-  body {
+body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
   }
 main{
-	flex: 1;
+	flex: 1 0 auto;
+  padding: 20px;
 }
 header {
     display: wrap;
@@ -225,8 +223,8 @@ nav ul {
     text-align: center;
 }
 nav ul li {
-    display: wrap;
-    margin: 3%;
+    display: inline;
+    margin: 1.2%;
 }
 .logo{
     font-family: 'DM Sans';
@@ -259,8 +257,9 @@ nav ul li {
   grid-template-columns: repeat(2,45%);
   gap: 5%;
   justify-content: center;
-  margin: 4% 7.5%;
-  padding: 0px 0px 30px 0px;
+  margin: 3% 7.5%;
+  padding: 0px 0px calc(1.5*41 / 190 * 100%) 0px;
+
 }
 .box {
   padding: 0px;
@@ -291,14 +290,15 @@ nav ul li {
   text-align: center;
   border-radius: 5px 5px 15px 15px;
   transition: 0.4s;
+  background-color: var(--bg);
 }
 .text:hover{
 	cursor: pointer;
-	background-color: #4b1931;
+	background-color: var(--hover-bg);
 }
 h2{
   font-family: Spline Sans Mono;
-  font-size: 0.8rem;
+  font-size: 110%;
   font-weight: normal;
   margin: 0px 15px;
   padding: 0px;
@@ -307,19 +307,24 @@ a{
   text-decoration: none;
 }
 footer{
-    aspect-ratio: 190/41;
+    flex-shrink: 0;       
     width: 100%;
-    background-image: url("/mybackground/footer.png");
-	background-size: contain;
-    background-repeat: no-repeat;
+}
+.footer-image {
+    width: 100%;
+	background-image: url('/mybackground/footer.png');
+    padding-top: calc(41 / 190 *100%);
+    background-size: cover;
+    background-position: center;
 }
 .footertext{
-    font-size: 2.2rem;
+    position: relative;
     text-align: center;
-    padding-top: 100px;
+    font-size: 2.2rem;
     font-family: DM Sans;
-	font-weight: 600;
+    font-weight: 600;
     color: #ddd4d4;
+    margin: 0;
 }
 subtext{
     font-size: 1.2rem;
@@ -328,14 +333,13 @@ subtext{
 	font-weight: normal;
 }
 
-
-
 @media (min-width: 900px) {
-  .wrapper {grid-template-columns: repeat(4, 20%);}
+  .wrapper {grid-template-columns: repeat(4, 20%); padding: 0px 0px 30px 0px;}
   header {display: flex;}
   nav ul li {display: inline; margin: 0;}
   .snail {width: 100%;}
   .logo-cont{display: grid; grid-template-columns: 1fr 5fr;}
   .logo{text-align: left;}
+  .footer-image{padding-top: 0; aspect-ratio: 190/41;}
 }
 </style>
