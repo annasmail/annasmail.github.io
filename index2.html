@@ -34,36 +34,21 @@ Title: Anna Smail
 </body>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
-
-.container1{
-  animation: chainReaction 2s, float 2s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 0.3s;
-  margin: 0 auto 0 auto;
-  text-align: center;
-  }
-h1{
-    font-family: DM Sans;
-    font-size: 28px;
-    font-weight: 600;
-	margin: 0 0 auto 0;
-  }
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
 @keyframes chainReaction {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
 
 @keyframes float {
-	0% {transform: translatey(0px);}
-	100% {transform: translatey(20px);}
+   0% {transform: translatey(0px);}
+   100% {transform: translatey(20px);}
 }
   
 html, body {
     height: 100%;
     margin: 0;
+	font-size: 35px;
 }
 body {
     display: flex;
@@ -148,7 +133,7 @@ nav ul li {
 }
 .logo{
     font-family: 'DM Sans';
-    font-size: 44px;
+    font-size: 65px;
     text-align: center;
     font-weight: 600;
     margin: auto 20px;
@@ -171,7 +156,7 @@ nav ul li {
 /*---------------*/
 
 h1 {
-    font-size: 28px;
+    font-size: 35px;
     font-family:'DM Sans';
     color:#000000;
     font-weight: 600;
@@ -237,11 +222,13 @@ u {
   nav ul li {display: inline; margin: 0;}
   .snail {width: 100%;}
   .logo-cont{display: grid; grid-template-columns: 1fr 5fr;}
-  .logo{text-align: left;}
+  .logo{text-align: left; font-size: 45px;}
   .top{margin-right: 10px;margin-left: 10px;}
   .github{margin-right: 10px;margin-left: 10px;}
   body{background-image: url('/mybackground/Artboard 15.webp')}
   h1{font-size: 2.3em;}
   .grid-container{grid-template-columns: 1fr 2fr 1fr; padding: 100px 40px 0px 40px;}
+  body{font-size: 16px;}
+  html{font-size: 16px;}
 }
 </style>
