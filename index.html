@@ -1,7 +1,26 @@
 ---
-title: Anna Smail
-layout: layout
+Title: Anna Smail
 ---
+
+<body>
+
+<header>
+  <logo>
+    <a href="/" style="text-decoration: none;">
+      <div class="logo-cont">
+      <div class="snail"></div>
+      <div class="logo">Anna Smail</div>
+      </div>
+      </a>
+  </logo>
+  <nav>
+        <ul class="nav_links">
+      <li><a href="/AboutMe" class="btn top">About</a></li>
+      <li><a href="/Projects" class="btn top">Projects</a></li>
+      <li><a href="https://github.com/annasmail" class="btn github">Github</a></li>
+    </ul>
+  </nav>
+</header>
 
 <div class="grid-container">
 <div class="grid-item1">
@@ -12,80 +31,143 @@ layout: layout
   </div>
 </div>
 
- <script>
-	const nav = document.querySelector('header')
-	window.addEventListener('scroll', fixNav)
-	function fixNav() {
-    	if (window.scrollY > 10) {
-        nav.classList.add('active')
-  	} else {
-        nav.classList.remove('active')
-  	}
-	}	
-  </script>
+</body>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Martian+Mono:wght@100..800&family=Sankofa+Display&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
 @keyframes chainReaction {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
 
 @keyframes float {
-	0% {transform: translatey(0px);}
-	100% {transform: translatey(20px);}
+   0% {transform: translatey(0px);}
+   100% {transform: translatey(20px);}
 }
+  
+html, body {
+    height: 100%;
+    margin: 0;
+	font-size: 35px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-.buttoncontainer{
+body {
     width: 100%;
+    margin: 0;
+    background-image: url("/mybackground/Artboard 716.webp");
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+    min-height: 100vh;
+}
+header {
+    display: wrap;
+    justify-content: space-between;
     align-items: center;
+    max-width: 100%;
+    padding: 2% 5%;
+    top: 0;
+    margin: 0px;
+    background-color: #FFFFFF;
+    transition: all 0.8s ease-in-out;
+    z-index: 100;
+    border-bottom: dashed 2px #EEF6FF;
+}
+a {
+    text-decoration: none;
+    color:#000000;
+}
+a:hover {
+    text-decoration: none;
+}
+a.btn {
+    text-decoration: none;
+}
+.top {
+    color: #000000;
+    font-family: Spline Sans Mono;
+    font-weight: normal;
+    padding: 6px 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+    padding: 8px 17px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.top:hover {
+    font-weight: normal;
+    padding: 8px 17px;
+    color: #000000;
+    background-color: #e5f0fe;
+    border-radius: 25px;
+}
+.github {
+    color: #000000;
+    font-family: Spline Sans Mono;
+    font-weight: normal;
+    padding: 6px 15px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.github:hover {
+    color: #FFFFFF;
+    background-color: #4b66c7;
+    border-radius: 25px;
+    font-weight: normal;
+}
+nav ul {
+    font-family:'DM Sans';
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 1.2%;
+}
+.logo{
+    font-family: 'DM Sans';
+    font-size: 65px;
+    text-align: center;
+    font-weight: 600;
+    margin: auto 20px;
+    color: #0e0e0e;
+}
+.logo-cont{
+    display: wrap;
+    gap: 0px;
+    margin: 10px 1%;
+    width: 100%;
+}
+.snail{
+    width: 15%;
+    background-image: url('/samQuizImages/snail.png');
+    aspect-ratio: 1/1;
+    background-size: contain;
     margin: auto;
 }
-.buttoncontainer a {
-    color: #181515;
-    padding: 6px 14px;
-    text-decoration: none;
-    text-align: center;
-    margin: 5px 10px;
-    border-radius: 15px;
-    font-size: 1.2rem;
-    max-width: 60%;
-    font-family: 'Spline Sans Mono';
-    transition: ease-out 0.4s;
-    background-color: #d8eaff;
-}
-.buttoncontainer a:hover {
-    background-color: #c3dcf9;
-    cursor: pointer;
-}
 
-	
-body {
-    max-width: 100%;
-    padding: 0px 0px 80px 0px;
-    margin: 0px;
-    background-image: url("/mybackground/newhomebg.png");
-		background-position-y: 100px;
-  background-size: cover;
-	background-repeat: no-repeat;
-  height: 100vh;
-	background-position-x: center;
-}
+/*---------------*/
 
 h1 {
-    font-size: 2.3em;
+    font-size: 50px;
     font-family:'DM Sans';
     color:#000000;
-    line-height: 1.1em;
-    font-weight: bold;
+    font-weight: 600;
 	margin: 15px 0px;
 }
 
 .grid-container {
   display: grid;
   gap: 0px;
-  grid-template-columns: 1fr 2fr 1fr;
-  padding: 120px 40px 200px 40px;
+  grid-template-columns: 2fr 7fr 2fr;
+  padding: 70px 40px 0px 40px;
   justify-content: center;
   margin: 0px 0px;
 }
@@ -119,19 +201,6 @@ animation: chainReaction 2s, float 2s;
   animation-fill-mode: forwards;
   animation-delay: 1.8s;
 }
-.grid-item3 {
-	box-sizing: border-box;
-	color:#000000;
-  grid-column: 2;
-	padding: 30px  0px;
-	border-radius: 25px;
-  margin: 0px;
-  order: 1;
-animation: chainReaction 2s, float 2s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 3.2s;
-}
 b {
     font-family:'DM Sans';
     color:#4b66c7;
@@ -144,8 +213,21 @@ u {
     color:#000000;
     line-height: 1.1em;
     font-weight: bold;
-    text-decoration: #4b66c7 underline;
-    text-decoration-thickness: 0.15rem;
 }
+
+@media (min-width: 1024px) {
+  header {display: flex;}
+  nav ul li {display: inline; margin: 0;}
+  .snail {width: 100%;}
+  .logo-cont{display: grid; grid-template-columns: 1fr 5fr;}
+  .logo{text-align: left; font-size: 45px;}
+  .top{margin-right: 10px;margin-left: 10px;}
+  .github{margin-right: 10px;margin-left: 10px;}
+  body{background-image: url('/mybackground/Artboard 15.webp')}
+  h1{font-size: 2.3em;}
+  .grid-container{grid-template-columns: 1fr 2fr 1fr; padding: 100px 40px 0px 40px;}
+  body{font-size: 16px;}
+  html{font-size: 16px;}
+  u{text-decoration: #4b66c7 underline; text-decoration-thickness: 0.15rem;}
 }
 </style>
