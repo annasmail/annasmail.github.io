@@ -13,10 +13,9 @@ Layout: layout
 </div>
 
 <div class="quizheader">
-    <div class="heysam"></div>
         <div class="quizinstructions">
-        <div class="instructionstxt" style="animation-delay: 0.3s">This is an escape room I made for my family to play at christmas.</div>
-        <div class="instructionstxt" style="animation-delay: 1.4s">There are <b>4 characters</b> that need to work together to get the codes.</div>
+        <div class="instructionstxt" style="animation-delay: 0.3s">This is an escape room I made for my family to play at christmas. It only works on mobile devices!</div>
+        <div class="instructionstxt" style="animation-delay: 1.4s">There are <b>4 characters for 4 players</b> that need to work together to get the codes.</div>
         <div class="instructionstxt" style="animation-delay: 2.6s">If you can't figure out the answer, you can also type 'cheat' in, and that will work too :)</div>
         <div class="instructionstxtlink" style="animation-delay: 2.6s">Click here to start!</div>
     </div>
@@ -394,6 +393,87 @@ button:hover{
 .playersticker:hover{
     cursor: pointer;
     transform: scale(1.03);
+}
+
+
+/*header*/
+.logo{
+    font-family: 'DM Sans';
+    font-size: 44px;
+    text-align: left;
+    font-weight: 600;
+    margin: auto 20px;
+    color: #0e0e0e;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 15px 4%;
+  align-items: center;
+  gap: 30px;
+  width: 92%;
+  background-color: #fff;
+}
+.logo-cont{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 0px;
+    margin: 10px 1%;
+    width: 100%;
+}
+.snail{
+    width: 100%;
+    background-image: url('/samQuizImages/snail.png');
+    aspect-ratio: 1/1;
+    background-size: contain;
+    margin: auto;
+}
+.quizheader{
+    margin: 0px;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url('/mybackground/Artboard 716.webp');
+    background-size: cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.quizinstructions{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px auto;
+}
+.instructionstxt{
+    width: 700px;
+    font-size: 1.5rem;
+    margin: 10px auto;
+    animation: fadein 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.instructionstxtlink{
+    padding: 7px 5px;
+    max-width: 250px;
+    font-size: 1.5rem;
+    margin: 20px auto 10px auto;
+    animation: fadein 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    transition: ease 0.3s;
+    border-radius: 25px;
+    border: dashed 2px #d7e2f7;
+}
+.instructionstxtlink:hover{
+    background-color: #d7e2f7;
+    border: solid 2px #d7e2f7;
+}
+@keyframes fadein {
+  0% {opacity: 0; transform: translateY(0px);}
+  100% {opacity: 1; transform: translateY(20px);}
 }
 
 
