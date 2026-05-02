@@ -760,12 +760,12 @@ $("#next12").click(function (event) {
   const input = document.getElementById('answerInput');
   const hiddenImage = document.getElementById('hiddenImage');
 
-  const correctAnswer = "41847";
+  const correctAnswers = ["41847", "cheat"];
 
   checkBtn.addEventListener('click', () => {
     const userAnswer = input.value.trim().toLowerCase();
 
-    if (userAnswer === correctAnswer.toLowerCase()) {
+    if (correctAnswers.includes(userAnswer)) {
       hiddenImage.style.display = "block";
       $('html, body').animate({scrollTop: $(".hidden1").offset().top}, 1500);
         setTimeout(() => {
