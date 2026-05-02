@@ -760,12 +760,12 @@ $("#next12").click(function (event) {
   const input = document.getElementById('answerInput');
   const hiddenImage = document.getElementById('hiddenImage');
 
-  const correctAnswer = "41847";
+  const correctAnswers = ["41847", "cheat"];
 
   checkBtn.addEventListener('click', () => {
     const userAnswer = input.value.trim().toLowerCase();
 
-    if (userAnswer === correctAnswer.toLowerCase()) {
+    if (correctAnswers.includes(userAnswer)) {
       hiddenImage.style.display = "block";
       $('html, body').animate({scrollTop: $(".hidden1").offset().top}, 1500);
         setTimeout(() => {
@@ -783,12 +783,12 @@ $("#next12").click(function (event) {
   const input2 = document.getElementById('answerInput2');
   const hiddenImage2 = document.getElementById('hiddenImage2');
 
-  const correctAnswer2 = "prison";
+  const correctAnswers2 = ["prison", "cheat"];
 
   checkBtn2.addEventListener('click', () => {
     const userAnswer2 = input2.value.trim().toLowerCase();
 
-    if (userAnswer2 === correctAnswer2.toLowerCase()) {
+    if (correctAnswers2.includes(userAnswer2)) {
       hiddenImage2.style.display = "block";
       $('html, body').animate({scrollTop: $(".hidden2").offset().top}, 1500);
     setTimeout(() => {const el = document.getElementById("maingate-text1");el.style.opacity = "1";el.style.pointerEvents = "auto"; 
@@ -805,12 +805,12 @@ $("#next12").click(function (event) {
   const input3 = document.getElementById('answerInput3');
   const hiddenImage3 = document.getElementById('hiddenImage3');
 
-  const correctAnswer3 = "214574RH8";
+  const correctAnswers3 = ["214574RH8", "cheat"];
 
   checkBtn3.addEventListener('click', () => {
     const userAnswer3 = input3.value.trim().toLowerCase();
 
-    if (userAnswer3 === correctAnswer3.toLowerCase()) {
+    if (correctAnswers3.includes(userAnswer3)) {
       hiddenImage3.style.display = "block";
       $('html, body').animate({scrollTop: $(".hidden3").offset().top}, 1500);
     setTimeout(() => {
@@ -857,12 +857,12 @@ $('html, body').animate({scrollTop: $(".hidden6").offset().top}, 1500);
   const input4 = document.getElementById('answerInput4');
   const hiddenImage7 = document.getElementById('hiddenImage7');
 
-  const correctAnswer4 = "32";
+  const correctAnswers4 = ["32", "cheat"];
 
   checkBtn4.addEventListener('click', () => {
     const userAnswer4 = input4.value.trim().toLowerCase();
 
-    if (userAnswer4 === correctAnswer4.toLowerCase()) {
+    if (correctAnswers4.includes(userAnswer4)) {
       hiddenImage7.style.display = "block";
       $('html, body').animate({scrollTop: $(".hidden7").offset().top}, 1500);
     } else {
