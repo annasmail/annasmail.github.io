@@ -91,6 +91,7 @@ body{
     font-size: 1.2rem;
     transition: 0.8s;
     color: #3d6eee;
+    width: 20%;
 }
 
 .toprojects:hover{
@@ -100,6 +101,12 @@ body{
 }
 
 h{background-color: #dae4ff;}
+
+$(".toprojects").click(function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(".bluebg").offset().top
+    }, 1500);});
 
 .bluebg{
     margin: 0px;
