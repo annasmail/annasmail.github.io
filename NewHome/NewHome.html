@@ -101,12 +101,6 @@ body{
 
 h{background-color: #dae4ff;}
 
-$(".toprojects").click(function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $(".bluebg").offset().top
-    }, 1500);});
-
 .bluebg{
     margin: 0px;
     width: 100%;
@@ -157,6 +151,16 @@ $(".toprojects").click(function (event) {
     .text{font-size: 2rem;}
     .toprojects{font-size: 2rem;}
 }
+
+</style>
+
+<script>
+    $(".toprojects").click(function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(".bluebg").offset().top
+    }, 1500);});
+</script>
 
 
 </style>
